@@ -31,10 +31,11 @@ export default function PatioSlider({ title }) {
                   width={1200}
                   height={100}
                   priority={true}
+                  alt="carousel image"
                 />
                 {/* <div className={styles.content1} /> */}
               </div>
-              <Carousel.Caption style={captionStyle} className="spacing">
+              <Carousel.Caption className="spacing">
                 <div className="spacing">
                   <h1 className="title">
                     Calgary's largest residential paving stone installer{" "}
@@ -52,10 +53,11 @@ export default function PatioSlider({ title }) {
                   width={1200}
                   height={100}
                   priority={true}
+                  alt="carousel image"
                 />
                 {/* <div className={styles.content2} /> */}
               </div>
-              <Carousel.Caption style={captionStyle} className="spacing">
+              <Carousel.Caption className="spacing">
                 <div className="spacing">
                   <h2 className="title">
                     Patios, Walkways, Pool Decks, Driveays
@@ -73,10 +75,11 @@ export default function PatioSlider({ title }) {
                   width={1200}
                   height={100}
                   priority={true}
+                  alt="carousel image"
                 />
                 {/* <div className={styles.content3} /> */}
               </div>
-              <Carousel.Caption style={captionStyle} className="spacing">
+              <Carousel.Caption className="spacing">
                 <div className="spacing">
                   <h2 className="title">take a step outdoors</h2>
                   <p className="subheader tan">
