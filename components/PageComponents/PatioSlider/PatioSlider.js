@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { ButtonPrimary, ButtonSecondaryLight } from "../../buttons";
 import { Actions, Container, HeroBannerPadding } from "../../layoutComponents";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 // import styles from "./PatioSlider.module.scss";
 import styles from "../../Heros/HeroBasic.module.scss";

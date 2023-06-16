@@ -6,7 +6,6 @@ import {
   Container,
   HeroBannerPadding,
 } from "components/layoutComponents";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroSlider.module.scss";
 import Image from "next/image";

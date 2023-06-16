@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { ButtonInline, ButtonPrimary } from "../buttons";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
