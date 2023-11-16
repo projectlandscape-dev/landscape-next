@@ -1,0 +1,48 @@
+
+.wrapper{
+    background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"),
+    rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--txt-light);
+}
+.boxStyle{
+    max-width: 90ch;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.orderStyle{
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.listStyle{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+;
+}
+.desStyle{
+    text-align: start;
+    border:1px solid #DFAE4A;
+    padding:15px;
+    width:85%;       
+}
+.description p{
+margin-bottom: 0;
+}
+.pointStyle{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    color:black;
+    background-color:#DFAE4A ;
+    justify-content: center;
+}

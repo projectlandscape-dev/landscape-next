@@ -313,6 +313,15 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         ... on Page_Pagecomponents_PageComponents_Text {
           text
         }
+        ... on Page_Pagecomponents_PageComponents_ProcessArea {
+          addProcess {
+            description
+            fieldGroupName
+            itemNumber
+            title
+          }
+          title
+        }
       }
     }
   }
