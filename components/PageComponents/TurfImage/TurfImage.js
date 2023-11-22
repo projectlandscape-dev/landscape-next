@@ -1,14 +1,14 @@
 import React from "react";
-import { Flex } from "./layoutComponents";
+import { Flex } from "components/layoutComponents";
 
-export default function TurfImages() {
+export default function TurfImage() {
   return (
     <section>
       <Flex>
-        <img src="./TurfImages/turfImage1.png"></img>
-        <img src="./TurfImages/turfImage1.png"></img>
-        <img src="./TurfImages/turfImage1.png"></img>
-        <img src="./TurfImages/turfImage1.png"></img>
+        <img src="/turf1.png"></img>
+        <img src="/turf2.png"></img>
+        <img src="/turf3.png"></img>
+        <img src="/turf4.png"></img>
       </Flex>
     </section>
   );
