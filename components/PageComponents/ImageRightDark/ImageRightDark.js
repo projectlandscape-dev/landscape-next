@@ -7,7 +7,7 @@ import {
   FlexMobileOpp,
   Section,
 } from "../../layoutComponents";
-import Image from "next/image";
+import Image from "../../Image";
 
 const Wrapper = styled.div`
   background: var(--clr-accent);
@@ -30,7 +30,18 @@ const ImgStyles = {
   marginTop: "2em",
   maxHeight: "450px",
 };
-
+const Img = styled.div`
+  figure {
+    div {
+      box-shadow: -20px 20px 0px 1px var(--clr-tan);
+      img {
+        max-height: 600px;
+        min-height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+`;
 export default function ImageRightDark({
   subheader,
   title,
@@ -39,6 +50,7 @@ export default function ImageRightDark({
   button,
   link,
 }) {
+  console.log(image, "imagggggg");
   return (
     <Wrapper>
       <section>
@@ -64,11 +76,13 @@ export default function ImageRightDark({
                 </ButtonSecondaryLight>
               )}
             </Text>
-            <Image
-              className="stretch"
-              alt={image.altText || ""}
-              srcSet={image.srcSet}
-            />
+            <Img>
+              <Image
+                className="stretch"
+                alt={image.altText || ""}
+                srcSet={image.srcSet}
+              />
+            </Img>
           </div>
         </div>
       </section>
