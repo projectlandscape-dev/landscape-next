@@ -56,7 +56,7 @@ export default function HeroBasic(props) {
               <div className={styles.content}>
                 <div className={styles.desktopImg}>
                   <Image
-                    src="/heroSliderImages/pastedImage0.png"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/11/pasted-image-0-1-1.png"
                     width={1200}
                     height={100}
                     alt="calgary landscaping"
@@ -65,7 +65,7 @@ export default function HeroBasic(props) {
                 </div>
                 <div className={styles.mobileImg}>
                   <Image
-                    src="/heroSliderImages/pastedImage0.png"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/11/pasted-image-0-1-1.png"
                     width={1200}
                     height={100}
                     alt="calgary landscaping"
@@ -89,7 +89,7 @@ export default function HeroBasic(props) {
               <div className={styles.content}>
                 <div className={styles.desktopImg}>
                   <Image
-                    src="/heroSliderImages/pasted image2.png"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/11/pasted-imagee.png"
                     width={1200}
                     height={100}
                     alt="calgary landscaping"
@@ -98,7 +98,7 @@ export default function HeroBasic(props) {
                 </div>
                 <div className={styles.mobileImg}>
                   <Image
-                    src="/heroSliderImages/pasted image2.png"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/11/pasted-imagee.png"
                     width={1200}
                     height={100}
                     alt="calgary landscaping"

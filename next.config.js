@@ -21,6 +21,11 @@ module.exports = {
         hostname: "res.cloudinary.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "21-pl.purpleparrotwebsites.com",
+        port: "",
+      },
     ],
   },
 };
