@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonSecondaryLight } from "../buttons";
+import { ButtonSecondaryLight } from "../../buttons";
 import { Container, Flex, FlexMobileOpp, Section } from "../layoutComponents";
 import Image from "next/image";
 
