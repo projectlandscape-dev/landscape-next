@@ -14,6 +14,11 @@ const Text = styled.div`
     color: var(--txt-light);
   }
 `;
+const Inner = styled.div`
+  a {
+    color: var(--txt-light);
+  }
+`;
 
 const ImgStyles = {
   boxShadow: "-20px 20px 0px 1px var(--clr-tan)",
