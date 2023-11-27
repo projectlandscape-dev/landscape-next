@@ -35,7 +35,7 @@ export default function Benefits1({ subheader, title, benefitContent }) {
           <h2 className="title">{title}</h2>
         </div>
         <GridThree>
-          {benefitContent.map((benefit,index) => {
+          {benefitContent?.map((benefit, index) => {
             return (
               <BenefitItem className="spacing center" key={index}>
                 <Image
