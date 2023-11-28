@@ -22,6 +22,8 @@ import {
 import styled from "styled-components";
 import { ButtonPrimary } from "../components/buttons";
 import AllServicesBanner from "../components/Services/AllServicesBanner";
+import Badges from "../components/PageComponents/Badges/Badges";
+import Cta3 from "../components/PageComponents/Cta3/Cta3";
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-3.webp"),
@@ -40,6 +42,14 @@ const AccordionStyle = {
   border: "none",
   padding: "3px",
 };
+const Text = styled.div`
+  text-align: center;
+  max-width: 110ch;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+`;
 
 export default function ReferFriend() {
   return (
@@ -54,6 +64,39 @@ export default function ReferFriend() {
         subheader=""
         description="Simply refer a family member or friend to our landscaping services, and if they become a customer, you'll receive a special reward as a token of our gratitude. We value your trust and confidence in us, and we believe that a referral from you is the ultimate form of praise. Thank you for considering recommending us to your friends and family."
       />
+      <Container className="spacing mb-5 mt-5">
+        <Text>
+          <h3 className="title">PROJECT LANDSCAPES REFERRAL PROGRAM</h3>
+        </Text>
+        <p className="mt-4 leading-relaxed">
+          Project Landscape's referral and loyalty program reflects our
+          appreciation for client recommendations and ongoing trust. This
+          initiative rewards clients with a $150 gift card for every new
+          referral who signs up for a Project Landscape project, emphasizing the
+          value the company places on word-of-mouth promotion. Such a reward
+          system not only incentivizes existing clients to share their positive
+          experiences with others but also shows the company's confidence in the
+          quality and craftsmanship of its services. Moreover, Project Landscape
+          extends this gratitude to repeat clients. For every additional project
+          that a client contracts with them, whether it be a deck, patio,
+          lighting, or any other outdoor living space, they receive the same
+          $150 gift card. This approach not only acknowledges client loyalty but
+          also encourages them to continue choosing Project Landscape for their
+          future outdoor living space needs. By ensuring that both referrals and
+          repeat projects receive the same high level of service that clients
+          have experienced, Project Landscape reassures clients that their
+          recommendations are valued. They can refer others with the peace of
+          mind that these referrals will experience the same exceptional
+          service. This strategy demonstrates Project Landscape's commitment to
+          maintaining high standards in custom-designed and professionally built
+          outdoor living solutions across Calgary and its surrounding areas.
+          Through this program, Project Landscape not only fosters client
+          loyalty but also strengthens its reputation in the community as a
+          reliable and high-quality service provider.
+        </p>
+      </Container>
+      <Cta3 />
+      <Badges />
       <StepsToRefer />
       <ReferForm />
       <MainTestimonials />
