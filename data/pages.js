@@ -192,6 +192,20 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
           }
         }
+        ... on Page_Pagecomponents_PageComponents_ComponentF {
+          __typename
+          subheader
+          title
+          content {
+            title
+            description
+            image {
+              altText
+              sourceUrl(size: MEDIUM_LARGE)
+              srcSet
+            }
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_Cta1 {
           __typename
           body
