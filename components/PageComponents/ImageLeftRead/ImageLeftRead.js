@@ -95,7 +95,7 @@ export default function ImageLeftRead({
               />
             )}
             <ReadMoreButton onClick={handleReadMoreClick}>
-              {isTextExpanded ? "Read Less" : "Read More"}
+              {isTextExpanded ? "Read More" : "Read Less"}
             </ReadMoreButton>
 
             {/* {button && link ? (
