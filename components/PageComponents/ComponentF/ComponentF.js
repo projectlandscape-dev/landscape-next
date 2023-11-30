@@ -44,6 +44,7 @@ const AdditionalText = styled.div`
 `;
 
 export default function ComponentF({ subheader, title, content }) {
+  console.log(content, "sdadsdfsad");
   const [expandedItemIndex, setExpandedItemIndex] = useState(null);
   const [textHeight, setTextHeight] = useState({});
   const [itemHeight, setItemHeight] = useState({});
@@ -90,12 +91,14 @@ export default function ComponentF({ subheader, title, content }) {
                     width={width}
                     height={height}
                   />
-                  <Inner onClick={() => handleInnerClick(index)}>
-                    <h3
+                  <h3 className="subheader ">{item.subheader}</h3>
+                  <div onClick={() => handleInnerClick(index)}>
+                    <h4
                       style={{
                         display: "flex",
                         alignItems: "center",
                         textAlign: "start",
+                        padding: "10px",
                       }}
                       className="subheader accent"
                     >
@@ -106,7 +109,7 @@ export default function ComponentF({ subheader, title, content }) {
                         src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/11/unnamed-2.png"
                         alt="Dropdown Icon"
                       />
-                    </h3>
+                    </h4>
 
                     <AdditionalText
                       expanded={expandedItemIndex === index}
@@ -120,7 +123,7 @@ export default function ComponentF({ subheader, title, content }) {
                         />
                       ) : null}
                     </AdditionalText>
-                  </Inner>
+                  </div>
                 </Item>
               );
             })}

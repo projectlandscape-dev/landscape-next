@@ -213,6 +213,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           title
           content {
             title
+            subheader
             description
             image {
               altText
