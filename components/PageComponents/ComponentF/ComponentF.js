@@ -91,8 +91,15 @@ export default function ComponentF({ subheader, title, content }) {
                     height={height}
                   />
                   <Inner onClick={() => handleInnerClick(index)}>
-                    <h3 src className="subheader accent">
-                      {title} hello
+                    <h3
+                      style={{
+                        dislay: "flex",
+                        alignItems: "center",
+                        textAlign: "start",
+                      }}
+                      className="subheader accent"
+                    >
+                      {title}
                       <img
                         width="35px"
                         height="35px"
