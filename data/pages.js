@@ -221,11 +221,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
           }
         }
-        ... on Page_Pagecomponents_PageComponents_CenterText {
-          __typename
-          body
-          title
-        }
+
         ... on Page_Pagecomponents_PageComponents_Cta1 {
           __typename
           body
