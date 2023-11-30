@@ -443,6 +443,14 @@ export default function HeaderBasic() {
                       <li>
                         <Link
                           className={styles.styledLink}
+                          href="/awards-certificates"
+                        >
+                          Awards & Certificates
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={styles.styledLink}
                           href="/refer-a-friend-to-project-landscape-ltd"
                         >
                           refer a friend
