@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
@@ -44,11 +44,25 @@ const AdditionalText = styled.div`
 `;
 
 export default function ComponentF({ subheader, title, content }) {
-  const [isTextExpanded, setIsTextExpanded] = useState(false);
+  const [expandedItemIndex, setExpandedItemIndex] = useState(null);
+  const [textHeight, setTextHeight] = useState({});
+  const [itemHeight, setItemHeight] = useState({});
 
-  const handleInnerClick = () => {
-    setIsTextExpanded(!isTextExpanded);
+  const handleInnerClick = (index) => {
+    setExpandedItemIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
+  useEffect(() => {
+    const newTextHeight = {};
+    const newItemHeight = {};
+    content.forEach((_, index) => {
+      newTextHeight[index] = expandedItemIndex === index ? "auto" : "100px";
+      newItemHeight[index] = expandedItemIndex === index ? "auto" : "440px";
+    });
+    setTextHeight(newTextHeight);
+    setItemHeight(newItemHeight);
+  }, [expandedItemIndex, content]);
+
   let width = "100%";
   let height = "300px";
   return (
@@ -62,9 +76,13 @@ export default function ComponentF({ subheader, title, content }) {
         </Text>
         <center>
           <GridThree>
-            {content?.map((item) => {
+            {content?.map((item, index) => {
               return (
-                <Item className="spacing">
+                <Item
+                  className="spacing"
+                  key={index}
+                  style={{ height: itemHeight[index] }}
+                >
                   <Image
                     alt={item.image.altText || ""}
                     srcSet={item.image.srcSet}
@@ -72,18 +90,21 @@ export default function ComponentF({ subheader, title, content }) {
                     width={width}
                     height={height}
                   />
-                  <Inner onClick={handleInnerClick}>
+                  <Inner onClick={() => handleInnerClick(index)}>
                     <h3 src className="subheader accent">
-                      {title}
+                      {title} hello
                       <img
                         width="35px"
                         height="35px"
-                        src="/public/dropdownArrow.png"
+                        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/11/unnamed-2.png"
                         alt="Dropdown Icon"
                       />
                     </h3>
 
-                    <AdditionalText expanded={isTextExpanded}>
+                    <AdditionalText
+                      expanded={expandedItemIndex === index}
+                      style={{ height: textHeight[index] }}
+                    >
                       {item.description ? (
                         <div
                           dangerouslySetInnerHTML={{

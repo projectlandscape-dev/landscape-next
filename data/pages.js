@@ -66,7 +66,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           __typename
           fieldGroupName
           body
-          bodyCopy
+          bodycopy
           subheader
           title
           button

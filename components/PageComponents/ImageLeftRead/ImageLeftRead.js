@@ -55,7 +55,7 @@ export default function ImageLeftRead({
   subheader,
   title,
   body,
-  bodyCopy,
+  bodycopy,
   image,
   button,
   link,
@@ -90,12 +90,12 @@ export default function ImageLeftRead({
             {isTextExpanded && (
               <div
                 dangerouslySetInnerHTML={{
-                  __html: `${bodyCopy}`,
+                  __html: `${bodycopy}`,
                 }}
               />
             )}
             <ReadMoreButton onClick={handleReadMoreClick}>
-              {isTextExpanded ? "Read More" : "Read Less"}
+              {isTextExpanded ? "Read Less " : "Read More"}
             </ReadMoreButton>
 
             {/* {button && link ? (
