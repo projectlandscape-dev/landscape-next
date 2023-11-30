@@ -96,6 +96,7 @@ const PanelsWrapper = styled.div`
 `;
 
 export default function TabsSide({ title, tabsContent }) {
+  console.log(tabsContent, "content");
   let width = "100%";
   let height = "400px";
   return (
@@ -141,7 +142,7 @@ export default function TabsSide({ title, tabsContent }) {
                             <Image
                               alt={tab.tabImage.altText || ""}
                               srcSet={tab.tabImage.srcSet}
-                              src={tab.tabImage.src}
+                              src={tab.tabImage.sourceUrl}
                               width={width}
                               height={height}
                             />
