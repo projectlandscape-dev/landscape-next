@@ -93,7 +93,7 @@ export default function ComponentF({ subheader, title, content }) {
                   <Inner onClick={() => handleInnerClick(index)}>
                     <h3
                       style={{
-                        dislay: "flex",
+                        display: "flex",
                         alignItems: "center",
                         textAlign: "start",
                       }}
