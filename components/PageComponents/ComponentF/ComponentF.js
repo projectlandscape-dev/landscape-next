@@ -44,7 +44,6 @@ const AdditionalText = styled.div`
 `;
 
 export default function ComponentF({ subheader, title, content }) {
-  console.log(content, "sdadsdfsad");
   const [expandedItemIndex, setExpandedItemIndex] = useState(null);
   const [textHeight, setTextHeight] = useState({});
   const [itemHeight, setItemHeight] = useState({});
