@@ -346,6 +346,28 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
           }
         }
+        ... on Page_Pagecomponents_PageComponents_RelatedPost {
+          selectPost {
+            ... on Post {
+              id
+              uri
+              slug
+              title
+              featuredImage {
+                node {
+                  sourceUrl
+                  srcSet
+                  altText
+                }
+              }
+              categories {
+                nodes {
+                  slug
+                }
+              }
+            }
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_Testimonial {
           title
           testimonials {

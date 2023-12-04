@@ -133,7 +133,6 @@ const BannerBottomText = styled.div`
 `;
 
 export default function Blog({ posts, pagination }) {
-  console.log({ posts });
   return (
     <LayoutJs>
       <Seo
