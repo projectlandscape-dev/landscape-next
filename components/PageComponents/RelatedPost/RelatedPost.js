@@ -55,13 +55,7 @@ const Inner = styled.div`
   padding: 1em;
 `;
 
-const Img = styled.div``;
-
 export default function RelatedPost({ selectPost }) {
-  console.log(selectPost, "selectPost");
-  let width = "100%";
-  let height = "270px";
-
   return (
     <Section>
       <Container className="spacing">
@@ -75,9 +69,8 @@ export default function RelatedPost({ selectPost }) {
         <GridThree>
           {selectPost?.map((post, index) => {
             const categorySlug = post?.categories?.nodes[0]?.slug;
-            console.log(post, "realpost");
             return (
-              <div>
+              <div key={index}>
                 <Image
                   alt={post.featuredImage?.node?.altText}
                   src={post.featuredImage?.node?.sourceUrl}
