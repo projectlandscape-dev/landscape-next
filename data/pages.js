@@ -368,6 +368,20 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
           }
         }
+        ... on Page_Pagecomponents_PageComponents_ImageThreeColumns {
+          fieldGroupName
+          images {
+            image {
+              mediaItemUrl
+            }
+            image2 {
+              mediaItemUrl
+            }
+            image3 {
+              mediaItemUrl
+            }
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_Testimonial {
           title
           testimonials {
