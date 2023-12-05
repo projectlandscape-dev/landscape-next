@@ -5,7 +5,7 @@ import { Section, GridThree } from "../../layoutComponents";
 
 const Image = styled.img`
   width: 400px;
-  height: 280px;
+  height: 380px;
   object-fit: cover;
   border-radius: 8px;
 `;

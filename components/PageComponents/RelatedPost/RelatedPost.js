@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
-import Image from "components/Image";
 import getPostBySlug from "../../../data/posts";
 import Link from "next/link";
 import { postPathBySlugCategory } from "lib/posts";
@@ -13,6 +12,11 @@ const Wrapper = styled.div`
   @media screen and (max-width: 450px) {
     padding: 4em 0;
   }
+`;
+const Image = styled.img`
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
 `;
 
 const Text = styled.div`
@@ -51,17 +55,12 @@ const Inner = styled.div`
   padding: 1em;
 `;
 
-const Img = styled.div`
-  .imgs {
-    border: 2px solid var(--clr-accent);
-    border-radius: 1000px;
-  }
-`;
+const Img = styled.div``;
 
 export default function RelatedPost({ selectPost }) {
   console.log(selectPost, "selectPost");
   let width = "100%";
-  let height = "100%";
+  let height = "270px";
 
   return (
     <Section>
@@ -76,13 +75,10 @@ export default function RelatedPost({ selectPost }) {
         <GridThree>
           {selectPost?.map((post, index) => {
             const categorySlug = post?.categories?.nodes[0]?.slug;
-            // const realpost = getPostBySlug(post.slug);
             console.log(post, "realpost");
             return (
               <div>
-                <img
-                  width={width}
-                  height={height}
+                <Image
                   alt={post.featuredImage?.node?.altText}
                   src={post.featuredImage?.node?.sourceUrl}
                 />{" "}
