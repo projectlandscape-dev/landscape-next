@@ -87,7 +87,9 @@ export default function Banner({
           <Container className="spacing">
             <Text className="spacing">
               <div className="">
-                <p className="subheader">{titleCopy}</p>
+                <p style={{ fontSize: "16px" }} className="subheader">
+                  {titleCopy}
+                </p>
                 <h1 className="title">{title}</h1>
                 <p className="subheader">{subheader}</p>
               </div>
