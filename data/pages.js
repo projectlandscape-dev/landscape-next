@@ -12,6 +12,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         ... on Page_Pagecomponents_PageComponents_Banner {
           __typename
           title
+          titleCopy
           description
           subheader
           image {

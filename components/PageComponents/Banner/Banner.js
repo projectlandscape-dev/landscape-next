@@ -72,7 +72,13 @@ const TextMobile = styled.div`
     display: flex;
   }
 `;
-export default function Banner({ title, subheader, description, image }) {
+export default function Banner({
+  title,
+  subheader,
+  description,
+  image,
+  titleCopy,
+}) {
   return (
     <div>
       <HeroBannerPadding />
@@ -81,6 +87,7 @@ export default function Banner({ title, subheader, description, image }) {
           <Container className="spacing">
             <Text className="spacing">
               <div className="">
+                <p className="subheader">{titleCopy}</p>
                 <h1 className="title">{title}</h1>
                 <p className="subheader">{subheader}</p>
               </div>
