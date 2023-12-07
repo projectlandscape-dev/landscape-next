@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Container, GridThree, Section } from "../../layoutComponents";
 import { ButtonPrimary } from "../../buttons";
-import Image from "../../Image";
 
 // const StyledImg = styled(GatsbyImage)`
 //   max-height: 100px;
@@ -23,10 +22,14 @@ const BenefitItem = styled.div`
     }
   }
 `;
-
+const Image = styled.img`
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+`;
 export default function Benefits1({ subheader, title, benefitContent }) {
   let width = "100px";
-  let height = "100px";
+  let height = "500px";
   return (
     <Section>
       <Container className="spacing-md">
@@ -35,16 +38,15 @@ export default function Benefits1({ subheader, title, benefitContent }) {
           <h2 className="title">{title}</h2>
         </div>
         <GridThree>
-          {benefitContent?.map((benefit, index) => {
+          {benefitContent.map((benefit, index) => {
             return (
               <BenefitItem className="spacing center" key={index}>
-                <Image
-                  alt={benefit.image.altText || ""}
-                  srcSet={benefit.image.srcSet}
-                  src={benefit.image.sourceUrl}
-                  width={width}
-                  height={height}
-                />
+                <center>
+                  <Image
+                    alt={benefit.image.altText || ""}
+                    src={benefit.image.sourceUrl}
+                  />
+                </center>
                 <h3 className="subheader caps tan">{benefit.title}</h3>
                 {benefit.description ? (
                   <div

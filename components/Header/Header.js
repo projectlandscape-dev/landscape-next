@@ -284,6 +284,14 @@ export default function HeaderBasic() {
                       <li>
                         <Link
                           className={styles.styledLink}
+                          href="/residential-services/landscape-construction/calgary-sod-delivery"
+                        >
+                          sod delivery
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={styles.styledLink}
                           href="/residential-services/landscape-construction/tree-shrub-planting"
                         >
                           shrub and tree planting
@@ -412,14 +420,6 @@ export default function HeaderBasic() {
                       <li>
                         <Link className={styles.styledLink} href="/about">
                           about
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className={styles.styledLink}
-                          href="/awards-certificates"
-                        >
-                          Awards & Certificates
                         </Link>
                       </li>
                       <li>
