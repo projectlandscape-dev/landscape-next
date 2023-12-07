@@ -366,7 +366,7 @@ export default function Footer() {
                   <li>
                     <Link
                       className={styles.styledLink}
-                      href="/residential-services/landscape-construction/calgary-sod-delivery"
+                      href="/residential-services/softscaping/calgary-sod-delivery"
                     >
                       sod delivery
                     </Link>
