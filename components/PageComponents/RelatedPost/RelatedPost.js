@@ -75,11 +75,14 @@ export default function RelatedPost({ selectPost }) {
                   alt={post.featuredImage?.node?.altText}
                   src={post.featuredImage?.node?.sourceUrl}
                 />{" "}
-                <h5 style={{ padding: "20px 0px" }}>
-                  <Link href={postPathBySlugCategory(post.slug, categorySlug)}>
+                <h4 style={{ padding: "20px 0px" }}>
+                  <Link
+                    style={{ color: "#3b5c8d" }}
+                    href={postPathBySlugCategory(post.slug, categorySlug)}
+                  >
                     {post.title}
                   </Link>
-                </h5>
+                </h4>
               </div>
             );
           })}
