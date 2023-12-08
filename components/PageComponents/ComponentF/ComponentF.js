@@ -90,7 +90,7 @@ export default function ComponentF({ subheader, title, content }) {
                     width={width}
                     height={height}
                   />
-                  <h3 className="subheader ">{item.subheader}</h3>
+                  <h3 className="subheader ">{item.title}</h3>
                   <div onClick={() => handleInnerClick(index)}>
                     <h4
                       style={{
