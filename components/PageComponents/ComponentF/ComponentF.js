@@ -98,10 +98,11 @@ export default function ComponentF({ subheader, title, content }) {
                         alignItems: "center",
                         textAlign: "start",
                         padding: "10px",
+                        justifyContent: "space-between",
                       }}
                       className="subheader accent"
                     >
-                      {title}
+                      {item.subheader}
                       <img
                         width="35px"
                         height="35px"
