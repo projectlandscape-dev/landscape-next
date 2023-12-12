@@ -16,6 +16,7 @@ const Text = styled.div`
 `;
 
 const Img = styled.div`
+  position: relative;
   figure {
     div {
       box-shadow: -20px 20px 0px 1px var(--clr-tan);
@@ -33,6 +34,12 @@ const Inner = styled.div`
     color: var(--txt-light);
   }
 `;
+const LogoWrapper = styled.div`
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 10px;
+`;
 
 export default function ImageLeftDark({
   subheader,
@@ -41,6 +48,7 @@ export default function ImageLeftDark({
   image,
   button,
   link,
+  imageCopy,
 }) {
   return (
     <Wrapper>
@@ -48,6 +56,11 @@ export default function ImageLeftDark({
         <Container>
           <FlexMobileOpp>
             <Img>
+              {imageCopy ? (
+                <LogoWrapper>
+                  <img height="100px" width="100px" src={imageCopy.sourceUrl} />
+                </LogoWrapper>
+              ) : null}
               <Image
                 className="stretch"
                 alt={image.altText || ""}

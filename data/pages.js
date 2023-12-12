@@ -48,6 +48,11 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             sourceUrl(size: MEDIUM_LARGE)
             srcSet
           }
+          imageCopy {
+            altText
+            sourceUrl
+            srcSet
+          }
         }
         ... on Page_Pagecomponents_PageComponents_ImageLeft {
           __typename
@@ -90,7 +95,13 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             sourceUrl(size: MEDIUM_LARGE)
             srcSet
           }
+          imageCopy {
+            altText
+            sourceUrl
+            srcSet
+          }
         }
+
         ... on Page_Pagecomponents_PageComponents_ImageRightDark {
           __typename
           body
@@ -393,6 +404,19 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         }
         ... on Page_Pagecomponents_PageComponents_Text {
           text
+        }
+        ... on Page_Pagecomponents_PageComponents_TabProcess {
+          fieldGroupName
+          tabName {
+            body
+            title
+            tabTitle
+            image {
+              altText
+              sourceUrl
+              srcSet
+            }
+          }
         }
         ... on Page_Pagecomponents_PageComponents_ProcessArea {
           addProcess {

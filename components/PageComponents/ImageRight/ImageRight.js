@@ -11,6 +11,7 @@ const Text = styled.div``;
 // `
 
 const Img = styled.div`
+  position: relative;
   figure {
     div {
       box-shadow: 20px 20px 0px 1px var(--clr-accent);
@@ -23,6 +24,13 @@ const Img = styled.div`
   }
 `;
 
+const LogoWrapper = styled.div`
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 10px;
+`;
+
 export default function ImageRight({
   subheader,
   title,
@@ -30,6 +38,7 @@ export default function ImageRight({
   image,
   button,
   link,
+  imageCopy,
 }) {
   return (
     <Section>
@@ -54,7 +63,13 @@ export default function ImageRight({
               <ButtonPrimary href="/contact">get started</ButtonPrimary>
             )}
           </Text>
+
           <Img>
+            {imageCopy ? (
+              <LogoWrapper>
+                <img height="100px" width="100px" src={imageCopy.sourceUrl} />
+              </LogoWrapper>
+            ) : null}
             <Image
               className="stretch"
               alt={image.altText || ""}
