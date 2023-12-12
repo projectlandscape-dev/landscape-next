@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { ButtonPrimary, ButtonSecondaryLight } from "../../buttons";
 import { Actions, Container, HeroBannerPadding } from "../../layoutComponents";
 import { Carousel } from "react-bootstrap";
-// import styles from "./PatioSlider.module.scss";
-import styles from "../../Heros/HeroBasic.module.scss";
+import styles from "./PatioSlider.module.scss";
 import Image from "next/image";
 
 const captionStyle = {
@@ -22,97 +21,67 @@ export default function PatioSlider({ title }) {
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
-        <Carousel>
+          <Carousel>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.desktopImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                    width={1200}
-                    height={100}
-                    alt="calgary landscaping"
-                    priority={true}
-                  />
-                </div>
-                <div className={styles.mobileImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                    width={1200}
-                    height={100}
-                    alt="calgary landscaping"
-                  />
-                </div>
+                <Image
+                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-1.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1686787112/patios-banner-1_xz18e1.webp"
+                  width={1200}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content1} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
-                  <h2 className="title">outdoor living done right</h2>
-                  <p className="subheader tan">Where outdoor living happens</p>
-                  <ButtonPrimary href="/residential-services/outdoor-living">
-                    get started &#8594;
-                  </ButtonPrimary>
+                  <h1 className="title">
+                    Calgary's largest residential paving stone installer{" "}
+                  </h1>
+                  <p className="subheader tan">The confidence to stand out </p>
+                  <ButtonPrimary href="/contact">get started</ButtonPrimary>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.desktopImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={1200}
-                    height={100}
-                    alt="calgary landscaping"
-                    priority={true}
-                  />
-                </div>
-                <div className={styles.mobileImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={1200}
-                    height={100}
-                    alt="calgary landscaping"
-                  />
-                </div>
+                <Image
+                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-2.png"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1690332721/image_1_ojcc9l.png"
+                  width={1200}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content2} /> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
-                  <h2 className="title">hardscaping services</h2>
+                  <h2 className="title">
+                    Paving stone Patios, Walkways, Pool Decks & Driveways
+                  </h2>
+                  <p className="subheader tan">A style for every home</p>
+                  <ButtonPrimary href="/contact">get started</ButtonPrimary>
+                </div>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={5000}>
+              <div className={styles.content}>
+                <Image
+                  // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-3-_1_-2-2.webp"
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1686787111/patios-banner-3_trstay.webp"
+                  width={1200}
+                  height={100}
+                  priority={true}
+                />
+                {/* <div className={styles.content3} /> */}
+              </div>
+              <Carousel.Caption style={captionStyle} className="spacing">
+                <div className="spacing">
+                  <h2 className="title">take a step outdoors</h2>
                   <p className="subheader tan">
-                    create a stunning outdoor oasis with our hardscaping
-                    services
+                    Expand your outdoor living space to its full potential
                   </p>
-                  <ButtonPrimary href="/residential-services/hardscaping">
-                    get started &#8594;
-                  </ButtonPrimary>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item interval={5000}>
-              <div className={styles.content}>
-                <div className={styles.desktopImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    width={1200}
-                    height={100}
-                    alt="calgary landscaping"
-                    priority={true}
-                  />
-                </div>
-                <div className={styles.mobileImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    width={1200}
-                    height={100}
-                    alt="calgary landscaping"
-                  />
-                </div>
-              </div>
-              <Carousel.Caption style={captionStyle} className="spacing">
-                <div className="spacing">
-                  <h2 className="title">softscaping services</h2>
-                  <p className="subheader tan">Bring your backyard to life</p>
-                  <ButtonPrimary href="/residential-services/softscaping">
-                    get started &#8594;
-                  </ButtonPrimary>
+                  <ButtonPrimary href="/contact">get started</ButtonPrimary>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
