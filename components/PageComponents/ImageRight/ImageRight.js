@@ -40,7 +40,6 @@ export default function ImageRight({
   link,
   imageCopy,
 }) {
-  console.log(image, "image");
   return (
     <Section>
       <Container>
