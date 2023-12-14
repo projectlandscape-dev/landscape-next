@@ -24,10 +24,10 @@ const TabContainer = styled.div`
   margin-bottom: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 38px;
-  padding: 10px;
+  border-radius: 50px;
+  padding: 20px;
   width: fit-content;
-  margin: 20px auto 30px;
+  margin: 30px auto 30px;
 `;
 
 const TabButton = styled.button`
@@ -51,11 +51,14 @@ const TabContent = styled.div`
   display: ${(props) => (props.active ? "block" : "none")};
 `;
 
-export default function TabProcess({ tabName }) {
+export default function TabProcess({ tabName, title }) {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <Section>
+      <center>
+        <h2 className="title">{title}</h2>
+      </center>
       <Container>
         <TabContainer>
           {tabName?.map((item, index) => {
