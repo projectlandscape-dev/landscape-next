@@ -423,6 +423,14 @@ export default function HeaderBasic() {
                         </Link>
                       </li>
                       <li>
+                        <Link
+                          className={styles.styledLink}
+                          href="/awards-certificates"
+                        >
+                          Awards and Certificates
+                        </Link>
+                      </li>
+                      <li>
                         <Link className={styles.styledLink} href="/our-process">
                           our process
                         </Link>

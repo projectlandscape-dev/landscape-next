@@ -499,6 +499,14 @@ export default function Footer() {
                   <li>
                     <Link
                       className={styles.styledLink}
+                      href="/awards-certificates"
+                    >
+                      Awards and Certificates
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={styles.styledLink}
                       href="/customer-resource-center"
                     >
                       customer resource center
