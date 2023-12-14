@@ -40,6 +40,7 @@ export default function ImageRight({
   link,
   imageCopy,
 }) {
+  console.log(image, "image");
   return (
     <Section>
       <Container>
@@ -73,7 +74,7 @@ export default function ImageRight({
             <Image
               className="stretch"
               alt={image.altText || ""}
-              srcSet={image.srcSet}
+              srcSet={image.sourceUrl}
             />
           </Img>
         </Flex>
