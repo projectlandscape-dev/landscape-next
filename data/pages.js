@@ -212,6 +212,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           content {
             title
             description
+            link
             image {
               altText
               sourceUrl(size: MEDIUM_LARGE)
