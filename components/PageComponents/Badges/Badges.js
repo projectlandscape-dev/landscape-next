@@ -49,7 +49,7 @@ export default function Badges({ title }) {
   return (
     <Section>
       <Wrapper className="spacing">
-        {title ? <h2 className="title center">{title}</h2> : null}
+        <h2 className="title center">Awards and Certificates</h2>
         <Slider className="slider" {...settings}>
           <Image
             src="/badges/best-landscaping-companies-in-calgary-1.svg"
