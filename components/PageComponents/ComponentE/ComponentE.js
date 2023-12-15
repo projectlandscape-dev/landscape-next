@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
 import Image from "components/Image";
+import Link from "next/link";
 
 const Text = styled.div`
   text-align: center;
@@ -66,14 +67,13 @@ export default function ComponentE({ subheader, title, content }) {
                     <h3 className="subheader accent">{item.title}</h3>
                     {item.description ? (
                       item.link ? (
-                        <link href={item?.link}>
-                          {" "}
+                        <Link href={item?.link}>
                           <div
                             dangerouslySetInnerHTML={{
                               __html: `${item.description}`,
                             }}
                           />
-                        </link>
+                        </Link>
                       ) : (
                         <div
                           dangerouslySetInnerHTML={{
