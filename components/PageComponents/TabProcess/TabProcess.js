@@ -31,7 +31,7 @@ const TabContainer = styled.div`
 `;
 
 const TabButton = styled.button`
-  padding: 10px 15px;
+  padding: 16px 25px;
   cursor: pointer;
   border: none;
   color: ${(props) => (props.active ? "white" : "blaack")};
