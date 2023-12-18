@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Section, Container, GridAuto } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
 import Image from "components/Image";
+import Link from "next/link";
 
 const Wrapper = styled.div`
   padding: 4em 0;
@@ -75,7 +76,7 @@ export default function RelatedServices({ serviceContent }) {
           </div>
         </Text>
         <GridAuto>
-          {serviceContent.map((item,index) => {
+          {serviceContent.map((item, index) => {
             return (
               <Item key={index}>
                 <Image
@@ -88,12 +89,15 @@ export default function RelatedServices({ serviceContent }) {
                 <Inner>
                   <h3 className="subheader tan">{item.title}</h3>
                   {item.link ? (
-                    <div
-                      className="bold"
-                      dangerouslySetInnerHTML={{
-                        __html: `${item.link}`,
-                      }}
-                    />
+                    <Link href={item.bodylink}>
+                      {" "}
+                      <div
+                        className="bold"
+                        dangerouslySetInnerHTML={{
+                          __html: `${item.link}`,
+                        }}
+                      />
+                    </Link>
                   ) : null}
                 </Inner>
               </Item>

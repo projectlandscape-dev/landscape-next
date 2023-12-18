@@ -311,6 +311,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           serviceContent {
             title
             link
+            bodylink
             image {
               altText
               sourceUrl(size: MEDIUM_LARGE)
