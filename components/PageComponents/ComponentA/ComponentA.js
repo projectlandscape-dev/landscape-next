@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "components/layoutComponents";
 import Image from "../../Image";
+import Link from "next/link";
 
 const device = {
   md: "48em",
@@ -135,7 +136,7 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
         </Container>
         <Grid>
           <List>
-            {componentItems.map((item,index) => {
+            {componentItems.map((item, index) => {
               return (
                 <Item key={index}>
                   <Image
@@ -149,19 +150,30 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
                   <Inner>
                     <h3 className="subheader tan">{item.title}</h3>
                     {item.text ? (
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: `${item.text}`,
-                        }}
-                      />
+                      item.button ? (
+                        <Link href={item.button}>
+                          {" "}
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: `${item.text}`,
+                            }}
+                          />
+                        </Link>
+                      ) : (
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: `${item.text}`,
+                          }}
+                        />
+                      )
                     ) : null}
-                    {item.button ? (
+                    {/* {item.button ? (
                       <Button
                         dangerouslySetInnerHTML={{
                           __html: `${item.button}`,
                         }}
                       />
-                    ) : null}
+                    ) : null} */}
                   </Inner>
                 </Item>
               );
