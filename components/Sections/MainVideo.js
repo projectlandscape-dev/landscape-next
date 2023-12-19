@@ -44,7 +44,7 @@ export default function MainVideo() {
       <div className="spacing-lg">
         <TextTop>
           <h2 className="subheader accent">
-            the most trusted landscape companies in Calgary, AB
+            The most trusted landscape company in Calgary
           </h2>
           <h3 className="title">
             Welcome to a different kind of customer experience in outdoor living

@@ -1,0 +1,34 @@
+.wrapper {
+    .slick-initialized .slick-slide {
+      display: block;
+      padding: 2em;
+     
+  }
+  
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  
+  }
+  
+  .slider {
+    padding:50px 0px ;
+    @media screen and (max-width: 70em) {
+      display: none;
+    }
+  }
+  
+  .grid {
+    display: none;
+    @media screen and (max-width: 70em) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+      grid-gap: 1em;
+  
+      & > * {
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+  

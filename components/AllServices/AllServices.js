@@ -45,7 +45,7 @@ export default function AllServices() {
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735838/calgary-pavers_za64ny.webp"
             alt="calgary landscaping services"
             href="/residential-services/landscape-construction/patio-surfaces"
-            text="pavers"
+            text="Paving Stones"
           />
           <ServiceBox
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735838/retaining-walls-landscaper-calgary_bia36x.webp"
@@ -157,13 +157,13 @@ export default function AllServices() {
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736376/lighting-calgary-landscaper_nj2pps.webp"
             alt="calgary landscaping services"
             href="/landscape-lighting-services-calgary"
-            text="lighting"
+            text="Landscape lighting"
           />
           <ServiceBox
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736374/calgary-lighting_ndhyo6.webp"
             alt="calgary landscaping services"
             href="/landscape-design"
-            text="design"
+            text="Landscape Design"
           />
           <ServiceBox
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/water-feature-landscaper_xs8lp7.webp"

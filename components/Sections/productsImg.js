@@ -23,24 +23,17 @@ export default function ProductsImg(props) {
               </h2>
             </div>
             <p>
-              As experts in the field of landscaping and{" "}
-              <ButtonInline href="/residential-services/outdoor-living">
-                outdoor
-              </ButtonInline>{" "}
-              renovations, we take pride in using only the highest quality
-              landscaping materials to ensure that your property is not only
-              visually appealing but also adds value to your home. From{" "}
-              <ButtonInline href="/residential-services/irrigation-landscape-lighting">
-                irrigation systems
-              </ButtonInline>{" "}
-              to seasonal clean-ups, construction projects, and other
-              landscaping services, our team at Project Landscape in Calgary is
-              dedicated to meeting your{" "}
-              <ButtonInline href="/residential-services">
-                residential landscaping
-              </ButtonInline>{" "}
-              needs with <ButtonInline href="/testimonials">trust</ButtonInline>{" "}
-              and <ButtonInline href="/blog">expertise</ButtonInline>.
+              As local trend setters in landscaping and outdoor living, we're
+              dedicated to using only the finest materials in our projects. Our
+              goal is to create a visually stunning and valuable addition to
+              your home. Dive into the world of exceptional landscape products
+              with us and step beyond the ordinary into a realm of extraordinary
+              design possibilities. From elegant paving stones to
+              low-maintenance decking materials, and landscape lighting options
+              to create a wow factor, we offer a plethora of choices. Find your
+              unique style effortlessly with our user-friendly online material
+              selection guide, and start crafting the outdoor oasis of your
+              dreams today!
             </p>
 
             <ButtonPrimary href="/calgary-landscaping-materials">

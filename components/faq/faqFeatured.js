@@ -157,17 +157,22 @@ export default function FaqFeatured(props) {
                       flex="1"
                       textAlign="left"
                     >
-                      What types of services do you offer?
+                      What Types Of Calgary Landscaping Services Do You Offer?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Project landscape offers a wide variety of services to meet
-                  both residential and commercial properties. From property
-                  maintenance, fertilizer and weed control programs, full
-                  service parking lot maintenance, irrigation system services to
-                  snow and ice management.
+                  At our premier Calgary landscaping company, we offer a diverse
+                  array of services tailored to elevate your outdoor living
+                  experience. Our skilled team excels in crafting custom decks,
+                  perfect for entertaining and relaxation. We also specialize in
+                  installing elegant paving stone patios, blending functionality
+                  with aesthetic appeal. Our expertise extends to innovative
+                  hardscaping solutions, transforming your garden into a
+                  stunning, durable oasis. Choose us for a blend of creativity,
+                  quality, and sustainability in all your landscaping needs,
+                  right here in Calgary.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
@@ -243,15 +248,22 @@ export default function FaqFeatured(props) {
             <div className="spacing">
               <div>
                 <p className="subheader tan">learn from the leaders</p>
-                <h2 className="title">frequently asked questions</h2>
+                <h2 className="title">
+                  Frequently Asked Questions About Landscape Design &
+                  Installation
+                </h2>
               </div>
 
               <p>
-                At Project Landscape Ltd., our premier Calgary landscaping
-                services will increase the value and overall aesthetic of your
-                home. We use quality brands, and unique products to help keep
-                your lawn healthy, and your home looking incredible. This means
-                an overall better living experience for you and your family.
+                At Project Landscape in Calgary, we're your go-to experts for
+                all things related to landscape installation and design. Our
+                comprehensive FAQ section is meticulously designed to answer
+                your queries, offering insights on everything from the latest
+                trends in landscape design to practical tips on installation.
+                Whether you're pondering the ideal materials for your outdoor
+                space or seeking advice on sustainable landscaping solutions,
+                we've got you covered. Dive into our resourceful FAQ section and
+                empower your landscaping journey with knowledge and confidence.
               </p>
               <ButtonPrimary href="/contact">get started</ButtonPrimary>
             </div>

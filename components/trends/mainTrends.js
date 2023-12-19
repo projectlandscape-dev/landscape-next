@@ -70,7 +70,7 @@ export default function MainTrends() {
           <Text className="spacing ">
             <div>
               {/* <p className="subheader accent">title for trends</p> */}
-              <h2 className="title">calgary landscaping trends</h2>
+              <h2 className="title"> 2024 calgary landscaping trends</h2>
             </div>
             <p>
               We take pride in staying up to date with the latest trends and

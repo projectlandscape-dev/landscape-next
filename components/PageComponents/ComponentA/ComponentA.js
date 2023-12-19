@@ -149,24 +149,22 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
 
                   <Inner>
                     <h3 className="subheader tan">{item.title}</h3>
-                    {item.text ? (
-                      item.button ? (
-                        <Link href={item.button}>
-                          {" "}
-                          <div
-                            dangerouslySetInnerHTML={{
-                              __html: `${item.text}`,
-                            }}
-                          />
-                        </Link>
-                      ) : (
+                    {item.text && item.button ? (
+                      <Link href={item.button || "#"}>
                         <div
                           dangerouslySetInnerHTML={{
                             __html: `${item.text}`,
                           }}
                         />
-                      )
-                    ) : null}
+                      </Link>
+                    ) : (
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: `${item.text}`,
+                        }}
+                      />
+                    )}
+
                     {/* {item.button ? (
                       <Button
                         dangerouslySetInnerHTML={{

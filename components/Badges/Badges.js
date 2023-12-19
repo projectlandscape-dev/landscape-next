@@ -11,14 +11,16 @@ const ImgStyle = {
   marginTop: "auto",
   marginBottom: "auto",
   height: "100px",
-  width: "100%",
-  padding: "2em",
+  width: "200px",
+  padding: "0em",
+  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+  margin: "12px 30px",
 };
 
 export default function Badges() {
   const settings = {
     infinite: true,
-    slidesToShow: 8,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     speed: 4000,
@@ -36,163 +38,207 @@ export default function Badges() {
             </h2>
           </div>
           <Slider className={styles.slider} {...settings}>
-            <Image
-              src="/badges/best-landscaping-companies-in-calgary-1.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/best-landscaping-companies-in-calgary-2.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/best-landscaping-companies-in-calgary-3.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-experts-calgary-1.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-experts-calgary-2.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-experts-calgary-3.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-1.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-2.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-3.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-4.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-5.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-6.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-7.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-8.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-9.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-10.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-11.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/best-landscaping-companies-in-calgary-1.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/best-landscaping-companies-in-calgary-2.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/best-landscaping-companies-in-calgary-3.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-experts-calgary-1.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-experts-calgary-2.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-experts-calgary-3.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-1.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-2.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-3.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-4.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-5.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-6.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-7.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-8.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-9.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-10.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-11.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
           </Slider>
           <div className={styles.grid}>
-            <Image
-              src="/badges/best-landscaping-companies-in-calgary-1.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/best-landscaping-companies-in-calgary-2.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-3.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-9.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/badges/landscaping-calgary-top-rated-experts-11.svg"
-              alt="best landscaping companies in calgary"
-              style={ImgStyle}
-              width={100}
-              height={100}
-            />
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/best-landscaping-companies-in-calgary-1.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/best-landscaping-companies-in-calgary-2.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-3.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-9.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div style={ImgStyle}>
+              <Image
+                src="/badges/landscaping-calgary-top-rated-experts-11.svg"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
           </div>
         </div>
       </section>

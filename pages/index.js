@@ -21,6 +21,8 @@ import FaqFeatured from "../components/faq/faqFeatured";
 import { Helmet } from "react-helmet";
 import Seo from "../components/seo";
 import MainServices from "../components/MainServices/MainServices";
+import PortfolioBanner from "../components/portfolioBanner";
+import StaticProcessArea from "../components/PageComponents/StaticProcessArea";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -144,6 +146,8 @@ export default function Index() {
       />
       <Cta3 />
       <MainTrends />
+      <PortfolioBanner />
+      <StaticProcessArea />
       <Why />
       {/* <Ebook title="download our landscaping ebook" href="" /> */}
       <MainTestimonials />

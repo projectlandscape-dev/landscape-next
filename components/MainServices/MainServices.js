@@ -15,29 +15,23 @@ export default function MainServices() {
             <div>
               {/* <p className="subheader accent">find the services you need</p> */}
               <h2 className="title">
-                bring your landscaping calgary project to life
+                A Calgary Landscape Company you Can Rely On
               </h2>
             </div>
             <p>
-              Your home is your pride and joy, and we are the{" "}
-              <ButtonInline href="/">landscape professionals</ButtonInline> who
-              can help you maintain its outdoor beauty. Increasing your
-              property's value and making your yard the envy of the block,
-              <ButtonInline href="/about">Project Landscape</ButtonInline>{" "}
-              ensures that your landscaping needs are met. From{" "}
-              <ButtonInline href="/residential-services/irrigation-landscape-lighting">
-                irrigation
-              </ButtonInline>
-              , seasonal clean-up,{" "}
-              <ButtonInline href=".residential-services/hardscaping/">
-                construction
-              </ButtonInline>{" "}
-              and{" "}
-              <ButtonInline href="/residential-services">
-                more services
-              </ButtonInline>
-              , we are the Calgary Landscaping experts you can trust for all
-              your residential landscaping needs.
+              Welcome to Project Landscape, Calgary's most trusted and extensive
+              residential landscape company, where transforming your outdoor
+              space into a dream oasis is our passion. As Calgary's largest
+              provider of comprehensive landscaping services, we specialize in
+              bringing your vision to life with our expert hardscaping,
+              softscaping, and outdoor living solutions. Our certification in
+              paving stones, decking, and retaining walls guarantees you not
+              only exceptional quality but also innovative design and durable
+              construction. At Project Landscape, we understand that your home
+              is your sanctuary. That's why we're dedicated to enhancing your
+              living experience, ensuring every project reflects your personal
+              style and meets your needs. Choose us for a landscape that
+              elevates your home and lifestyle!
             </p>
           </div>
         </div>
