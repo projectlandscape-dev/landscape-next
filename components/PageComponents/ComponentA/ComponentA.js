@@ -157,13 +157,13 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
                           }}
                         />
                       </Link>
-                    ) : (
+                    ) : item.text ? (
                       <div
                         dangerouslySetInnerHTML={{
                           __html: `${item.text}`,
                         }}
                       />
-                    )}
+                    ) : null}
 
                     {/* {item.button ? (
                       <Button
