@@ -10,6 +10,13 @@ const ImgStyle = {
   boxShadow: "20px 20px 0px 1px var(--clr-accent)",
   maxHeight: "450px",
 };
+const Buttonwrapper = styled.div`
+  width: 52%;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 53%;
+  text-align: center;
+`;
 
 export default function ProductsImg(props) {
   return (
@@ -36,9 +43,11 @@ export default function ProductsImg(props) {
               dreams today!
             </p>
 
-            <ButtonPrimary href="/calgary-landscaping-materials">
-              discover products
-            </ButtonPrimary>
+            <Buttonwrapper>
+              <ButtonPrimary href="/calgary-landscaping-materials">
+                discover products
+              </ButtonPrimary>
+            </Buttonwrapper>
           </Text>
           <Image
             height={100}

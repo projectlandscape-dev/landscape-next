@@ -105,12 +105,6 @@ export default function RelatedServices({ serviceContent }) {
                       }}
                     />
                   )}
-                  <div
-                    className="bold"
-                    dangerouslySetInnerHTML={{
-                      __html: `${item.link}`,
-                    }}
-                  />
                 </Inner>
               </Item>
             );
