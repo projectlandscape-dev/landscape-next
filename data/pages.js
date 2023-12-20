@@ -25,6 +25,22 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           __typename
           title
         }
+        ... on Page_Pagecomponents_PageComponents_Chartarea {
+          title
+          image {
+            altText
+            sourceUrl
+          }
+          steps {
+            stepcount
+            title
+            body
+            videolink
+          }
+          sliderdata {
+            description
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_Text {
           __typename
           text
@@ -408,6 +424,20 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           text
         }
         ... on Page_Pagecomponents_PageComponents_TabProcess {
+          fieldGroupName
+          title
+          tabName {
+            body
+            title
+            tabTitle
+            image {
+              altText
+              sourceUrl
+              srcSet
+            }
+          }
+        }
+        ... on Page_Pagecomponents_PageComponents_TabProcess2 {
           fieldGroupName
           title
           tabName {
