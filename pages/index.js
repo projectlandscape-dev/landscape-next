@@ -12,6 +12,7 @@ import ShowroomSection from "../components/Sections/ShowroomSection";
 import MainVideo from "../components/Sections/MainVideo";
 import LandscapingImg from "../components/Sections/landscapingImg";
 import OasisImg from "../components/Sections/oasisImg";
+import ProjectImg from "../components/Sections/ProjectImg";
 import MainTrends from "../components/trends/mainTrends";
 import Why from "../components/why";
 import Ebook from "../components/ebook";
@@ -134,6 +135,7 @@ export default function Index() {
       <Cta3 />
       <ProductsImg />
       <ShowroomSection />
+      <ProjectImg />
       <MainVideo />
       <LandscapingImg
         title="Landscaping services in Calgary"

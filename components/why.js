@@ -8,8 +8,9 @@ export default function Why() {
     <section>
       <div className="container spacing">
         <div>
-          <p className="subheader accent">why choose project landscape</p>
+          <p className="subheader accent">Why Choose project Landscape</p>
           <h2 className="title">the best of Calgary landscaping companies</h2>
+          <p className="subheader accent">Clients Benefits What You Get</p>
         </div>
         <div className="gridThree">
           <div className="spacing">
