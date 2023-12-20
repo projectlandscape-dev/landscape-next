@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import { Container, Section } from "components/layoutComponents"
-import styled from "styled-components"
-import { FaStar } from "react-icons/fa"
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Container, Section } from "components/layoutComponents";
+import styled from "styled-components";
+import { FaStar } from "react-icons/fa";
 
 const ReviewWrapper = styled.div`
   border: 1px solid var(--clr-accent);
@@ -21,14 +21,14 @@ const ReviewWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
-`
+`;
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-`
+`;
 
 const SliderWrapper = styled.div`
   .slick-prev:before,
@@ -36,7 +36,7 @@ const SliderWrapper = styled.div`
     color: var(--clr-accent);
     font-size: 24px;
   }
-`
+`;
 
 const FlexStars = styled.div`
   display: flex;
@@ -49,9 +49,9 @@ const FlexStars = styled.div`
   & > * {
     color: var(--clr-tan);
   }
-`
+`;
 
-const ReviewBox = props => {
+const ReviewBox = (props) => {
   return (
     <ReviewWrapper className="spacing">
       <h3 className="subheader">{props.title}</h3>
@@ -65,8 +65,8 @@ const ReviewBox = props => {
         <FaStar />
       </FlexStars>
     </ReviewWrapper>
-  )
-}
+  );
+};
 
 export default function Testimonial({ title, testimonials }) {
   const settings = {
@@ -75,10 +75,15 @@ export default function Testimonial({ title, testimonials }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  }
+  };
   return (
     <Wrapper>
       <Section>
+        <center>
+          <h2 className="title" style={{ padding: "20px 0px" }}>
+            What Clients Say About Us
+          </h2>
+        </center>
         <Container>
           <SliderWrapper>
             <Slider {...settings}>
@@ -111,5 +116,5 @@ export default function Testimonial({ title, testimonials }) {
         </Container>
       </Section>
     </Wrapper>
-  )
+  );
 }

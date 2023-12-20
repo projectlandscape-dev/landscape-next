@@ -23,6 +23,7 @@ import Seo from "../components/seo";
 import MainServices from "../components/MainServices/MainServices";
 import PortfolioBanner from "../components/portfolioBanner";
 import StaticProcessArea from "../components/PageComponents/StaticProcessArea";
+import CompanyValue from "../components/companyvalue";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -152,6 +153,7 @@ export default function Index() {
       {/* <Ebook title="download our landscaping ebook" href="" /> */}
       <MainTestimonials />
       <FaqFeatured />
+      <CompanyValue />
       <Videos />
     </LayoutJs>
   );

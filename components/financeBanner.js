@@ -26,6 +26,11 @@ const Wrapper = styled.div`
 export default function FinanceBanner() {
   return (
     <section>
+      <center>
+        <h2 className="title" style={{ padding: "20px 0px" }}>
+          Get The Outdoor Financing You Need
+        </h2>
+      </center>
       <div className="container">
         <Wrapper>
           <div>

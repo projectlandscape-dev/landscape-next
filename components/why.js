@@ -14,13 +14,13 @@ export default function Why() {
         <div className="gridThree">
           <div className="spacing">
             <Image
-              src="/calgary-landscaper-benefits.jpg"
+              src="/icon1.png"
               alt="calgary landscaping company"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
             />
             <h3 className="body--large caps bold">
-              We Bring Your ideas to life
+              We Provide Environmental Sustainability
             </h3>
             <p>
               Hiring a professional Calgary landscape{" "}
@@ -35,14 +35,14 @@ export default function Why() {
           </div>
           <div className="spacing">
             <Image
-              src="/calgary-landscaper-benefits.jpg"
+              src="/icon2.png"
               alt="calgary landscaping company"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
             />
 
             <h3 className="body--large caps bold">
-              we save you money and time
+              We Provide Reduced Maintenance
             </h3>
             <p>
               When you work with a professional landscaping Calgary designer,
@@ -56,14 +56,14 @@ export default function Why() {
           </div>
           <div className="spacing">
             <Image
-              src="/calgary-landscaper-benefits.jpg"
+              src="/icon3.png"
               alt="calgary landscaping company"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
             />
 
             <h3 className="body--large caps bold">
-              we can enhance your property value
+              Decades Of Landscaping Experience
             </h3>
             <p>
               Professional landscaping in Calgary not only enhances the
@@ -76,14 +76,14 @@ export default function Why() {
           </div>
           <div className="spacing">
             <Image
-              src="/calgary-landscaper-benefits.jpg"
+              src="/icon6.png"
               alt="calgary landscaping company"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
             />
 
             <h3 className="body--large caps bold">
-              we provide Environmental Sustainability
+              We Can Enhance Your Property Value
             </h3>
             <p>
               A professional landscaper in Calgary understands the importance of
@@ -100,14 +100,14 @@ export default function Why() {
           </div>
           <div className="spacing">
             <Image
-              src="/calgary-landscaper-benefits.jpg"
+              src="/icon4.png"
               alt="calgary landscaping company"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
             />
 
             <h3 className="body--large caps bold">
-              we provide reduced maintenance
+              We Can Save You Time & Money
             </h3>
             <p>
               Maintaining a landscape can be a daunting task, especially for
@@ -120,14 +120,14 @@ export default function Why() {
           </div>
           <div className="spacing">
             <Image
-              src="/calgary-landscaper-benefits.jpg"
+              src="/icon5.png"
               alt="calgary landscaping company"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
             />
 
             <h3 className="body--large caps bold">
-              decades of landscaping experience
+              We Bring your Ideas To life
             </h3>
             <p>
               Working with a professional landscape designer is a smart
