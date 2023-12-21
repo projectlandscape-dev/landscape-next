@@ -22,7 +22,7 @@ const TabContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-
+  flex-wrap: wrap;
   padding: 20px;
   width: fit-content;
   margin: 30px auto 30px;

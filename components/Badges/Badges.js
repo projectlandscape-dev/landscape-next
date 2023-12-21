@@ -15,6 +15,9 @@ const ImgStyle = {
   padding: "0em",
   boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
   margin: "12px 30px",
+  // "@media (max-width: 500px)" {
+  //   width: "150px",
+  // },
 };
 
 export default function Badges() {
@@ -38,7 +41,7 @@ export default function Badges() {
             </h2>
           </div>
           <Slider className={styles.slider} {...settings}>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/best-landscaping-companies-in-calgary-1.svg"
                 alt="best landscaping companies in calgary"
@@ -47,7 +50,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/best-landscaping-companies-in-calgary-2.svg"
                 alt="best landscaping companies in calgary"
@@ -56,7 +59,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/best-landscaping-companies-in-calgary-3.svg"
                 alt="best landscaping companies in calgary"
@@ -65,7 +68,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-experts-calgary-1.svg"
                 alt="best landscaping companies in calgary"
@@ -74,7 +77,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-experts-calgary-2.svg"
                 alt="best landscaping companies in calgary"
@@ -83,7 +86,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-experts-calgary-3.svg"
                 alt="best landscaping companies in calgary"
@@ -92,7 +95,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-1.svg"
                 alt="best landscaping companies in calgary"
@@ -101,7 +104,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-2.svg"
                 alt="best landscaping companies in calgary"
@@ -110,7 +113,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-3.svg"
                 alt="best landscaping companies in calgary"
@@ -120,7 +123,7 @@ export default function Badges() {
               />
             </div>
 
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-4.svg"
                 alt="best landscaping companies in calgary"
@@ -129,7 +132,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-5.svg"
                 alt="best landscaping companies in calgary"
@@ -138,7 +141,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-6.svg"
                 alt="best landscaping companies in calgary"
@@ -147,7 +150,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-7.svg"
                 alt="best landscaping companies in calgary"
@@ -156,7 +159,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-8.svg"
                 alt="best landscaping companies in calgary"
@@ -165,7 +168,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-9.svg"
                 alt="best landscaping companies in calgary"
@@ -174,7 +177,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-10.svg"
                 alt="best landscaping companies in calgary"
@@ -183,7 +186,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-11.svg"
                 alt="best landscaping companies in calgary"
@@ -194,7 +197,7 @@ export default function Badges() {
             </div>
           </Slider>
           <div className={styles.grid}>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/best-landscaping-companies-in-calgary-1.svg"
                 alt="best landscaping companies in calgary"
@@ -203,7 +206,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/best-landscaping-companies-in-calgary-2.svg"
                 alt="best landscaping companies in calgary"
@@ -212,7 +215,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-3.svg"
                 alt="best landscaping companies in calgary"
@@ -221,7 +224,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-9.svg"
                 alt="best landscaping companies in calgary"
@@ -230,7 +233,7 @@ export default function Badges() {
                 height={100}
               />
             </div>
-            <div style={ImgStyle}>
+            <div>
               <Image
                 src="/badges/landscaping-calgary-top-rated-experts-11.svg"
                 alt="best landscaping companies in calgary"
