@@ -39,7 +39,7 @@ export default function ImageLeft({
             <Image
               className="stretch img-left"
               alt={image.altText || ""}
-              srcSet={image.srcSet}
+              srcSet={image.sourceUrl}
             />
           </ImgLeft>
           <Text className="spacing">
