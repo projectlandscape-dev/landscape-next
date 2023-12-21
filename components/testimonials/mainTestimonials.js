@@ -78,7 +78,7 @@ export default function MainTestimonials() {
     slidesToScroll: 1,
   };
   return (
-    <>
+    <div style={{ padding: "30px 0px" }}>
       <center>
         <h2 className="title" style={{ padding: "20px 0px" }}>
           What Clients Say About Us
@@ -109,6 +109,6 @@ export default function MainTestimonials() {
           </div>
         </section>
       </Wrapper>
-    </>
+    </div>
   );
 }
