@@ -48,13 +48,22 @@ export default function Benefits1({ subheader, title, benefitContent }) {
                   />
                 </center>
                 <h3 className="subheader caps tan">{benefit.title}</h3>
-                {benefit.description ? (
+                {benefit.description && benefit.textlink ? (
+                  <Link href={benefit.textlink}>
+                    {" "}
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: `${benefit.description}`,
+                      }}
+                    />
+                  </Link>
+                ) : (
                   <div
                     dangerouslySetInnerHTML={{
                       __html: `${benefit.description}`,
                     }}
                   />
-                ) : null}
+                )}
               </BenefitItem>
             );
           })}

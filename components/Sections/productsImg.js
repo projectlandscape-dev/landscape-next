@@ -16,6 +16,9 @@ const Buttonwrapper = styled.div`
   border: 1px solid red;
   border-radius: 53%;
   text-align: center;
+  @media (max-width: 768px) {
+    width: 88%;
+  }
 `;
 
 export default function ProductsImg(props) {

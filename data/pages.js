@@ -148,6 +148,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           subheader
           benefitContent {
             title
+            textlink
             description
             image {
               altText
