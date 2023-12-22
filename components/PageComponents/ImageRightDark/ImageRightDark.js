@@ -80,7 +80,7 @@ export default function ImageRightDark({
               <Image
                 className="stretch"
                 alt={image.altText || ""}
-                srcSet={image.srcSet}
+                srcSet={image.sourceUrl}
               />
             </Img>
           </div>
