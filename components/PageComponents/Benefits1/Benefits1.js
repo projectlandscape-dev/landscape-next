@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, GridThree, Section } from "../../layoutComponents";
 import { ButtonPrimary } from "../../buttons";
+import Link from "next/link";
 
 // const StyledImg = styled(GatsbyImage)`
 //   max-height: 100px;
