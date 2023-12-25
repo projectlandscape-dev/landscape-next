@@ -608,6 +608,14 @@ export default function Footer() {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  className={styles.a}
+                  href="https://21-pl.purpleparrotwebsites.com/sitemap_index.xml"
+                >
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
           <div className={styles.author}>

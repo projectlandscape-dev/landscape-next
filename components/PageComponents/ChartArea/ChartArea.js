@@ -103,7 +103,11 @@ const StepContent = ({
 
     <h3 className="title">{title}</h3>
 
-    <p>{body}</p>
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `${body}`,
+      }}
+    />
     <div className="actions">
       <BtnPrimary
         onClick={() => {
@@ -126,6 +130,7 @@ const StepContent = ({
 );
 
 export default function ChartArea({ title, image, steps, sliderdata }) {
+  console.log("calllllnewsection");
   const [isYoutubeModalOpen, setIsYoutubeModalOpen] = useState(false);
   const [isLearnModal, setIsLearnModalOpen] = useState(false);
 
