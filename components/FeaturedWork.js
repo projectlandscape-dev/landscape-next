@@ -12,9 +12,9 @@ const FeaturedWrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--txt-light);
-  //   .carousel.slide {
-  //     display: none;
-  //   }
+  .carousel-indicators {
+    display: none;
+  }
 `;
 const BtnSecondary = styled.button`
   cursor: pointer;
