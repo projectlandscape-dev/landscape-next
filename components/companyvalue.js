@@ -9,7 +9,7 @@ const List = styled.li`
   display: flex;
   justify-content: space-between;
   p {
-    width: 96%;
+    width: 95%;
   }
 `;
 const PositiveWrapper = styled.div`
@@ -21,6 +21,21 @@ const PositiveWrapper = styled.div`
 
   li {
     border-bottom: 1px solid white;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    ul {
+      padding: 10px;
+    }
+  }
+`;
+const NegativeWrapper = styled.div`
+  width: 85%;
+  @media (max-width: 768px) {
+    width: 100%;
+    ul {
+      padding: 10px;
+    }
   }
 `;
 const CompanyValue = () => {
@@ -34,7 +49,7 @@ const CompanyValue = () => {
             alignItems: "center",
           }}
         >
-          <div style={{ width: "85%" }}>
+          <NegativeWrapper>
             <center>
               <h2>Other Landscaping Companies</h2>
             </center>
@@ -98,7 +113,7 @@ const CompanyValue = () => {
                 </List>
               </ul>
             </div>
-          </div>
+          </NegativeWrapper>
         </div>
         <PositiveWrapper>
           <center>
