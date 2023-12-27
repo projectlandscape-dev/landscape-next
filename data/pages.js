@@ -45,6 +45,10 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           __typename
           text
         }
+        ... on Page_Pagecomponents_PageComponents_VideoSection {
+          fieldGroupName
+          videolink
+        }
         ... on Page_Pagecomponents_PageComponents_ImageSlider {
           __typename
           subheader
