@@ -58,13 +58,13 @@ export default function Benefits1({ subheader, title, benefitContent }) {
                       }}
                     />
                   </Link>
-                ) : (
+                ) : benefit.description ? (
                   <div
                     dangerouslySetInnerHTML={{
                       __html: `${benefit.description}`,
                     }}
                   />
-                )}
+                ) : null}
               </BenefitItem>
             );
           })}

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Container, Section } from "../layoutComponents";
 import styled from "styled-components";
 import { FaStar } from "react-icons/fa";
+import { ButtonPrimary } from "../buttons";
 
 const ReviewWrapper = styled.div`
   border: 1px solid var(--clr-accent);
@@ -29,6 +30,7 @@ const Wrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 1000px;
+  padding: 10px 5px;
 `;
 
 const SliderWrapper = styled.div`
@@ -108,6 +110,9 @@ export default function MainTestimonials() {
             </SliderWrapper>
           </div>
         </section>
+        <div style={{ textAlign: "end" }}>
+          <ButtonPrimary href="/testimonials">Read All Reviews</ButtonPrimary>
+        </div>
       </Wrapper>
     </div>
   );
