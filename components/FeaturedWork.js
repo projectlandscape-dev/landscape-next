@@ -3,6 +3,7 @@ import { Container, GridTwo, Section } from "./layoutComponents";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 import { ButtonPrimary } from "./buttons";
+import Link from "next/link";
 
 const FeaturedWrapper = styled.div`
   background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"),
@@ -50,10 +51,10 @@ const FeaturedWork = () => {
           </div>
           <div style={{ width: "80%", fontSize: "18px" }}>
             <p>
-              Check out some of our most exciting work in Web Design and Digital
-              Marketing! At Lounge Lizard, our web design, development, and
-              marketing company works with a wide range of diverse companies
-              that have unique needs and goals — see what we’ve done.
+              Check out some of our most exciting work in Landscape design and
+              Outdoor living! At Project Landscape, our landscape designs and
+              installations work with a wide range of diverse materials that
+              have unique needs and goals — see what we’ve done.
             </p>
           </div>
         </GridTwo>
@@ -67,31 +68,37 @@ const FeaturedWork = () => {
                 }}
               >
                 <div style={{ width: "40%" }}>
-                  <div style={{ width: "60%" }}>
+                  <div style={{ width: "60%", marginLeft: "50px" }}>
                     <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
-                      MIND GAMES Fragrance
+                      Hardscaping Meets Low Maintenance
                     </h2>
                     <p style={{ marginBottom: "40px" }}>
-                      With a stunning increase in sales leads and SEO
-                      performance, Silvercast’s new transformational site
-                      showcases their digital signage from the heart of Time’s
-                      Square.
+                      Explore a stunning Calgary landscape where hardscaping
+                      blends with low-maintenance elegance. Behold a backyard
+                      paradise featuring effortless artificial turf, sturdy
+                      retaining walls, inviting landscape lighting, and chic
+                      paving stones. This outdoor sanctuary, crafted by Project
+                      Landscape, is a testament to the harmonious blend of
+                      beauty and practicality.
                     </p>
                     <div>
                       <ButtonPrimary href="/calgary-landscaping-materials">
-                        discover products
+                        View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
-                      <BtnSecondary>Seel All our work</BtnSecondary>
+                      <Link href="/portfolio">
+                        <BtnSecondary> See All Our Work</BtnSecondary>
+                      </Link>
                     </div>
                   </div>
                 </div>
 
-                <div>
+                <div style={{ height: "450px" }}>
                   <img
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-3_c5kayc.webp"
-                    height="600px"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/21.png"
+                    height="100%"
+                    style={{ objectPosition: "top", objectFit: "none" }}
                     width={"600px"}
                   />
                 </div>
@@ -105,31 +112,32 @@ const FeaturedWork = () => {
                 }}
               >
                 <div style={{ width: "40%" }}>
-                  <div style={{ width: "60%" }}>
+                  <div style={{ width: "60%", marginLeft: "50px" }}>
                     <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
-                      MIND GAMES Fragrance
+                      The Ultimate Deck
                     </h2>
                     <p style={{ marginBottom: "40px" }}>
-                      With a stunning increase in sales leads and SEO
-                      performance, Silvercast’s new transformational site
-                      showcases their digital signage from the heart of Time’s
-                      Square.
+                      This contemporary deck and pergola design is expertly
+                      wrapped and sealed with smooth hardy board, ensuring
+                      durability and a sleek, modern aesthetic. It's a perfect
+                      blend of style and functionality for any outdoor space.
                     </p>
                     <div>
                       <ButtonPrimary href="/calgary-landscaping-materials">
-                        discover products
+                        View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
-                      <BtnSecondary>Seel All our work</BtnSecondary>
+                      <Link href="/portfolio">
+                        <BtnSecondary> See All Our Work</BtnSecondary>
+                      </Link>
                     </div>
                   </div>
                 </div>
-
-                <div>
+                <div style={{ height: "450px" }}>
                   <img
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-3_c5kayc.webp"
-                    height="600px"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/22.png"
+                    height="100%"
                     width={"600px"}
                   />
                 </div>
@@ -143,15 +151,18 @@ const FeaturedWork = () => {
                 }}
               >
                 <div style={{ width: "40%" }}>
-                  <div style={{ width: "60%" }}>
+                  <div style={{ width: "60%", marginLeft: "50px" }}>
                     <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
-                      MIND GAMES Fragrance
+                      A Calgary Staycation
                     </h2>
                     <p style={{ marginBottom: "40px" }}>
-                      With a stunning increase in sales leads and SEO
-                      performance, Silvercast’s new transformational site
-                      showcases their digital signage from the heart of Time’s
-                      Square.
+                      Welcome to your ultimate staycation destination right in
+                      Calgary! This backyard oasis is adorned with a stunning
+                      cedar pergola, elegant privacy screens, ambient landscape
+                      lighting, and exquisite Techo Bloc paving stones. The
+                      centerpiece is a gas-powered fire table, perfect for cozy
+                      gatherings and relaxing evenings under the stars. A true
+                      retreat in your own backyard.
                     </p>
                     <div>
                       <ButtonPrimary href="/calgary-landscaping-materials">
@@ -159,15 +170,17 @@ const FeaturedWork = () => {
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
-                      <BtnSecondary>Seel All our work</BtnSecondary>
+                      <Link href="/portfolio">
+                        <BtnSecondary> See All Our Work</BtnSecondary>
+                      </Link>
                     </div>
                   </div>
                 </div>
 
-                <div>
+                <div style={{ height: "450px" }}>
                   <img
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-3_c5kayc.webp"
-                    height="600px"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/24.png"
+                    height="100%"
                     width={"600px"}
                   />
                 </div>
@@ -181,15 +194,19 @@ const FeaturedWork = () => {
                 }}
               >
                 <div style={{ width: "40%" }}>
-                  <div style={{ width: "60%" }}>
+                  <div style={{ width: "60%", marginLeft: "50px" }}>
                     <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
-                      MIND GAMES Fragrance
+                      Backyard Revival
                     </h2>
                     <p style={{ marginBottom: "40px" }}>
-                      With a stunning increase in sales leads and SEO
-                      performance, Silvercast’s new transformational site
-                      showcases their digital signage from the heart of Time’s
-                      Square.
+                      Experience a complete transformation with this
+                      show-stopping front and backyard makeover. This
+                      envy-inducing landscape features a custom shed, sleek
+                      composite decking, charming paving stone patios, alluring
+                      landscape lighting, tranquil water features, a stylish
+                      pergola, flourishing garden beds, and practical artificial
+                      turf for effortless, low maintenance living. A true
+                      neighborhood gem in every detail.
                     </p>
                     <div>
                       <ButtonPrimary href="/calgary-landscaping-materials">
@@ -197,15 +214,17 @@ const FeaturedWork = () => {
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
-                      <BtnSecondary>Seel All our work</BtnSecondary>
+                      <Link href="/portfolio">
+                        <BtnSecondary> See All Our Work</BtnSecondary>
+                      </Link>
                     </div>
                   </div>
                 </div>
 
-                <div>
+                <div style={{ height: "450px" }}>
                   <img
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-3_c5kayc.webp"
-                    height="600px"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/25.png"
+                    height="100%"
                     width={"600px"}
                   />
                 </div>

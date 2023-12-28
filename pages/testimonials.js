@@ -58,10 +58,12 @@ const Review = (props) => {
       <p className="italics">"{props.review}"</p>
 
       <Flex>
-        <FcGoogle size={35} />
         <div>
           <p className="subheader bold">{props.title}</p>
-          <p className="caps bold">{props.name}</p>
+          <Flex>
+            {" "}
+            <FcGoogle size={35} /> <p className="caps bold">{props.name}</p>
+          </Flex>
           <a
             href="https://www.google.com/search?q=project%20landscape&oq=project+landscape&aqs=chrome..69i57j69i64j69i60l3.2120j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AJOqlzVRUU_ZaNptPsOjzHtILa57paj9uQ:1676341266052&rflfq=1&num=10&rldimm=11747008283103314784&lqi=ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg&ved=2ahUKEwjnu73t-ZP9AhVKGzQIHdw6BLIQvS56BAgWEAE&sa=X&rlst=f#rlfi=hd:;si:11747008283103314784,l,ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg;mv:[[50.997355899999995,-113.98204679999999],[50.9522124,-114.01662379999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:14"
             target="_blank"
@@ -217,6 +219,144 @@ We were incredibly impressed with the quality of work, our fence turned out amaz
               title="lawn maintenance"
               name="Jo"
               review="Project Landscape has been a most reliable company looking after my lawn needs. They are very professional. When they leave after the mowing the area is completely cleaned up. I do appreciate being able to communicate with them and they have been very agreeable to my needs."
+            />
+            <Review
+              title="lawn maintenance"
+              name="Mat Wynn"
+              review="Scott and Alison are amazing! They coordinated my landscape project and it turned out amazing. I would highly recommend them to family and friends."
+            />
+            <Review
+              title="lawn maintenance"
+              name="Shayne Seefeldt"
+              review="Fantastic work from Project Landscape. From the original site visit and quote to our finalized work everything was professional. Great communication throughout. Great work by Scott, Allison and Mario!"
+            />
+            <Review
+              title="lawn maintenance"
+              name="Ariadna Rolo"
+              review="I highly recommend Project Landscape for their exceptional work and the incredible team led by Mario and Pepe. They went above and beyond to bring my vision to life, creating a breathtaking outdoor space that exceeded my expectations.
+              From the start, Project Landscape impressed me with their attentive approach and expert advice. Mario and Pepe's craftsmanship was impeccable, showcasing their extensive knowledge and experience. They flawlessly combined functionality and beauty, transforming my backyard into a paradise.
+              Despite a few challenges along the way, Project Landscape handled them with efficiency and creativity. Mario and Pepe's problem-solving skills were exceptional, resulting in innovative solutions that surpassed my expectations. Their dedication to customer satisfaction was evident throughout the entire project.
+              I wholeheartedly recommend Project Landscape to anyone in need of top-tier landscaping services. Their professionalism, reliability, and the expertise of their team members like Mario and Pepe make them the ideal choice for transforming your outdoor space.
+              Thank you, Project Landscape, for turning my vision into a reality!
+              "
+            />
+            <Review
+              title="lawn maintenance"
+              name="Yuriy Yakovenko"
+              review="Great value for money, very responsive and accommodating people.
+              "
+            />
+            <Review
+              title=" Mulching, Sod installation"
+              name="Herbert Wang"
+              review="Project Landscape did a great job reinstalling the sod and mulch in my front yard. The team handled everything professionally and used quality materials for the job. Would recommend!
+              "
+            />
+            <Review
+              title=" Mulching, Sod installation"
+              name="Scott Thain"
+              review="Very happy with the results of our patio installation! The guys came in and had it done in two days. Even though we requested it on very short notice in the middle of summer, they managed to fit us in in a reasonable time-frame. Would absolutely use them again!
+              "
+            />
+            <Review
+              title=" Mulching, Sod installation"
+              name="Pamela sedore
+              "
+              review="Alison and Ryan the project coordinators were very helpful, friendly and professional.
+              Carmen, Alfredo and Emilio who came and did the landscaping were extremely hard working, friendly, skilled, knowledgeable and professional. There were quite a few challenges with removal of tree roots and partial trunks. We made some changes along the way and they were very accommodating and did a superb job.
+              
+              "
+            />
+            <Review
+              title=" Walkway landscaping, Landscape design construction, Driveway landscaping"
+              name="Info Estrela Design Studios
+
+              "
+              review="Working with Alison, Scott and the team at Project Landscape was a real pleasure. The team is professional, knowledgeable and exceeded my expectations. I will be using Project Landscape for all of my future landscaping projects and I highly recommend anyone do the same.
+              "
+            />
+            <Review
+              title=" Walkway landscaping, Landscape design construction, Driveway landscaping"
+              name="Urban Officiant
+              "
+              review="Alison and Scott from Project Landscape are amazing to work with. They helped us with bringing our vision for a backyard fire pit to life. Not only were they both super friendly but also efficient, professional and they delivered (over and above) what they promised. I wouldn't hesitate to use them for all my landscaping needs in the future and strongly recommend Project Landscape.
+              Thank you Alison and Scott!!              
+              "
+            />
+            <Review
+              title=" Walkway landscaping, Landscape design construction, Driveway landscaping"
+              name=" Jordan Fleming
+
+              "
+              review="Thank you Scott, Alison, David, Dylan, and everyone else who contributed to making our vision a reality and ensuring we were happy. The craftsmanship and quality of the finished project is beyond our expectations. On top of that, each crew was extremely friendly, respected our home, and ensured nothing was damaged and made sure everything was cleaned up. I can tell these people take a lot of pride in their work, and we are happy we chose Project Landscape for our project.        
+              "
+            />
+            <Review
+              title="Landscape design construction, Patio design, Custom landscape design"
+              name=" Ross Andersen
+
+              "
+              review="Project Landscape did an amazing job with our backyard. Very professional, highly recommended.
+              "
+            />
+            <Review
+              title=" Landscape design construction, Outdoor step construction, Custom landscape design, Backyard landscaping"
+              name="  Sandra Klis
+              "
+              review="After years of debating we finally took the step to redo our entire deck. It was a big investment for us so we wanted to make sure we went with the right company. We did our research and got multiple quotes and we loved the initial interactions with the Project Landscape team. Very professional, came on-site, discussed various option on how to do the deck, gave input but also allowed our vision to come to life. Once the quote details were sorted they got to work quickly on our new deck. The removed the entire old deck, did some landscaping to make way for the new deck, had a friendly and courteous team in to build the new deck, with a super strong foundation. We also made some small changes mid-project to add more lighting which they were easily able to accommodate. During the process their team explained each step and kept us updated to what would happen next. This was great so we knew what was happening and how things were progressing. The entire project was wrapped up within a few weeks and was done so well, better than we even imagined! The job site was left nice and tidy, ready for us to use right away. I included some before and after images as well. It was a great experience and we’re so happy we went with the Project Landscape team for our new deck. Would highly recommend Scott and Alison and their team!!!
+              "
+            />
+            <Review
+              title="  Custom landscape design, Yard work"
+              name="   garth wildman 
+
+              "
+              review="They did a major landscaping job next door to us, which entailed building a new concrete retaining wall. This destroyed my shrubs. They replaced my shrubs, and added cedar mulch as requested."
+            />
+            <Review
+              title="  Custom landscape design, Yard work"
+              name="Erin Meyers 
+
+              "
+              review="Project Landscape installed a small patio in my backyard earlier this year. Though the rain caused some delays their team was professional and helpful throughout the whole process. We are very happy with the finished product! "
+            />
+            <Review
+              title="Patio design"
+              name=" New Look Tony "
+              review="Alison and the team were very professional! Always on time and attention to detail was greatly appreciated. "
+            />
+            <Review
+              title="Yard work"
+              name=" Nikki Dellosa "
+              review="I just wanted to reach out and say Thank you!
+              The work was completed well, all the guys were great to deal with, and our yard looks fantastic. They are easy to work with, consistent, and good at what they do. Their costs are very fair. They are also very responsive and address any issue that comes up in a timely manner. Scott is easy to work with, he listens to our requests.
+              The Project landscape was courteous to our
+              neighbours and ensured that their lawn was
+              unaffected. Everything turned out better than we were expecting. We love the final look of our yard.
+              I would without a doubt recommend Project
+              Landscape to anyone creating or redoing their
+              yards. Should we ever need to landscape a yard again, we would definitely contact Scott and Alison.
+              Again thank you!
+              Nikki ♥️ Chaddey
+ "
+            />
+            <Review
+              title="Landscape installations, Stone masonry, Mulching, Sod installation, Yard work"
+              name=" Bob Miller"
+              review="Overall, every person involved in our small front-yard project was a pleasure to deal with. Special accolades go to Mario, the project foreman, who tirelessly led all the hands-on work.
+ "
+            />
+            <Review
+              title="Landscape installations, Stone masonry, Mulching, Sod installation, Yard work"
+              name=" J. Shantz"
+              review="We had an outstanding experience with Project Landscape! Their team, led by Alison, Scott, and Ryan, along with their skilled contractors, demonstrated the utmost professionalism and accommodation throughout our project. Our house is a new build in a new area of the city so we planned for: - a new, bigger deck (composite decking)
+              - landscaping rock
+              - artificial turf
+              - vinyl fencing
+              Project Landscape was able to do it all for us and even when we made a few changes along the way, there were never any issues, it was always yup we can do that, no problem!. They were very accommodating to all our requests
+              The transformation of our property exceeded our expectations, leaving us with a yard we are genuinely proud of, and even the neighbours have commented at how good everything looks. Kudos to Project Landscape for their exceptional service and a special shoutout to Alison, Scott, Ryan, and the entire team for their awesome work! Highly recommended!
+
+ "
             />
           </GridThree>
         </Container>
