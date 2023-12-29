@@ -93,7 +93,7 @@ export default function CompanyValue({
                     <FaCheckCircle color="green" size={"17px"} />{" "}
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: `${item?.body}`,
+                        __html: `${item?.bodycontent}`,
                       }}
                     />
                   </List>
