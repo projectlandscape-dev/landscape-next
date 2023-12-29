@@ -13,7 +13,7 @@ const ImgStyle = {
 const Buttonwrapper = styled.div`
   width: 52%;
   padding: 20px;
-  border: 1px solid red;
+  border: 3px solid red;
   border-radius: 53%;
   text-align: center;
   @media (max-width: 768px) {

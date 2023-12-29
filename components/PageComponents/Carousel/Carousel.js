@@ -20,7 +20,9 @@ const SliderWrapper = styled.div`
     color: var(--clr-accent);
     font-size: 30px;
   }
-
+  .slick-slide {
+    padding: 0px 15px;
+  }
   .slick-dots {
     li {
       height: 30px;
@@ -33,7 +35,7 @@ const SliderItem = styled.div`
   figure {
     div {
       img {
-        height: 400px;
+        height: 300px;
         width: 100%;
         object-fit: cover;
       }
@@ -53,7 +55,7 @@ const Inner = styled.div`
 
 export default function Carousel({ subheader, title, carouselContent }) {
   let width = "100%";
-  let height = "450px";
+  let height = "300px";
 
   const settings = {
     dots: true,

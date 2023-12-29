@@ -522,6 +522,11 @@ export default function HeaderBasic() {
                     <ul>
                       <h3 className="subheader">Get Inspired</h3>
                       <li>
+                        <Link className={styles.styledLink} href="/projects">
+                          Projects
+                        </Link>
+                      </li>
+                      <li>
                         <Link className={styles.styledLink} href="/portfolio">
                           portfolio
                         </Link>

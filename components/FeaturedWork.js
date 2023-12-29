@@ -39,6 +39,11 @@ const BtnSecondary = styled.button`
     color: var(--clr-accent);
   }
 `;
+const FeaturedImage = styled.img`
+  height: 500px;
+  width: 550px;
+  object-fit: cover;
+`;
 const FeaturedWork = () => {
   return (
     <FeaturedWrapper>
@@ -94,13 +99,8 @@ const FeaturedWork = () => {
                   </div>
                 </div>
 
-                <div style={{ height: "450px" }}>
-                  <img
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/21.png"
-                    height="100%"
-                    style={{ objectPosition: "top", objectFit: "none" }}
-                    width={"600px"}
-                  />
+                <div>
+                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/21.png" />
                 </div>
               </div>{" "}
             </Carousel.Item>
@@ -134,12 +134,8 @@ const FeaturedWork = () => {
                     </div>
                   </div>
                 </div>
-                <div style={{ height: "450px" }}>
-                  <img
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/22.png"
-                    height="100%"
-                    width={"600px"}
-                  />
+                <div>
+                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/22.png" />
                 </div>
               </div>{" "}
             </Carousel.Item>
@@ -177,12 +173,8 @@ const FeaturedWork = () => {
                   </div>
                 </div>
 
-                <div style={{ height: "450px" }}>
-                  <img
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/24.png"
-                    height="100%"
-                    width={"600px"}
-                  />
+                <div>
+                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/24.png" />
                 </div>
               </div>{" "}
             </Carousel.Item>
@@ -221,12 +213,8 @@ const FeaturedWork = () => {
                   </div>
                 </div>
 
-                <div style={{ height: "450px" }}>
-                  <img
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/25.png"
-                    height="100%"
-                    width={"600px"}
-                  />
+                <div>
+                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/25.png" />
                 </div>
               </div>{" "}
             </Carousel.Item>

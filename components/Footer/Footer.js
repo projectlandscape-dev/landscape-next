@@ -580,6 +580,11 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
+                    <Link className={styles.styledLink} href="/projects">
+                      projects
+                    </Link>
+                  </li>
+                  <li>
                     <Link className={styles.styledLink} href="/financing">
                       financing
                     </Link>

@@ -55,7 +55,8 @@ export default function Index() {
         description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
       />
       <HeroBasic />
-      <Badges />
+      <PortfolioBanner />
+
       <MainServices />
       <AllServices />
       <Wrapper>
@@ -134,6 +135,7 @@ export default function Index() {
         </section>
       </Wrapper>
       <Cta3 />
+      <Badges />
       <ProductsImg />
       <ShowroomSection />
       <ProjectImg />
@@ -150,7 +152,7 @@ export default function Index() {
       />
       <Cta3 />
       <MainTrends />
-      <PortfolioBanner />
+
       <StaticProcessArea />
       <Why />
       <FeaturedWork />
