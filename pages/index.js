@@ -24,7 +24,7 @@ import Seo from "../components/seo";
 import MainServices from "../components/MainServices/MainServices";
 import PortfolioBanner from "../components/portfolioBanner";
 import StaticProcessArea from "../components/PageComponents/StaticProcessArea";
-import CompanyValue from "../components/companyvalue";
+import CompanyValue from "../components/staticcompanyvalue";
 import FeaturedWork from "../components/StaticFeaturedWork";
 
 const Wrapper = styled.div`

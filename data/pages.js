@@ -45,6 +45,17 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           __typename
           text
         }
+        ... on Page_Pagecomponents_PageComponents_CompanyValue {
+          fieldGroupName
+          negativeheading
+          negativebodycontent {
+            body
+          }
+          positiveheading
+          positivebodycontent {
+            bodycontent
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_VideoSection {
           fieldGroupName
           videolink
