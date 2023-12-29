@@ -10,7 +10,7 @@ const List = styled.li`
   padding: 15px 0px;
   display: flex;
   justify-content: space-between;
-  p {
+  div {
     width: 95%;
   }
   :last-child {
