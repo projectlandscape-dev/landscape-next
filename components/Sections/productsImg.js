@@ -11,14 +11,8 @@ const ImgStyle = {
   maxHeight: "450px",
 };
 const Buttonwrapper = styled.div`
-  width: 52%;
-  padding: 20px;
-  border: 3px solid red;
-  border-radius: 53%;
-  text-align: center;
-  @media (max-width: 768px) {
-    width: 88%;
-  }
+  diplay: flex;
+  height: 50px;
 `;
 
 export default function ProductsImg(props) {
@@ -50,6 +44,7 @@ export default function ProductsImg(props) {
               <ButtonPrimary href="/calgary-landscaping-materials">
                 discover products
               </ButtonPrimary>
+              <img src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png" />
             </Buttonwrapper>
           </Text>
           <Image

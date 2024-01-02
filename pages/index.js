@@ -162,7 +162,7 @@ export default function Index() {
       {/* <Ebook title="download our landscaping ebook" href="" /> */}
       <MainTestimonials />
       <FaqFeatured />
-      <CompanyValue />
+      {/* <CompanyValue /> */}
       <Videos />
       <FinanceBanner />
     </LayoutJs>

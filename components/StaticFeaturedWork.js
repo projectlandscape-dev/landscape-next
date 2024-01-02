@@ -87,7 +87,7 @@ const FeaturedWork = () => {
                       beauty and practicality.
                     </p>
                     <div>
-                      <ButtonPrimary href="/calgary-landscaping-materials">
+                      <ButtonPrimary href="/projects">
                         View Case Study
                       </ButtonPrimary>
                     </div>
@@ -123,7 +123,7 @@ const FeaturedWork = () => {
                       blend of style and functionality for any outdoor space.
                     </p>
                     <div>
-                      <ButtonPrimary href="/calgary-landscaping-materials">
+                      <ButtonPrimary href="/projects">
                         View Case Study
                       </ButtonPrimary>
                     </div>
@@ -161,7 +161,7 @@ const FeaturedWork = () => {
                       retreat in your own backyard.
                     </p>
                     <div>
-                      <ButtonPrimary href="/calgary-landscaping-materials">
+                      <ButtonPrimary href="/projects">
                         discover products
                       </ButtonPrimary>
                     </div>
@@ -215,6 +215,45 @@ const FeaturedWork = () => {
 
                 <div>
                   <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/25.png" />
+                </div>
+              </div>{" "}
+            </Carousel.Item>
+            <Carousel.Item interval={5000}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <div style={{ width: "40%" }}>
+                  <div style={{ width: "60%", marginLeft: "50px" }}>
+                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                      A Place To Unwind
+                    </h2>
+                    <p style={{ marginBottom: "40px" }}>
+                      Explore our newest landscape creation featuring
+                      outcropping retaining walls, welcoming patios, elegant
+                      steps, and private screens. This design transforms your
+                      backyard into the ultimate retreat for relaxation and
+                      serenity. Experience the perfect fusion of style and
+                      peacefulness in your personal outdoor haven. Your tranquil
+                      oasis is just a step away.
+                    </p>
+                    <div>
+                      <ButtonPrimary href="/projects">
+                        discover products
+                      </ButtonPrimary>
+                    </div>
+                    <div style={{ marginTop: "20px" }}>
+                      <Link href="/portfolio">
+                        <BtnSecondary> See All Our Work</BtnSecondary>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-63-1.png" />
                 </div>
               </div>{" "}
             </Carousel.Item>
