@@ -11,7 +11,7 @@ const ImgStyle = {
   maxHeight: "450px",
 };
 const Buttonwrapper = styled.div`
-  diplay: flex;
+  display: flex;
   height: 50px;
 `;
 
