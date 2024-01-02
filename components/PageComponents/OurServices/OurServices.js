@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { GridThree, Section } from "components/layoutComponents";
 
 const Image = styled.img`
-  width: 0%; /* Adjust the width of each image as needed */
+  width: 400px; /* Adjust the width of each image as needed */
+  height: 400px;
+  object-fit: cover;
   box-sizing: border-box;
 `;
 
@@ -38,7 +40,9 @@ export default function OurServices({ title, services }) {
                     />
 
                     <center>
-                      <h1>{item?.title}</h1>
+                      <h1 style={{ fontSize: "24px", marginTop: "10px" }}>
+                        {item?.title}
+                      </h1>
                     </center>
                   </div>
                 );
