@@ -56,6 +56,13 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             title
           }
         }
+        ... on Page_Pagecomponents_PageComponents_FinanceTab {
+          body
+          fieldGroupName
+          innerheading
+          subheader
+          title
+        }
 
         ... on Page_Pagecomponents_PageComponents_CompanyValue {
           fieldGroupName

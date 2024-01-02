@@ -17,7 +17,6 @@ export default function LayoutJs({ children }) {
       <Header />
       <main>{children}</main>
       <GoogleBadge />
-      <FinanceBanner />
       <ContactBanner />
       <Footer />
     </Wrapper>
