@@ -100,7 +100,7 @@ export default function Carousel({ subheader, title, carouselContent }) {
         </Text>
         <SliderWrapper>
           <Slider {...settings}>
-            {carouselContent?.map((item) => {
+            {carouselContent.map((item) => {
               return (
                 <SliderItem>
                   <Image
