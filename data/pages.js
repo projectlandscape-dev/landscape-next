@@ -435,6 +435,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         }
         ... on Page_Pagecomponents_PageComponents_ImageThreeColumns {
           fieldGroupName
+          title
           images {
             image {
               mediaItemUrl

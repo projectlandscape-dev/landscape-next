@@ -13,9 +13,14 @@ const ImageWrapper = styled.div`
   width: 86%;
   margin: 0 auto;
 `;
-export default function ImageThreeColumn({ images }) {
+export default function ImageThreeColumn({ title, images }) {
   return (
     <Section>
+      {title ? (
+        <center style={{ marginBottom: "20px" }}>
+          <h1>{title}</h1>
+        </center>
+      ) : null}
       <ImageWrapper>
         <GridThree>
           {images?.map((item) => {
