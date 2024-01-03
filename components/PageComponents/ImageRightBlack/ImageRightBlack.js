@@ -10,7 +10,7 @@ import {
 import Image from "../../Image";
 
 const Wrapper = styled.div`
-  background: var(--clr-accent);
+  background: black;
 `;
 
 const Text = styled.div`
@@ -42,7 +42,7 @@ const Img = styled.div`
     }
   }
 `;
-export default function ImageRightDark({
+export default function ImageRightBlack({
   subheader,
   title,
   body,
