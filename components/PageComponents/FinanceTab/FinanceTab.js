@@ -4,7 +4,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { ButtonPrimary } from "components/buttons";
 
-const FinanceTab = () => {
+const FinanceTab = ({ title, subheader, innerHeading, body }) => {
   const Wrapper = styled.div`
     background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"),
       rgba(255, 255, 255, 0.7);
@@ -36,7 +36,11 @@ const FinanceTab = () => {
             <p className="subheader">{subheader}</p>
             <h2 className="title">{innerHeading}</h2>
           </div>
-          <p>{body}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `${body}`,
+            }}
+          />
           <ButtonPrimary href="/financing">view payment plans</ButtonPrimary>
           <Image
             className="finance-img"
