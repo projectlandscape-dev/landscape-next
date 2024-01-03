@@ -63,8 +63,8 @@ export default function ImageLeftDark({
               ) : null}
               <Image
                 className="stretch"
-                alt={image.altText || ""}
-                srcSet={image.sourceUrl}
+                alt={image?.altText || ""}
+                srcSet={image?.sourceUrl}
               />
             </Img>
             <Text className="spacing">

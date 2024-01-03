@@ -100,13 +100,13 @@ export default function Carousel({ subheader, title, carouselContent }) {
         </Text>
         <SliderWrapper>
           <Slider {...settings}>
-            {carouselContent.map((item) => {
+            {carouselContent?.map((item) => {
               return (
                 <SliderItem>
                   <Image
                     alt={item.image.altText || ""}
-                    srcSet={item.image.srcSet}
-                    src={item.image.src}
+                    srcSet={item.image.sourceUrl}
+                    src={item.image.sourceUrl}
                     width={width}
                     height={height}
                   />
