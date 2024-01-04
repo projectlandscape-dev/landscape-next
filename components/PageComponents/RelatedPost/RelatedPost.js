@@ -62,7 +62,7 @@ export default function RelatedPost({ selectPost }) {
         <Text className="spacing">
           <div className="">
             <div>
-              <h1 className="title">Related Post</h1>
+              <h1 className="title">Related Posts</h1>
             </div>
           </div>
         </Text>
