@@ -7,7 +7,7 @@ import {
   HeroBannerPadding,
 } from "components/layoutComponents";
 import { Carousel } from "react-bootstrap";
-import styles from "./DynamicSlider.moudule.scss";
+import styles from "./DynamicSlider.module.scss";
 import Image from "next/image";
 
 const captionStyle = {
