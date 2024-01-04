@@ -168,6 +168,19 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         ... on Page_Pagecomponents_PageComponents_PortfolioBanner {
           title
         }
+        ... on Page_Pagecomponents_PageComponents_DynamicSlider {
+          body
+          sliderdata {
+            bgimage {
+              altText
+              sourceUrl
+            }
+            button
+            link
+            subheader
+            title
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_ImageRightBlack {
           __typename
           body
