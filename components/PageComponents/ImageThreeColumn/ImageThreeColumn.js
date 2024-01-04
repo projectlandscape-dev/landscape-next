@@ -4,8 +4,8 @@ import { Section, GridThree } from "../../layoutComponents";
 // import Image from "components/Image";
 
 const Image = styled.img`
-  width: 400px;
-  height: 380px;
+  width: 350px;
+  height: 330px;
   object-fit: cover;
   border-radius: 8px;
 `;
