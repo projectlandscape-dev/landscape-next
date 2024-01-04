@@ -165,6 +165,9 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             srcSet
           }
         }
+        ... on Page_Pagecomponents_PageComponents_PortfolioBanner {
+          title
+        }
         ... on Page_Pagecomponents_PageComponents_ImageRightBlack {
           __typename
           body
