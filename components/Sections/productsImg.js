@@ -44,7 +44,10 @@ export default function ProductsImg(props) {
               <ButtonPrimary href="/calgary-landscaping-materials">
                 discover products
               </ButtonPrimary>
-              <img src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png" />
+              <img
+                width="160px"
+                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
+              />
             </Buttonwrapper>
           </Text>
           <Image

@@ -425,6 +425,22 @@ export default function HeaderBasic() {
                       <li>
                         <Link
                           className={styles.styledLink}
+                          href="/strategic-partners"
+                        >
+                          strategic partners
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={styles.styledLink}
+                          href="/areas-we-service"
+                        >
+                          service areas
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={styles.styledLink}
                           href="/awards-certificates"
                         >
                           Awards and Certificates
@@ -464,25 +480,20 @@ export default function HeaderBasic() {
                           refer a friend
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          className={styles.styledLink}
-                          href="/strategic-partners"
-                        >
-                          strategic partners
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className={styles.styledLink}
-                          href="/areas-we-service"
-                        >
-                          service areas
-                        </Link>
-                      </li>
+
                       <li>
                         <Link className={styles.styledLink} href="/financing">
                           financing{" "}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className={styles.styledLink} href="/care-guides">
+                          Care Guides
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className={styles.styledLink} href="/free-guides">
+                          Free Guides
                         </Link>
                       </li>
                       <li>
@@ -504,11 +515,6 @@ export default function HeaderBasic() {
                           href="/testimonials"
                         >
                           testimonials
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className={styles.styledLink} href="/packages">
-                          packages
                         </Link>
                       </li>
                     </ul>
@@ -534,9 +540,22 @@ export default function HeaderBasic() {
                       <li>
                         <Link
                           className={styles.styledLink}
+                          href="/calgary-landscaping-materials"
+                        >
+                          Material Selection Guide
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={styles.styledLink}
                           href="/landscape-idea-center"
                         >
                           indoor idea center
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className={styles.styledLink} href="/packages">
+                          packages
                         </Link>
                       </li>
                     </ul>
