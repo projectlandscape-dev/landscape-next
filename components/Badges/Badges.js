@@ -195,6 +195,33 @@ export default function Badges() {
                 height={100}
               />
             </div>
+            <div>
+              <Image
+                src="/badges/newBadges1.png"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div>
+              <Image
+                src="/badges/newBadges2.png"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
+            <div>
+              <Image
+                src="/badges/newBadges3.png"
+                alt="best landscaping companies in calgary"
+                style={ImgStyle}
+                width={100}
+                height={100}
+              />
+            </div>
           </Slider>
           <div className={styles.grid}>
             <div>
