@@ -18,6 +18,12 @@ const FormWrapper = styled.div`
     margin-left: 2px;
   }
 `;
+const LocationProject = styled.div`
+  width: 28%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 export default function FormContact(props) {
   return (
@@ -82,7 +88,14 @@ export default function FormContact(props) {
             </div>
             <hr />
             <div className="spacing">
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  gap: "20px",
+                }}
+              >
                 <div className="spacing">
                   <h3 className="subheader">harscaping needs:</h3>
                   <div className="spacing-sm">
@@ -216,7 +229,14 @@ export default function FormContact(props) {
             </div>
             <hr />
             <div className="spacing">
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  gap: "20px",
+                }}
+              >
                 <div className="spacing">
                   <h3 className="subheader">outdoor living needs:</h3>
                   <div className="spacing-sm">
@@ -319,7 +339,7 @@ export default function FormContact(props) {
                     <label for="outdoor-furniture">outdoor furniture</label>
                   </div>
                 </div>
-                <div className="spacing" style={{ width: "28%" }}>
+                <LocationProject className="spacing">
                   <div className="spacing">
                     <h3 className="subheader">location:</h3>
                     <div>
@@ -362,7 +382,7 @@ export default function FormContact(props) {
                       <label for="renovation">renovation</label>
                     </div>
                   </div>
-                </div>
+                </LocationProject>
               </div>
             </div>
 
