@@ -424,7 +424,6 @@ export default function FormContact(props) {
             </div> */}
             <hr />
 
-            <hr />
             <div className="spacing-sm">
               <Label htmlFor="budget">What's your budget?</Label>
               <Select name="budget" id="budget" className="center">
