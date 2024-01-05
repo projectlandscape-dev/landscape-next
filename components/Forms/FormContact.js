@@ -341,6 +341,36 @@ export default function FormContact(props) {
                 </div>
                 <LocationProject className="spacing">
                   <div className="spacing">
+                    <h3 className="subheader">Accessories:</h3>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="Saunas"
+                        id="Saunas"
+                        value="Saunas"
+                      />
+                      <label for="Saunas">Saunas </label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="Hot-Tubs"
+                        id="Hot-Tubs"
+                        value="Hot-Tubs"
+                      />
+                      <label for="Hot-Tubs">Hot Tubs</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="Cold-Plunge"
+                        id="Cold-Plunge"
+                        value="Cold-Plunge"
+                      />
+                      <label for="Cold-Plunge">Cold Plunge</label>
+                    </div>
+                  </div>
+                  <div className="spacing">
                     <h3 className="subheader">location:</h3>
                     <div>
                       <input
@@ -393,36 +423,6 @@ export default function FormContact(props) {
               <Input type="file" id="upload" name="upload" />
             </div> */}
             <hr />
-            <div className="spacing">
-              <h3 className="subheader">Accessories:</h3>
-              <div>
-                <input
-                  type="checkbox"
-                  name="Saunas"
-                  id="Saunas"
-                  value="Saunas"
-                />
-                <label for="Saunas">Saunas </label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  name="Hot-Tubs"
-                  id="Hot-Tubs"
-                  value="Hot-Tubs"
-                />
-                <label for="Hot-Tubs">Hot Tubs</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  name="Cold-Plunge"
-                  id="Cold-Plunge"
-                  value="Cold-Plunge"
-                />
-                <label for="Cold-Plunge">Cold Plunge</label>
-              </div>
-            </div>
 
             <hr />
             <div className="spacing-sm">
