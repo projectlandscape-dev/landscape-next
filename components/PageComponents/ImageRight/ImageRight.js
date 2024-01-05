@@ -30,6 +30,10 @@ const LogoWrapper = styled.div`
   right: 20px;
   top: 10px;
 `;
+const Buttonwrapper = styled.div`
+  display: flex;
+  height: 50px;
+`;
 
 export default function ImageRight({
   subheader,
@@ -37,6 +41,7 @@ export default function ImageRight({
   body,
   image,
   button,
+  showarrow = false,
   link,
   imageCopy,
 }) {
@@ -59,6 +64,16 @@ export default function ImageRight({
 
             {button && link ? (
               <ButtonPrimary href={link}>{button}</ButtonPrimary>
+            ) : showarrow ? (
+              <Buttonwrapper>
+                <ButtonPrimary href="/calgary-landscaping-materials">
+                  discover Products
+                </ButtonPrimary>
+                <img
+                  width="160px"
+                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
+                />
+              </Buttonwrapper>
             ) : (
               <ButtonPrimary href="/contact">get started</ButtonPrimary>
             )}
