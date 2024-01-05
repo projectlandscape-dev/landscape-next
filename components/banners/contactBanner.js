@@ -45,6 +45,7 @@ export default function ContactBanner(props) {
               <div className="">
                 <h1 className="title">{props.title}</h1>
                 <p className="subheader tan">{props.subheader}</p>
+                <h2>{props.secondHeading}</h2>
               </div>
             </Text>
           </Container>
