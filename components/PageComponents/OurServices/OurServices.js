@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GridThree, Section } from "components/layoutComponents";
+import Link from "next/link";
 
 const Image = styled.img`
   width: 320px; /* Adjust the width of each image as needed */
@@ -34,10 +35,19 @@ export default function OurServices({ title, services }) {
               {services?.map((item) => {
                 return (
                   <div>
-                    <Image
-                      src={item?.image?.sourceUrl}
-                      alt={item?.image?.altText}
-                    />
+                    {item.link ? (
+                      <Link href={item.link}>
+                        <Image
+                          src={item?.image?.sourceUrl}
+                          alt={item?.image?.altText}
+                        />
+                      </Link>
+                    ) : (
+                      <Image
+                        src={item?.image?.sourceUrl}
+                        alt={item?.image?.altText}
+                      />
+                    )}
 
                     <center>
                       <h1 style={{ fontSize: "24px", marginTop: "10px" }}>

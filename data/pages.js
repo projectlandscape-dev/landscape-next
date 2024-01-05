@@ -45,6 +45,9 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           __typename
           text
         }
+        ... on Page_Pagecomponents_PageComponents_ThinBanner {
+          title
+        }
         ... on Page_Pagecomponents_PageComponents_OurService {
           fieldGroupName
           title
@@ -53,6 +56,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
               altText
               sourceUrl
             }
+            link
             title
           }
         }
