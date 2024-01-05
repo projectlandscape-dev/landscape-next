@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { GridThree, Section } from "components/layoutComponents";
 
 const Image = styled.img`
-  width: 400px; /* Adjust the width of each image as needed */
-  height: 400px;
+  width: 320px; /* Adjust the width of each image as needed */
+  height: 320px;
   object-fit: cover;
   box-sizing: border-box;
 `;
