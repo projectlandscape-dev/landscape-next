@@ -201,7 +201,7 @@ const FeaturedWork = () => {
                       neighborhood gem in every detail.
                     </p>
                     <div>
-                      <ButtonPrimary href="/calgary-landscaping-materials">
+                      <ButtonPrimary href="/projects">
                         discover products
                       </ButtonPrimary>
                     </div>
