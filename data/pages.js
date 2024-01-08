@@ -156,7 +156,21 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             srcSet
           }
         }
-
+        ... on Page_Pagecomponents_PageComponents_ImageLeftDarkWithTwoImages {
+          body
+          button
+          image {
+            altText
+            sourceUrl
+          }
+          image2 {
+            altText
+            sourceUrl
+          }
+          link
+          subheader
+          title
+        }
         ... on Page_Pagecomponents_PageComponents_ImageRightDark {
           __typename
           body
