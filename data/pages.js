@@ -243,6 +243,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           __typename
           title
           subheader
+          secondHeading
           carouselContent {
             title
             description

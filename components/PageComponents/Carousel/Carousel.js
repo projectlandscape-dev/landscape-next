@@ -53,7 +53,12 @@ const Inner = styled.div`
 //   object-fit: cover;
 // `
 
-export default function Carousel({ subheader, title, carouselContent }) {
+export default function Carousel({
+  subheader,
+  title,
+  carouselContent,
+  secondHeading,
+}) {
   let width = "100%";
   let height = "300px";
 
@@ -96,6 +101,10 @@ export default function Carousel({ subheader, title, carouselContent }) {
           <div>
             <p className="subheader accent">{subheader}</p>
             <h2 className="title">{title}</h2>
+            <p style={{ fontSize: "16px" }} className="subheader">
+              {" "}
+              {secondHeading}
+            </p>
           </div>
         </Text>
         <SliderWrapper>
