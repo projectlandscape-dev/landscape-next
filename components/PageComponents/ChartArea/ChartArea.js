@@ -130,7 +130,6 @@ const StepContent = ({
 );
 
 export default function ChartArea({ title, image, steps, sliderdata }) {
-  console.log("calllllnewsection");
   const [isYoutubeModalOpen, setIsYoutubeModalOpen] = useState(false);
   const [isLearnModal, setIsLearnModalOpen] = useState(false);
 

@@ -96,7 +96,6 @@ const PanelsWrapper = styled.div`
 `;
 
 export default function TabsSide({ title, tabsContent }) {
-  console.log(tabsContent, "content");
   let width = "100%";
   let height = "400px";
   return (
