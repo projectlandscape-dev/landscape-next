@@ -144,6 +144,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           subheader
           title
           button
+          showarrow
           link
           image {
             altText

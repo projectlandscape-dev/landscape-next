@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container, Section, FlexMobileOpp } from "components/layoutComponents";
 import { ButtonSecondaryLight } from "components/buttons";
 import Image from "../../Image";
+import { ButtonPrimary } from "../../buttons";
 
 const Wrapper = styled.div`
   background: var(--clr-accent);
@@ -40,6 +41,10 @@ const LogoWrapper = styled.div`
   left: 20px;
   top: 10px;
 `;
+const Buttonwrapper = styled.div`
+  display: flex;
+  height: 50px;
+`;
 
 export default function ImageLeftDark({
   subheader,
@@ -49,6 +54,7 @@ export default function ImageLeftDark({
   button,
   link,
   imageCopy,
+  showarrow,
 }) {
   return (
     <Wrapper>
@@ -78,13 +84,29 @@ export default function ImageLeftDark({
                 }}
               />
               {button && link ? (
-                <ButtonSecondaryLight href={link}>
-                  {button}
-                </ButtonSecondaryLight>
+                <Buttonwrapper>
+                  <ButtonSecondaryLight href={link}>
+                    {button}
+                  </ButtonSecondaryLight>
+                  {showarrow && (
+                    <img
+                      width="160px"
+                      src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62-removebg-preview.png"
+                    />
+                  )}
+                </Buttonwrapper>
               ) : (
-                <ButtonSecondaryLight href="/contact">
-                  get started
-                </ButtonSecondaryLight>
+                <Buttonwrapper>
+                  <ButtonSecondaryLight href="/contact">
+                    get started
+                  </ButtonSecondaryLight>
+                  {showarrow && (
+                    <img
+                      width="160px"
+                      src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62-removebg-preview.png"
+                    />
+                  )}
+                </Buttonwrapper>
               )}
             </Text>
           </FlexMobileOpp>
