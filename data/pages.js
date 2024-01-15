@@ -109,6 +109,18 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             srcSet
           }
         }
+        ... on Page_Pagecomponents_PageComponents_CompanyWork {
+          fieldGroupName
+          subheader
+          title
+          workitem {
+            body
+            icon {
+              altText
+              sourceUrl
+            }
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_ImageLeft {
           __typename
           fieldGroupName
