@@ -114,6 +114,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           fieldGroupName
           body
           subheader
+          showarrow
           title
           button
           link

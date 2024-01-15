@@ -22,7 +22,10 @@ const ImgLeft = styled.div`
     }
   }
 `;
-
+const Buttonwrapper = styled.div`
+  display: flex;
+  height: 50px;
+`;
 export default function ImageLeft({
   subheader,
   title,
@@ -30,6 +33,7 @@ export default function ImageLeft({
   image,
   button,
   link,
+  showarrow,
 }) {
   return (
     <Section>
@@ -54,6 +58,16 @@ export default function ImageLeft({
             ></div>
             {button && link ? (
               <ButtonPrimary href={link}>{button}</ButtonPrimary>
+            ) : showarrow ? (
+              <Buttonwrapper>
+                <ButtonPrimary href="/calgary-landscaping-materials">
+                  discover Products
+                </ButtonPrimary>
+                <img
+                  width="160px"
+                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
+                />
+              </Buttonwrapper>
             ) : (
               <ButtonPrimary href="/contact">get started</ButtonPrimary>
             )}
