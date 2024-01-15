@@ -51,11 +51,16 @@ const TabContent = styled.div`
   display: ${(props) => (props.active ? "block" : "none")};
 `;
 
-export default function TabProcess({ tabName, title }) {
+export default function TabProcess({ tabName, title, color }) {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <Section>
+    <div
+      style={{
+        padding: "4em 0",
+        background: color || "unset",
+      }}
+    >
       <center>
         <h2 className="title">{title}</h2>
       </center>
@@ -99,6 +104,6 @@ export default function TabProcess({ tabName, title }) {
           );
         })}
       </Container>
-    </Section>
+    </div>
   );
 }

@@ -316,6 +316,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             title
             text
             button
+            link
             image {
               altText
               sourceUrl(size: MEDIUM_LARGE)
@@ -548,6 +549,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         ... on Page_Pagecomponents_PageComponents_TabProcess {
           fieldGroupName
           title
+          color
           tabName {
             body
             title

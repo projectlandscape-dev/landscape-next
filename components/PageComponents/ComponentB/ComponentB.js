@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "components/layoutComponents";
 import Image from "components/Image";
+import Link from "next/link";
 
 const device = {
   md: "48em",
@@ -129,7 +130,7 @@ export default function ComponentB({ subheader, title, body, componentItems }) {
         </Container>
         <Grid>
           <List>
-            {componentItems.map((item,index) => {
+            {componentItems.map((item, index) => {
               return (
                 <Item key={index}>
                   <Image
@@ -148,12 +149,10 @@ export default function ComponentB({ subheader, title, body, componentItems }) {
                         }}
                       />
                     ) : null}
-                    {item.button ? (
-                      <Button
-                        dangerouslySetInnerHTML={{
-                          __html: `${item.button}`,
-                        }}
-                      />
+                    {item.button && item.link ? (
+                      <Link style={{ color: "white" }} href={item.link}>
+                        {item.button}
+                      </Link>
                     ) : null}
                   </Inner>
                 </Item>
