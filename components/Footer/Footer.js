@@ -471,14 +471,6 @@ export default function Footer() {
                   <li>
                     <Link
                       className={styles.styledLink}
-                      href="/residential-services/hardscaping/backyard-sports-court-installation"
-                    >
-                      sports courts
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className={styles.styledLink}
                       href="/residential-services/outdoor-living/outdoor-furniture"
                     >
                       outdoor furniture
