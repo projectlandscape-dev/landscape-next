@@ -11,6 +11,7 @@ const Text = styled.div``;
 // `
 
 const ImgLeft = styled.div`
+  position: relative;
   figure {
     div {
       box-shadow: -20px 20px 0px 1px var(--clr-accent);
@@ -26,6 +27,12 @@ const Buttonwrapper = styled.div`
   display: flex;
   height: 50px;
 `;
+const LogoWrapper = styled.div`
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 10px;
+`;
 export default function ImageLeft({
   subheader,
   title,
@@ -34,16 +41,22 @@ export default function ImageLeft({
   button,
   link,
   showarrow,
+  imageCopy,
 }) {
   return (
     <Section>
       <Container>
         <FlexMobileOpp>
           <ImgLeft>
+            {imageCopy ? (
+              <LogoWrapper>
+                <img height="130px" width="130px" src={imageCopy.sourceUrl} />
+              </LogoWrapper>
+            ) : null}
             <Image
-              className="stretch img-left"
-              alt={image.altText || ""}
-              srcSet={image.sourceUrl}
+              className="stretch"
+              alt={image?.altText || ""}
+              srcSet={image?.sourceUrl}
             />
           </ImgLeft>
           <Text className="spacing">

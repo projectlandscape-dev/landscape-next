@@ -31,6 +31,7 @@ const ImgStyles = {
   maxHeight: "450px",
 };
 const Img = styled.div`
+  position: relative;
   figure {
     div {
       box-shadow: -20px 20px 0px 1px var(--clr-tan);
@@ -42,6 +43,12 @@ const Img = styled.div`
     }
   }
 `;
+const LogoWrapper = styled.div`
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 10px;
+`;
 export default function ImageRightDark({
   subheader,
   title,
@@ -49,6 +56,7 @@ export default function ImageRightDark({
   image,
   button,
   link,
+  imageCopy,
 }) {
   return (
     <Wrapper>
@@ -76,10 +84,15 @@ export default function ImageRightDark({
               )}
             </Text>
             <Img>
+              {imageCopy ? (
+                <LogoWrapper>
+                  <img height="130px" width="130px" src={imageCopy.sourceUrl} />
+                </LogoWrapper>
+              ) : null}
               <Image
                 className="stretch"
-                alt={image.altText || ""}
-                srcSet={image.sourceUrl}
+                alt={image?.altText || ""}
+                srcSet={image?.sourceUrl}
               />
             </Img>
           </div>

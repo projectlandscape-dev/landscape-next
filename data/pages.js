@@ -123,6 +123,11 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             sourceUrl(size: MEDIUM_LARGE)
             srcSet
           }
+          imagecopy {
+            altText
+            sourceUrl
+            srcSet
+          }
         }
         ... on Page_Pagecomponents_PageComponents_ImageLeftRead {
           __typename
@@ -183,6 +188,11 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           image {
             altText
             sourceUrl(size: MEDIUM_LARGE)
+            srcSet
+          }
+          imagecopy {
+            altText
+            sourceUrl
             srcSet
           }
         }
