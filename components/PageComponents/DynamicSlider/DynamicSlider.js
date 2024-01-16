@@ -20,6 +20,7 @@ const captionStyle = {
 };
 
 export default function DynamicSlider({ body, sliderdata }) {
+  console.log(sliderdata, "data");
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
@@ -27,37 +28,41 @@ export default function DynamicSlider({ body, sliderdata }) {
         <div className={styles.heroWrapper}>
           <Carousel>
             {sliderdata.map((item) => {
-              <Carousel.Item interval={5000}>
-                <div className={styles.content}>
-                  <Image
-                    // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"
-                    src={item.bgimage.sourceUrl}
-                    width={1200}
-                    height={100}
-                    priority={true}
-                  />
-                  {/* <div className={styles.content1} /> */}
-                </div>
-                <Carousel.Caption style={captionStyle} className="spacing">
-                  <div className="spacing">
-                    <h1 className="title">{item.title}</h1>
-                    <p className="subheader tan">{item.subheader}</p>
-                    {item.button && item.link ? (
-                      <ButtonPrimary href={item.link}>
-                        {item.button}
-                      </ButtonPrimary>
-                    ) : (
-                      <ButtonPrimary href="/contact">get started</ButtonPrimary>
-                    )}
+              return (
+                <Carousel.Item interval={5000}>
+                  <div className={styles.content}>
+                    <Image
+                      // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"
+                      src={item.bgimage.sourceUrl}
+                      width={1200}
+                      height={100}
+                      priority={true}
+                    />
+                    {/* <div className={styles.content1} /> */}
                   </div>
-                </Carousel.Caption>
-              </Carousel.Item>;
+                  <Carousel.Caption style={captionStyle} className="spacing">
+                    <div className="spacing">
+                      <h1 className="title">{item.title}</h1>
+                      <p className="subheader tan">{item.subheader}</p>
+                      {item.button && item.link ? (
+                        <ButtonPrimary href={item.link}>
+                          {item.button}
+                        </ButtonPrimary>
+                      ) : (
+                        <ButtonPrimary href="/contact">
+                          get started
+                        </ButtonPrimary>
+                      )}
+                    </div>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              );
             })}
           </Carousel>
         </div>
         <div className={styles.heroBottomText}>
           <div className="container">
-            <Inner
+            <div
               dangerouslySetInnerHTML={{
                 __html: `${body}`,
               }}
@@ -68,3 +73,31 @@ export default function DynamicSlider({ body, sliderdata }) {
     </div>
   );
 }
+
+// {sliderdata.map((item) => {
+//   <Carousel.Item interval={5000}>
+//     <div className={styles.content}>
+//       <Image
+//         // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"
+//         src={item.bgimage.sourceUrl}
+//         width={1200}
+//         height={100}
+//         priority={true}
+//       />
+//       {/* <div className={styles.content1} /> */}
+//     </div>
+//     <Carousel.Caption style={captionStyle} className="spacing">
+//       <div className="spacing">
+//         <h1 className="title">{item.title}</h1>
+//         <p className="subheader tan">{item.subheader}</p>
+//         {item.button && item.link ? (
+//           <ButtonPrimary href={item.link}>
+//             {item.button}
+//           </ButtonPrimary>
+//         ) : (
+//           <ButtonPrimary href="/contact">get started</ButtonPrimary>
+//         )}
+//       </div>
+//     </Carousel.Caption>
+//   </Carousel.Item>;
+// })}
