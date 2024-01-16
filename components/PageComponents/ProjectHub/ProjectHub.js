@@ -62,7 +62,7 @@ const Seperator = styled.div`
 `;
 const ProjectHub = ({ title, body, button, link, bgimage }) => {
   return (
-    <Section>
+    <div style={{ padding: "20px 0px" }}>
       <FlexDiv>
         <div>
           <ImageWrapper
@@ -102,7 +102,7 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
           )}
         </TextWrapper>
       </FlexDiv>
-    </Section>
+    </div>
   );
 };
 
