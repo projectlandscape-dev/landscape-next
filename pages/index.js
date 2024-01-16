@@ -27,6 +27,7 @@ import StaticProcessArea from "../components/PageComponents/StaticProcessArea";
 import CompanyValue from "../components/staticcompanyvalue";
 import FeaturedWork from "../components/StaticFeaturedWork";
 import FinanceBanner from "../components/financeBanner";
+import Innovation from "../components/PageComponents/Innovation/Innovation";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -155,7 +156,7 @@ export default function Index() {
       />
       <Cta3 />
       <MainTrends />
-
+      <Innovation />
       <StaticProcessArea />
       <Why />
       <FeaturedWork />
