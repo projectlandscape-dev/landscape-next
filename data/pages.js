@@ -343,6 +343,22 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         ... on Page_Pagecomponents_PageComponents_WhiteBanner {
           title
         }
+        ... on Page_Pagecomponents_PageComponents_BannerDescriptionBox {
+          body
+          bgimage {
+            sourceUrl
+          }
+          title
+          itemwrapper {
+            body
+            title
+            link
+            image {
+              altText
+              sourceUrl
+            }
+          }
+        }
         ... on Page_Pagecomponents_PageComponents_ComponentC {
           __typename
           body

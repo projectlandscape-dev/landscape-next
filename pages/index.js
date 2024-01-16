@@ -156,7 +156,6 @@ export default function Index() {
       />
       <Cta3 />
       <MainTrends />
-      <Innovation />
       <StaticProcessArea />
       <Why />
       <FeaturedWork />
