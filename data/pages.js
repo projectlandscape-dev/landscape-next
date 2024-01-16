@@ -340,6 +340,9 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           link
           title
         }
+        ... on Page_Pagecomponents_PageComponents_WhiteBanner {
+          title
+        }
         ... on Page_Pagecomponents_PageComponents_ComponentC {
           __typename
           body
