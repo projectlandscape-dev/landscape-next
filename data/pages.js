@@ -359,6 +359,10 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
           }
         }
+        ... on Page_Pagecomponents_PageComponents_ExceptTheBest {
+          body
+          title
+        }
         ... on Page_Pagecomponents_PageComponents_ComponentC {
           __typename
           body

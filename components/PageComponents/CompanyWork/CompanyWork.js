@@ -50,7 +50,12 @@ const CompanyWork = ({ title, subheader, workitem }) => {
             return (
               <WorkItem>
                 <img src={item.icon.sourceUrl} alt={item.icon.altText} />
-                <p>{item.body} </p>
+
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `${item.body}`,
+                  }}
+                />
               </WorkItem>
             );
           })}
