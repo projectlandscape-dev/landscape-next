@@ -45,7 +45,9 @@ export default function ProjectImg() {
                 and satisfaction, backed by our comprehensive workmanship and
                 product satisfaction guarantees.
               </p>
-              <ButtonPrimary href={"/contact"}>Get Started</ButtonPrimary>
+              <ButtonPrimary href={"/contact"}>
+                See How We're Different
+              </ButtonPrimary>
             </Text>
             <Image
               height={100}

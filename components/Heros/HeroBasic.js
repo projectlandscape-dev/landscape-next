@@ -44,10 +44,16 @@ export default function HeroBasic(props) {
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
-                  <h2 className="title">outdoor living done right</h2>
-                  <p className="subheader tan">Where outdoor living happens</p>
+                  <p style={{ fontSize: "16px" }} className="subheader tan">
+                    Award Winning Calgary Landscape Services
+                  </p>
+                  <h2 className="title">Calgary Outdoor living : Done Right</h2>
+                  <p className="subheader tan">
+                    Where outdoor living happens Decks, Pergolas, landscape
+                    design & more
+                  </p>
                   <ButtonPrimary href="/residential-services/outdoor-living">
-                    get started &#8594;
+                    Explore Outdoor living services&#8594;
                   </ButtonPrimary>
                 </div>
               </Carousel.Caption>
@@ -74,13 +80,18 @@ export default function HeroBasic(props) {
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
-                  <h2 className="title">hardscaping services</h2>
+                  <p style={{ fontSize: "16px" }} className="subheader tan">
+                    Award Winning Calgary Hardscaping & Patios
+                  </p>
+                  <h2 className="title">
+                    Calgary Landscaping & Hardscaping Services
+                  </h2>
                   <p className="subheader tan">
                     create a stunning outdoor oasis with our hardscaping
-                    services
+                    services Patios, Retaining walls, walkways & more
                   </p>
                   <ButtonPrimary href="/residential-services/hardscaping">
-                    get started &#8594;
+                    Explore Hardscaping services&#8594;
                   </ButtonPrimary>
                 </div>
               </Carousel.Caption>
@@ -107,10 +118,18 @@ export default function HeroBasic(props) {
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
-                  <h2 className="title">softscaping services</h2>
-                  <p className="subheader tan">Bring your backyard to life</p>
+                  <p style={{ fontSize: "16px" }} className="subheader tan">
+                    Award Winning Calgary Landscape Services
+                  </p>
+                  <h2 className="title">
+                    Calgary Landscaping & Softscaping services
+                  </h2>
+                  <p className="subheader tan">
+                    Bring your backyard to life Artificial turf, Irrigation, Sod
+                    installation & more
+                  </p>
                   <ButtonPrimary href="/residential-services/softscaping">
-                    get started &#8594;
+                    Explore softscaping services &#8594;
                   </ButtonPrimary>
                 </div>
               </Carousel.Caption>

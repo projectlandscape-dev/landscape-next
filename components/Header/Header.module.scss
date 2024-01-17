@@ -7,7 +7,7 @@
 }
 
 .headertop {
-  padding: 1em 0;
+  padding: 0.5em 0;
   background: var(--clr-accent);
 
   ul {
@@ -68,9 +68,11 @@
 }
 
 .containerTop {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   max-width: 95rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logoContainer {

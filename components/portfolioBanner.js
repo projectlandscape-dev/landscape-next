@@ -33,7 +33,7 @@ export default function PortfolioBanner() {
                 <p className="title">your personal paradise starts here</p>
               </div>
               <ButtonPrimaryDark href="/portfolio">
-                view our portfolio
+                Get Inspired
               </ButtonPrimaryDark>
             </Text>
             {/* <Image
