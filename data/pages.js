@@ -222,6 +222,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
               altText
               sourceUrl
             }
+            titlecopy
             button
             link
             subheader

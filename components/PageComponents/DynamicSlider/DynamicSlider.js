@@ -42,6 +42,9 @@ export default function DynamicSlider({ body, sliderdata }) {
                   </div>
                   <Carousel.Caption style={captionStyle} className="spacing">
                     <div className="spacing">
+                      <p style={{ fontSize: "16px" }} className="subheader tan">
+                        {item.titlecopy}
+                      </p>
                       <h1 className="title">{item.title}</h1>
                       <p className="subheader tan">{item.subheader}</p>
                       {item.button && item.link ? (
