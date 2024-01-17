@@ -33,6 +33,9 @@ const ContentWrapper = styled.div`
   margin-top: -120px;
   text-align: center;
   padding: 10px 15px;
+  @media screen and (max-width: 48em) {
+    margin-top: 0px;
+  }
 `;
 
 const ItemWrapper = styled.div`

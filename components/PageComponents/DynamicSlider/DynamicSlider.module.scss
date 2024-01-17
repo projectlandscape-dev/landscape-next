@@ -1,5 +1,5 @@
 .wrapper {
-    padding-bottom: 4em;
+    // padding-bottom: 4em;
     p {
       margin-bottom: 0;
     }
@@ -11,7 +11,14 @@
   
   .heroGrid {
     display: grid;
-    grid-template-rows: auto 4em auto;
+    grid-template-rows: auto  auto;
+  
+    // Responsive styles
+    @media screen and (max-width: 48em) {
+      grid-template-rows: auto 4em auto; // Adjust rows for smaller screens
+    }
+  
+    // Add more media queries as needed for different breakpoints
   }
   
   .heroWrapper {
@@ -29,6 +36,15 @@
     color: var(--txt-light);
     padding: 2em;
     width: 80%;
+
+    
+      // Responsive styles
+      @media screen and (max-width: 768px) {
+        width: 100%; 
+      }
+    
+
+
   }
   
   .content {

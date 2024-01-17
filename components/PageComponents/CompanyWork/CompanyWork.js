@@ -21,6 +21,13 @@ const WorkWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   gap: 12px;
+  @media screen and (max-width: 48em) {
+    flex-direction: column;
+    width: 50%;
+  }
+  p {
+    word-break: break-word;
+  }
 `;
 const WorkItem = styled.div`
   background: white;
@@ -47,10 +54,10 @@ const CompanyWork = ({ title, subheader, workitem }) => {
         </center>
         <WorkWrapper>
           {workitem.map((item) => {
+            console.log(item, "itemmmmm");
             return (
               <WorkItem>
                 <img src={item.icon.sourceUrl} alt={item.icon.altText} />
-
                 <div
                   dangerouslySetInnerHTML={{
                     __html: `${item.body}`,

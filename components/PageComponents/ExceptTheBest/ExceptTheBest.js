@@ -7,11 +7,18 @@ const ContentWrapper = styled.div`
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 48em) {
+    width: 95%;
+  }
 `;
 const BodyWrapper = styled.div`
   width: 60%;
   border-left: 2px solid var(--clr-accent);
   padding-left: 45px;
+  @media screen and (max-width: 48em) {
+    padding-left: 8px;
+    width: 66%;
+  }
 `;
 const ExceptTheBest = ({ title, body }) => {
   return (

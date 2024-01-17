@@ -21,6 +21,9 @@ const ContentWrapper = styled.div`
   color: white;
   padding: 40px;
   gap: 15px;
+  @media screen and (max-width: 48em) {
+    width: 80%;
+  }
 `;
 const Innovation = ({ title, body, button, link }) => {
   return (

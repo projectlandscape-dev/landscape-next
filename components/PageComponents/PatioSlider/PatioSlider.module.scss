@@ -12,6 +12,9 @@
 .heroGrid {
   display: grid;
   grid-template-rows: auto auto;
+  @media screen and (max-width: 48em) {
+    grid-template-rows: auto 4em auto; // Adjust rows for smaller screens
+  }
 }
 
 .heroWrapper {
@@ -29,6 +32,9 @@
   color: var(--txt-light);
   padding: 2em;
   width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%; 
+  }
 }
 
 .content {

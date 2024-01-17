@@ -39,6 +39,9 @@ const FlexWrap = styled.div`
   display: flex;
   align-items: ${(props) => (!props.contentcenter ? "center" : "unset")};
   gap: 30px;
+  @media screen and (max-width: 48em) {
+    flex-direction: column-reverse;
+  }
   & > * {
     width: 100%;
   }

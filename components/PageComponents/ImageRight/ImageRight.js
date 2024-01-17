@@ -42,6 +42,9 @@ const FlexWrap = styled.div`
   & > * {
     width: 100%;
   }
+  @media screen and (max-width: 48em) {
+    flex-direction: column;
+  }
 `;
 
 export default function ImageRight({

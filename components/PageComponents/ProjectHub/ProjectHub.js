@@ -11,6 +11,9 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 48em) {
+    height: 300px;
+  }
 `;
 const TextWrapper = styled.div`
   background: var(--clr-accent);
@@ -24,6 +27,9 @@ const FlexDiv = styled.div`
 
   & > * {
     width: 100%;
+  }
+  @media screen and (max-width: 48em) {
+    flex-direction: column;
   }
 `;
 const InnerBoxWrapper = styled.div`
