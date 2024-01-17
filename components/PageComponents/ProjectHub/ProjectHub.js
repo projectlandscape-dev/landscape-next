@@ -10,6 +10,7 @@ const ImageWrapper = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 const TextWrapper = styled.div`
   background: var(--clr-accent);
@@ -29,7 +30,7 @@ const InnerBoxWrapper = styled.div`
   border: 4px solid var(--clr-accent);
   height: fit-content;
   padding: 10px;
-  margin-top: 60px;
+
   color: white;
 `;
 const Living = styled.div`
@@ -37,9 +38,11 @@ const Living = styled.div`
   color: transparent;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 20px;
-  letter-spacing: 13px;
+  font-size: 25px;
+  letter-spacing: 15px;
   font-weight: 700;
+  background-size: cover;
+  background-position: center;
 `;
 const Seperator = styled.div`
   position: relative;
@@ -62,7 +65,7 @@ const Seperator = styled.div`
 `;
 const ProjectHub = ({ title, body, button, link, bgimage }) => {
   return (
-    <div style={{ padding: "20px 0px" }}>
+    <div>
       <FlexDiv>
         <div>
           <ImageWrapper
@@ -93,13 +96,15 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
               __html: `${body}`,
             }}
           />
-          {button && link ? (
-            <ButtonSecondaryLight href={link}>{button}</ButtonSecondaryLight>
-          ) : (
-            <ButtonSecondaryLight href="/contact">
-              get started
-            </ButtonSecondaryLight>
-          )}
+          <div style={{ marginTop: "25px" }}>
+            {button && link ? (
+              <ButtonSecondaryLight href={link}>{button}</ButtonSecondaryLight>
+            ) : (
+              <ButtonSecondaryLight href="/contact">
+                get started
+              </ButtonSecondaryLight>
+            )}
+          </div>
         </TextWrapper>
       </FlexDiv>
     </div>

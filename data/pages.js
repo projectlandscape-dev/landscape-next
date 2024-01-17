@@ -97,6 +97,8 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           title
           button
           showarrow
+          contentcenter
+          showshadow
           link
           image {
             altText
@@ -127,6 +129,8 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           body
           subheader
           showarrow
+          contentcenter
+          showshadow
           title
           button
           link

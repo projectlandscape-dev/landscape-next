@@ -58,7 +58,7 @@ export default function ComponentC({ subheader, title, body, image }) {
           />
         ) : null}
         <center>
-          <ButtonPrimary href="/contact">talk to us today</ButtonPrimary>
+          {/* <ButtonPrimary href="/contact">talk to us today</ButtonPrimary> */}
         </center>
       </Container>
     </Section>

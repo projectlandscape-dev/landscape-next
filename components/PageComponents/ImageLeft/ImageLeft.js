@@ -12,9 +12,11 @@ const Text = styled.div``;
 
 const ImgLeft = styled.div`
   position: relative;
+  box-shadow: ${(props) =>
+    !props.showshadow ? "20px 20px 0px 1px var(--clr-accent)" : "unset"};
   figure {
+    margin: 0;
     div {
-      box-shadow: -20px 20px 0px 1px var(--clr-accent);
       img {
         max-height: 600px;
         min-height: 400px;
@@ -33,21 +35,31 @@ const LogoWrapper = styled.div`
   left: 20px;
   top: 10px;
 `;
+const FlexWrap = styled.div`
+  display: flex;
+  align-items: ${(props) => (!props.contentcenter ? "center" : "unset")};
+  gap: 30px;
+  & > * {
+    width: 100%;
+  }
+`;
 export default function ImageLeft({
   subheader,
   title,
   body,
   image,
   button,
+  showarrow = false,
   link,
-  showarrow,
   imageCopy,
+  contentcenter = false,
+  showshadow = false,
 }) {
   return (
     <Section>
       <Container>
-        <FlexMobileOpp>
-          <ImgLeft>
+        <FlexWrap contentcenter={contentcenter}>
+          <ImgLeft showshadow={showshadow}>
             {imageCopy ? (
               <LogoWrapper>
                 <img height="130px" width="130px" src={imageCopy.sourceUrl} />
@@ -85,7 +97,7 @@ export default function ImageLeft({
               <ButtonPrimary href="/contact">get started</ButtonPrimary>
             )}
           </Text>
-        </FlexMobileOpp>
+        </FlexWrap>
       </Container>
     </Section>
   );

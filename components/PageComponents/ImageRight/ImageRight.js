@@ -9,12 +9,13 @@ const Text = styled.div``;
 // const StyledImg = styled(GatsbyImage)`
 //   box-shadow: 20px 20px 0px 1px var(--clr-accent);
 // `
-
 const Img = styled.div`
   position: relative;
+  box-shadow: ${(props) =>
+    !props.showshadow ? "20px 20px 0px 1px var(--clr-accent)" : "unset"};
   figure {
+    margin: 0;
     div {
-      box-shadow: 20px 20px 0px 1px var(--clr-accent);
       img {
         max-height: 600px;
         min-height: 400px;
@@ -34,6 +35,14 @@ const Buttonwrapper = styled.div`
   display: flex;
   height: 50px;
 `;
+const FlexWrap = styled.div`
+  display: flex;
+  align-items: ${(props) => (!props.contentcenter ? "center" : "unset")};
+  gap: 30px;
+  & > * {
+    width: 100%;
+  }
+`;
 
 export default function ImageRight({
   subheader,
@@ -44,11 +53,13 @@ export default function ImageRight({
   showarrow = false,
   link,
   imageCopy,
+  contentcenter = false,
+  showshadow = false,
 }) {
   return (
     <Section>
       <Container>
-        <Flex>
+        <FlexWrap contentcenter={contentcenter}>
           <Text className="spacing">
             <div>
               <p className="subheader accent">{subheader}</p>
@@ -79,7 +90,7 @@ export default function ImageRight({
             )}
           </Text>
 
-          <Img>
+          <Img showshadow={showshadow}>
             {imageCopy ? (
               <LogoWrapper>
                 <img height="130px" width="130px" src={imageCopy.sourceUrl} />
@@ -91,7 +102,7 @@ export default function ImageRight({
               srcSet={image.sourceUrl}
             />
           </Img>
-        </Flex>
+        </FlexWrap>
       </Container>
     </Section>
   );
