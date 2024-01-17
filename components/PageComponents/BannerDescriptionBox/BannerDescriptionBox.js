@@ -78,7 +78,7 @@ const BannerDescriptionBox = ({ body, bgimage, title, itemwrapper }) => {
 
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: `${body}`,
+                    __html: `${item.body}`,
                   }}
                 />
               </ItemWrapper>
