@@ -15,7 +15,7 @@ const ContentWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 42%;
-  margin: 0 auto;
+  margin: 27px auto;
   text-align: center;
   background: #387d1c91;
   color: white;

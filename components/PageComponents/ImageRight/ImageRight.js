@@ -9,6 +9,7 @@ const Text = styled.div``;
 // const StyledImg = styled(GatsbyImage)`
 //   box-shadow: 20px 20px 0px 1px var(--clr-accent);
 // `
+
 const Img = styled.div`
   position: relative;
   box-shadow: ${(props) =>
@@ -47,6 +48,10 @@ const FlexWrap = styled.div`
   }
 `;
 
+const Subheader = styled.p`
+white-space: nowrap;
+`;
+
 export default function ImageRight({
   subheader,
   title,
@@ -65,7 +70,7 @@ export default function ImageRight({
         <FlexWrap contentcenter={contentcenter}>
           <Text className="spacing">
             <div>
-              <p className="subheader accent">{subheader}</p>
+            <Subheader className="subheader accent">{subheader}</Subheader>
               <h2 className="title">{title}</h2>
             </div>
             {body ? (

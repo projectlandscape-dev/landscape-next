@@ -18,7 +18,7 @@ const ImageWrapper = styled.div`
 const TextWrapper = styled.div`
   background: var(--clr-accent);
   margin-left: 0;
-  padding: 100px 40px;
+  padding: 160px 40px;
   color: white;
 `;
 const FlexDiv = styled.div`

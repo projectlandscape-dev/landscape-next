@@ -40,7 +40,9 @@ export default function ComponentC({ subheader, title, body, image }) {
         <Text className="spacing">
           <div className="">
             <p className="subheader accent">{subheader}</p>
+           <center>
             <h2 className="title">{title}</h2>
+            </center> 
           </div>
           <div
             dangerouslySetInnerHTML={{

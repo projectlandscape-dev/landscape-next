@@ -42,6 +42,7 @@ export default function Page(props) {
         {hasFlexibleFields && (
           <div>
             {acf.flexibleFields.map((obj, index) => {
+              console.log("obj",obj)
               let DynamicComponent = PageComponents.get(obj.type);
               if (DynamicComponent !== undefined && DynamicComponent !== null) {
                 return <DynamicComponent key={index} {...obj} />;
