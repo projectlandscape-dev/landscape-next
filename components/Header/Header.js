@@ -194,6 +194,14 @@ export default function HeaderBasic() {
                       <li>
                         <Link
                           className={styles.styledLink}
+                          href="/paver-sealing-refresh-program"
+                        >
+                         Paving Stone Sealing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={styles.styledLink}
                           href="/residential-services/landscape-construction/retaining-walls"
                         >
                           retaining walls
