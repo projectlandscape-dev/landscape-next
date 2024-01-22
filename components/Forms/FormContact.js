@@ -433,9 +433,8 @@ export default function FormContact(props) {
                 <option value="$10-20K">$10-20K</option>
                 <option value="$20-30K">$20-30K</option>
                 <option value="$30-50K">$30-50K</option>
-                <option value="$50-70k">$50 -70k</option>
-                <option value="$70-80k">$70 -80k</option>
-                <option value="$80-100k">$80 -100k</option>
+                <option value="$50-75k">$50 -75k</option>
+                <option value="$75-100k">$75 -100k</option>
                 <option value="$100K=">$100k+</option>
               </Select>
             </div>
