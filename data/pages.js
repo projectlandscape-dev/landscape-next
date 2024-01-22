@@ -628,6 +628,17 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           }
           title
         }
+        ... on Page_Pagecomponents_PageComponents_ImageBlur {
+          title
+          imagesection {
+            body
+            title
+            image {
+              altText
+              sourceUrl
+            }
+          }
+        }
       }
     }
   }
