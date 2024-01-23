@@ -28,6 +28,7 @@ import CompanyValue from "../components/staticcompanyvalue";
 import FeaturedWork from "../components/StaticFeaturedWork";
 import FinanceBanner from "../components/financeBanner";
 import Innovation from "../components/PageComponents/Innovation/Innovation";
+import TableChart from "../components/PageComponents/TableChart/TableChart";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -60,6 +61,7 @@ export default function Index() {
       <div style={{ marginTop: "-64px" }}>
         <PortfolioBanner />
       </div>
+      <TableChart/>
       <MainServices />
       <AllServices />
       <Wrapper>

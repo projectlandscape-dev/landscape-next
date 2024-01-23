@@ -2,8 +2,6 @@ import React from "react";
 import { Section, Container } from "../../layoutComponents";
 import styled from "styled-components";
 
-
-
 const TableWrapper = styled.div`
   margin-top: 20px;
 
@@ -11,13 +9,31 @@ const TableWrapper = styled.div`
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    overflow: hidden;
+    display: inline-block;
   }
 
   th,
   td {
-    border: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
     padding: 20px;
-    text-align: left;
+    text-align: center;
+    position: relative;
+    width: 10%;
+  }
+
+  td:hover::after {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.3s ease;
+    content: "";
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: 1;
+
   }
 
   th {
@@ -55,9 +71,8 @@ const TableWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto; 
+    margin: auto;
   }
-  
 `;
 
 export default function TableChart() {
