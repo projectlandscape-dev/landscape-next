@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import Image from "next/image";
 import styles from "./styles.module.css";
@@ -9,10 +9,13 @@ export default function ScrollCount() {
   const [counterBlackBox, setCounterBlackBox] = useState(0);
 
   const targetValueFirstBox = 30;
-  const targetValueRedBox = 67; // Change this to the desired value for the red box
-  const targetValueBlackBox = 41; // Change this to the desired value for the black box
+  const targetValueRedBox = 67;
+  const targetValueBlackBox = 41;
   const duration = 2000;
-  const interval = 50;
+
+  const firstBoxRef = useRef(null);
+  const redBoxRef = useRef(null);
+  const blackBoxRef = useRef(null);
 
   const animateCounter = (startTime, targetValue, setCounter) => {
     return () => {
@@ -28,54 +31,59 @@ export default function ScrollCount() {
     };
   };
 
-  useEffect(() => {
-    let startTimeFirstBox;
-    let startTimeRedBox;
-    let startTimeBlackBox;
-
-    let animationFrameIdFirstBox;
-    let animationFrameIdRedBox;
-    let animationFrameIdBlackBox;
-
-    const startAnimation = (targetValue, setCounter, startTime, animationFrameId) => {
-      return () => {
-        startTime = performance.now();
+  const handleIntersection = (entries, observer, setCounter, targetValue) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const startTime = performance.now();
         setCounter(0);
         animateCounter(startTime, targetValue, setCounter)();
-      };
-    };
-
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        cancelAnimationFrame(animationFrameIdFirstBox);
-        cancelAnimationFrame(animationFrameIdRedBox);
-        cancelAnimationFrame(animationFrameIdBlackBox);
-      } else {
-        startAnimation(targetValueFirstBox, setCounterFirstBox, startTimeFirstBox, animationFrameIdFirstBox)();
-        startAnimation(targetValueRedBox, setCounterRedBox, startTimeRedBox, animationFrameIdRedBox)();
-        startAnimation(targetValueBlackBox, setCounterBlackBox, startTimeBlackBox, animationFrameIdBlackBox)();
+        observer.unobserve(entry.target);
       }
+    });
+  };
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust this threshold as needed
     };
 
-    document.addEventListener("visibilitychange", handleVisibilityChange);
+    const observerFirstBox = new IntersectionObserver(
+      (entries) => handleIntersection(entries, observerFirstBox, setCounterFirstBox, targetValueFirstBox),
+      observerOptions
+    );
+    const observerRedBox = new IntersectionObserver(
+      (entries) => handleIntersection(entries, observerRedBox, setCounterRedBox, targetValueRedBox),
+      observerOptions
+    );
+    const observerBlackBox = new IntersectionObserver(
+      (entries) => handleIntersection(entries, observerBlackBox, setCounterBlackBox, targetValueBlackBox),
+      observerOptions
+    );
 
-    startAnimation(targetValueFirstBox, setCounterFirstBox, startTimeFirstBox, animationFrameIdFirstBox)();
-    startAnimation(targetValueRedBox, setCounterRedBox, startTimeRedBox, animationFrameIdRedBox)();
-    startAnimation(targetValueBlackBox, setCounterBlackBox, startTimeBlackBox, animationFrameIdBlackBox)();
+    if (firstBoxRef.current) {
+      observerFirstBox.observe(firstBoxRef.current);
+    }
+    if (redBoxRef.current) {
+      observerRedBox.observe(redBoxRef.current);
+    }
+    if (blackBoxRef.current) {
+      observerBlackBox.observe(blackBoxRef.current);
+    }
 
     return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-      cancelAnimationFrame(animationFrameIdFirstBox);
-      cancelAnimationFrame(animationFrameIdRedBox);
-      cancelAnimationFrame(animationFrameIdBlackBox);
+      observerFirstBox.disconnect();
+      observerRedBox.disconnect();
+      observerBlackBox.disconnect();
     };
-  }, [targetValueFirstBox, targetValueRedBox, targetValueBlackBox, duration]);
+  }, [targetValueFirstBox, targetValueRedBox, targetValueBlackBox]);
 
   return (
     <Section>
       <Container>
         <GridThree>
-          <div className={styles.firstbox}>
+          <div className={styles.firstbox} ref={firstBoxRef}>
             <center>
               <Image
                 src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/thumbsup.png"
@@ -92,7 +100,7 @@ export default function ScrollCount() {
             </center>
           </div>
           <div className={styles.secondColumn}>
-            <div className={styles.redBox}>
+            <div className={styles.redBox} ref={redBoxRef}>
               <center>
                 <Image
                   src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/message.png"
@@ -107,7 +115,7 @@ export default function ScrollCount() {
                 </div>
               </center>
             </div>
-            <div className={styles.blackBox}>
+            <div className={styles.blackBox} ref={blackBoxRef}>
               <center>
                 <Image
                   src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/incorrect.png"
