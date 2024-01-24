@@ -33,7 +33,7 @@ export default function NewBlockBlack(props) {
             />
             <Text className="spacing">
               <div>
-                <h2 className="title">
+                <h2 className="title tan">
                   {" "}
                   We're Flipping The Indoors Out
                   {/* explore our <span className="tan">indoor idea</span> centers */}

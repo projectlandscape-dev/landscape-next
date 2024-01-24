@@ -16,12 +16,15 @@ const captionStyle = {
 };
 
 export default function HeroBasic(props) {
+  const CustomPrevIcon = (props) => <img width="100" height="100" src="https://img.icons8.com/ios/100/FFFFFF/long-arrow-left.png" alt="long-arrow-left" {...props}/>;
+  const CustomNextIcon =(props) => <img width="100" height="100" src="https://img.icons8.com/ios/100/FFFFFF/long-arrow-right--v1.png" alt="long-arrow-right--v1" {...props}/>;
+
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
-          <Carousel>
+          <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
                 <div className={styles.desktopImg}>

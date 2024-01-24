@@ -56,6 +56,7 @@ export default function LandscapingImg(props) {
                 home, you deserve the attention,expertise, great customer
                 service and detailed focus that you invested into.
               </p>
+              <div style={{fontWeight:"600", fontSize:"20px"}}>Need Landscaping And Have No Idea Where To Start. The Struggle Is Over</div>
               <ButtonSecondaryLight href={props.to}>
                 {props.button}
               </ButtonSecondaryLight>

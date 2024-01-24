@@ -125,6 +125,7 @@ export default function HeaderBasic() {
                   marginBottom: "0px",
                   fontSize: "24px",
                   marginLeft: "50px",
+                  fontWeight: "600"
                 }}
               >
                 {" "}
@@ -135,12 +136,12 @@ export default function HeaderBasic() {
               <Link
                 style={{ fontWeight: "bolder", fontSize:"24px" }}
                 className={styles.navLinkTop}
-                href="tel: (816)398-2901"
+                href="tel: 403 257 4059"
               >
                 <div>
                   <FaPhone />
                 </div>
-                (816)398-2901
+                403 257 4059 
               </Link>
               <ButtonSecondaryLight
                 style={{ height: "40px", fontSize: "12px" }}

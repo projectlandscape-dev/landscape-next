@@ -150,9 +150,9 @@ export default function Index() {
       <ProjectImg />
       <MainVideo />
       <LandscapingImg
-        title="Landscaping services in Calgary"
+        title="Landscaping Made Simple For Calgary Homeowners"
         to="/about"
-        button="more about us"
+        button="Hire An Expert"
       />
       <OasisImg
         title="Bring your outdoor oasis to life"
