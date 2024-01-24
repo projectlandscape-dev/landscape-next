@@ -123,7 +123,7 @@ export default function MainVideo() {
 
               <div className="actions">
                 <ButtonPrimaryDark href="/contact">
-                  get started
+                  Free Estimates
                 </ButtonPrimaryDark>
                 <ButtonPrimary href="/about">about us</ButtonPrimary>
               </div>

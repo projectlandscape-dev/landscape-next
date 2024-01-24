@@ -1,0 +1,68 @@
+
+.firstbox {
+    background-color: #f0f0f0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+  
+  .secondColumn {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .redBox {
+    background-color: #D80303;
+    color: white;
+    padding: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+  
+  .blackBox {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+  
+  .thirdColumn {
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    margin: auto;
+
+  }
+  .only{
+    font-weight: 800;
+    font-size: 24px;
+  }
+  .count{
+    font-weight: 800;
+font-size: 50px;
+color: red
+  }
+  .thumpsupBody{
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .button{
+    background-color: #D80303;
+    padding: 8px 20px;
+    box-shadow: 0 2px 2px rgba(240, 237, 237, 0.1);
+    border-radius: 25px;
+    border: none;
+    color: white;
+  }
+  .incorrect{
+    font-weight: 800;
+    font-size: 50px;
+    color: white
+  }

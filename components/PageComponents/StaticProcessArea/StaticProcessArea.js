@@ -8,7 +8,7 @@ export default function StaticProcessArea() {
       <Section>
         <div className={Styles.boxStyle}>
           <h2 className="title">
-            Attention to Detail Every Step of the ProcessAre
+            Attention to Detail Every Step of the Process
           </h2>
           <ul className={Styles.orderStyle}>
             <li className={Styles.listStyle}>

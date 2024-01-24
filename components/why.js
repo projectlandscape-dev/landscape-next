@@ -144,7 +144,7 @@ export default function Why() {
           </div>
         </div>
         <center>
-          <ButtonPrimary href="/contact">get started</ButtonPrimary>
+          <ButtonPrimary href="/contact">See For Yourself</ButtonPrimary>
         </center>
       </div>
     </section>

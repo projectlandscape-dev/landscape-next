@@ -95,6 +95,12 @@ export default function AllServices() {
             href="/residential-services/hardscaping/water-management"
             text="water mgmt"
           />
+           <ServiceBox
+            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-2024-01-24T114215.376.png"
+            alt="calgary landscaping services"
+            href="/paver-sealing-refresh-program"
+            text="Paving Stone Sealing"
+          />
         </div>
       </div>
       <div className={styles.wrapperDark}>

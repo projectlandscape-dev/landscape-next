@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 const TableWrapper = styled.div`
   margin-top: 20px;
-
   table {
     width: 100%;
     border-collapse: collapse;
@@ -20,7 +19,7 @@ const TableWrapper = styled.div`
     padding: 20px;
     text-align: center;
     position: relative;
-    width: 10%;
+    width: 5%;
   }
 
   td:hover::after {
@@ -33,14 +32,16 @@ const TableWrapper = styled.div`
     top: -5000px;
     width: 100%;
     z-index: 1;
-
   }
 
   th {
-    background-color: #174f7e;
+    background-color:  var(--clr-accent);
     color: white;
   }
 
+  th.project-guarantee {
+    background-color: #5CFF5C;
+  }
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
@@ -54,7 +55,7 @@ const TableWrapper = styled.div`
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #3498db;
+    background-color: #5CFF5C;
     color: white;
     display: flex;
     align-items: center;
@@ -74,160 +75,168 @@ const TableWrapper = styled.div`
     margin: auto;
   }
 `;
+const TableCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 export default function TableChart() {
   return (
     <Section>
       <Container className="spacing-md">
-        <TableWrapper>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Project landscape</th>
-                <th>Deck Contractors</th>
-                <th>Landscape Contractors</th>
-                <th>Architects / Designers</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Handle Permit Process</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
+        <TableCenter>
+          <TableWrapper>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th className="project-guarantee">Project landscape</th>
+                  <th>Deck Contractors</th>
+                  <th>Landscape Contractors</th>
+                  <th>Architects / Designers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Handle Permit Process</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className="circle-question">?</div>
+                  </td>
+                  <td className="status-column">
                   <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-              <tr>
-                <td>Professional Drawings</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
+                  </td>
+                  <td className="status-column"></td>
+                </tr>
+                <tr>
+                  <td>Professional Drawings</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className="circle-question">?</div>
+                  </td>
+                  <td className="status-column">
                   <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
+                  </td>
+                  <td className="status-column">
                   <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-              <tr>
-                <td>Design Consultation</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Design Consultation</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className="circle-question">?</div>
+                  </td>
+                  <td className="status-column">
                   <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
+                  </td>
+                  <td className="status-column">
                   <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Material Suggestions</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className="circle-question">?</div>
+                  </td>
+                  <td className="status-column">
                   <div className="circle-question">?</div>
-                </td>
-              </tr>
-              <tr>
-                <td>Material Suggestions</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-              </tr>
-              <tr>
-                <td>First Class Customer Service</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
+                  </td>
+                  <td className="status-column">
+                    <div className="circle-question">?</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>First Class Customer Service</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column"></td>
+                </tr>
+                <tr>
+                  <td>Warranty</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className="circle-question">?</div>
+                  </td>
+                  <td className="status-column">
                   <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-              <tr>
-                <td>Warranty</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-              <tr>
-                <td>Financing</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-              <tr>
-                <td>Project Guarantee</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-              <tr>
-                <td>Certified & Backed By Suppliers</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle-question">?</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-              <tr>
-                <td>Cost Savings</td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column">
-                  <div className="circle">✓</div>
-                </td>
-                <td className="status-column"></td>
-              </tr>
-            </tbody>
-          </table>
-        </TableWrapper>
+                  </td>
+                  <td className="status-column"></td>
+                </tr>
+                <tr>
+                  <td>Financing</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column"></td>
+                </tr>
+                <tr>
+                  <td>Project Guarantee</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column"></td>
+                </tr>
+                <tr>
+                  <td>Certified & Backed By Suppliers</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column"></td>
+                </tr>
+                <tr>
+                  <td>Cost Savings</td>
+                  <td className="status-column">
+                    <div className="circle">✓</div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column">
+                    <div className=""></div>
+                  </td>
+                  <td className="status-column"></td>
+                </tr>
+              </tbody>
+            </table>
+          </TableWrapper>
+        </TableCenter>
       </Container>
     </Section>
   );

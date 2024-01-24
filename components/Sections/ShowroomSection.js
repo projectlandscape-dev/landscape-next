@@ -34,7 +34,7 @@ export default function ShowroomSection(props) {
             <Text className="spacing">
               <div>
                 <h2 className="title">
-                  explore our <span className="tan">indoor idea</span> centerS
+                  explore our <span className="tan">indoor idea</span> centers
                 </h2>
               </div>
               <p>

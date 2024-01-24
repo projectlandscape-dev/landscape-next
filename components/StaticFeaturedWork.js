@@ -51,7 +51,7 @@ const FeaturedWork = () => {
         <GridTwo>
           <div>
             <h2 style={{ textAlign: "end", fontSize: "60px" }}>
-              FEATURED WORK
+            PROJECT SPOTLIGHTS
             </h2>
           </div>
           <div style={{ width: "80%", fontSize: "18px" }}>
@@ -162,7 +162,7 @@ const FeaturedWork = () => {
                     </p>
                     <div>
                       <ButtonPrimary href="/projects">
-                        discover products
+                       View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
@@ -202,7 +202,7 @@ const FeaturedWork = () => {
                     </p>
                     <div>
                       <ButtonPrimary href="/projects">
-                        discover products
+                       View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
@@ -241,7 +241,7 @@ const FeaturedWork = () => {
                     </p>
                     <div>
                       <ButtonPrimary href="/projects">
-                        discover products
+                      View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>

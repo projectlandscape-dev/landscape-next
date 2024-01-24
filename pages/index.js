@@ -29,6 +29,8 @@ import FeaturedWork from "../components/StaticFeaturedWork";
 import FinanceBanner from "../components/financeBanner";
 import Innovation from "../components/PageComponents/Innovation/Innovation";
 import TableChart from "../components/PageComponents/TableChart/TableChart";
+import ScrollCount from "../components/PageComponents/ScrollCount/ScrollCount";
+import NewBlockBlack from "../components/Sections/NewBlockBlack";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -63,6 +65,7 @@ export default function Index() {
       </div>
       <TableChart/>
       <MainServices />
+      <NewBlockBlack/>
       <AllServices />
       <Wrapper>
         <section>
@@ -143,6 +146,7 @@ export default function Index() {
       <Badges />
       <ProductsImg />
       <ShowroomSection />
+      <ScrollCount/>
       <ProjectImg />
       <MainVideo />
       <LandscapingImg

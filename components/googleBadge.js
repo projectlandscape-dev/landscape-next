@@ -90,7 +90,7 @@ export default function GoogleBadge() {
               <FaStar style={fontStyle} />
             </FlexStars>
           </div>
-          <p className="body--small">Based on 74 reviews</p>
+          <p className="body--small">Based on 90 reviews</p>
         </div>
       </Flex>
     </Wrapper>

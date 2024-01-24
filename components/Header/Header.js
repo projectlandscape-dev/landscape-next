@@ -111,29 +111,29 @@ export default function HeaderBasic() {
         <div className={styles.headertop}>
           <div className={styles.containerTop}>
             <div>
-              <Link className={styles.styledLink} href="/">
+              {/* <Link className={styles.styledLink} href="/">
                 <Image
                   src="/project-landscape-logo-light.svg"
                   alt="landscape company calgary logo"
                   height={80}
                   width={140}
                 />
-              </Link>
+              </Link> */}
               <p
                 style={{
                   color: "white",
                   marginBottom: "0px",
-                  fontSize: "12px",
-                  marginLeft: "20px",
+                  fontSize: "24px",
+                  marginLeft: "50px",
                 }}
               >
                 {" "}
                 OutDoor Living Done Right
               </p>
             </div>
-            <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+            <div style={{ display: "flex", gap: "50px", alignItems: "center" }}>
               <Link
-                style={{ fontWeight: "bolder" }}
+                style={{ fontWeight: "bolder", fontSize:"24px" }}
                 className={styles.navLinkTop}
                 href="tel: (816)398-2901"
               >
