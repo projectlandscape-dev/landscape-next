@@ -24,7 +24,9 @@ export default function ScrollCount() {
 
       if (progress < 1) {
         setCounter(Math.floor(targetValue * progress));
-        requestAnimationFrame(animateCounter(startTime, targetValue, setCounter));
+        requestAnimationFrame(
+          animateCounter(startTime, targetValue, setCounter)
+        );
       } else {
         setCounter(targetValue);
       }
@@ -50,15 +52,33 @@ export default function ScrollCount() {
     };
 
     const observerFirstBox = new IntersectionObserver(
-      (entries) => handleIntersection(entries, observerFirstBox, setCounterFirstBox, targetValueFirstBox),
+      (entries) =>
+        handleIntersection(
+          entries,
+          observerFirstBox,
+          setCounterFirstBox,
+          targetValueFirstBox
+        ),
       observerOptions
     );
     const observerRedBox = new IntersectionObserver(
-      (entries) => handleIntersection(entries, observerRedBox, setCounterRedBox, targetValueRedBox),
+      (entries) =>
+        handleIntersection(
+          entries,
+          observerRedBox,
+          setCounterRedBox,
+          targetValueRedBox
+        ),
       observerOptions
     );
     const observerBlackBox = new IntersectionObserver(
-      (entries) => handleIntersection(entries, observerBlackBox, setCounterBlackBox, targetValueBlackBox),
+      (entries) =>
+        handleIntersection(
+          entries,
+          observerBlackBox,
+          setCounterBlackBox,
+          targetValueBlackBox
+        ),
       observerOptions
     );
 
@@ -110,8 +130,8 @@ export default function ScrollCount() {
                 />
                 <div className={styles.incorrect}>{counterRedBox}%</div>
                 <div className={styles.thumpsupBody}>
-                  Return on investment can be achieved through high-quality
-                  landscape design and installation.
+                  of families want to spend more time outside with a well
+                  designed landscape
                 </div>
               </center>
             </div>
@@ -125,8 +145,9 @@ export default function ScrollCount() {
                 />
                 <div className={styles.incorrect}>{counterBlackBox}%</div>
                 <div className={styles.thumpsupBody}>
-                  Return on investment can be achieved through high-quality
-                  landscape design and installation.
+                  Of landscaping companies are missing the proper certifications
+                  or necessary paperwork, highlighting the importance of
+                  checking credentials before hiring.
                 </div>
               </center>
             </div>
