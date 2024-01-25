@@ -16,7 +16,7 @@ const TableWrapper = styled.div`
   td {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     position: relative;
     width: 5%;
