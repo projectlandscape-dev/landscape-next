@@ -670,6 +670,16 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             sourceUrl
           }
         }
+        ... on Page_Pagecomponents_PageComponents_Column3 {
+          content {
+            title
+            subheader
+            image {
+              altText
+              sourceUrl
+            }
+          }
+        }
       }
     }
   }
