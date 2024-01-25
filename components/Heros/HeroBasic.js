@@ -4,6 +4,7 @@ import { ButtonInline, ButtonPrimary } from "../buttons";
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
+import { GoArrowRight } from "react-icons/go";
 
 const captionStyle = {
   textAlign: "left",
@@ -16,8 +17,28 @@ const captionStyle = {
 };
 
 export default function HeroBasic(props) {
-  const CustomPrevIcon = (props) => <img width="100" height="100" src="https://img.icons8.com/ios/100/FFFFFF/long-arrow-left.png" alt="long-arrow-left" {...props}/>;
-  const CustomNextIcon =(props) => <img width="100" height="100" src="https://img.icons8.com/ios/100/FFFFFF/long-arrow-right--v1.png" alt="long-arrow-right--v1" {...props}/>;
+  const CustomPrevIcon = (props) => (
+    <Image
+    style={{margin: "85px 0px 0 80px", }}
+      width={200}
+      height={200}
+      src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
+      alt="long-arrow-left"
+      {...props}
+    />
+  );
+  const CustomNextIcon = (props) => (
+    <Image
+    style={{margin: "85px 80px 0 0", }}
+
+      width={200}
+      height={200}
+      src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
+      alt="long-arrow-right--v1"
+      {...props}
+    />
+    
+  );
 
   return (
     <div className={styles.wrapper}>

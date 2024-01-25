@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import Image from "next/image";
-import styles from "./styles.module.css";
+import styles from "./ScrollCount.module.css";
 
 export default function ScrollCount() {
   const [counterFirstBox, setCounterFirstBox] = useState(0);
