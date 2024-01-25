@@ -30,6 +30,7 @@ import FinanceBanner from "../components/financeBanner";
 import Innovation from "../components/PageComponents/Innovation/Innovation";
 import ScrollCount from "../components/PageComponents/ScrollCount/ScrollCount";
 import NewBlockBlack from "../components/Sections/NewBlockBlack";
+import Column3 from "../components/PageComponents/Column3/Column3";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -62,6 +63,7 @@ export default function Index() {
       <div style={{ marginTop: "-64px" }}>
         <PortfolioBanner />
       </div>
+      <Column3/>
       <MainServices />
       <NewBlockBlack/>
       <AllServices />

@@ -236,6 +236,9 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           title
           button
           link
+          showarrow
+          showshadow
+          contentcenter
           image {
             altText
             sourceUrl(size: MEDIUM_LARGE)
