@@ -80,7 +80,7 @@ const TableCenter = styled.div`
   justify-content: center;
 `;
 
-export default function TableChart() {
+export default function Cta4() {
   return (
     <Section>
       <Container className="spacing-md">

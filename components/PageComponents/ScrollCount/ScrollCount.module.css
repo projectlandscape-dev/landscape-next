@@ -27,7 +27,7 @@
   }
   
   .blackBox {
-    background-color: black;
+    background-color: var(--clr-dark);
     color: white;
     padding: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -36,7 +36,7 @@
   
   .thirdColumn {
     /* background-color: #f0f0f0; */
-    padding: 20px;
+    /* padding: 20px; */
     margin: auto;
 
   }

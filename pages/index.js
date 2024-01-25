@@ -28,7 +28,6 @@ import CompanyValue from "../components/staticcompanyvalue";
 import FeaturedWork from "../components/StaticFeaturedWork";
 import FinanceBanner from "../components/financeBanner";
 import Innovation from "../components/PageComponents/Innovation/Innovation";
-import TableChart from "../components/PageComponents/TableChart/TableChart";
 import ScrollCount from "../components/PageComponents/ScrollCount/ScrollCount";
 import NewBlockBlack from "../components/Sections/NewBlockBlack";
 
@@ -63,7 +62,6 @@ export default function Index() {
       <div style={{ marginTop: "-64px" }}>
         <PortfolioBanner />
       </div>
-      <TableChart/>
       <MainServices />
       <NewBlockBlack/>
       <AllServices />
