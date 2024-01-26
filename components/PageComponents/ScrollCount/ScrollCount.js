@@ -16,6 +16,7 @@ export const GridThree = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
 export default function ScrollCount() {
   const [counterFirstBox, setCounterFirstBox] = useState(0);
   const [counterRedBox, setCounterRedBox] = useState(0);
@@ -125,7 +126,7 @@ export default function ScrollCount() {
                   width={80}
                   height={80}
                 />
-                <p className={styles.only}>Only</p>
+                <div className={styles.only}>Only</div>
                 <div className={styles.count}>{counterFirstBox}%</div>
                 <div className={styles.thumpsupBody}>
                   Return on investment can be achieved through high-quality
