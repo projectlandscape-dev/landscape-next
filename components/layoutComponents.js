@@ -125,7 +125,6 @@ export const GridThree = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
-  max-width: 90%;
   @media screen and (max-width: ${device.md}) {
     grid-template-columns: 1fr;
   }

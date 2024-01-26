@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const TableWrapper = styled.div`
   margin-top: 20px;
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -35,12 +36,12 @@ const TableWrapper = styled.div`
   }
 
   th {
-    background-color:  var(--clr-accent);
+    background-color: var(--clr-accent);
     color: white;
   }
 
   th.project-guarantee {
-    background-color: #5CFF5C;
+    background-color: #5cff5c;
   }
   tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -55,7 +56,7 @@ const TableWrapper = styled.div`
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #5CFF5C;
+    background-color: #5cff5c;
     color: white;
     display: flex;
     align-items: center;
@@ -106,7 +107,7 @@ export default function Cta4() {
                     <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
-                  <div className="circle-question">?</div>
+                    <div className="circle-question">?</div>
                   </td>
                   <td className="status-column"></td>
                 </tr>
@@ -119,10 +120,10 @@ export default function Cta4() {
                     <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
-                  <div className="circle-question">?</div>
+                    <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
-                  <div className="circle">✓</div>
+                    <div className="circle">✓</div>
                   </td>
                 </tr>
                 <tr>
@@ -134,10 +135,10 @@ export default function Cta4() {
                     <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
-                  <div className="circle-question">?</div>
+                    <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
-                  <div className="circle">✓</div>
+                    <div className="circle">✓</div>
                   </td>
                 </tr>
                 <tr>
@@ -149,7 +150,7 @@ export default function Cta4() {
                     <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
-                  <div className="circle-question">?</div>
+                    <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
                     <div className="circle-question">?</div>
@@ -177,7 +178,7 @@ export default function Cta4() {
                     <div className="circle-question">?</div>
                   </td>
                   <td className="status-column">
-                  <div className="circle-question">?</div>
+                    <div className="circle-question">?</div>
                   </td>
                   <td className="status-column"></td>
                 </tr>
