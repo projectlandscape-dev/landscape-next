@@ -1,8 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Section, Container, GridThree } from "components/layoutComponents";
+import { Section, Container } from "components/layoutComponents";
 import Image from "next/image";
 import styles from "./ScrollCount.module.css";
+import styled from "styled-components";
 
+const device = {
+  md: "48em",
+};
+export const GridThree = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  max-width: 80%;
+  @media screen and (max-width: ${device.md}) {
+    grid-template-columns: 1fr;
+  }
+`;
 export default function ScrollCount() {
   const [counterFirstBox, setCounterFirstBox] = useState(0);
   const [counterRedBox, setCounterRedBox] = useState(0);
@@ -102,72 +115,76 @@ export default function ScrollCount() {
   return (
     <Section>
       <Container>
-        <GridThree>
-          <div className={styles.firstbox} ref={firstBoxRef}>
-            <center>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/thumbsup.png"
-                alt="thumsup"
-                width={80}
-                height={100}
-              />
-              <p className={styles.only}>Only</p>
-              <div className={styles.count}>{counterFirstBox}%</div>
-              <div className={styles.thumpsupBody}>
-                Return on investment can be achieved through high-quality
-                landscape design and installation.
+        <center>
+          <GridThree>
+            <div className={styles.firstbox} ref={firstBoxRef}>
+              <center>
+                <Image
+                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/2-removebg-preview.png"
+                  alt="thumsup"
+                  width={80}
+                  height={80}
+                />
+                <p className={styles.only}>Only</p>
+                <div className={styles.count}>{counterFirstBox}%</div>
+                <div className={styles.thumpsupBody}>
+                  Return on investment can be achieved through high-quality
+                  landscape design and installation.
+                </div>
+              </center>
+            </div>
+            <div className={styles.secondColumn}>
+              <div className={styles.redBox} ref={redBoxRef}>
+                <center>
+                  <Image
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/1-removebg-preview.png"
+                    alt="thumsup"
+                    width={80}
+                    height={80}
+                  />
+                  <div className={styles.incorrect}>{counterRedBox}%</div>
+                  <div className={styles.thumpsupBody}>
+                    of families want to spend more time outside with a well
+                    designed landscape
+                  </div>
+                </center>
               </div>
-            </center>
-          </div>
-          <div className={styles.secondColumn}>
-            <div className={styles.redBox} ref={redBoxRef}>
-              <center>
-                <Image
-                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/message.png"
-                  alt="thumsup"
-                  width={100}
-                  height={100}
-                />
-                <div className={styles.incorrect}>{counterRedBox}%</div>
-                <div className={styles.thumpsupBody}>
-                  of families want to spend more time outside with a well
-                  designed landscape
-                </div>
-              </center>
+              <div className={styles.blackBox} ref={blackBoxRef}>
+                <center>
+                  <Image
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/3.png"
+                    alt="thumsup"
+                    width={80}
+                    height={80}
+                  />
+                  <div className={styles.incorrect}>{counterBlackBox}%</div>
+                  <div className={styles.thumpsupBody}>
+                    Of landscaping companies are missing the proper
+                    certifications or necessary paperwork, highlighting the
+                    importance of checking credentials before hiring.
+                  </div>
+                </center>
+              </div>
             </div>
-            <div className={styles.blackBox} ref={blackBoxRef}>
-              <center>
-                <Image
-                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/incorrect.png"
-                  alt="thumsup"
-                  width={100}
-                  height={100}
-                />
-                <div className={styles.incorrect}>{counterBlackBox}%</div>
-                <div className={styles.thumpsupBody}>
-                  Of landscaping companies are missing the proper certifications
-                  or necessary paperwork, highlighting the importance of
-                  checking credentials before hiring.
-                </div>
-              </center>
+            <div className={styles.thirdColumn}>
+              <h3>
+                92% of businesses are losing money due to poor marketing efforts
+              </h3>
+              <p>
+                One by One we've helped hundreds of customers in Calgary, not
+                only in creating the stunning outdoor living spaces they've
+                envisioned, but also in saving them money on maintenance and
+                avoiding the pitfalls of poor design and installations. We
+                recognize the frustration that comes with dealing with
+                undependable landscapers who deliver subpar work, then only to
+                find out later they're missing the right certifications and
+                insurance.
+              </p>
+              <p>How does your marketing compare?</p>
+              <button className={styles.button}>Get a Free Audit</button>
             </div>
-          </div>
-          <div className={styles.thirdColumn}>
-            <h2>
-              92% of businesses are losing money due to poor marketing efforts
-            </h2>
-            <p>
-              Whether your business is struggling with a lack of leads or you’re
-              trying to break into a new market, an effective marketing strategy
-              will make all the difference. So why hasn’t it worked for you?
-              You’re with the wrong marketing agency in Calgary. Strategic,
-              data-driven marketing is vital for businesses striving to thrive
-              in a fiercely competitive digital world.
-            </p>
-            <p>How does your marketing compare?</p>
-            <button className={styles.button}>Get a Free Audit</button>
-          </div>
-        </GridThree>
+          </GridThree>
+        </center>
       </Container>
     </Section>
   );

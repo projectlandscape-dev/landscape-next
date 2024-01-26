@@ -11,7 +11,7 @@ const Box = styled.div`
   flex-direction: column;
 
   .number {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
     padding: 12px 0 12px 0;
   }
@@ -30,11 +30,11 @@ export default function Column3({ content }) {
                     <Image
                       src={item?.image?.sourceUrl}
                       alt={item?.image?.altText}
-                      width={150}
+                      width={100}
                       height={100}
                     />
                     <h1 className="number">{item?.title}</h1>
-                    <h3>{item?.subheader}</h3>
+                    <h5>{item?.subheader}</h5>
                   </center>
                 </Box>
               );
