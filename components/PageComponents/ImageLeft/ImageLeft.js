@@ -52,7 +52,7 @@ export default function ImageLeft({
   body,
   image,
   button,
-  showarrow = false,
+  showarrow,
   link,
   imageCopy,
   contentcenter = false,

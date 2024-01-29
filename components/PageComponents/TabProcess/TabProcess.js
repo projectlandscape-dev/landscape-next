@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Container, Section, Flex } from "components/layoutComponents";
+import { Container, Flex } from "components/layoutComponents";
 import Image from "components/Image";
 
 const Text = styled.div``;

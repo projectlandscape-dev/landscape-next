@@ -11,7 +11,7 @@ export const GridThree = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
-  max-width: 80%;
+  max-width: 67%;
   @media screen and (max-width: ${device.md}) {
     grid-template-columns: 1fr;
   }
@@ -168,7 +168,7 @@ export default function ScrollCount() {
               </div>
             </div>
             <div className={styles.thirdColumn}>
-              <h3>
+              <h3 style={{fontSize: "25px", lineHeight: 1}}>
                 92% of businesses are losing money due to poor marketing efforts
               </h3>
               <p>

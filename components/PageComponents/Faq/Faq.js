@@ -35,7 +35,7 @@ export default function FaqFeatured({ title, body, questions }) {
       <Section>
         <Container>
           <FlexMobileOpp>
-            <Accordion className="spacing">
+            <Accordion className="spacing" allowToggle>
               {questions.map((item, index) => {
                 return (
                   <AccordionItem style={AccordionStyle} key={index}>
