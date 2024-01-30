@@ -680,6 +680,18 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
           }
         }
+        ... on Page_Pagecomponents_PageComponents_ImageRightBlackRead {
+          bodycopy
+          body
+          link
+          subheader
+          title
+          image {
+            altText
+            sourceUrl
+          }
+          button
+        }
       }
     }
   }
