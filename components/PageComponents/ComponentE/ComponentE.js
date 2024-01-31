@@ -52,7 +52,7 @@ export default function ComponentE({ subheader, title, content }) {
         </Text>
         <center>
           <GridThree>
-            {content.map((item) => {
+            {content?.map((item) => {
               return (
                 <Item className="spacing">
                   <Image

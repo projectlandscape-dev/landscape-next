@@ -692,6 +692,18 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           }
           button
         }
+        ... on Page_Pagecomponents_PageComponents_ImageLeftDarkWithOne {
+          body
+          bodycopy
+          button
+          link
+          subheader
+          title
+          image {
+            altText
+            sourceUrl
+          }
+        }
       }
     }
   }
