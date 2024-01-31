@@ -86,7 +86,7 @@ export default function ImageRightDark({
             <Img>
               {imageCopy ? (
                 <LogoWrapper>
-                  <img height="130px" width="130px" src={imageCopy.sourceUrl} />
+                  <img height="130px" width="130px" src={imageCopy?.sourceUrl} />
                 </LogoWrapper>
               ) : null}
               <Image
