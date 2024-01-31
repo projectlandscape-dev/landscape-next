@@ -36,7 +36,7 @@ const Inner = styled.div`
 `;
 
 const Outer = styled.div`
-    color: var(--txt-light);
+  color: var(--txt-light);
 `;
 
 const LogoWrapper = styled.div`
@@ -55,11 +55,11 @@ const ImageWrapper = styled.div`
   }
 `;
 const ButtonWrapper = styled.div`
-display : flex;
-align-item : center;
-justify-content: center;
-`
-const ImageLeftDarkWithOne = ({
+  display: flex;
+  align-item: center;
+  justify-content: center;
+`;
+export default function ImageLeftDarkWithOne ({
   subheader,
   title,
   body,
@@ -68,14 +68,13 @@ const ImageLeftDarkWithOne = ({
   button,
   link,
   image2,
-}) => {
+}){
   return (
     <Wrapper>
       <Section>
         <Container>
           <FlexMobileOpp>
             <ImageWrapper>
-            
               <img
                 className="stretch"
                 alt={image?.altText || ""}
@@ -93,31 +92,25 @@ const ImageLeftDarkWithOne = ({
                   __html: `${body}`,
                 }}
               />
-            
-            
             </Text>
-            
           </FlexMobileOpp>
           <Outer
             dangerouslySetInnerHTML={{
-                __html: `${bodycopy}`,
-              }}
+              __html: `${bodycopy}`,
+            }}
           />
           <ButtonWrapper>
-          {button && link ? (
-                <ButtonSecondaryLight href={link}>
-                  {button}
-                </ButtonSecondaryLight>
-              ) : (
-                <ButtonSecondaryLight href="/contact">
-                  get started
-                </ButtonSecondaryLight>
-              )}
-              </ButtonWrapper>
+            {button && link ? (
+              <ButtonSecondaryLight href={link}>{button}</ButtonSecondaryLight>
+            ) : (
+              <ButtonSecondaryLight href="/contact">
+                get started
+              </ButtonSecondaryLight>
+            )}
+          </ButtonWrapper>
         </Container>
       </Section>
     </Wrapper>
   );
 };
 
-export default ImageLeftDarkWithOne;

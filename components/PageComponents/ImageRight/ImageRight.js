@@ -106,8 +106,8 @@ export default function ImageRight({
             ) : null}
             <Image
               className="stretch"
-              alt={image.altText || ""}
-              srcSet={image.sourceUrl}
+              alt={image?.altText || ""}
+              srcSet={image?.sourceUrl}
             />
           </Img>
         </FlexWrap>
