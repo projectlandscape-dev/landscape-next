@@ -30,7 +30,6 @@ import FinanceBanner from "../components/financeBanner";
 import Innovation from "../components/PageComponents/Innovation/Innovation";
 import ScrollCount from "../components/PageComponents/ScrollCount/ScrollCount";
 import NewBlockBlack from "../components/Sections/NewBlockBlack";
-import PromoBanner from "../components/PageComponents/PromoBanner/PromoBanner";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -59,7 +58,6 @@ export default function Index() {
         title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
         description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
       />
-      {/* <PromoBanner/> */}
       <HeroBasic />
       <div style={{ marginTop: "-64px" }}>
         <PortfolioBanner />

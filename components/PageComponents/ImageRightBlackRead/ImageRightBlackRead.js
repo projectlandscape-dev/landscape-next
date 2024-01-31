@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Container, Section, Flex } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
@@ -36,7 +36,6 @@ const Img = styled.div`
     }
   }
 `;
-
 
 const FlexWrap = styled.div`
   display: flex;
@@ -123,40 +122,13 @@ export default function ImageRightBlackRead({
               <ReadMoreButton onClick={handleReadMoreClick}>
                 {isTextExpanded ? "Read Less " : "Read More"}
               </ReadMoreButton>
-
-              {/* {button && link ? (
-                <ButtonPrimary href={link}>{button}</ButtonPrimary>
-              ) : showarrow ? (
-                <Buttonwrapper>
-                  <ButtonPrimary href="/calgary-landscaping-materials">
-                    discover Products
-                  </ButtonPrimary>
-                  <img
-                    width="160px"
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed__1_-removebg-preview.png"
-                  />
-                </Buttonwrapper>
-              ) : (
-                <ButtonPrimary href="/contact">get started</ButtonPrimary>
-              )} */}
             </Text>
 
-            {/* <Img showshadow={showshadow}>
-              {imageCopy ? (
-                <LogoWrapper>
-                  <img
-                    height="130px"
-                    width="130px"
-                    src={imageCopy?.sourceUrl}
-                  />
-                </LogoWrapper>
-              ) : null} */}
-              <Image
-                className="stretch"
-                alt={image?.altText || ""}
-                srcSet={image?.sourceUrl}
-              />
-            {/* </Img> */}
+            <Image
+              className="stretch"
+              alt={image?.altText || ""}
+              srcSet={image?.sourceUrl}
+            />
           </FlexWrap>
         </Container>
       </Section>

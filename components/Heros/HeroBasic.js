@@ -41,7 +41,7 @@ export const GridThree = styled.div`
 `;
 
 const Box = styled.div`
-  background: #042d46;
+  background: #0D2288;
   padding: 0 5px 3px 5px;
   border-radius: 10px;
   color: white;
@@ -102,10 +102,10 @@ export default function HeroBasic(props) {
               <div className={styles.innerBox}>
                 <div className={styles.outer_circle}>
                   <Image
-                  src='https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/1__1_-removebg-preview.png'
-                  alt="user"
-                  width={30}
-                  height={30}
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/1__1_-removebg-preview.png"
+                    alt="user"
+                    width={30}
+                    height={30}
                   />
                 </div>
                 <h4 className={styles.social}>Follow</h4>
@@ -116,15 +116,15 @@ export default function HeroBasic(props) {
             </Box>
             <Box>
               <div className={styles.innerBox}>
-              <div className={styles.outer_circle}>
+                <div className={styles.outer_circle}>
                   <Image
-                  src='https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/2__1_-removebg-preview.png'
-                  alt="user"
-                  width={30}
-                  height={30}
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/2__1_-removebg-preview.png"
+                    alt="user"
+                    width={30}
+                    height={30}
                   />
                 </div>
-                                <h4 className={styles.social}>Like & comment</h4>
+                <h4 className={styles.social}>Like & comment</h4>
               </div>
               <p className={styles.promo_content}>
                 Transform your outdoor space into a serene haven with
@@ -132,12 +132,12 @@ export default function HeroBasic(props) {
             </Box>
             <Box>
               <div className={styles.innerBox}>
-              <div className={styles.outer_circle}>
+                <div className={styles.outer_circle}>
                   <Image
-                  src='https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/3__1_-removebg-preview.png'
-                  alt="user"
-                  width={30}
-                  height={30}
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/3__1_-removebg-preview.png"
+                    alt="user"
+                    width={30}
+                    height={30}
                   />
                 </div>
                 <h4 className={styles.social}>Share</h4>

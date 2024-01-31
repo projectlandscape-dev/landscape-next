@@ -114,9 +114,8 @@
 }
 .innerBox {
   border: none;
-  background-color: yellow;
+  background-color: #F8C446;
   border-radius: 5px;
-  // padding: 5px;
   height: 50px;
   display: flex;
   align-items: flex-end;
@@ -128,15 +127,9 @@
   padding: 5px;
   left: 10px;
   top: -14px;
-  // background-color: #5596bf;
-  border-radius: 50%;
+  z-index: 2;
 }
-// .inside_circle {
-//   color: white;
-//   border: 1px dashed white;
-//   padding: 5px;
-//   border-radius: 50%;
-// }
+
 .promo_content {
   font-size: 8px;
 }
@@ -162,7 +155,7 @@
   left: 20%;
   font-size: 10px;
   padding: 2px 30px;
-  background-color: yellow;
+  background-color: #F8C446;
   color: black;
   border: none;
   border-radius: 5px;
@@ -174,7 +167,7 @@
   left: 20%;
   width: 190px;
   padding: 2px 30px;
-  background-color: #042d46;
+  background-color: #0D2288;
   color: #fff;
   border: none;
   border-radius: 10px;
