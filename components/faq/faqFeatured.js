@@ -35,7 +35,7 @@ export default function FaqFeatured(props) {
       <section>
         <div className="container">
           <div className="flexMobileOpp">
-            <Accordion className="spacing">
+            <Accordion className="spacing" allowToggle>
               <AccordionItem style={AccordionStyle}>
                 <h2>
                   <AccordionButton style={AccordionStyle}>
