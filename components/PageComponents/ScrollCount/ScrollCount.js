@@ -3,6 +3,7 @@ import { Section, Container } from "components/layoutComponents";
 import Image from "next/image";
 import styles from "./ScrollCount.module.css";
 import styled from "styled-components";
+import { ButtonPrimary } from "../../buttons";
 
 const device = {
   md: "48em",
@@ -168,8 +169,8 @@ export default function ScrollCount() {
               </div>
             </div>
             <div className={styles.thirdColumn}>
-              <h3 style={{fontSize: "25px", lineHeight: 1}}>
-                92% of businesses are losing money due to poor marketing efforts
+              <h3 style={{ fontSize: "25px", lineHeight: 1 }}>
+                Creating Dream Outdoor Spaces with Savings and Reliability{" "}
               </h3>
               <p>
                 One by One we've helped hundreds of customers in Calgary, not
@@ -181,8 +182,10 @@ export default function ScrollCount() {
                 find out later they're missing the right certifications and
                 insurance.
               </p>
-              <p>How does your marketing compare?</p>
-              <button className={styles.button}>Get a Free Audit</button>
+              <ButtonPrimary href="">
+                Get Started
+              </ButtonPrimary>
+              {/* <button className={styles.button}>Get Started</button> */}
             </div>
           </GridThree>
         </center>

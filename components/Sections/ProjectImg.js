@@ -1,12 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonInline, ButtonPrimary } from "../buttons";
+import { ButtonInline, ButtonPrimary, ButtonSecondaryLight } from "../buttons";
 import { Container, Flex, Section } from "../layoutComponents";
 import Image from "next/image";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+background: var(--clr-accent)
+`;
 
-const Text = styled.div``;
+const Text = styled.div`
+color: var(--txt-light);
+p {
+  color: var(--txt-light);
+}
+`;
 
 const ImgStyle = {
   boxShadow: "20px 20px 0px 1px var(--clr-accent)",
@@ -45,9 +52,9 @@ export default function ProjectImg() {
                 and satisfaction, backed by our comprehensive workmanship and
                 product satisfaction guarantees.
               </p>
-              <ButtonPrimary href={"/contact"}>
+              <ButtonSecondaryLight href={"/contact"}>
                 See How We're Different
-              </ButtonPrimary>
+              </ButtonSecondaryLight>
             </Text>
             <Image
               height={100}
