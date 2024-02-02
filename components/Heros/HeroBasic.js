@@ -4,8 +4,6 @@ import { ButtonInline, ButtonPrimary } from "../buttons";
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
-import { GoArrowRight } from "react-icons/go";
-// import { GridThree } from "../layoutComponents";
 
 const device = {
   md: "48em",
@@ -19,7 +17,6 @@ const captionStyle = {
   color: "var(--txt-light)",
   textShadow: "-3px 3px 3px #000000",
 };
-//******************************* * promo banner css here ******************************
 const TopRightSection = styled.div`
   position: absolute;
   top: 17%;
@@ -54,7 +51,6 @@ const Grid1 = styled.div`
   gap: 2px;
 `;
 
-//******************************* * promo banner css end ******************************
 
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
@@ -80,7 +76,6 @@ export default function HeroBasic(props) {
 
   return (
     <div className={styles.wrapper} style={{ position: "relative" }}>
-      {/*  *******************promo banner code here************************  */}
       <TopRightSection>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <Image
@@ -159,9 +154,6 @@ export default function HeroBasic(props) {
           <button className={styles.button2}>Good Luck</button>
         </div>
       </TopRightSection>
-
-      {/*  ***************************promo banner code end here*********************************  */}
-
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>

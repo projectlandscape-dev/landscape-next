@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Section } from "../../layoutComponents";
 
 const BackgroundWrapper = styled.div`
   background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png");
@@ -9,7 +10,16 @@ const BackgroundWrapper = styled.div`
   padding: 50px 0px;
   background-size: cover;
   position: relative;
+  margin-top: 73px;
+  @media (max-width: 768px) {
+    margin-top: 105px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 177px;
+  }
+
 `;
+
 const OverlayBox = styled.div`
   background-color: #004271;
   mix-blend-mode: multiply;
@@ -24,6 +34,7 @@ const OverlayBox = styled.div`
 `;
 const ThinBanner = ({ title }) => {
   return (
+    <Section>
     <BackgroundWrapper>
       <h1
         style={{
@@ -37,6 +48,7 @@ const ThinBanner = ({ title }) => {
       </h1>
       <OverlayBox />
     </BackgroundWrapper>
+    </Section>
   );
 };
 
