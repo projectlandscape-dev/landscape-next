@@ -10,22 +10,21 @@ export default function OnlyImageGallery({ content }) {
   return (
     <Wrapper>
       <Section>
-      <Container className="spacing">
-
-        <GridThree>
-          {content?.map((item, index) => {
-            return (
-              <Image
-                style={{ minHeight: "280px" }}
-                key={index}
-                src={item.image.sourceUrl}
-                alt=""
-                width={500}
-                height={400}
-              />
-            );
-          })}
-        </GridThree>
+        <Container className="spacing">
+          <GridThree>
+            {content?.map((item, index) => {
+              return (
+                <Image
+                  style={{ height: '300px' }}
+                  key={index}
+                  src={item.image.sourceUrl}
+                  alt=""
+                  width={500}
+                  height={400}
+                />
+              );
+            })}
+          </GridThree>
         </Container>
       </Section>
     </Wrapper>

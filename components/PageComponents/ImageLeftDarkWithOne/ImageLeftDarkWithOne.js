@@ -36,8 +36,8 @@ const Inner = styled.div`
 `;
 
 const Outer = styled.div`
+  margin-top: 10px;
   color: var(--txt-light);
-  margin-top : 10px;
 `;
 
 const LogoWrapper = styled.div`
@@ -74,10 +74,6 @@ export default function ImageLeftDarkWithOne({
     <Wrapper>
       <Section>
         <Container>
-          <Text className="spacing">
-            <p className="subheader accent">{subheader} </p>
-            <h2 className="title">{title}</h2>
-          </Text>
           <FlexMobileOpp>
             <ImageWrapper>
               <img
@@ -87,7 +83,11 @@ export default function ImageLeftDarkWithOne({
               />
             </ImageWrapper>
 
-            <Text className="spacing" style={{minHeight:'380px'}}>
+            <Text className="spacing">
+              <div>
+                <p className="subheader accent">{subheader} </p>
+                <h2 className="title">{title}</h2>
+              </div>
               <Inner
                 dangerouslySetInnerHTML={{
                   __html: `${body}`,

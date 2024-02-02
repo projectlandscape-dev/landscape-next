@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Section } from "../../layoutComponents";
 
 const BackgroundWrapper = styled.div`
   background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png");
@@ -39,8 +38,9 @@ const ThinBanner = ({ title }) => {
         style={{
           zIndex: 2,
           position: "relative",
-          width: "75%",
+          width: "85%",
           margin: "0 auto",
+          fontSize: "50px"
         }}
       >
         {title}
