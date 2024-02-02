@@ -10,12 +10,12 @@ const BackgroundWrapper = styled.div`
   padding: 50px 0px;
   background-size: cover;
   position: relative;
-  margin-top: 73px;
+  margin-top: 137px;
   @media (max-width: 768px) {
-    margin-top: 105px;
+    margin-top: 205px;
   }
   @media (max-width: 400px) {
-    margin-top: 177px;
+    margin-top: 241px;
   }
 
 `;
@@ -34,7 +34,6 @@ const OverlayBox = styled.div`
 `;
 const ThinBanner = ({ title }) => {
   return (
-    <Section>
     <BackgroundWrapper>
       <h1
         style={{
@@ -48,7 +47,6 @@ const ThinBanner = ({ title }) => {
       </h1>
       <OverlayBox />
     </BackgroundWrapper>
-    </Section>
   );
 };
 

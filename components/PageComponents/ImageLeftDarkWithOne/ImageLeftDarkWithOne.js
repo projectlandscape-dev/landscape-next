@@ -37,6 +37,7 @@ const Inner = styled.div`
 
 const Outer = styled.div`
   color: var(--txt-light);
+  margin-top : 10px;
 `;
 
 const LogoWrapper = styled.div`
@@ -59,7 +60,7 @@ const ButtonWrapper = styled.div`
   align-item: center;
   justify-content: center;
 `;
-export default function ImageLeftDarkWithOne ({
+export default function ImageLeftDarkWithOne({
   subheader,
   title,
   body,
@@ -68,11 +69,15 @@ export default function ImageLeftDarkWithOne ({
   button,
   link,
   image2,
-}){
+}) {
   return (
     <Wrapper>
       <Section>
         <Container>
+          <Text className="spacing">
+            <p className="subheader accent">{subheader} </p>
+            <h2 className="title">{title}</h2>
+          </Text>
           <FlexMobileOpp>
             <ImageWrapper>
               <img
@@ -82,11 +87,7 @@ export default function ImageLeftDarkWithOne ({
               />
             </ImageWrapper>
 
-            <Text className="spacing">
-              <div>
-                <p className="subheader accent">{subheader} </p>
-                <h2 className="title">{title}</h2>
-              </div>
+            <Text className="spacing" style={{minHeight:'380px'}}>
               <Inner
                 dangerouslySetInnerHTML={{
                   __html: `${body}`,
@@ -112,5 +113,4 @@ export default function ImageLeftDarkWithOne ({
       </Section>
     </Wrapper>
   );
-};
-
+}

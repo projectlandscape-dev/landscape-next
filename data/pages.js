@@ -704,6 +704,14 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             sourceUrl
           }
         }
+        ... on Page_Pagecomponents_PageComponents_OnlyImageGallery {
+          content {
+            image {
+              altText
+              sourceUrl
+            }
+          }
+        }
       }
     }
   }
