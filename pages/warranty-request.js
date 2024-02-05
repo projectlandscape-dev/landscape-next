@@ -15,6 +15,8 @@ import {
 import {
   Container,
   FlexMobileOpp,
+  GridThree,
+  GridTwo,
   Section,
 } from "../components/layoutComponents";
 import styled from "styled-components";
@@ -58,6 +60,90 @@ export default function WarrantyRequest() {
         to="/contact"
         button="get more help from us"
       /> */}
+      <Section>
+        <Container>
+          <FlexMobileOpp>
+            <div>
+              <h2>Project Landscape Guarantee</h2>
+              <h5>Your Peace of Mind is Our Priority</h5>
+
+              <p>
+                At Project Landscape, we understand that your outdoor space is
+                not just a project, it's a part of your home - a place of
+                relaxation, family gatherings, and cherished memories. That's
+                why we stand firmly behind the quality of our work with the
+                Project Landscape Guarantee.
+              </p>
+
+              <h3>Comprehensive Coverage for Your Investment</h3>
+
+              <p>
+                Our guarantee is a testament to our commitment to excellence and
+                customer satisfaction. We ensure that every installation and
+                design meets the highest standards of quality and durability.
+                Here's what our guarantee covers:
+              </p>
+
+              <GridThree>
+                <p>
+                  <strong>Quality of Workmanship:</strong> We pride ourselves on
+                  delivering top-notch workmanship. If any aspect of our work
+                  does not meet your expectations or our own high standards, we
+                  will address the issue at no extra cost to you.
+                </p>
+                <p>
+                  <strong>Material Durability:</strong> We use only the best
+                  materials, guaranteed to withstand the test of time and
+                  weather. In the unlikely event of material failure, we will
+                  replace or repair the affected components.
+                </p>
+                <p>
+                  <strong>Design Integrity:</strong> Our designs are not only
+                  aesthetically pleasing but also functional. If there are any
+                  design flaws that affect the usability or enjoyment of your
+                  space, we will rework the design to your satisfaction.
+                </p>
+              </GridThree>
+
+              <h3>Easy Warranty Claims</h3>
+
+              <p>
+                Experiencing an issue? Filing a warranty claim with us is
+                hassle-free:
+              </p>
+
+              <GridTwo>
+                <p>
+                  <strong>Fill Out the Form:</strong> Provide all the necessary
+                  details about your project and the issue you're encountering.
+                </p>
+                <p>
+                  <strong>Quick Response:</strong> Our team will review your
+                  claim and get in touch with you promptly to resolve the issue.
+                </p>
+              </GridTwo>
+
+              <h3>Terms and Conditions</h3>
+
+              <p>
+                Our guarantee is valid for a period of 2 years on hardscaping
+                installations & 1 year on softscaping from the date of project
+                completion and is subject to certain terms and conditions.
+                Please refer to our detailed warranty documentation for specific
+                coverage information.
+              </p>
+
+              <h3>Your Trust, Our Responsibility</h3>
+
+              <p>
+                We don't just create landscapes; we build lasting relationships.
+                The Project Landscape Guarantee is our promise to you - a
+                promise of reliability, quality, and peace of mind.
+              </p>
+            </div>
+          </FlexMobileOpp>
+        </Container>
+      </Section>
       <WarrantyForm />
       <Wrapper>
         <Section>
