@@ -15,31 +15,12 @@ const Text = styled.div`
   }
 `;
 
-const Img = styled.div`
-  position: relative;
-  figure {
-    div {
-      box-shadow: -20px 20px 0px 1px var(--clr-tan);
-      img {
-        max-height: 600px;
-        min-height: 400px;
-        object-fit: cover;
-      }
-    }
-  }
-`;
-
 const Inner = styled.div`
   a {
     color: var(--txt-light);
   }
 `;
-const LogoWrapper = styled.div`
-  position: absolute;
-  z-index: 1;
-  left: 20px;
-  top: 10px;
-`;
+
 const ImageWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -64,12 +45,12 @@ const ImageLeftDarkWithTwoImages = ({
         <Container>
           <FlexMobileOpp>
             <ImageWrapper>
-              <img
+              <Image
                 className="stretch"
                 alt={image?.altText || ""}
                 srcSet={image?.sourceUrl}
               />
-              <img
+              <Image
                 className="stretch"
                 alt={image2?.altText || ""}
                 srcSet={image2?.sourceUrl}

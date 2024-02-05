@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GridThree } from "../../layoutComponents";
+import Image from "next/image";
 
 const Wrapper = styled.div`
   color: white;
@@ -67,7 +68,7 @@ const BannerDescriptionBox = ({ body, bgimage, title, itemwrapper }) => {
           {itemwrapper.map((item) => {
             return (
               <ItemWrapper>
-                <img src={item.image.sourceUrl} alt={item.altText} />
+                <Image src={item.image.sourceUrl} alt={item.altText} loading="lazy" />
                 {item.title && item.link ? (
                   <Link href={item.link}>
                     <h4>{item.title}</h4>

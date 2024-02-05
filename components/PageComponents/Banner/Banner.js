@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Actions, HeroBannerPadding } from "../../layoutComponents";
-import { ButtonPrimary, AnchorInline } from "../../buttons";
+import { Container, HeroBannerPadding } from "../../layoutComponents";
+import { ButtonPrimary} from "../../buttons";
 
 const BannerGrid = styled.div`
   display: grid;
@@ -112,20 +112,4 @@ export default function Banner({
   );
 }
 
-// const Banner = ({ title, subheader, description, image }) => {
-//   let width = '100%';
-//   let height = 'auto';
-//   return (
-//     <div>
-//       <h2>PageComponent Banner</h2>
-//       <h3>{title}</h3>
-//       <p>{subheader}</p>
-//       <p>{description}</p>
-//       {image ? (
-//         <img width={width} height={height} src={image.sourceUrl} alt={image.altText || ''} srcSet={image.srcSet} />
-//       ) : null}
-//     </div>
-//   );
-// };
 
-// export default Banner;

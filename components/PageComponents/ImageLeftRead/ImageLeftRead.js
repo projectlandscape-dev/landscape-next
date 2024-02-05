@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Container, Section, FlexMobileOpp } from "../../layoutComponents";
-import { ButtonPrimary } from "../../buttons";
 import Image from "../../Image";
 
 const Text = styled.div``;
 
-// const StyledImg = styled(GatsbyImage)`
-//   box-shadow: -20px 20px 0px 1px var(--clr-accent);
-// `
+
 
 const ImgLeft = styled.div`
   figure {
@@ -57,8 +54,7 @@ export default function ImageLeftRead({
   body,
   bodycopy,
   image,
-  button,
-  link,
+
 }) {
   const [isTextExpanded, setIsTextExpanded] = useState(false);
 
@@ -97,14 +93,6 @@ export default function ImageLeftRead({
             <ReadMoreButton onClick={handleReadMoreClick}>
               {isTextExpanded ? "Read Less " : "Read More"}
             </ReadMoreButton>
-
-            {/* {button && link ? (
-              <>
-                <ButtonPrimary href={link}>{button}</ButtonPrimary>
-              </>
-            ) : (
-              <ButtonPrimary href="/contact">get started</ButtonPrimary>
-            )} */}
           </Text>
         </FlexMobileOpp>
       </Container>

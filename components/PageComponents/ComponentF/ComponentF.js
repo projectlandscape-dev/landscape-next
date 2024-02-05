@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
 import Image from "components/Image";
-import { BsTextWrap } from "react-icons/bs";
 
 const Text = styled.div`
   text-align: center;
@@ -13,10 +12,6 @@ const Text = styled.div`
   margin-left: auto;
 `;
 
-// const StyledImg = styled(GatsbyImage)`
-//   height: 300px;
-//   width: 100%;
-// `
 
 const Item = styled.div`
   text-align: center;
@@ -34,10 +29,6 @@ const Item = styled.div`
   }
 `;
 
-const Inner = styled.div`
-  padding: 2em;
-  cursor: pointer;
-`;
 
 const AdditionalText = styled.div`
   display: ${({ expanded }) => (expanded ? "block" : "none")};

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Container, Section, FlexMobileOpp } from "../../layoutComponents";
-import { ButtonPrimary } from "../../buttons";
 import Image from "../../Image";
 
 
@@ -101,14 +100,6 @@ export default function ImageLeftBlackRead({
             <ReadMoreButton onClick={handleReadMoreClick}>
               {isTextExpanded ? "Read Less " : "Read More"}
             </ReadMoreButton>
-
-            {/* {button && link ? (
-              <>
-                <ButtonPrimary href={link}>{button}</ButtonPrimary>
-              </>
-            ) : (
-              <ButtonPrimary href="/contact">get started</ButtonPrimary>
-            )} */}
           </Text>
         </FlexMobileOpp>
       </Container>

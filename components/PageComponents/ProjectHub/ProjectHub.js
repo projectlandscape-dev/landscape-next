@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Section, Flex } from "components/layoutComponents";
 import styled from "styled-components";
 import { ButtonPrimary, ButtonSecondaryLight } from "../../buttons";
+import Image from "next/image";
 
 const ImageWrapper = styled.div`
   background-position: center;
@@ -89,7 +90,7 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
               </div>
               <h1>Done Right</h1>
               <Seperator>
-                <img style={{ margin: "0 auto" }} src="/star.png" />
+                <Image style={{ margin: "0 auto" }} src="/star.png" />
               </Seperator>
             </InnerBoxWrapper>
           </ImageWrapper>

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { ButtonPrimary } from "../buttons"
 import { Container, Flex, FlexMobileOpp, Section } from "../layoutComponents"
+import Image from "next/image"
 
 const Text = styled.div``
 
@@ -15,7 +16,7 @@ export default function ImageLeft(props) {
     <Section>
       <Container>
         <FlexMobileOpp>
-          <Img src={props.img} alt={props.alt} />
+          <Image src={props.img} alt={props.alt} />
           <Text className="spacing">
             <div>
               <p className="subheader">{props.subheader}</p>

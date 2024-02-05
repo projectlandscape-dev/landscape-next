@@ -1,14 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Section, FlexMobileOpp } from "../../layoutComponents";
+import { Container, Section } from "../../layoutComponents";
 import { ButtonPrimary } from "../../buttons";
 import Image from "../../Image";
 
 const Text = styled.div``;
 
-// const StyledImg = styled(GatsbyImage)`
-//   box-shadow: -20px 20px 0px 1px var(--clr-accent);
-// `
 
 const ImgLeft = styled.div`
   position: relative;
@@ -65,7 +62,7 @@ export default function ImageLeft({
           <ImgLeft showshadow={showshadow}>
             {imageCopy ? (
               <LogoWrapper>
-                <img height="130px" width="130px" src={imageCopy.sourceUrl} />
+                <Image height="130px" width="130px" src={imageCopy.sourceUrl} />
               </LogoWrapper>
             ) : null}
             <Image
@@ -91,7 +88,7 @@ export default function ImageLeft({
                 <ButtonPrimary href="/calgary-landscaping-materials">
                   discover Products
                 </ButtonPrimary>
-                <img
+                <Image
                   width="160px"
                   src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
                 />

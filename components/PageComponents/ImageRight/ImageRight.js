@@ -88,7 +88,7 @@ export default function ImageRight({
                 <ButtonPrimary href="/calgary-landscaping-materials">
                   discover Products
                 </ButtonPrimary>
-                <img
+                <Image
                   width="160px"
                   src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
                 />
@@ -101,7 +101,7 @@ export default function ImageRight({
           <Img showshadow={showshadow}>
             {imageCopy ? (
               <LogoWrapper>
-                <img height="130px" width="130px" src={imageCopy.sourceUrl} />
+                <Image height="130px" width="130px" src={imageCopy.sourceUrl} />
               </LogoWrapper>
             ) : null}
             <Image

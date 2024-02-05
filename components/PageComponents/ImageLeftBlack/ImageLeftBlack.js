@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { ButtonSecondaryLight } from "../../buttons";
-import {
-  Container,
-  Flex,
-  FlexMobileOpp,
-  Section,
-} from "../../layoutComponents";
 import Image from "../../Image";
 
 const Wrapper = styled.div`
@@ -25,11 +19,7 @@ const Inner = styled.div`
   }
 `;
 
-const ImgStyles = {
-  boxShadow: "-20px 20px 0px 1px var(--clr-tan)",
-  marginTop: "2em",
-  maxHeight: "450px",
-};
+
 const Img = styled.div`
   figure {
     div {

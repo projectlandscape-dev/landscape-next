@@ -1,48 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { Section, Container } from "components/layoutComponents";
-import { ButtonPrimary } from "components/buttons";
+import Image from "next/image";
 
-const Text = styled.div`
-  // text-align: center;
-  // max-width: 140ch;
-  // width: 100%;
-  // margin-right: auto;
-  // margin-left: auto;
-
-  // p {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   max-width: 90ch;
-  //   ul {
-  //     padding: 2em;
-  //     width: 75%;
-  //     li {
-  //       list-style-type: none;
-  //       margin-left: auto;
-  //       margin-right: auto;
-  //     }
-  //   }
-  // }
-`;
-
-// const StyledImg = styled(GatsbyImage)`
-//   width: 80%;
-//   max-height: 450px;
-// `
+const Text = styled.div``;
 
 export default function ComponentC({ subheader, title, body, image }) {
-  let width = "100%";
-  let height = "auto";
+  // let width = "100%";
+  // let height = "auto";
   return (
     <Section>
       <Container className="spacing">
         <Text className="spacing">
           <div className="">
             <p className="subheader accent">{subheader}</p>
-           <center>
-            <h2 className="title">{title}</h2>
-            </center> 
+            <center>
+              <h2 className="title">{title}</h2>
+            </center>
           </div>
           <div
             dangerouslySetInnerHTML={{
@@ -51,12 +25,14 @@ export default function ComponentC({ subheader, title, body, image }) {
           />
         </Text>
         {image ? (
-          <img
-            width={width}
-            height={height}
+          <Image
+            style={{ width: "100%" }}
+            width={1000}
+            height={100}
             src={image.sourceUrl}
             alt={image.altText || ""}
             srcSet={image.srcSet}
+            quality={100}
           />
         ) : null}
         <center>
@@ -66,20 +42,3 @@ export default function ComponentC({ subheader, title, body, image }) {
     </Section>
   );
 }
-
-// const ComponentC = ({ subheader, title, body, image }) => {
-//   let width = '100%';
-//   let height = 'auto';
-//   return (
-//     <div>
-//       <p>{subheader}</p>
-//       <h2>{title}</h2>
-//       {body ? <div dangerouslySetInnerHTML={{ __html: body }} /> : null}
-//       {image ? (
-//         <img width={width} height={height} src={image.sourceUrl} alt={image.altText || ''} srcSet={image.srcSet} />
-//       ) : null}
-//     </div>
-//   );
-// };
-
-// export default ComponentC;

@@ -76,10 +76,12 @@ export default function ImageLeftDarkWithOne({
         <Container>
           <FlexMobileOpp>
             <ImageWrapper>
-              <img
-                className="stretch"
-                alt={image?.altText || ""}
-                srcSet={image?.sourceUrl}
+              <Image
+              className="stretch"
+              alt={image?.altText || ""}
+              src={image?.sourceUrl}
+              width={500}
+              height={500}
               />
             </ImageWrapper>
 

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Container, Section, FlexMobileOpp } from "components/layoutComponents";
 import { ButtonSecondaryLight } from "components/buttons";
 import Image from "../../Image";
-import { ButtonPrimary } from "../../buttons";
 
 const Wrapper = styled.div`
   background: var(--clr-accent);
@@ -64,7 +63,7 @@ export default function ImageLeftDark({
             <Img>
               {imageCopy ? (
                 <LogoWrapper>
-                  <img height="130px" width="130px" src={imageCopy.sourceUrl} />
+                  <Image height="130px" width="130px" src={imageCopy.sourceUrl} />
                 </LogoWrapper>
               ) : null}
               <Image
@@ -89,7 +88,7 @@ export default function ImageLeftDark({
                     {button}
                   </ButtonSecondaryLight>
                   {showarrow && (
-                    <img
+                    <Image
                       width="160px"
                       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62-removebg-preview.png"
                     />
@@ -101,7 +100,7 @@ export default function ImageLeftDark({
                     get started
                   </ButtonSecondaryLight>
                   {showarrow && (
-                    <img
+                    <Image
                       width="160px"
                       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62-removebg-preview.png"
                     />

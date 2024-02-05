@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Section, Flex } from "components/layoutComponents";
+import { Section } from "components/layoutComponents";
+import Image from "next/image";
 
 const Wrapper = styled.div`
   background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-56-1.png");
@@ -25,9 +26,6 @@ const WorkWrapper = styled.div`
     flex-direction: column;
     width: 50%;
   }
-  // p {
-  //   word-break: break-word;
-  // }
 `;
 const WorkItem = styled.div`
   background: white;
@@ -56,10 +54,18 @@ const CompanyWork = ({ title, subheader, workitem }) => {
           {workitem.map((item) => {
             return (
               <WorkItem>
-                <img src={item.icon.sourceUrl} alt={item.icon.altText} />
+                <Image
+                  height={100}
+                  width={500}
+                  src={item.icon.sourceUrl}
+                  alt={item.icon.altText}
+                />
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: `${item.body.replace(/&nbsp;|\u00A0|&#160;/g, ' ')}`,
+                    __html: `${item.body.replace(
+                      /&nbsp;|\u00A0|&#160;/g,
+                      " "
+                    )}`,
                   }}
                 />
               </WorkItem>

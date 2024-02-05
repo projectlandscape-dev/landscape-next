@@ -102,8 +102,8 @@ export default function ImageRightBlack({
                 <ButtonPrimary href="/calgary-landscaping-materials">
                   discover Products
                 </ButtonPrimary>
-                <img
-                  width="160px"
+                <Image
+                  width={160}
                   src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed__1_-removebg-preview.png"
                 />
               </Buttonwrapper>
@@ -115,7 +115,7 @@ export default function ImageRightBlack({
           <Img showshadow={showshadow}>
             {imageCopy ? (
               <LogoWrapper>
-                <img height="130px" width="130px" src={imageCopy.sourceUrl} />
+                <Image height={130} width={130} src={imageCopy.sourceUrl} />
               </LogoWrapper>
             ) : null}
             <Image
