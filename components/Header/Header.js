@@ -125,7 +125,7 @@ export default function HeaderBasic() {
                 OutDoor Living Done Right
               </p>
             </div>
-            <div style={{ display: "flex", gap: "50px", alignItems: "center" }}>
+            <div style={{ display: "flex", gap: "50px", alignItems: "center", height: "40px"  }}>
               <Link
                 style={{ fontWeight: "bolder", fontSize:"24px" }}
                 className={styles.navLinkTop}

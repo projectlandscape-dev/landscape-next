@@ -24,16 +24,17 @@
   grid-row: 2 / -1;
   grid-column: 1 / -1;
   z-index: 2;
-
   background: var(--clr-dark);
   color: var(--txt-light);
   padding: 2em;
   width: 80%;
+  height: 100%;
 
   @media screen and (max-width: 50em) {
     display: none;
   }
 }
+
 
 .content {
   position: relative;
@@ -106,6 +107,8 @@
   position: absolute;
   bottom: 5px;
   left: 12px;
+  width: 100%;
+  text-align: left; 
 }
 .banner_container {
   display: flex;

@@ -18,154 +18,99 @@ export const GridThree = styled.div`
   }
 `;
 
-export default function ScrollCount() {
-  const [counterFirstBox, setCounterFirstBox] = useState(0);
-  const [counterRedBox, setCounterRedBox] = useState(0);
-  const [counterBlackBox, setCounterBlackBox] = useState(0);
+const CounterBox = ({ imageSrc, alt, targetValue, description, isOnlyBox }) => {
+  const [counter, setCounter] = useState(0);
+  const boxRef = useRef(null);
 
-  const targetValueFirstBox = 30;
-  const targetValueRedBox = 67;
-  const targetValueBlackBox = 41;
-  const duration = 2000;
-
-  const firstBoxRef = useRef(null);
-  const redBoxRef = useRef(null);
-  const blackBoxRef = useRef(null);
-
-  const animateCounter = (startTime, targetValue, setCounter) => {
+  const animateCounter = (startTime) => {
     return () => {
       const currentTime = performance.now();
       const progress = (currentTime - startTime) / duration;
 
       if (progress < 1) {
         setCounter(Math.floor(targetValue * progress));
-        requestAnimationFrame(
-          animateCounter(startTime, targetValue, setCounter)
-        );
+        requestAnimationFrame(animateCounter(startTime));
       } else {
         setCounter(targetValue);
       }
     };
   };
 
-  const handleIntersection = (entries, observer, setCounter, targetValue) => {
+  const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const startTime = performance.now();
         setCounter(0);
-        animateCounter(startTime, targetValue, setCounter)();
+        animateCounter(startTime)();
         observer.unobserve(entry.target);
       }
     });
   };
 
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
-
-    const observerFirstBox = new IntersectionObserver(
-      (entries) =>
-        handleIntersection(
-          entries,
-          observerFirstBox,
-          setCounterFirstBox,
-          targetValueFirstBox
-        ),
-      observerOptions
-    );
-    const observerRedBox = new IntersectionObserver(
-      (entries) =>
-        handleIntersection(
-          entries,
-          observerRedBox,
-          setCounterRedBox,
-          targetValueRedBox
-        ),
-      observerOptions
-    );
-    const observerBlackBox = new IntersectionObserver(
-      (entries) =>
-        handleIntersection(
-          entries,
-          observerBlackBox,
-          setCounterBlackBox,
-          targetValueBlackBox
-        ),
+    const observer = new IntersectionObserver(
+      (entries) => handleIntersection(entries, observer),
       observerOptions
     );
 
-    if (firstBoxRef.current) {
-      observerFirstBox.observe(firstBoxRef.current);
-    }
-    if (redBoxRef.current) {
-      observerRedBox.observe(redBoxRef.current);
-    }
-    if (blackBoxRef.current) {
-      observerBlackBox.observe(blackBoxRef.current);
+    if (boxRef.current) {
+      observer.observe(boxRef.current);
     }
 
-    return () => {
-      observerFirstBox.disconnect();
-      observerRedBox.disconnect();
-      observerBlackBox.disconnect();
-    };
-  }, [targetValueFirstBox, targetValueRedBox, targetValueBlackBox]);
+    return () => observer.disconnect();
+  }, [targetValue]);
 
+  return (
+    <div className={styles.counterBox} ref={boxRef}>
+      <center>
+        <Image src={imageSrc} alt={alt} width={80} height={80} />
+        {isOnlyBox && <div className={styles.only}>Only</div>}
+        <div className={styles.count}>{counter}%</div>
+        <div className={styles.description}>{description}</div>
+      </center>
+    </div>
+  );
+};
+
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
+
+const duration = 2000;
+
+export default function ScrollCount() {
   return (
     <Section>
       <Container>
         <center>
           <GridThree>
-            <div className={styles.firstbox} ref={firstBoxRef}>
-              <center>
-                <Image
-                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/2-removebg-preview.png"
-                  alt="thumsup"
-                  width={80}
-                  height={80}
-                />
-                <div className={styles.only}>Only</div>
-                <div className={styles.count}>{counterFirstBox}%</div>
-                <div className={styles.thumpsupBody}>
-                  Return on investment can be achieved through high-quality
-                  landscape design and installation.
-                </div>
-              </center>
+            <div className={styles.firstbox}>
+              <CounterBox
+                imageSrc="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/2-removebg-preview.png"
+                alt="thumbs-up"
+                targetValue={30}
+                description="Return on investment can be achieved through high-quality landscape design and installation."
+                isOnlyBox={true}
+              />
             </div>
             <div className={styles.secondColumn}>
-              <div className={styles.redBox} ref={redBoxRef}>
-                <center>
-                  <Image
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/1-removebg-preview.png"
-                    alt="thumsup"
-                    width={80}
-                    height={80}
-                  />
-                  <div className={styles.incorrect}>{counterRedBox}%</div>
-                  <div className={styles.thumpsupBody}>
-                    of families want to spend more time outside with a well
-                    designed landscape
-                  </div>
-                </center>
+              <div className={styles.greenBox}>
+                <CounterBox
+                  imageSrc="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/1-removebg-preview.png"
+                  alt="thumbs-up"
+                  targetValue={67}
+                  description="of families want to spend more time outside with a well designed landscape."
+                />
               </div>
-              <div className={styles.blackBox} ref={blackBoxRef}>
-                <center>
-                  <Image
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/3.png"
-                    alt="thumsup"
-                    width={80}
-                    height={80}
-                  />
-                  <div className={styles.incorrect}>{counterBlackBox}%</div>
-                  <div className={styles.thumpsupBody}>
-                    Of landscaping companies are missing the proper
-                    certifications or necessary paperwork, highlighting the
-                    importance of checking credentials before hiring.
-                  </div>
-                </center>
+              <div className={styles.blackBox}>
+                <CounterBox
+                  imageSrc="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/3.png"
+                  alt="thumbs-up"
+                  targetValue={41}
+                  description="Of landscaping companies are missing the proper certifications or necessary paperwork, highlighting the importance of checking credentials before hiring."
+                />
               </div>
             </div>
             <div className={styles.thirdColumn}>
@@ -182,10 +127,7 @@ export default function ScrollCount() {
                 find out later they're missing the right certifications and
                 insurance.
               </p>
-              <ButtonPrimary href="">
-                Get Started
-              </ButtonPrimary>
-              {/* <button className={styles.button}>Get Started</button> */}
+              <ButtonPrimary href="">Get Started</ButtonPrimary>
             </div>
           </GridThree>
         </center>
