@@ -20,8 +20,11 @@ const TopRightSection = styled.div`
   top: 17%;
   right: 1px;
   z-index: 2;
-  width: 300px;
-  height: 280px;
+  width: 380px;
+  height: 350px;
+  @media screen and (max-width: 768px) {
+    top: 13%;
+  }
 `;
 export const GridThree = styled.div`
   display: grid;
@@ -33,24 +36,11 @@ export const GridThree = styled.div`
   }
 `;
 
-const Box = styled.div`
-  background: #0d2288;
-  padding: 0 5px 3px 5px;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-`;
-
-const Grid1 = styled.div`
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2px;
-`;
 
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
     <Image
-      style={{ margin: "85px 0px 0 80px" }}
+      style={{ margin: "180px 0 0 80px" }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
@@ -60,7 +50,7 @@ export default function HeroBasic(props) {
   );
   const CustomNextIcon = (props) => (
     <Image
-      style={{ margin: "85px 80px 0 0" }}
+      style={{ margin: "180px 80px 0 0" }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
@@ -77,25 +67,31 @@ export default function HeroBasic(props) {
           backgroundSize: "cover",
         }}
       >
-        <button>Click</button>
-        <div className={styles.banner_container}>
-          <div className={styles.contacts}>
-            <Image
-              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/call1.png"
-              alt=" Phone"
-              width={25}
-              height={25}
-            />
-            <span>4032574059</span>
-          </div>
-          <div className={styles.contacts}>
-            <Image
-              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/LINK-1.png"
-              alt="link"
-              width={25}
-              height={25}
-            />
-            <Link href="#">projectlandscape.ca</Link>
+        <div className={styles.content_container}>
+          <button className={styles.button}>Click For Details</button>
+          <div className={styles.banner_container}>
+            <div className={styles.contacts}>
+              <Image
+                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/call1.png"
+                alt=" Phone"
+                width={25}
+                height={25}
+                loading="lazy"
+              />
+              <span>4032574059</span>
+            </div>
+            <div className={styles.contacts}>
+              <Image
+                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/LINK-1.png"
+                alt="link"
+                width={25}
+                height={25}
+                loading="lazy"
+              />
+              <Link href="#" style={{ color: "white" }}>
+                projectlandscape.ca
+              </Link>
+            </div>
           </div>
         </div>
       </TopRightSection>
