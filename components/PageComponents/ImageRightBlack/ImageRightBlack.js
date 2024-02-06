@@ -4,7 +4,6 @@ import { Container, Section, Flex } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
 import Image from "components/Image";
 
-
 const Wrapper = styled.div`
   background: black;
 `;
@@ -61,7 +60,7 @@ const FlexWrap = styled.div`
 `;
 
 const Subheader = styled.p`
-white-space: nowrap;
+  white-space: nowrap;
 `;
 
 export default function ImageRightBlack({
@@ -78,56 +77,54 @@ export default function ImageRightBlack({
 }) {
   return (
     <Wrapper>
+      <Section>
+        <Container>
+          <FlexWrap contentcenter={contentcenter}>
+            <Text className="spacing">
+              <div>
+                <Subheader className="subheader accent">{subheader}</Subheader>
+                <h2 className="title">{title}</h2>
+              </div>
+              {body ? (
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `${body}`,
+                  }}
+                ></div>
+              ) : null}
 
-    <Section>
-      <Container>
-        <FlexWrap contentcenter={contentcenter}>
-          <Text className="spacing">
-            <div>
-            <Subheader className="subheader accent">{subheader}</Subheader>
-              <h2 className="title">{title}</h2>
-            </div>
-            {body ? (
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `${body}`,
-                }}
-              ></div>
-            ) : null}
+              {button && link ? (
+                <ButtonPrimary href={link}>{button}</ButtonPrimary>
+              ) : showarrow ? (
+                <Buttonwrapper>
+                  <ButtonPrimary href="/calgary-landscaping-materials">
+                    discover Products
+                  </ButtonPrimary>
+                  <Image
+                    width="160"
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed__1_-removebg-preview.png"
+                  />
+                </Buttonwrapper>
+              ) : (
+                <ButtonPrimary href="/contact">get started</ButtonPrimary>
+              )}
+            </Text>
 
-            {button && link ? (
-              <ButtonPrimary href={link}>{button}</ButtonPrimary>
-            ) : showarrow ? (
-              <Buttonwrapper>
-                <ButtonPrimary href="/calgary-landscaping-materials">
-                  discover Products
-                </ButtonPrimary>
-                <Image
-                  width={160}
-                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed__1_-removebg-preview.png"
-                />
-              </Buttonwrapper>
-            ) : (
-              <ButtonPrimary href="/contact">get started</ButtonPrimary>
-            )}
-          </Text>
-
-          <Img showshadow={showshadow}>
-            {imageCopy ? (
-              <LogoWrapper>
-                <Image height={130} width={130} src={imageCopy.sourceUrl} />
-              </LogoWrapper>
-            ) : null}
-            <Image
-              className="stretch"
-              alt={image.altText || ""}
-              srcSet={image.sourceUrl}
-            />
-          </Img>
-        </FlexWrap>
-      </Container>
-    </Section>
+            <Img showshadow={showshadow}>
+              {imageCopy ? (
+                <LogoWrapper>
+                  <Image height='130' width='130' src={imageCopy.sourceUrl} />
+                </LogoWrapper>
+              ) : null}
+              <Image
+                className="stretch"
+                alt={image.altText || ""}
+                srcSet={image.sourceUrl}
+              />
+            </Img>
+          </FlexWrap>
+        </Container>
+      </Section>
     </Wrapper>
-
   );
 }

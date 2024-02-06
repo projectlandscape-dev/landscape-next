@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, GridThree, Section } from "../../layoutComponents";
-import Image from "components/Image";
+import Image from "next/image";
 
 const NewSectionItem = styled.div`
   text-align: center;
@@ -30,14 +30,11 @@ const NewSectionItem = styled.div`
 `;
 
 export default function ImageBlur({ title, imagesection }) {
-  let width = "100%";
-  let height = "300px";
   return (
     <Section>
       <Container className="spacing-md">
         <div className="center">
           <p className="subheader title accent">{title}</p>
-          {/* <h2 className="title">sghfjhgj dfhjytghrh grttyyt</h2> */}
         </div>
         <center>
           <GridThree>
@@ -47,10 +44,11 @@ export default function ImageBlur({ title, imagesection }) {
                   <figure>
                     <div>
                       <Image
-                        width={width}
-                        height={height}
+                        width={500}
+                        height={100}
                         alt="new section 1"
                         src={item?.image?.sourceUrl}
+                        loading="lazy"
                       />
                     </div>
                     <div className="overlay">

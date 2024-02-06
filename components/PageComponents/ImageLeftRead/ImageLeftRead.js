@@ -54,7 +54,8 @@ export default function ImageLeftRead({
   body,
   bodycopy,
   image,
-
+  button,
+  link,
 }) {
   const [isTextExpanded, setIsTextExpanded] = useState(false);
 
@@ -93,6 +94,8 @@ export default function ImageLeftRead({
             <ReadMoreButton onClick={handleReadMoreClick}>
               {isTextExpanded ? "Read Less " : "Read More"}
             </ReadMoreButton>
+
+       
           </Text>
         </FlexMobileOpp>
       </Container>

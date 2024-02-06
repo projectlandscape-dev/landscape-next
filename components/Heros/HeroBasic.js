@@ -4,10 +4,8 @@ import { ButtonInline, ButtonPrimary } from "../buttons";
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
-const device = {
-  md: "48em",
-};
 const captionStyle = {
   textAlign: "left",
   display: "flex",
@@ -20,12 +18,10 @@ const captionStyle = {
 const TopRightSection = styled.div`
   position: absolute;
   top: 17%;
-  right: 0;
+  right: 1px;
   z-index: 2;
   width: 300px;
   height: 280px;
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/new.png")
-    center/cover;
 `;
 export const GridThree = styled.div`
   display: grid;
@@ -38,7 +34,7 @@ export const GridThree = styled.div`
 `;
 
 const Box = styled.div`
-  background: #0D2288;
+  background: #0d2288;
   padding: 0 5px 3px 5px;
   border-radius: 10px;
   color: white;
@@ -50,7 +46,6 @@ const Grid1 = styled.div`
   grid-template-columns: repeat(1, 1fr);
   gap: 2px;
 `;
-
 
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
@@ -76,82 +71,32 @@ export default function HeroBasic(props) {
 
   return (
     <div className={styles.wrapper} style={{ position: "relative" }}>
-      <TopRightSection>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <Image
-            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-1-1-1.png"
-            alt="logo"
-            width={80}
-            height={80}
-          />
-        </div>
+      <TopRightSection
+        style={{
+          backgroundImage: `url(https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-1-2.png) `,
+          backgroundSize: "cover",
+        }}
+      >
+        <button>Click</button>
         <div className={styles.banner_container}>
-          <Image
-            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/giveaway-logo-1.png"
-            alt="logo"
-            width={150}
-            height={150}
-          />
-          <GridThree>
-            <Box>
-              <div className={styles.innerBox}>
-                <div className={styles.outer_circle}>
-                  <Image
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/1__1_-removebg-preview.png"
-                    alt="user"
-                    width={30}
-                    height={30}
-                  />
-                </div>
-                <h4 className={styles.social}>Follow</h4>
-              </div>
-              <p className={styles.promo_content}>
-                Transform your outdoor space into a serene haven with
-              </p>
-            </Box>
-            <Box>
-              <div className={styles.innerBox}>
-                <div className={styles.outer_circle}>
-                  <Image
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/2__1_-removebg-preview.png"
-                    alt="user"
-                    width={30}
-                    height={30}
-                  />
-                </div>
-                <h4 className={styles.social}>Like & comment</h4>
-              </div>
-              <p className={styles.promo_content}>
-                Transform your outdoor space into a serene haven with
-              </p>
-            </Box>
-            <Box>
-              <div className={styles.innerBox}>
-                <div className={styles.outer_circle}>
-                  <Image
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/3__1_-removebg-preview.png"
-                    alt="user"
-                    width={30}
-                    height={30}
-                  />
-                </div>
-                <h4 className={styles.social}>Share</h4>
-              </div>
-              <p className={styles.promo_content}>
-                Transform your outdoor space into a serene haven with
-              </p>
-            </Box>
-          </GridThree>
-        </div>
-        <center>
-          <p className={styles.main_content}>
-            Transform your outdoor space into a serene haven with our unique
-            Calgary landscaping services.
-          </p>
-        </center>
-        <div className={styles.button_container}>
-          <div className={styles.button1}>You have until 25th August</div>
-          <button className={styles.button2}>Good Luck</button>
+          <div className={styles.contacts}>
+            <Image
+              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/call1.png"
+              alt=" Phone"
+              width={25}
+              height={25}
+            />
+            <span>4032574059</span>
+          </div>
+          <div className={styles.contacts}>
+            <Image
+              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/LINK-1.png"
+              alt="link"
+              width={25}
+              height={25}
+            />
+            <Link href="#">projectlandscape.ca</Link>
+          </div>
         </div>
       </TopRightSection>
       <div className="heroBannerPadding" />

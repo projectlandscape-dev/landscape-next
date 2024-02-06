@@ -105,12 +105,19 @@
 
 .banner_container {
   display: flex;
-  gap: 8px;
-  flex-direction: column;
+  // gap: 8px;
+  // flex-direction: column;
+  // align-items: end;
+  justify-content: space-around;
+  // padding: 0 40px;
+  // margin-top: -15px;
+}
+.contacts{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 40px;
-  margin-top: -15px;
+  gap: 5px;
+  color: white;
+  font-size: 12px;
 }
 .innerBox {
   border: none;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Section } from "../../layoutComponents";
+import {Section } from "../../layoutComponents";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,19 +31,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Grid = styled.div`
-  display: none;
-  @media screen and (max-width: 70em) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-    grid-gap: 1em;
 
-    & > * {
-      justify-self: center;
-      align-self: center;
-    }
-  }
-`;
 
 export default function Badges({ title }) {
   const settings = {

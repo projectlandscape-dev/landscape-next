@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Container, Flex } from "components/layoutComponents";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
-import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
 import { useLockedBody } from "usehooks-ts";
@@ -54,8 +52,11 @@ const NavList = styled.ul`
 `;
 
 const Burger = styled.div`
-  display: none;
+  position: absolute;
+  visibility: hidden;
+  right: 15px; 
   cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
   div {
     width: 25px;
@@ -65,24 +66,24 @@ const Burger = styled.div`
 
     :nth-child(1) {
       transform: ${({ nav }) =>
-        nav ? "rotate(-45deg) translate(-6px, 5px)" : ""};
+        nav ? "rotate(-45deg) translate(-6px, 5px)" : "none"};
     }
     :nth-child(2) {
-      opacity: ${({ nav }) => (nav ? "0" : "")};
+      opacity: ${({ nav }) => (nav ? "0" : "1")};
     }
     :nth-child(3) {
       transform: ${({ nav }) =>
-        nav ? "rotate(45deg) translate(-6px, -5px)" : ""};
+        nav ? "rotate(45deg) translate(-6px, -5px)" : "none"};
     }
   }
 
   @media screen and (max-width: ${device.md}) {
-    transform: scale(1);
-    display: block;
+    visibility: visible;
+    right: 15px;
+    transform: ${({ nav }) => (nav ? "scale(1)" : "none")};
     z-index: 10000;
   }
 `;
-
 export default function HeaderBasic() {
   const [nav, navOpen] = useState(false);
 
@@ -111,14 +112,6 @@ export default function HeaderBasic() {
         <div className={styles.headertop}>
           <div className={styles.containerTop}>
             <div>
-              {/* <Link className={styles.styledLink} href="/">
-                <Image
-                  src="/project-landscape-logo-light.svg"
-                  alt="landscape company calgary logo"
-                  height={80}
-                  width={140}
-                />
-              </Link> */}
               <p
                 style={{
                   color: "white",
@@ -160,8 +153,8 @@ export default function HeaderBasic() {
                 <Image
                   src="/project-landscape-logo-light.svg"
                   alt="landscape company calgary logo"
-                  height={100}
                   width={170}
+                  height={100}
                 />
               </Link>
             </div>
