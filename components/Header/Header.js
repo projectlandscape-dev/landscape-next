@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
@@ -16,7 +16,6 @@ const device = {
 
 const NavList = styled.ul`
   display: flex;
-  // align-items: center;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -40,14 +39,8 @@ const NavList = styled.ul`
     border-radius: var(--br);
     border-top: 1px solid var(--txt-dark-secondary);
     padding: 1em 2em 16em 2em;
-
     height: 100vh;
     overflow: auto;
-
-    // & > * + * {
-    //   margin-left: 0;
-    //   margin-top: 15px;
-    // }
   }
 `;
 
@@ -84,6 +77,7 @@ const Burger = styled.div`
     z-index: 10000;
   }
 `;
+
 export default function HeaderBasic() {
   const [nav, navOpen] = useState(false);
 
@@ -154,7 +148,8 @@ export default function HeaderBasic() {
                   alt="landscape company calgary logo"
                   width={170}
                   height={170}
-                  loading="lazy"
+                  quality={75}
+                  priority={true}
                 />
               </Link>
             </div>

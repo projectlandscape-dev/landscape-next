@@ -22,6 +22,12 @@ const TopRightSection = styled.div`
   z-index: 2;
   width: 320px;
   height: 320px;
+  aspect-ratio: inherit ;
+
+  background-image: url('https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-1-2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
   @media screen and (max-width: 768px) {
     top: 13%;
   }
@@ -61,13 +67,7 @@ export default function HeroBasic(props) {
 
   return (
     <div className={styles.wrapper} style={{ position: "relative" }}>
-      <TopRightSection
-        style={{
-          backgroundImage: `url(https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-1-2.png) `,
-          backgroundSize: "contain",
-          backgroundRepeat:'no-repeat'
-        }}
-      >
+      <TopRightSection>
         <div className={styles.content_container}>
           <button className={styles.button}>Click For Details</button>
           <div className={styles.banner_container}>
