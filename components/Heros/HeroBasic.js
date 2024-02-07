@@ -17,11 +17,11 @@ const captionStyle = {
 };
 const TopRightSection = styled.div`
   position: absolute;
-  top: 17%;
-  right: 1px;
+  top: 18%;
+  right: 0;
   z-index: 2;
-  width: 380px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   @media screen and (max-width: 768px) {
     top: 13%;
   }
@@ -64,7 +64,8 @@ export default function HeroBasic(props) {
       <TopRightSection
         style={{
           backgroundImage: `url(https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-1-2.png) `,
-          backgroundSize: "cover",
+          backgroundSize: "contain",
+          backgroundRepeat:'no-repeat'
         }}
       >
         <div className={styles.content_container}>

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
+import styles from "./Header.module.scss";
 import styled from "styled-components";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { useLockedBody } from "usehooks-ts";
-import styles from "./Header.module.scss";
 import { useRouter } from "next/router";
 import { ButtonSecondaryLight } from "../buttons";
 
@@ -54,7 +54,7 @@ const NavList = styled.ul`
 const Burger = styled.div`
   position: absolute;
   visibility: hidden;
-  right: 15px; 
+  right: 15px;
   cursor: pointer;
   transition: transform 0.3s ease, opacity 0.3s ease;
 
@@ -111,33 +111,32 @@ export default function HeaderBasic() {
       <div className={styles.header}>
         <div className={styles.headertop}>
           <div className={styles.containerTop}>
-            <div>
-              <p
+              <div
                 style={{
                   color: "white",
-                  marginBottom: "0px",
                   fontSize: "24px",
-                  marginLeft: "50px",
-                  fontWeight: "600"
+                  fontWeight: "600",
                 }}
               >
                 {" "}
                 OutDoor Living Done Right
-              </p>
-            </div>
-            <div style={{ display: "flex", gap: "50px", alignItems: "center", height: "40px"  }}>
+              </div>
+            <div style={{ display: "flex", gap: "4em", alignItems: "center" }}>
               <Link
-                style={{ fontWeight: "bolder", fontSize:"24px" }}
+                style={{
+                  fontWeight: "bolder",
+                  fontSize: "24px",
+                }}
                 className={styles.navLinkTop}
                 href="tel: 403 257 4059"
               >
                 <div>
                   <FaPhone />
                 </div>
-                403 257 4059 
+                403 257 4059
               </Link>
               <ButtonSecondaryLight
-                style={{ height: "40px", fontSize: "12px" }}
+                style={{fontSize:'10px',  textAlign: 'center' }}
                 href="/contact"
               >
                 Start Your Project
@@ -154,7 +153,8 @@ export default function HeaderBasic() {
                   src="/project-landscape-logo-light.svg"
                   alt="landscape company calgary logo"
                   width={170}
-                  height={100}
+                  height={170}
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -190,7 +190,7 @@ export default function HeaderBasic() {
                           className={styles.styledLink}
                           href="/paver-sealing-refresh-program"
                         >
-                         Paving Stone Sealing
+                          Paving Stone Sealing
                         </Link>
                       </li>
                       <li>
