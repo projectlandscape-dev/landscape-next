@@ -105,32 +105,18 @@ export default function HeaderBasic() {
       <div className={styles.header}>
         <div className={styles.headertop}>
           <div className={styles.containerTop}>
-              <div
-                style={{
-                  color: "white",
-                  fontSize: "24px",
-                  fontWeight: "600",
-                }}
-              >
-                {" "}
-                OutDoor Living Done Right
-              </div>
-            <div style={{ display: "flex", gap: "4em", alignItems: "center" }}>
-              <Link
-                style={{
-                  fontWeight: "bolder",
-                  fontSize: "24px",
-                }}
-                className={styles.navLinkTop}
-                href="tel: 403 257 4059"
-              >
+            <div className={styles.containerTopText}>
+              OutDoor Living Done Right
+            </div>
+            <div className={styles.phone_container}>
+              <Link className={styles.navLinkTop} href="tel: 403 257 4059">
                 <div>
                   <FaPhone />
                 </div>
                 403 257 4059
               </Link>
               <ButtonSecondaryLight
-                style={{fontSize:'10px',  textAlign: 'center' }}
+                style={{ fontSize: "10px", textAlign: "center" }}
                 href="/contact"
               >
                 Start Your Project

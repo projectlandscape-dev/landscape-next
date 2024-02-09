@@ -3,16 +3,13 @@ import { Section, Container } from "../../layoutComponents";
 import styled from "styled-components";
 
 const TableWrapper = styled.div`
-  margin-top: 20px;
-
+  overflow-x: auto;
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    overflow: hidden;
+    overflow-y: hidden;
     display: inline-block;
   }
-
   th,
   td {
     border-left: 1px solid #ddd;

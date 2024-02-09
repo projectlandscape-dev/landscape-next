@@ -28,6 +28,11 @@ const TabContainer = styled.div`
   padding: 20px;
   width: fit-content;
   margin: 30px auto 30px;
+  @media screen and (max-width: 600px) {
+    padding : 10px;
+    border-radius : 30px
+  }
+
 `;
 
 const TabButton = styled.button`
@@ -45,6 +50,12 @@ const TabButton = styled.button`
     background-color: green;
     color: white;
   }
+  @media screen and (max-width: 600px) {
+    padding: 5px 20px;
+    border-radius: 20px;
+
+  }
+
 `;
 
 const TabContent = styled.div`

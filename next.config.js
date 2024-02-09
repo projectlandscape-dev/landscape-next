@@ -5,9 +5,14 @@ if (!process.env.WORDPRESS_API_URL) {
   `);
 }
 
-/** @type {import('next').NextConfig} */
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  // output: 'export',
+  // trailingSlash: true,
   images: {
+    // unoptimized : true,
     domains: [
       process.env.WORDPRESS_API_URL.match(/(?!(w+)\.)\w*(?:\w+\.)+\w+/)[0], // Valid WP Image domain.
       "0.gravatar.com",
@@ -29,3 +34,5 @@ module.exports = {
     ],
   },
 };
+
+module.exports = nextConfig

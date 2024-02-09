@@ -9,30 +9,49 @@
 .headertop {
   padding: 0.5em 0;
   background: var(--clr-accent);
+}
+@media screen and (max-width: 600px) {
+  .containerTop .containerTopText {
+    font-size: 0.9em;
+  }
 
-  ul {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-
-    li {
-      &:nth-child(2),
-      &:nth-child(3) {
-        @media screen and (max-width: 70em) {
-          display: none;
-        }
-      }
-    }
-
-    & > * + * {
-      margin-left: 1.5em;
-    }
+  .containerTop .phone_container .navLinkTop {
+    font-size: 15px;
+  }
+  .containerTop .phone_container{
+    gap: 1.1em;
   }
 }
 
+@media screen and (max-width: 400px) {
+  .containerTop .containerTopText {
+    font-size: 0.8em;
+  }
+
+  .containerTop .phone_container .navLinkTop {
+    font-size: 12px;
+  }
+  .containerTop .phone_container{
+    gap: 1em;
+  }
+}
+.containerTopText{
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.phone_container {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+.phone_container .navLinkTop{
+  font-weight: bolder;
+  font-size: 22px;
+}
 .navLinkTop {
+
   text-decoration: none;
   text-transform: uppercase;
   font-size: var(--fs-b);
@@ -75,7 +94,7 @@
   max-width: 95rem;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .logoContainer {
@@ -367,33 +386,3 @@
     color: var(--txt-dark);
   }
 }
-
-// .burger {
-//   display: none;
-//   cursor: pointer;
-
-//   div {
-//     width: 25px;
-//     height: 3px;
-//     margin: 5px;
-//     background-color: var(--clr-accent);
-
-//     :nth-child(1) {
-//       transform: ${({ nav }) =>
-//         nav ? "rotate(-45deg) translate(-6px, 5px)" : ""};
-//     }
-//     :nth-child(2) {
-//       opacity: ${({ nav }) => (nav ? "0" : "")};
-//     }
-//     :nth-child(3) {
-//       transform: ${({ nav }) =>
-//         nav ? "rotate(45deg) translate(-6px, -5px)" : ""};
-//     }
-//   }
-
-//   @media screen and (max-width: 70em) {
-//     transform: scale(1);
-//     display: block;
-//     z-index: 10000;
-//   }
-// }

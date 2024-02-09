@@ -1,11 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { ButtonPrimary, ButtonSecondaryLight } from "components/buttons";
-import {
-  Actions,
-  Container,
-  HeroBannerPadding,
-} from "components/layoutComponents";
+import { ButtonPrimary } from "components/buttons";
 import { Carousel } from "react-bootstrap";
 import styles from "./DynamicSlider.module.scss";
 import Image from "next/image";
@@ -20,7 +14,7 @@ const captionStyle = {
 };
 
 export default function DynamicSlider({ body, sliderdata }) {
-  console.log(sliderdata, "data");
+  console.log(sliderdata, "data333");
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
@@ -32,13 +26,12 @@ export default function DynamicSlider({ body, sliderdata }) {
                 <Carousel.Item interval={5000}>
                   <div className={styles.content}>
                     <Image
-                      // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"
-                      src={item.bgimage.sourceUrl}
-                      width={1200}
+                      src={item?.bgimage?.sourceUrl}
+                      alt={item?.bgimage?.altText}
+                      width={500}
                       height={100}
                       priority={true}
                     />
-                    {/* <div className={styles.content1} /> */}
                   </div>
                   <Carousel.Caption style={captionStyle} className="spacing">
                     <div className="spacing">
@@ -76,31 +69,3 @@ export default function DynamicSlider({ body, sliderdata }) {
     </div>
   );
 }
-
-// {sliderdata.map((item) => {
-//   <Carousel.Item interval={5000}>
-//     <div className={styles.content}>
-//       <Image
-//         // src="http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/under-deck-lighting-calgary.png"
-//         src={item.bgimage.sourceUrl}
-//         width={1200}
-//         height={100}
-//         priority={true}
-//       />
-//       {/* <div className={styles.content1} /> */}
-//     </div>
-//     <Carousel.Caption style={captionStyle} className="spacing">
-//       <div className="spacing">
-//         <h1 className="title">{item.title}</h1>
-//         <p className="subheader tan">{item.subheader}</p>
-//         {item.button && item.link ? (
-//           <ButtonPrimary href={item.link}>
-//             {item.button}
-//           </ButtonPrimary>
-//         ) : (
-//           <ButtonPrimary href="/contact">get started</ButtonPrimary>
-//         )}
-//       </div>
-//     </Carousel.Caption>
-//   </Carousel.Item>;
-// })}

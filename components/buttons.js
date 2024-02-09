@@ -35,6 +35,12 @@ export const ButtonPrimary = styled(props => <Link {...props} />)`
       padding-left: 0;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: var(--fs-xs); 
+    padding: 0.1em 0.3em;
+    text-align: center;
+  }
 `
 
 export const ButtonPrimaryDark = styled(props => <Link {...props} />)`

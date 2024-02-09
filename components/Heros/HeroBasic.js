@@ -15,23 +15,23 @@ const captionStyle = {
   color: "var(--txt-light)",
   textShadow: "-3px 3px 3px #000000",
 };
-const TopRightSection = styled.div`
-  position: absolute;
-  top: 18%;
-  right: 0;
-  z-index: 2;
-  width: 320px;
-  height: 320px;
-  aspect-ratio: inherit ;
+// const TopRightSection = styled.div`
+//   position: absolute;
+//   top: 18%;
+//   right: 0;
+//   z-index: 2;
+//   width: 320px;
+//   height: 320px;
+//   aspect-ratio: inherit ;
 
-  background-image: url('https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-1-2.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+//   background-image: url('https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-1-2.png');
+//   background-size: contain;
+//   background-repeat: no-repeat;
 
-  @media screen and (max-width: 768px) {
-    top: 13%;
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     top: 13%;
+//   }
+// `;
 export const GridThree = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -51,6 +51,7 @@ export default function HeroBasic(props) {
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
       alt="long-arrow-left"
+      priority={true}
       {...props}
     />
   );
@@ -61,13 +62,14 @@ export default function HeroBasic(props) {
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
       alt="long-arrow-right--v1"
+      priority={true}
       {...props}
     />
   );
 
   return (
     <div className={styles.wrapper} style={{ position: "relative" }}>
-      <TopRightSection>
+      {/* <TopRightSection>
         <div className={styles.content_container}>
           <button className={styles.button}>Click For Details</button>
           <div className={styles.banner_container}>
@@ -95,7 +97,7 @@ export default function HeroBasic(props) {
             </div>
           </div>
         </div>
-      </TopRightSection>
+      </TopRightSection> */}
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
@@ -105,7 +107,7 @@ export default function HeroBasic(props) {
                 <div className={styles.desktopImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                    width={1200}
+                    width={500}
                     height={100}
                     alt="calgary landscaping"
                     priority={true}
@@ -114,9 +116,10 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                    width={1200}
+                    width={100}
                     height={100}
                     alt="calgary landscaping"
+                    priority={true}
                   />
                 </div>
               </div>
@@ -141,7 +144,7 @@ export default function HeroBasic(props) {
                 <div className={styles.desktopImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={1200}
+                    width={500}
                     height={100}
                     alt="calgary landscaping"
                     priority={true}
@@ -150,9 +153,10 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={1200}
+                    width={100}
                     height={100}
                     alt="calgary landscaping"
+                    priority={true}
                   />
                 </div>
               </div>
@@ -179,7 +183,7 @@ export default function HeroBasic(props) {
                 <div className={styles.desktopImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    width={1200}
+                    width={500}
                     height={100}
                     alt="calgary landscaping"
                     priority={true}
@@ -188,9 +192,11 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    width={1200}
+                    width={100}
                     height={100}
                     alt="calgary landscaping"
+                    priority={true}
+
                   />
                 </div>
               </div>
