@@ -15,23 +15,40 @@ const captionStyle = {
   color: "var(--txt-light)",
   textShadow: "-3px 3px 3px #000000",
 };
-// const TopRightSection = styled.div`
-//   position: absolute;
-//   top: 18%;
-//   right: 0;
-//   z-index: 2;
-//   width: 320px;
-//   height: 320px;
-//   aspect-ratio: inherit ;
+const TopRightSection = styled.div`
+  position: absolute;
+  top: 18%;
+  right: 0;
+  z-index: 2;
+  width: 520px;
+  height: 320px;
+  background-image: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-scaled.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 
-//   background-image: url('https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-1-2.png');
-//   background-size: contain;
-//   background-repeat: no-repeat;
+  &:hover {
+    cursor: pointer;
 
-//   @media screen and (max-width: 768px) {
-//     top: 13%;
-//   }
-// `;
+    &:before {
+      content: 'Click to participate';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgb(82,178,44);
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      z-index : 4;
+      opacity: 5;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 13%;
+  }
+`;
 export const GridThree = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -41,7 +58,6 @@ export const GridThree = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
-
 
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
@@ -69,35 +85,10 @@ export default function HeroBasic(props) {
 
   return (
     <div className={styles.wrapper} style={{ position: "relative" }}>
-      {/* <TopRightSection>
-        <div className={styles.content_container}>
-          <button className={styles.button}>Click For Details</button>
-          <div className={styles.banner_container}>
-            <div className={styles.contacts}>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/call1.png"
-                alt=" Phone"
-                width={25}
-                height={25}
-                loading="lazy"
-              />
-              <span>4032574059</span>
-            </div>
-            <div className={styles.contacts}>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/LINK-1.png"
-                alt="link"
-                width={25}
-                height={25}
-                loading="lazy"
-              />
-              <Link href="#" style={{ color: "white" }}>
-                projectlandscape.ca
-              </Link>
-            </div>
-          </div>
-        </div>
-      </TopRightSection> */}
+      <Link href='/PromoContest'>
+      <TopRightSection>
+      </TopRightSection>
+      </Link>
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
@@ -196,7 +187,6 @@ export default function HeroBasic(props) {
                     height={100}
                     alt="calgary landscaping"
                     priority={true}
-
                   />
                 </div>
               </div>

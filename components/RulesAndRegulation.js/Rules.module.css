@@ -1,0 +1,33 @@
+
+.contestContainer{
+    text-align: left;
+    font-style: italic;
+}
+
+.contestContainer ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .contestContainer li {
+    margin-bottom: 10px; 
+  }
+  .contestContainer h4 {
+    text-decoration:underline;
+  }
+  /* .howtoenter{
+
+  } */
+
+  .termAndcondition ul{
+    list-style: none; 
+  }
+  .termAndcondition h4{
+    text-decoration:underline;
+  }
+  .nocashvalue{
+    list-style: none; 
+  }
+  .nocashvalue h4{
+    text-decoration:underline;
+  }
