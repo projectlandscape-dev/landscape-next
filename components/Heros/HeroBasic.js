@@ -20,33 +20,28 @@ const TopRightSection = styled.div`
   top: 18%;
   right: 0;
   z-index: 2;
-  width: 520px;
-  height: 320px;
-  background-image: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-scaled.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
 
   &:hover {
     cursor: pointer;
 
     &:before {
-      content: 'Click to participate';
+      content: "Click to participate";
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: rgb(82,178,44);
+      background-color: rgb(82, 178, 44);
       color: black;
       padding: 10px;
       border-radius: 5px;
-      z-index : 4;
+      z-index: 4;
       opacity: 5;
       transition: opacity 0.3s ease;
     }
   }
 
   @media screen and (max-width: 768px) {
-    top: 13%;
+    top: 19%;
   }
 `;
 export const GridThree = styled.div`
@@ -85,9 +80,16 @@ export default function HeroBasic(props) {
 
   return (
     <div className={styles.wrapper} style={{ position: "relative" }}>
-      <Link href='/PromoContest'>
-      <TopRightSection>
-      </TopRightSection>
+      <Link href="/PromoContest">
+        <TopRightSection>
+          <Image
+            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-scaled.jpg"
+            alt="promo contest"
+            width={620}
+            height={100}
+            priority={true}
+          />
+        </TopRightSection>
       </Link>
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>

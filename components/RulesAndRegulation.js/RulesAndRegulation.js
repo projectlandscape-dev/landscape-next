@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./Rules.module.css";
 import { Container, Section } from "../layoutComponents";
+import Link from "next/link";
+import Image from "next/image";
+
+
 const RulesAndRegulation = () => {
   return (
     <Section>
@@ -55,9 +59,35 @@ const RulesAndRegulation = () => {
               <h4>How To Enter</h4>
               <p>
                 To participate, complete the contest entry form between Monday
-                February 12th and Monday March 4th in full online at
-                projectlandscape.ca or calgaryhgs.com AND follow
-                project_landscape on instagram to qualify!
+                February 12th and Monday March 4th in full online at{" "}
+                <Link href="https://www.projectlandscape.ca" target="_blank">
+                  projectlandscape.ca
+                </Link>{" "}
+                or{" "}
+                <Link href="https://www.calgaryhgs.com/" target="_blank">
+                  calgaryhgs.com
+                </Link>{" "}
+                AND{" "}
+                
+                <Link
+                  href="https://www.instagram.com/project__landscape/?hl=en"
+                  target="_blank"
+                  style={{ backgroundColor: "yellow" }}
+                >
+                  follow project_landscape on instagram to qualify!{" "}
+                </Link>{" "}
+                <Image
+                  src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed__1_-removebg-preview.png"
+                  alt="arrow"
+                  width={65}
+                  height={65}
+                  style={{ display: "inline-block" }}
+                />
+              </p>
+              <p>
+                Verification of eligibility may be conducted before the
+                announcement of the contest winner to confirm compliance with
+                all requirements.
               </p>
               <strong>
                 THE WINNER WILL BE ANNOUNCED ON OUR INSTAGRAM PAGE ON MONDAY,
@@ -67,8 +97,10 @@ const RulesAndRegulation = () => {
                 Check in with us along the way for Home Show updates and contest
                 entry reminders!
               </p>
-              <center> <h1>Good Luck!!!!</h1></center>
-             
+              <center>
+                {" "}
+                <h1>Good Luck!!!!</h1>
+              </center>
             </div>
             <div className={styles.termAndcondition}>
               <h4>Terms And condition</h4>

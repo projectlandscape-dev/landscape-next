@@ -24,24 +24,26 @@ const Wrapper = styled.div`
   padding: 6em 0;
 `;
 const Contact = styled.div`
-display : flex;
-align-item:center;
-justify-content:center;
-gap : 0.7em;
-`
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  gap: 0.7em;
+`;
 export default function PromoContest() {
   const [consentChecked, setConsentChecked] = useState(false);
-  const [captchaResult, setCaptchaResult] = useState("");
+  const [captcha, setCaptcha] = useState("");
   const [userAnswer, setUserAnswer] = useState("");
-  const [num2, setNum2] = useState(0);
+  const [Result, setResult] = useState(null);
   const [captchaSolved, setCaptchaSolved] = useState(false);
   const [captchaError, setCaptchaError] = useState("");
 
   const generateCaptcha = () => {
-    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num1 = Math.floor(Math.random() * 10) + 2;
     const num2 = Math.floor(Math.random() * 10) + 1;
-    setCaptchaResult(num1 + num2);
-    setNum2(num2);
+    const num3 = Math.floor(Math.random() * 10) + 1;
+    const result = num1 - num2 + num3;
+    setResult(result);
+    setCaptcha(`${num1} - ${num2} + ${num3}`);
   };
 
   const handleConsentChange = () => {
@@ -57,10 +59,13 @@ export default function PromoContest() {
     setUserAnswer(e.target.value);
     const userAnswerInt = parseInt(e.target.value);
 
-    if (consentChecked && userAnswerInt === captchaResult - num2) {
+    if (consentChecked && userAnswerInt === Result) {
+      setUserAnswer("");
       setCaptchaError("");
+      setCaptchaSolved(true);
     } else {
       setCaptchaError("Incorrect captcha. Please try again.");
+      setCaptchaSolved(false);
     }
   };
 
@@ -83,7 +88,7 @@ export default function PromoContest() {
         <Container>
           <Wrapper>
             <center>
-              <Flex style={{width:'60%'}}>
+              <Flex style={{ width: "60%" }}>
                 <Contact>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/call1.png"
@@ -92,7 +97,10 @@ export default function PromoContest() {
                     height={25}
                     loading="lazy"
                   />
-                  <span>4032574059</span>
+                  <Link href="tel: 403 257 4059" style={{textDecoration:"none", color:'black'}}>
+                    {" "}
+                    <span>4032574059</span>
+                  </Link>
                 </Contact>
                 <Contact>
                   <Image
@@ -102,19 +110,27 @@ export default function PromoContest() {
                     height={25}
                     loading="lazy"
                   />
-                  <Link href="#" style={{ color: "black" }}>
+                  <Link
+                    href="https://projectlandscape.ca"
+                    target="_blank"
+                    style={{ color: "black" }}
+                  >
                     projectlandscape.ca
                   </Link>
                 </Contact>
                 <Contact>
-                    <Image 
-                    src='https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/insta.png'
+                  <Image
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/insta_transparent.png"
                     alt="instagram"
                     width={25}
                     height={25}
-                    />
-                  <Link href="https://www.instagram.com/" target="_blank">
-                    https://instagram.com
+                  />
+                  <Link
+                    href="https://www.instagram.com/project__landscape/?hl=en"
+                    target="_blank"
+                    style={{ color: "black" }}
+                  >
+                    project__landscape
                   </Link>
                 </Contact>
               </Flex>
@@ -205,10 +221,21 @@ export default function PromoContest() {
                     I consent to receiving emails.
                   </Label>
                 </div>
+                <div className="spacing-sm">
+                  <Label>
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      // checked={consentChecked}
+                      // onChange={handleConsentChange}
+                    />{" "}
+                    Followed project_landscape on instagram
+                  </Label>
+                </div>
                 {consentChecked && !captchaSolved && (
                   <center>
                     <Flex className="spacing-sm" style={{ width: "70%" }}>
-                      <Label htmlFor="captcha">{`${captchaResult} - ${num2} = `}</Label>
+                      <Label htmlFor="captcha">{`${captcha} = `}</Label>
                       <Input
                         type="number"
                         name="captcha"
@@ -236,9 +263,9 @@ export default function PromoContest() {
                   </div>
                 )}
                 <Submit type="submit" id="submit" value="submit" />
-                {/* <div className="spacing-sm">
-              <Link href="#">Terms and condition</Link>
-            </div> */}
+                <center>
+                <p style={{fontWeight:600, fontSize:'30px', color:'red'}}>DON'T FORGET TO FOLLOW US ON INSTAGRAM</p>
+                </center>
               </form>
             </FormWrapper>
             <RulesAndRegulation />
