@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styled from "styled-components";
-import { Container } from "../layoutComponents";
 import { FaPhone, FaRegClock } from "react-icons/fa";
 import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import FormFooter from "../Forms/FormFooter";
@@ -10,7 +8,6 @@ import Map from "../map";
 import InstagramFeed from "../instagramFeed";
 import { ButtonInline } from "../buttons";
 import styles from "./Footer.module.scss";
-import { StyleRegistry } from "styled-jsx";
 
 const IconStyle = {
   color: "var(--clr-accent)",
@@ -43,7 +40,7 @@ export default function Footer() {
                   <h4 className="subheader">contact us</h4>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         className={styles.contactLink}
                         href="tel: 403-257-4059"
                       >
@@ -51,10 +48,10 @@ export default function Footer() {
                           <FaPhone style={IconStyle} />
                         </div>
                         403-257-4059
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className={styles.contactLink}
                         href="mailto: office@projectlandscape.ca"
                       >
@@ -62,10 +59,10 @@ export default function Footer() {
                           <MdOutlineEmail style={IconStyle} />
                         </div>
                         office@projectlandscape.ca
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className={styles.contactLink}
                         href="https://www.google.com/search?q=project%20landscape&oq=project+landscape&aqs=chrome..69i57j69i64j69i60l3.2120j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AJOqlzVRUU_ZaNptPsOjzHtILa57paj9uQ:1676341266052&rflfq=1&num=10&rldimm=11747008283103314784&lqi=ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg&ved=2ahUKEwjnu73t-ZP9AhVKGzQIHdw6BLIQvS56BAgWEAE&sa=X&rlst=f#rlfi=hd:;si:11747008283103314784,l,ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg;mv:[[50.997355899999995,-113.98204679999999],[50.9522124,-114.01662379999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:14"
                         target="_blank"
@@ -74,15 +71,15 @@ export default function Footer() {
                           <MdLocationOn style={IconStyle} />
                         </div>
                         3511 64 Ave Calgary, AB
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className={styles.contactLink} href="#">
+                      <Link className={styles.contactLink} href="#">
                         <div>
                           <FaRegClock style={IconStyle} />
                         </div>
                         9 AM - 5 PM Mon - Fri <br /> 9 AM - 3 PM Sat
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -98,7 +95,7 @@ export default function Footer() {
                   <h4 className="subheader">showroom</h4>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         className={styles.contactLink}
                         href="https://www.google.com/maps?q=backyard+canada&rlz=1C1JZAP_enCA1008CA1008&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE5NzVqMGo5qAIAsAIA&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi097Gbmfb-AhUCADQIHYjWB-kQ_AUoAnoECAEQBA"
                         target="_blank"
@@ -107,10 +104,10 @@ export default function Footer() {
                           <MdLocationOn style={IconStyle} />
                         </div>
                         BACKYARD CANADA - 711 48 AVE SE UNIT 1
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className={styles.contactLink}
                         href="https://www.google.com/maps/place/THE+PATIO+STORE/@51.010056,-114.0577993,15z/data=!4m10!1m2!2m1!1spatio+store!3m6!1s0x537170fe60213311:0x6b77a73a5221e247!8m2!3d51.0008443!4d-114.0513727!15sCgtwYXRpbyBzdG9yZVoNIgtwYXRpbyBzdG9yZZIBF291dGRvb3JfZnVybml0dXJlX3N0b3JlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5GYmtwNVJrdFJFQUXgAQA!16s%2Fg%2F11d_74qn23"
                         target="_blank"
@@ -119,10 +116,10 @@ export default function Footer() {
                           <MdLocationOn style={IconStyle} />
                         </div>
                         PATIO STORE - 533 58 AVE SE
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className={styles.contactLink}
                         href="https://www.google.com/maps/place/World+of+Spas+%7C+Calgary+Hot+Tub+and+Swim+Spa+Dealer/@50.9962677,-114.0670975,17z/data=!3m1!4b1!4m6!3m5!1s0x537170f8345d142b:0x8259ac784ba88f8b!8m2!3d50.9962677!4d-114.0645172!16s%2Fg%2F1td424wj"
                         target="_blank"
@@ -131,14 +128,14 @@ export default function Footer() {
                           <MdLocationOn style={IconStyle} />
                         </div>
                         WORLD OF SPAS - 6201 CENTRE S
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div className={styles.socials}>
                   <h4 className="subheader">let's connect!</h4>
                   <div>
-                    <a
+                    <Link
                       target="_blank"
                       href="https://www.facebook.com/profile.php?id=100063556661393&ref=aymt_homepage_panel"
                     >
@@ -148,10 +145,10 @@ export default function Footer() {
                         src="/socials/facebook.svg"
                         alt="calgary landscaping company facebook"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a
+                    <Link
                       target="_blank"
                       href="https://www.instagram.com/project__landscape/?hl=en"
                     >
@@ -161,10 +158,10 @@ export default function Footer() {
                         src="/socials/instagram.svg"
                         alt="calgary landscaping company instagram"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a
+                    <Link
                       target="_blank"
                       href="https://www.youtube.com/@projectlandscapeltd.9811"
                     >
@@ -174,10 +171,10 @@ export default function Footer() {
                         src="/socials/youtube.svg"
                         alt="calgary landscaping company youtube"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a
+                    <Link
                       target="_blank"
                       href="https://www.pinterest.ca/projectland0734/"
                     >
@@ -187,10 +184,10 @@ export default function Footer() {
                         src="/socials/pinterest.svg"
                         alt="calgary landscaping company pinterest"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a
+                    <Link
                       target="_blank"
                       href="https://www.houzz.com/professionals/landscape-architects-and-landscape-designers/project-landscape-ltd-pfvwus-pf~816279347/__public"
                     >
@@ -200,10 +197,10 @@ export default function Footer() {
                         src="/socials/houzz.svg"
                         alt="calgary landscaping company"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a
+                    <Link
                       target="_blank"
                       href="https://www.google.com/search?q=project%20landscape&rlz=1C1JZAP_enCA1008CA1008&oq=project+landscape&aqs=chrome..69i57j69i59j69i64j69i65j69i60l2j69i65.4202j0j9&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=APwXEde42p-FOu2e0riecHHuoBMahO47kQ:1682655163573&rflfq=1&num=10&serdesk=1&rldimm=11747008283103314784&lqi=ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcqoBORABMh4QASIaKaI3Foxmm9yUEJWVyMjPvBmgI2VvlzimO9cyFRACIhFwcm9qZWN0IGxhbmRzY2FwZQ&ved=2ahUKEwiBlLf62sv-AhUXITQIHeg0D40QvS56BAgVEAE&sa=X&rlst=f#rlfi=hd:;si:11747008283103314784,l,ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcqoBORABMh4QASIaKaI3Foxmm9yUEJWVyMjPvBmgI2VvlzimO9cyFRACIhFwcm9qZWN0IGxhbmRzY2FwZQ;mv:[[51.0443109,-113.9770916],[50.992142799999996,-114.1041654]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:14"
                     >
@@ -213,7 +210,7 @@ export default function Footer() {
                         src="/socials/calgary-landscaping-pros-trusted.svg"
                         alt="calgary landscaping company"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div>
@@ -619,7 +616,7 @@ export default function Footer() {
             <div className="container">
               <div>
                 <p>website by: </p>
-                <a target="_blank" href="https://www.aarontonner.com">
+                <Link target="_blank" href="https://www.aarontonner.com">
                   <Image
                     className="img"
                     src="/aaron-tonner-web-solutions-logo-white-white.svg"
@@ -627,7 +624,7 @@ export default function Footer() {
                     width={100}
                     height={100}
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
