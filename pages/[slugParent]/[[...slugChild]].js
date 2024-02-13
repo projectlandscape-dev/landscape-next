@@ -137,7 +137,7 @@ export async function getStaticPaths() {
   // We also filter out the `/` homepage as it will conflict with index.js if
   // as they have the same path, which will fail the build
  
- pages.push(...tempPages)
+//  pages.push(...tempPages)
 
   const paths = pages
     .filter(({ uri }) => typeof uri === "string" && uri !== "/")
