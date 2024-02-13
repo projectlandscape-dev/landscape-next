@@ -54,7 +54,6 @@ const Review = React.memo((props) => {
           <FaStar key={index} style={fontStyle} />
         ))}
       </FlexStars>
-
       <p className="italics">"{props.review}"</p>
       <Flex>
         <div>
