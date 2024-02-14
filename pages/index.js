@@ -3,7 +3,6 @@ import LayoutJs from "../components/layoutJs";
 import HeroBasic from "../components/Heros/HeroBasic";
 import Badges from "../components/Badges/Badges";
 import AllServices from "../components/AllServices/AllServices";
-import { Container, Flex, Section } from "../components/layoutComponents";
 import { ButtonInline } from "../components/buttons";
 import styled from "styled-components";
 import Cta3 from "../components/Cta3/Cta3";
@@ -15,21 +14,18 @@ import OasisImg from "../components/Sections/oasisImg";
 import ProjectImg from "../components/Sections/ProjectImg";
 import MainTrends from "../components/trends/mainTrends";
 import Why from "../components/why";
-import Ebook from "../components/ebook";
 import MainTestimonials from "../components/testimonials/mainTestimonials";
 import Videos from "../components/videos";
 import FaqFeatured from "../components/faq/faqFeatured";
-import { Helmet } from "react-helmet";
 import Seo from "../components/seo";
 import MainServices from "../components/MainServices/MainServices";
 import PortfolioBanner from "../components/portfolioBanner";
 import StaticProcessArea from "../components/PageComponents/StaticProcessArea";
-import CompanyValue from "../components/staticcompanyvalue";
 import FeaturedWork from "../components/StaticFeaturedWork";
 import FinanceBanner from "../components/financeBanner";
-import Innovation from "../components/PageComponents/Innovation/Innovation";
 import ScrollCount from "../components/PageComponents/ScrollCount/ScrollCount";
 import NewBlockBlack from "../components/Sections/NewBlockBlack";
+import dynamic from "next/dynamic";
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),

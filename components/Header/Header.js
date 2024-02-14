@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useLockedBody } from "usehooks-ts";
 import { useRouter } from "next/router";
 import { ButtonSecondaryLight } from "../buttons";
+// import logo from "../../public/project-landscape-logo-light.svg";
 
 const device = {
   sm: "18em",
@@ -83,8 +84,6 @@ export default function HeaderBasic() {
 
   const { asPath } = useRouter();
 
-  // console.log({params})
-
   const [locked, setLocked] = useLockedBody(false, "__next");
 
   const toggleLocked = () => {
@@ -93,7 +92,6 @@ export default function HeaderBasic() {
 
   function toggleMenu() {
     navOpen(!nav);
-    // toggleLocked();
   }
 
   useEffect(() => {
@@ -130,11 +128,11 @@ export default function HeaderBasic() {
             <div className={styles.logoContainer}>
               <Link className={styles.styledLink} href="/">
                 <Image
+                  style={{ width: "auto", height: "60px" }}
                   src="/project-landscape-logo-light.svg"
                   alt="landscape company calgary logo"
                   width={170}
-                  height={170}
-                  quality={75}
+                  height={85}
                   priority={true}
                 />
               </Link>

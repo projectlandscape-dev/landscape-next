@@ -20,7 +20,6 @@ const TopRightSection = styled.div`
   top: 18%;
   right: 0;
   z-index: 2;
-
   &:hover {
     cursor: pointer;
 
@@ -57,7 +56,7 @@ export const GridThree = styled.div`
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
     <Image
-      style={{ margin: "180px 0 0 80px" }}
+      style={{ margin: "180px 0 0 80px", width:'auto', height : '150px' }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
@@ -68,7 +67,7 @@ export default function HeroBasic(props) {
   );
   const CustomNextIcon = (props) => (
     <Image
-      style={{ margin: "180px 80px 0 0" }}
+      style={{ margin: "180px 80px 0 0", width:'auto', height : '150px' }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
@@ -83,9 +82,10 @@ export default function HeroBasic(props) {
       <Link href="/PromoContest">
         <TopRightSection>
           <Image
-            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-scaled.jpg"
+            style={{ width: "auto", height: "310px" }}
+            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1.webp"
             alt="promo contest"
-            width={620}
+            width={650}
             height={100}
             priority={true}
           />

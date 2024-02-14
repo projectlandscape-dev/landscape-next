@@ -9,9 +9,6 @@ import LayoutJs from "../components/layoutJs";
 import Image from "next/image";
 
 const FormWrapper = styled.div`
-  // background: var(--clr-dark);
-  // color: var(--txt-light);
-  // padding: 2em;
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -266,6 +263,7 @@ export default function PromoContest() {
                 <center>
                 <p style={{fontWeight:600, fontSize:'30px', color:'red'}}>DON'T FORGET TO FOLLOW US ON INSTAGRAM</p>
                 </center>
+                <center><p style={{fontWeight:600, fontSize:'30px'}}>No purchase necessary</p></center>
               </form>
             </FormWrapper>
             <RulesAndRegulation />

@@ -1,10 +1,8 @@
 import React from "react";
-import { Container, Section } from "components/layoutComponents";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import styled from "styled-components";
 import styles from "./Badges.module.scss";
 
 const ImgStyle = {
@@ -19,6 +17,37 @@ const ImgStyle = {
   //   width: "150px",
   // },
 };
+
+const badgesImg = [
+  "best-landscaping-companies-in-calgary-1.svg",
+  "best-landscaping-companies-in-calgary-2.svg",
+  "best-landscaping-companies-in-calgary-3.svg",
+  "landscaping-experts-calgary-1.svg",
+  "landscaping-experts-calgary-2.svg",
+  "landscaping-experts-calgary-3.svg",
+  "landscaping-calgary-top-rated-experts-1.svg",
+  "landscaping-calgary-top-rated-experts-2.svg",
+  "landscaping-calgary-top-rated-experts-3.svg",
+  "landscaping-calgary-top-rated-experts-4.svg",
+  "landscaping-calgary-top-rated-experts-5.svg",
+  "landscaping-calgary-top-rated-experts-6.svg",
+  "landscaping-calgary-top-rated-experts-7.svg",
+  "landscaping-calgary-top-rated-experts-8.svg",
+  "landscaping-calgary-top-rated-experts-9.svg",
+  "landscaping-calgary-top-rated-experts-10.svg",
+  "landscaping-calgary-top-rated-experts-11.svg",
+  "newBadges1.png",
+  "newBadges2.png",
+  "newBadges3.png",
+];
+
+const gridImg = [
+  "best-landscaping-companies-in-calgary-1.svg",
+  "best-landscaping-companies-in-calgary-2.svg",
+  "landscaping-calgary-top-rated-experts-3.svg",
+  "landscaping-calgary-top-rated-experts-9.svg",
+  "landscaping-calgary-top-rated-experts-11.svg",
+];
 
 export default function Badges() {
   const settings = {
@@ -41,234 +70,30 @@ export default function Badges() {
             </h2>
           </div>
           <Slider className={styles.slider} {...settings}>
-            <div>
-              <Image
-                src="/badges/best-landscaping-companies-in-calgary-1.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/best-landscaping-companies-in-calgary-2.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/best-landscaping-companies-in-calgary-3.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-experts-calgary-1.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-experts-calgary-2.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-experts-calgary-3.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-1.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-2.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-3.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-4.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-5.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-6.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-7.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-8.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-9.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-10.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-11.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/newBadges1.png"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/newBadges2.png"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/newBadges3.png"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
+            {badgesImg.map((badge, index) => (
+              <div key={index}>
+                <Image
+                  src={`/badges/${badge}`}
+                  alt="best landscaping companies in calgary"
+                  style={ImgStyle}
+                  width={100}
+                  height={100}
+                />
+              </div>
+            ))}
           </Slider>
           <div className={styles.grid}>
-            <div>
-              <Image
-                src="/badges/best-landscaping-companies-in-calgary-1.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/best-landscaping-companies-in-calgary-2.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-3.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-9.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="/badges/landscaping-calgary-top-rated-experts-11.svg"
-                alt="best landscaping companies in calgary"
-                style={ImgStyle}
-                width={100}
-                height={100}
-              />
-            </div>
+            {gridImg.map((badge, index) => (
+              <div key={index}>
+                <Image
+                  src={`/badges/${badge}`}
+                  alt="best landscaping companies in calgary"
+                  style={ImgStyle}
+                  width={100}
+                  height={100}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
