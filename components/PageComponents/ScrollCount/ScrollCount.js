@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Section, Container } from "components/layoutComponents";
 import Image from "next/image";
 import styles from "./ScrollCount.module.css";
 import styled from "styled-components";
-import { ButtonPrimary } from "../../buttons";
+import dynamic from "next/dynamic";
+const Section = dynamic(()=>import("components/layoutComponents").then((module)=>module.Section));
+const Container = dynamic(()=>import("components/layoutComponents").then((module)=>module.Container));
+const ButtonPrimary = dynamic(()=>import("../../buttons").then((module)=>module.ButtonPrimary));
 
 const device = {
   md: "48em",

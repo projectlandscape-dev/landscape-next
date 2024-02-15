@@ -1,11 +1,10 @@
 import React from "react";
-import Banner from "../components/banners/banner";
-import LayoutJs from "../components/layoutJs";
-import ReferForm from "../components/Forms/ReferForm";
-import StepsToRefer from "../components/Sections/stepsToRefer";
-import MainTestimonials from "../components/testimonials/mainTestimonials";
-import Seo from "../components/seo";
-
+const Banner = dynamic(()=>import("../components/banners/banner"))
+const LayoutJs = dynamic(()=>import("../components/layoutJs"))
+const ReferForm = dynamic(()=>import("../components/Forms/ReferForm"))
+const StepsToRefer = dynamic(()=>import("../components/Sections/stepsToRefer"))
+const MainTestimonials = dynamic(()=>import("../components/testimonials/mainTestimonials"))
+const Seo = dynamic(()=>import("../components/seo"))
 import {
   Accordion,
   AccordionItem,
@@ -14,16 +13,15 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import {
-  Container,
-  FlexMobileOpp,
-  Section,
-} from "../components/layoutComponents";
+const Container = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Container));
+const FlexMobileOpp = dynamic(()=>import("../components/layoutComponents").then((module)=>module.FlexMobileOpp));
+const Section = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Section));
+const ButtonPrimary = dynamic(()=>import("../components/buttons").then((module)=>module.ButtonPrimary));
+const AllServicesBanner = dynamic(()=>import("../components/Services/AllServicesBanner"));
+const Badges = dynamic(()=>import("../components/PageComponents/Badges/Badges"));
+const Cta3 = dynamic(()=>import("../components/PageComponents/Cta3/Cta3"));
 import styled from "styled-components";
-import { ButtonPrimary } from "../components/buttons";
-import AllServicesBanner from "../components/Services/AllServicesBanner";
-import Badges from "../components/PageComponents/Badges/Badges";
-import Cta3 from "../components/PageComponents/Cta3/Cta3";
+import dynamic from "next/dynamic";
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/patio-slider-1-3.webp"),

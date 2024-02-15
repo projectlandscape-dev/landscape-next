@@ -13,9 +13,7 @@ const ImgStyle = {
   padding: "0em",
   boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
   margin: "12px 30px",
-  // "@media (max-width: 500px)" {
-  //   width: "150px",
-  // },
+
 };
 
 const badgesImg = [
@@ -70,8 +68,8 @@ export default function Badges() {
             </h2>
           </div>
           <Slider className={styles.slider} {...settings}>
-            {badgesImg.map((badge, index) => (
-              <div key={index}>
+            {badgesImg.map((badge) => (
+              <div key={badge}>
                 <Image
                   src={`/badges/${badge}`}
                   alt="best landscaping companies in calgary"
@@ -83,8 +81,8 @@ export default function Badges() {
             ))}
           </Slider>
           <div className={styles.grid}>
-            {gridImg.map((badge, index) => (
-              <div key={index}>
+            {gridImg.map((badge) => (
+              <div key={badge}>
                 <Image
                   src={`/badges/${badge}`}
                   alt="best landscaping companies in calgary"

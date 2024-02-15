@@ -1,9 +1,8 @@
 import React from "react";
-import Banner from "../components/banners/banner";
-import LayoutJs from "../components/layoutJs";
-import WarrantyForm from "../components/Forms/WarrantyForm";
-import Seo from "../components/seo";
-
+const Banner = dynamic(()=>import("../components/banners/banner"))
+const LayoutJs = dynamic(()=>import("../components/layoutJs"))
+const WarrantyForm = dynamic(()=>import("../components/Forms/WarrantyForm"))
+const Seo = dynamic(()=>import("../components/seo"))
 import {
   Accordion,
   AccordionItem,
@@ -12,15 +11,15 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import {
-  Container,
-  FlexMobileOpp,
-  GridThree,
-  GridTwo,
-  Section,
-} from "../components/layoutComponents";
+const Container = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Container));
+const FlexMobileOpp = dynamic(()=>import("../components/layoutComponents").then((module)=>module.FlexMobileOpp));
+const GridThree = dynamic(()=>import("../components/layoutComponents").then((module)=>module.GridThree));
+const GridTwo = dynamic(()=>import("../components/layoutComponents").then((module)=>module.GridTwo));
+const Section = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Section));
+const ButtonPrimary = dynamic(()=>import("../components/buttons").then((module)=>module.ButtonPrimary));
 import styled from "styled-components";
-import { ButtonPrimary } from "../components/buttons";
+
+import dynamic from "next/dynamic";
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),
@@ -52,21 +51,12 @@ export default function WarrantyRequest() {
         title="Project landscape warranty request form"
         description="Project Landscape stands behind our work and gladly warrants any installation services we provide. If you encounter any issues or defects related to our workmanship, please contact us within the specified warranty period. We will assess the situation and, if deemed applicable, provide the necessary repairs or replacements at no additional cost. Customer satisfaction is our priority, and we strive to ensure the quality and longevity of our landscaping projects."
       />
-      {/* <ImageLeft
-        title="warranty"
-        body="As Calgary's largest residential landscaping company, we proudly stand behind out installation services. Please fill out our landscaping warranty form below and we will be in touch with you shortly."
-        img={ImageTop}
-        alt="calgary landscape materials"
-        to="/contact"
-        button="get more help from us"
-      /> */}
       <Section>
         <Container>
           <FlexMobileOpp>
             <div>
               <h2>Project Landscape Guarantee</h2>
               <h5>Your Peace of Mind is Our Priority</h5>
-
               <p>
                 At Project Landscape, we understand that your outdoor space is
                 not just a project, it's a part of your home - a place of
@@ -74,16 +64,13 @@ export default function WarrantyRequest() {
                 why we stand firmly behind the quality of our work with the
                 Project Landscape Guarantee.
               </p>
-
               <h3>Comprehensive Coverage for Your Investment</h3>
-
               <p>
                 Our guarantee is a testament to our commitment to excellence and
                 customer satisfaction. We ensure that every installation and
                 design meets the highest standards of quality and durability.
                 Here's what our guarantee covers:
               </p>
-
               <GridThree>
                 <p>
                   <strong>Quality of Workmanship:</strong> We pride ourselves on
@@ -104,14 +91,11 @@ export default function WarrantyRequest() {
                   space, we will rework the design to your satisfaction.
                 </p>
               </GridThree>
-
               <h3>Easy Warranty Claims</h3>
-
               <p>
                 Experiencing an issue? Filing a warranty claim with us is
                 hassle-free:
               </p>
-
               <GridTwo>
                 <p>
                   <strong>Fill Out the Form:</strong> Provide all the necessary
@@ -122,9 +106,7 @@ export default function WarrantyRequest() {
                   claim and get in touch with you promptly to resolve the issue.
                 </p>
               </GridTwo>
-
               <h3>Terms and Conditions</h3>
-
               <p>
                 Our guarantee is valid for a period of 2 years on hardscaping
                 installations & 1 year on softscaping from the date of project
@@ -132,9 +114,7 @@ export default function WarrantyRequest() {
                 Please refer to our detailed warranty documentation for specific
                 coverage information.
               </p>
-
               <h3>Your Trust, Our Responsibility</h3>
-
               <p>
                 We don't just create landscapes; we build lasting relationships.
                 The Project Landscape Guarantee is our promise to you - a
@@ -248,7 +228,6 @@ export default function WarrantyRequest() {
                   <p className="subheader tan">learn from the leaders</p>
                   <h2 className="title">Calgary warranty request FAQs</h2>
                 </div>
-
                 <p>
                   Looking for information on our landscaping warranty program in
                   Calgary? Discover answers to common questions about our

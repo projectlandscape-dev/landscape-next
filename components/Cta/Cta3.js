@@ -1,7 +1,10 @@
 import React from "react";
-import { Container, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
 import styled from "styled-components";
-import { ButtonSecondaryLight } from "../buttons";
+const Container = dynamic(()=>import("../layoutComponents").then((module)=>module.Container));
+const Section = dynamic(()=>import("../layoutComponents").then((module)=>module.Section));
+const ButtonSecondaryLight = dynamic(()=>import("../buttons").then((module)=>module.ButtonSecondaryLight));
+
 
 const Wrapper = styled.div`
   background: var(--clr-accent);

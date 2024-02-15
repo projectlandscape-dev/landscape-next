@@ -1,37 +1,30 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import { ButtonPrimary, ButtonPrimaryDark, ButtonInline } from "../buttons";
-import {
-  Actions,
-  Container,
-  FlexMobileOpp,
-  Section,
-} from "../layoutComponents";
+import dynamic from "next/dynamic";
+const ButtonPrimary = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimary));
+const ButtonPrimaryDark = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimaryDark));
+const ButtonInline = dynamic(()=>import("../buttons").then((module)=>module.ButtonInline));
+
 
 const TextTop = styled.div`
   text-align: center;
-
   width: 85%;
   margin: 0 auto;
   max-width: 95rem;
 `;
-
 const Text = styled.div``;
-
 const Grid = styled.div`
   display: grid;
   grid-template-rows: 4em auto 4em;
   grid-template-columns: 2em auto 2em;
 `;
-
 const Bg = styled.div`
   background: var(--clr-accent);
   grid-column: 2 / -1;
   grid-row: 1 / -1;
   z-index: 1;
 `;
-
 const Video = styled.div`
   grid-column: 1 / span 2;
   grid-row: 2 / span 1;

@@ -4,6 +4,9 @@ if (!process.env.WORDPRESS_API_URL) {
     Add to your environment variables WORDPRESS_API_URL.
   `);
 }
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
 
 /**
  * @type {import('next').NextConfig}

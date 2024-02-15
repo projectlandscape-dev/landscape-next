@@ -1,24 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import { ButtonPrimary, ButtonInline } from "../buttons";
-import { Container, Flex, FlexMobileOpp, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
+const ButtonPrimary = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimary));
 
 const Wrapper = styled.div`
   background: var(--clr-dark);
 `;
-
 const Text = styled.div`
   color: var(--txt-light);
 `;
-
 const ImgStyles = {
   boxShadow: "-20px 20px 0px 1px var(--clr-tan)",
   marginTop: "2em",
   maxHeight: "450px",
 };
 
-export default function NewBlockBlack(props) {
+export default function NewBlockBlack() {
   return (
     <Wrapper>
       <section>
@@ -36,7 +34,6 @@ export default function NewBlockBlack(props) {
                 <h2 className="title tan">
                   {" "}
                   We're Flipping The Indoors Out
-                  {/* explore our <span className="tan">indoor idea</span> centers */}
                 </h2>
               </div>
               <p>
@@ -58,8 +55,6 @@ export default function NewBlockBlack(props) {
                 lighting. Our formula to the perfect landscaping process sets us
                 apart from the competition.
               </p>
-
-             
               <ButtonPrimary href="/landscape-idea-center">
                 explore showroom
               </ButtonPrimary>

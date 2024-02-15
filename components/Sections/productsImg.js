@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonPrimary, ButtonInline } from "../buttons";
-import { Container, Flex, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+const ButtonPrimary = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimary));
 
 const Text = styled.div``;
 
@@ -15,7 +15,7 @@ const Buttonwrapper = styled.div`
   height: 50px;
 `;
 
-export default function ProductsImg(props) {
+export default function ProductsImg() {
   return (
     <section>
       <div className="container">
@@ -47,6 +47,7 @@ export default function ProductsImg(props) {
               <Image
                 width={160}
                 height={160}
+                alt="image-62"
                 src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
               />
             </Buttonwrapper>

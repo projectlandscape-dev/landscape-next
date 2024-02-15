@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonInline, ButtonPrimary } from "../buttons";
+import dynamic from "next/dynamic";
+const ButtonPrimary = dynamic(()=>import( "../buttons").then((module)=>module.ButtonPrimary));
+const ButtonInline = dynamic(()=>import( "../buttons").then((module)=>module.ButtonInline));
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
@@ -82,11 +84,10 @@ export default function HeroBasic(props) {
       <Link href="/PromoContest">
         <TopRightSection>
           <Image
-            style={{ width: "auto", height: "310px" }}
-            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1.webp"
+            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
             alt="promo contest"
-            width={650}
-            height={100}
+            width={620}
+            height={310}
             priority={true}
           />
         </TopRightSection>

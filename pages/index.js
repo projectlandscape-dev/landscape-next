@@ -1,30 +1,30 @@
 import React from "react";
-import LayoutJs from "../components/layoutJs";
-import HeroBasic from "../components/Heros/HeroBasic";
-import Badges from "../components/Badges/Badges";
-import AllServices from "../components/AllServices/AllServices";
-import { ButtonInline } from "../components/buttons";
+const LayoutJs = dynamic(()=> import("../components/layoutJs"));
+const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
+const Badges = dynamic(()=> import("../components/Badges/Badges"));
+const AllServices = dynamic(()=> import("../components/AllServices/AllServices"));
+const ButtonInline = dynamic(() => import('../components/buttons').then((module) => module.ButtonInline));
+const Cta3 = dynamic(()=> import("../components/Cta3/Cta3"));
+const ProductsImg = dynamic(()=> import("../components/Sections/productsImg"));
+const ShowroomSection = dynamic(()=> import("../components/Sections/ShowroomSection"));
+const MainVideo = dynamic(()=> import("../components/Sections/MainVideo"));
+const LandscapingImg = dynamic(()=> import("../components/Sections/landscapingImg"));
+const OasisImg = dynamic(()=> import("../components/Sections/oasisImg"));
+const ProjectImg = dynamic(()=> import("../components/Sections/ProjectImg"));
+const MainTrends = dynamic(()=> import("../components/trends/mainTrends"));
+const Why = dynamic(()=> import("../components/why"));
+const MainTestimonials = dynamic(()=> import("../components/testimonials/mainTestimonials"));
+const Videos = dynamic(()=> import("../components/videos"));
+const FaqFeatured = dynamic(()=> import("../components/faq/faqFeatured"));
+const MainServices = dynamic(()=> import("../components/MainServices/MainServices"));
+const PortfolioBanner = dynamic(()=> import("../components/portfolioBanner"));
+const StaticProcessArea = dynamic(()=> import("../components/PageComponents/StaticProcessArea"));
+const FeaturedWork = dynamic(()=> import("../components/StaticFeaturedWork"));
+const FinanceBanner = dynamic(()=> import("../components/financeBanner"));
+const ScrollCount = dynamic(()=> import("../components/PageComponents/ScrollCount/ScrollCount"));
+const NewBlockBlack = dynamic(()=> import("../components/Sections/NewBlockBlack"));
+const Seo = dynamic(()=>import("../components/seo"))
 import styled from "styled-components";
-import Cta3 from "../components/Cta3/Cta3";
-import ProductsImg from "../components/Sections/productsImg";
-import ShowroomSection from "../components/Sections/ShowroomSection";
-import MainVideo from "../components/Sections/MainVideo";
-import LandscapingImg from "../components/Sections/landscapingImg";
-import OasisImg from "../components/Sections/oasisImg";
-import ProjectImg from "../components/Sections/ProjectImg";
-import MainTrends from "../components/trends/mainTrends";
-import Why from "../components/why";
-import MainTestimonials from "../components/testimonials/mainTestimonials";
-import Videos from "../components/videos";
-import FaqFeatured from "../components/faq/faqFeatured";
-import Seo from "../components/seo";
-import MainServices from "../components/MainServices/MainServices";
-import PortfolioBanner from "../components/portfolioBanner";
-import StaticProcessArea from "../components/PageComponents/StaticProcessArea";
-import FeaturedWork from "../components/StaticFeaturedWork";
-import FinanceBanner from "../components/financeBanner";
-import ScrollCount from "../components/PageComponents/ScrollCount/ScrollCount";
-import NewBlockBlack from "../components/Sections/NewBlockBlack";
 import dynamic from "next/dynamic";
 
 const Wrapper = styled.div`
@@ -95,7 +95,7 @@ export default function Index() {
                   ensuring that every outdoor space is transformed into a
                   stunning and practical oasis. Secondly, we are known for our
                   exceptional Calgary landscaping{" "}
-                  <ButtonInline href="/esidential-services/concrete-installations">
+                  <ButtonInline href="/residential-services/concrete-installations">
                     installation services
                   </ButtonInline>
                   . Project Landscape has a dedicated{" "}
@@ -158,10 +158,8 @@ export default function Index() {
       <StaticProcessArea />
       <Why />
       <FeaturedWork />
-      {/* <Ebook title="download our landscaping ebook" href="" /> */}
       <MainTestimonials />
       <FaqFeatured />
-      {/* <CompanyValue /> */}
       <Videos />
       <FinanceBanner />
     </LayoutJs>

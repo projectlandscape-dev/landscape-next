@@ -1,13 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import styled from "styled-components";
-import { Container, Section } from "../layoutComponents";
 import Link from "next/link";
-import { ButtonPrimary } from "../buttons";
 import styles from "./AllServices.module.scss";
 
 const ServiceBox = (props) => {
-  //
   return (
     <div className={styles.item}>
       <Image
@@ -30,7 +26,6 @@ export default function AllServices() {
     <section className="spacing-lg">
       <div className="container">
         <div className={styles.text}>
-          {/* <p className="subheader accent">find the service you need</p> */}
           <h2 className="title">
             take a closer look at our calgary landscaping services
           </h2>

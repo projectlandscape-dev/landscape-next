@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonSecondaryLight } from "../buttons";
-import { Container, Flex, FlexMobileOpp, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
+const ButtonSecondaryLight = dynamic(()=>import("../buttons").then((module)=>module.ButtonSecondaryLight));
 import Image from "next/image";
 
 const Wrapper = styled.div`

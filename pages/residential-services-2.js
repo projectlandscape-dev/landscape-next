@@ -1,12 +1,14 @@
 import React from "react";
-import LayoutJs from "../components/layoutJs";
-import MainServicesLinks from "../components/Services/MainServicesLinks";
-import AllServicesBanner from "../components/Services/AllServicesBanner";
-import FaqFeatured from "../components/faq/faqFeatured";
-import MainTestimonials from "../components/testimonials/mainTestimonials";
-import HeroSlider from "../components/Heros/HeroBasic";
-import Cta3 from "../components/Cta/Cta3";
-import Seo from "../components/seo";
+const LayoutJs = dynamic(()=>import("../components/layoutJs"))
+const MainServicesLinks = dynamic(()=>import("../components/Services/MainServicesLinks"))
+const AllServicesBanner = dynamic(()=>import("../components/Services/AllServicesBanner"))
+const FaqFeatured = dynamic(()=>import("../components/faq/faqFeatured"))
+const MainTestimonials = dynamic(()=>import("../components/testimonials/mainTestimonials"))
+const HeroSlider = dynamic(()=>import("../components/Heros/HeroBasic"))
+const Cta3 = dynamic(()=>import("../components/Cta/Cta3"))
+const Seo = dynamic(()=>import("../components/seo"))
+
+import dynamic from "next/dynamic";
 
 export default function residentialServicesPage() {
   return (

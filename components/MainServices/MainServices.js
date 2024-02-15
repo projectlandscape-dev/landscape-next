@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import styled from "styled-components";
-import { ButtonUnderline, ButtonInline } from "../buttons";
-import { Container, Section } from "../layoutComponents";
-import Link from "next/link";
+import dynamic from "next/dynamic";
+const ButtonUnderline = dynamic(()=>import("../buttons").then((module)=>module.ButtonUnderline));
 import styles from "./MainServices.module.scss";
 
 export default function MainServices() {

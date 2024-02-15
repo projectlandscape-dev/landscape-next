@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import dynamic from "next/dynamic";
 import styled from "styled-components";
-import { ButtonUnderline, ButtonInline } from "../buttons";
-import { Container, Section } from "../layoutComponents";
-import Link from "next/link";
+const ButtonUnderline = dynamic(()=>import("../buttons").then((module)=>module.ButtonUnderline));
+const ButtonInline = dynamic(()=>import("../buttons").then((module)=>module.ButtonInline));
+const Container = dynamic(()=>import("../layoutComponents").then((module)=>module.Container));
+const Section = dynamic(()=>import("../layoutComponents").then((module)=>module.Section));
 
 const device = {
   md: "48em",

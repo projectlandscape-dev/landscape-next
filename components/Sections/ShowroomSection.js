@@ -1,24 +1,23 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import { ButtonPrimary, ButtonInline } from "../buttons";
-import { Container, Flex, FlexMobileOpp, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
+const ButtonPrimary = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimary));
+const ButtonInline = dynamic(()=>import("../buttons").then((module)=>module.ButtonInline));
 
 const Wrapper = styled.div`
   background: var(--clr-dark);
 `;
-
 const Text = styled.div`
   color: var(--txt-light);
 `;
-
 const ImgStyles = {
   boxShadow: "-20px 20px 0px 1px var(--clr-tan)",
   marginTop: "2em",
   maxHeight: "450px",
 };
 
-export default function ShowroomSection(props) {
+export default function ShowroomSection() {
   return (
     <Wrapper>
       <section>

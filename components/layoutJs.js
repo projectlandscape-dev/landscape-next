@@ -1,11 +1,10 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import styled from "styled-components";
-import FinanceBanner from "./financeBanner";
-import ContactBanner from "./contactBanner";
-import Footer from "./Footer/Footer";
-import GoogleBadge from "./googleBadge";
-import Header from "./Header/Header";
-import RecentPosts from "./recentPosts";
+const ContactBanner = dynamic(()=>import("./contactBanner"))
+const Footer = dynamic(()=>import("./Footer/Footer"))
+const GoogleBadge = dynamic(()=>import("./googleBadge"))
+const Header = dynamic(()=>import("./Header/Header"))
 
 const Wrapper = styled.div`
   position: relative;

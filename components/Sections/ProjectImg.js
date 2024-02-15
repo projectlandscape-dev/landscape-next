@@ -1,18 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonInline, ButtonPrimary, ButtonSecondaryLight } from "../buttons";
-import { Container, Flex, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+const ButtonSecondaryLight = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonSecondaryLight)
+);
 
 const Wrapper = styled.div`
-background: var(--clr-accent)
+  background: var(--clr-accent);
 `;
 
 const Text = styled.div`
-color: var(--txt-light);
-p {
   color: var(--txt-light);
-}
+  p {
+    color: var(--txt-light);
+  }
 `;
 
 const ImgStyle = {
@@ -48,10 +50,11 @@ export default function ProjectImg() {
                 structure we build stands the test of time. Furthermore, our
                 strong partnerships with both local and national vendors allow
                 us to provide top-quality materials and services. At Project
-                Landscape, we don’t just build structures; we build confidence
+                Landscape, we don't just build structures; we build confidence
                 and satisfaction, backed by our comprehensive workmanship and
                 product satisfaction guarantees.
               </p>
+
               <ButtonSecondaryLight href={"/contact"}>
                 See How We're Different
               </ButtonSecondaryLight>
