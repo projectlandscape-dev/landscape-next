@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Seo />
-      <Component {...pageProps} />
       <SpeedInsights />
+      <Component {...pageProps} />
     </>
   )
 }

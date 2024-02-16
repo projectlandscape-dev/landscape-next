@@ -156,7 +156,7 @@ export default function AllServicesBanner() {
             text="edging"
           />
           <ServiceBox
-            src="/calgary-curbing.png"
+            src="/calgary-curbing.webp"
             alt="calgary landscaping services"
             href="/concrete-curbing"
             text="curbing"
@@ -174,7 +174,7 @@ export default function AllServicesBanner() {
             text="seat walls"
           />
           <ServiceBox
-            src="/calgary-concrete.jpg"
+            src="/calgary-concrete.webp"
             alt="calgary landscaping services"
             href="/residential-services/concrete-installations"
             text="concrete"

@@ -112,7 +112,7 @@ export default function RelatedServices() {
           <ItemLink to="/residential-services/hardscaping/concrete-contractors-calgary">
             <StaticImage
               className="service-img"
-              src="../../images/calgary-concrete.jpg"
+              src="../../images/calgary-concrete.webp"
               alt="calgary landscaping services"
             />
             <h3 className="upper">concrete</h3>
