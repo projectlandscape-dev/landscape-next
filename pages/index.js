@@ -26,6 +26,8 @@ const NewBlockBlack = dynamic(()=> import("../components/Sections/NewBlockBlack"
 const Seo = dynamic(()=>import("../components/seo"))
 import styled from "styled-components";
 import dynamic from "next/dynamic";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 const Wrapper = styled.div`
   background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
@@ -54,6 +56,7 @@ export default function Index() {
         title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
         description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
       />
+      <SpeedInsights/>
       <HeroBasic />
       <div style={{ marginTop: "-64px" }}>
         <PortfolioBanner />
