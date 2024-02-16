@@ -1,7 +1,7 @@
 import ClassName from 'models/classname';
+// import Image from 'next/image';
 
 import styles from './Image.module.scss';
-
 const Image = ({
   children,
   className,
