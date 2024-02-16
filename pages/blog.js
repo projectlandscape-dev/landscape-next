@@ -10,9 +10,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { ButtonPrimary } from "/components/buttons";
 import Image from "components/Image";
-import { postPathBySlugCategory, sanitizeExcerpt } from "lib/posts";
-import useSite from "hooks/use-site";
-import { WebsiteJsonLd } from "lib/json-ld";
+import { postPathBySlugCategory } from "lib/posts";
 import Seo from "../components/seo";
 import Pagination from "components/Pagination";
 
@@ -71,11 +69,6 @@ const Text = styled.div`
       font-size: var(--fs-3);
     }
   }
-`;
-
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
 `;
 
 // Banner

@@ -1,4 +1,4 @@
-import { Section, Container, GridAuto } from "components/layoutComponents";
+import { Section } from "components/layoutComponents";
 import React from "react";
 import Styles from "./ProcessArea.module.scss";
 
@@ -9,9 +9,9 @@ export default function ProcessArea({ title, addProcess }) {
         <div className={Styles.boxStyle}>
           <h2 className="title">{title}</h2>
           <ul className={Styles.orderStyle}>
-            {addProcess?.map((item) => {
+            {addProcess?.map((item, index) => {
               return (
-                <li className={Styles.listStyle}>
+                <li className={Styles.listStyle} key={index}>
                   <h2 className={Styles.pointStyle}>{item?.itemNumber}</h2>
                   <div className={Styles.desStyle}>
                     <h3>{item?.title}</h3>

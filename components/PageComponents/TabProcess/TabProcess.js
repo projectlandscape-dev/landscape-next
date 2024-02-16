@@ -29,10 +29,9 @@ const TabContainer = styled.div`
   width: fit-content;
   margin: 30px auto 30px;
   @media screen and (max-width: 600px) {
-    padding : 10px;
-    border-radius : 30px
+    padding: 10px;
+    border-radius: 30px;
   }
-
 `;
 
 const TabButton = styled.button`
@@ -53,9 +52,7 @@ const TabButton = styled.button`
   @media screen and (max-width: 600px) {
     padding: 5px 20px;
     border-radius: 20px;
-
   }
-
 `;
 
 const TabContent = styled.div`
@@ -80,6 +77,7 @@ export default function TabProcess({ tabName, title, color }) {
           {tabName?.map((item, index) => {
             return (
               <TabButton
+                key={index}
                 active={activeTab === index}
                 onClick={() => setActiveTab(index)}
               >
@@ -90,7 +88,7 @@ export default function TabProcess({ tabName, title, color }) {
         </TabContainer>
         {tabName?.map((item, index) => {
           return (
-            <TabContent active={activeTab === index}>
+            <TabContent key={index} active={activeTab === index}>
               <Flex>
                 <Text className="spacing">
                   <div>

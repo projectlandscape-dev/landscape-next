@@ -3,7 +3,6 @@ import React from "react"
 import styled from "styled-components"
 import { Container, Section } from "../layoutComponents"
 import { Link } from "gatsby"
-import { ButtonPrimary } from "../buttons"
 
 const Text = styled.div`
   max-width: 110ch;

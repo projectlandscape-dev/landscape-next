@@ -8,7 +8,6 @@ import Image from "next/image";
 import { useLockedBody } from "usehooks-ts";
 import { useRouter } from "next/router";
 import { ButtonSecondaryLight } from "../buttons";
-// import logo from "../../public/project-landscape-logo-light.svg";
 
 const device = {
   sm: "18em",
@@ -392,11 +391,6 @@ export default function HeaderBasic() {
                   </div>
                 </div>
                 <div className={styles.dropdown}>
-                  {/* <Title >
-                        <p>about</p>
-                        
-                            <IoMdArrowDropdown size={20} />
-                    </Title> */}
                   <p>
                     about <IoMdArrowDropdown size={20} />
                   </p>
