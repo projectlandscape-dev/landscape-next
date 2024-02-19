@@ -47,7 +47,8 @@ export default function WarrantyRequest() {
         description="Here you can request your warranty."
       />
       <Banner
-        img="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-67-1.png"
+        // img="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-67-1.png"
+        img='https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/image-67-2.jpg'
         title="Project landscape warranty request form"
         description="Project Landscape stands behind our work and gladly warrants any installation services we provide. If you encounter any issues or defects related to our workmanship, please contact us within the specified warranty period. We will assess the situation and, if deemed applicable, provide the necessary repairs or replacements at no additional cost. Customer satisfaction is our priority, and we strive to ensure the quality and longevity of our landscaping projects."
       />
