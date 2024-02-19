@@ -28,8 +28,8 @@ const TopRightSection = styled.div`
   top: 18%;
   right: 0;
   z-index: 2;
-  width: 620px; 
-  height: 310px; 
+  // width: 620px; 
+  // height: 310px; 
   &:hover {
     cursor: pointer;
     &:before {
@@ -124,10 +124,11 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-65cf44686732e.webp"
-                    width={1000}
-                    height={667}
+                    // width={1000}
+                    // height={667}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
-                    // priority={true}
                     loading="lazy"
                   />
                 </div>
@@ -162,8 +163,10 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={500}
-                    height={100}
+                    // width={500}
+                    // height={100}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
                     priority={true}
                   />
@@ -201,8 +204,8 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    width={100}
-                    height={100}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
                     priority={true}
                   />
