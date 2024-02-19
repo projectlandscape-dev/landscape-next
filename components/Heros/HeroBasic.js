@@ -113,11 +113,10 @@ export default function HeroBasic(props) {
               <div className={styles.content}>
                 <div className={styles.desktopImg}>
                   <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                    width={500}
-                    height={100}
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-slider_1_nsnsnr.webp"
+                    width={1000}
+                    height={665}
                     alt="calgary landscaping"
-                    // priority={true}
                     loading="lazy"
                   />
                 </div>

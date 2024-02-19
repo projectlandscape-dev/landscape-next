@@ -129,7 +129,7 @@ export default function WarrantyRequest() {
         <Section>
           <Container>
             <FlexMobileOpp>
-              <Accordion className="spacing">
+              <Accordion className="spacing" allowToggle>
                 <AccordionItem style={AccordionStyle}>
                   <h2>
                     <AccordionButton style={AccordionStyle}>
