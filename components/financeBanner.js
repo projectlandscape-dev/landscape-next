@@ -1,8 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-import { ButtonPrimary } from "./buttons";
-import { Container, Section } from "./layoutComponents";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+import styled from "styled-components";
+const ButtonPrimary = dynamic(() =>
+  import("./buttons").then((module) => module.ButtonPrimary)
+);
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"),

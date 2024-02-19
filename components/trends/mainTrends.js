@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonInline, ButtonUnderline } from "../buttons";
-import { Container, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
+const ButtonInline = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonInline)
+);
+const ButtonUnderline = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonUnderline)
+);
 import Image from "next/image";
 
 const device = {
@@ -69,7 +74,6 @@ export default function MainTrends() {
         <div className="container">
           <Text className="spacing ">
             <div>
-              {/* <p className="subheader accent">title for trends</p> */}
               <h2 className="title"> 2024 calgary landscaping trends</h2>
             </div>
             <p>
@@ -102,6 +106,7 @@ export default function MainTrends() {
                 width={600}
                 src="/calgary-landscaping-color.jpg"
                 alt="calgary hardscaping style"
+                loading="lazy"
               />
               <div>
                 <h3 className="subheader">design & landscape styles</h3>
@@ -119,6 +124,7 @@ export default function MainTrends() {
                 width={600}
                 src="/calgary-landscaping-texture.jpg"
                 alt="calgary landscaping inspiration"
+                loading="lazy"
               />
               <div>
                 <h3 className="subheader">outdoor living inspiration</h3>
@@ -136,6 +142,7 @@ export default function MainTrends() {
                 width={600}
                 src="/calgary-landscaping-scale.jpg"
                 alt="calgary landscaping trends"
+                loading="lazy"
               />
               <div>
                 <h3 className="subheader">landscape trends</h3>

@@ -65,7 +65,7 @@ const CounterBox = ({ imageSrc, alt, targetValue, description, isOnlyBox }) => {
   return (
     <div className={styles.counterBox} ref={boxRef}>
       <center>
-        <Image src={imageSrc} alt={alt} width={80} height={80} />
+        <Image src={imageSrc} alt={alt} width={80} height={80} loading="lazy"/>
         {isOnlyBox && <div className={styles.only}>Only</div>}
         <div className={styles.count}>{counter}%</div>
         <div className={styles.description}>{description}</div>

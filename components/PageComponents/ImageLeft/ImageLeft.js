@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Section } from "../../layoutComponents";
-import { ButtonPrimary } from "../../buttons";
-import Image from "../../Image";
+import dynamic from "next/dynamic";
+const Container = dynamic(() => import("../../layoutComponents").then((module) => module.Container));
+const Section = dynamic(() => import("../../layoutComponents").then((module) => module.Section));
+const ButtonPrimary = dynamic(() => import("../../buttons").then((module) => module.ButtonPrimary));
+const Image = dynamic(()=>import("../../Image"))
 
 const Text = styled.div``;
-
-
 const ImgLeft = styled.div`
   position: relative;
   box-shadow: ${(props) =>
@@ -90,6 +90,7 @@ export default function ImageLeft({
                 </ButtonPrimary>
                 <Image
                   width="160px"
+                  
                   src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
                 />
               </Buttonwrapper>

@@ -1,11 +1,12 @@
 import React from "react";
-import ContactBanner from "../components/banners/contactBanner";
-import FormContact from "../components/Forms/FormContact";
-import LayoutJs from "../components/layoutJs";
-import Seo from "../components/seo";
+import dynamic from "next/dynamic";
+const ContactBanner = dynamic(() => import("../components/banners/contactBanner"));
+const FormContact = dynamic(() => import("../components/Forms/FormContact"));
+const LayoutJs = dynamic(() => import("../components/layoutJs"));
+const Seo = dynamic(() => import("../components/seo"));
+const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
+const Testimonial = dynamic(() => import("../components/PageComponents/Testimonial/Testimonial"));
 
-import PortfolioBanner from "../components/portfolioBanner";
-import Testimonial from "../components/PageComponents/Testimonial/Testimonial";
 
 export default function Contact() {
   return (

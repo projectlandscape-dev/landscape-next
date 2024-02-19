@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { FaPhone, FaRegClock } from "react-icons/fa";
 import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import FormFooter from "../Forms/FormFooter";
-import Map from "../map";
+// import Map from "../map";
+const Map = dynamic(()=> import("../map"));
+
 import InstagramFeed from "../instagramFeed";
 import { ButtonInline } from "../buttons";
 import styles from "./Footer.module.scss";
@@ -623,6 +626,7 @@ export default function Footer() {
                     alt="aaron tonner web solutions logo"
                     width={100}
                     height={100}
+                    priority={true}
                   />
                 </Link>
               </div>

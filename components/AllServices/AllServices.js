@@ -8,10 +8,12 @@ const ServiceBox = (props) => {
     <div className={styles.item}>
       <Image
         className={styles.serviceImg}
-        fill={true}
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        fill
+        style={{ objectFit: "cover" }}
         src={props.src}
         alt={props.alt}
+        sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
+        priority={true}
       />
       <Link className={styles.styledLink} href={props.href}>
         {props.text}

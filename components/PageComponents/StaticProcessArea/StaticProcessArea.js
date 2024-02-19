@@ -1,6 +1,9 @@
-import { Section, Container, GridAuto } from "components/layoutComponents";
 import React from "react";
+import dynamic from "next/dynamic";
 import Styles from "./StaticProcess.module.scss";
+const Section = dynamic(() =>
+  import("components/layoutComponents").then((module) => module.Section)
+);
 
 export default function StaticProcessArea() {
   return (

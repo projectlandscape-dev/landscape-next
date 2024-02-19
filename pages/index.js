@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "styled-components";
+import dynamic from "next/dynamic";
 const LayoutJs = dynamic(()=> import("../components/layoutJs"));
 const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
 const Badges = dynamic(()=> import("../components/Badges/Badges"));
@@ -21,12 +23,10 @@ const PortfolioBanner = dynamic(()=> import("../components/portfolioBanner"));
 const StaticProcessArea = dynamic(()=> import("../components/PageComponents/StaticProcessArea"));
 const FeaturedWork = dynamic(()=> import("../components/StaticFeaturedWork"));
 const FinanceBanner = dynamic(()=> import("../components/financeBanner"));
-const ScrollCount = dynamic(()=> import("../components/PageComponents/ScrollCount/ScrollCount"));
+const ScrollCount = dynamic(()=> import("../components/PageComponents/ScrollCount/ScrollCount"),{ssr:false});
 const NewBlockBlack = dynamic(()=> import("../components/Sections/NewBlockBlack"));
-const Seo = dynamic(()=>import("../components/seo"))
-import styled from "styled-components";
-import dynamic from "next/dynamic";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+const Seo = dynamic(()=>import("../components/seo"));
+
 
 
 const Wrapper = styled.div`
@@ -56,7 +56,6 @@ export default function Index() {
         title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
         description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
       />
-      <SpeedInsights/>
       <HeroBasic />
       <div style={{ marginTop: "-64px" }}>
         <PortfolioBanner />

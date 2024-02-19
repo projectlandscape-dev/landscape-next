@@ -1,4 +1,6 @@
 import React from "react";
+import dynamic from "next/dynamic";
+import styled from "styled-components";
 import {
   Accordion,
   AccordionItem,
@@ -7,9 +9,9 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import { Container, FlexMobileOpp, Section } from "../layoutComponents";
-import styled from "styled-components";
-import { ButtonPrimary } from "../buttons";
+const ButtonPrimary = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonPrimary)
+);
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),

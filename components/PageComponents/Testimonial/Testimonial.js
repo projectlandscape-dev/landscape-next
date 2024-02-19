@@ -1,11 +1,21 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
+import React from "react";
+import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick-theme.css";
-import { Container, Section } from "components/layoutComponents";
+import "slick-carousel/slick/slick.css";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
+const Container = dynamic(() =>
+  import("components/layoutComponents").then((module) => module.Container)
+);
+const Section = dynamic(() =>
+  import("components/layoutComponents").then((module) => module.Section)
+);
 import styled from "styled-components";
-import { FaStar } from "react-icons/fa";
-import { ButtonPrimary } from "../../buttons";
+const FaStar = dynamic(() =>
+  import("react-icons/fa").then((module) => module.FaStar)
+);
+const ButtonPrimary = dynamic(() =>
+  import("../../buttons").then((module) => module.ButtonPrimary)
+);
 
 const ReviewWrapper = styled.div`
   border: 1px solid var(--clr-accent);
@@ -60,17 +70,15 @@ const ReviewBox = (props) => {
       <p className="italics">"{props.review}"</p>
       <p className="bold caps">{props.name}</p>
       <FlexStars>
-        <FaStar />
-        <FaStar />
-        <FaStar />
-        <FaStar />
-        <FaStar />
+        {[...Array(5)].map((_, index) => (
+          <FaStar key={index} />
+        ))}
       </FlexStars>
     </ReviewWrapper>
   );
 };
 
-export default function Testimonial({ title, testimonials }) {
+export default function Testimonial() {
   const settings = {
     dots: true,
     infinite: true,
@@ -105,15 +113,6 @@ export default function Testimonial({ title, testimonials }) {
                   review="They took on a pretty big project in our backyard that included excavating a large portion of the sloped yard, installing a gorgeous retaining wall with a beautiful patio completed in paving stones and decorative rock, a number of privacy screens as well as some shrubs & grass. The  team was superb, demonstrating exceptional skill."
                   name="Sabrina"
                 />
-                {/* {testimonials.map(testimonial => {
-                return (
-                  <ReviewBox
-                    title={testimonial.testimonialTitle}
-                    review={testimonial.testimonialBody}
-                    name={testimonial.testimonialName}
-                  />
-                )
-              })} */}
               </Slider>
             </SliderWrapper>
           </Container>

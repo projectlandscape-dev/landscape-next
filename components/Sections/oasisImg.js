@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonInline, ButtonPrimary } from "../buttons";
-import { Container, Flex, Section } from "../layoutComponents";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+const ButtonInline = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonInline)
+);
+const ButtonPrimary = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonPrimary)
+);
 
 const Wrapper = styled.div``;
-
 const Text = styled.div``;
 
 const ImgStyle = {
@@ -57,11 +61,12 @@ export default function OasisImg(props) {
               <ButtonPrimary href={props.to}>{props.button}</ButtonPrimary>
             </Text>
             <Image
-              height={100}
               width={400}
+              height={100}
               style={ImgStyle}
               src="https://res.cloudinary.com/di7j408eq/image/upload/v1685660046/calgary-landscaping-oasis_lt5gcp.png"
               alt="best landscaper calgary, AB"
+              loading="lazy"
             />
           </div>
         </div>

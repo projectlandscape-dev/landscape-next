@@ -1,7 +1,12 @@
 import React from "react";
-import { ButtonInline, ButtonPrimary } from "./buttons";
-import { Container, GridThree, Section } from "./layoutComponents";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+const ButtonInline = dynamic(() =>
+  import("./buttons").then((module) => module.ButtonInline)
+);
+const ButtonPrimary = dynamic(() =>
+  import("./buttons").then((module) => module.ButtonPrimary)
+);
 
 export default function Why() {
   return (
@@ -19,6 +24,7 @@ export default function Why() {
               alt="calgary landscaping company"
               width={80}
               height={80}
+              loading="lazy"
             />
             <h3 className="body--large caps bold">
               We Provide Environmental Sustainability
@@ -40,6 +46,7 @@ export default function Why() {
               alt="calgary landscaping company"
               width={80}
               height={80}
+              loading="lazy"
             />
 
             <h3 className="body--large caps bold">
@@ -61,6 +68,7 @@ export default function Why() {
               alt="calgary landscaping company"
               width={80}
               height={80}
+              loading="lazy"
             />
 
             <h3 className="body--large caps bold">
@@ -81,6 +89,7 @@ export default function Why() {
               alt="calgary landscaping company"
               width={80}
               height={80}
+              loading="lazy"
             />
 
             <h3 className="body--large caps bold">
@@ -105,6 +114,7 @@ export default function Why() {
               alt="calgary landscaping company"
               width={80}
               height={80}
+              loading="lazy"
             />
 
             <h3 className="body--large caps bold">
@@ -125,6 +135,7 @@ export default function Why() {
               alt="calgary landscaping company"
               width={80}
               height={80}
+              loading="lazy"
             />
 
             <h3 className="body--large caps bold">

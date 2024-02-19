@@ -49,12 +49,13 @@ export default function ProductsImg() {
                 height={160}
                 alt="image-62"
                 src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
+                priority={true}
               />
             </Buttonwrapper>
           </Text>
           <Image
+            width={500}
             height={100}
-            width={400}
             style={ImgStyle}
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659915/calgary-landscaping-selection-guide-1_g3knih.jpg"
             alt="calgary landscaping materials"

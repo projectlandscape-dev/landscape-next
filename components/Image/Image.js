@@ -19,7 +19,7 @@ const Image = ({
   return (
     <figure className={imageClassName.toString()}>
       <div className={styles.featuredImageImg} id="#image-container">
-        <img width={width} height={height} src={src} alt={alt || ''} srcSet={srcSet} sizes={sizes} />
+        <img width={width} height={height} src={src} alt={alt || ''} srcSet={srcSet} sizes={sizes} loading='lazy' />
       </div>
       {children && <figcaption>{children}</figcaption>}
       {dangerouslySetInnerHTML && (

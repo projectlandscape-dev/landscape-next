@@ -1,6 +1,12 @@
-import LayoutJs from "../components/layoutJs";
-import { Section, Container } from "../components/layoutComponents";
-import Seo from "../components/seo";
+import dynamic from "next/dynamic";
+const Section = dynamic(() =>
+  import("../components/layoutComponents").then((module) => module.Section)
+);
+const Container = dynamic(() =>
+  import("../components/layoutComponents").then((module) => module.Container)
+);
+const LayoutJs = dynamic(()=> import("../components/layoutJs"));
+const Seo = dynamic(()=>import("../components/seo"))
 
 export default function Custom404() {
   return (

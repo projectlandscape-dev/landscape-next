@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
-const ButtonPrimary = dynamic(()=>import( "../buttons").then((module)=>module.ButtonPrimary));
-const ButtonInline = dynamic(()=>import( "../buttons").then((module)=>module.ButtonInline));
+const ButtonPrimary = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonPrimary)
+);
+const ButtonInline = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonInline)
+);
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
@@ -17,14 +21,17 @@ const captionStyle = {
   color: "var(--txt-light)",
   textShadow: "-3px 3px 3px #000000",
 };
+
+
 const TopRightSection = styled.div`
   position: absolute;
   top: 18%;
   right: 0;
   z-index: 2;
+  width: 620px; 
+  height: 310px; 
   &:hover {
     cursor: pointer;
-
     &:before {
       content: "Click to participate";
       position: absolute;
@@ -36,11 +43,16 @@ const TopRightSection = styled.div`
       padding: 10px;
       border-radius: 5px;
       z-index: 4;
-      opacity: 5;
-      transition: opacity 0.3s ease;
+      opacity: 1; 
+      visibility: visible; 
+      transition: visibility 0s, opacity 0.3s ease; 
     }
   }
-
+  &:before {
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s, opacity 0.3s ease;
+  }
   @media screen and (max-width: 768px) {
     top: 19%;
   }
@@ -58,7 +70,7 @@ export const GridThree = styled.div`
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
     <Image
-      style={{ margin: "180px 0 0 80px", width:'auto', height : '150px' }}
+      style={{ margin: "180px 0 0 80px", width: "auto", height: "150px" }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
@@ -69,7 +81,7 @@ export default function HeroBasic(props) {
   );
   const CustomNextIcon = (props) => (
     <Image
-      style={{ margin: "180px 80px 0 0", width:'auto', height : '150px' }}
+      style={{ margin: "180px 80px 0 0", width: "auto", height: "150px" }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
@@ -88,7 +100,8 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
-            priority={true}
+            style={{ width: "100%", height: "auto" }}
+            loading="lazy"
           />
         </TopRightSection>
       </Link>
@@ -116,7 +129,6 @@ export default function HeroBasic(props) {
                     alt="calgary landscaping"
                     // priority={true}
                     loading="lazy"
-
                   />
                 </div>
               </div>
@@ -150,7 +162,7 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={100}
+                    width={500}
                     height={100}
                     alt="calgary landscaping"
                     priority={true}

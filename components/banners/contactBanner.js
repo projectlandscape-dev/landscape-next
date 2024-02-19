@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, HeroBannerPadding } from "../layoutComponents";
-
+import dynamic from "next/dynamic";
+const Container = dynamic(() =>
+  import("../layoutComponents").then((module) => module.Container)
+);
+const HeroBannerPadding = dynamic(() =>
+  import("../layoutComponents").then((module) => module.HeroBannerPadding)
+);
 const BannerGrid = styled.div`
   display: grid;
   grid-template-rows: auto 4em auto;

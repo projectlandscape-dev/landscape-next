@@ -1,15 +1,6 @@
 import { useRouter } from "next/router"
 import ErrorPage from "next/error"
-import Head from "next/head"
-import { GetStaticPaths, GetStaticProps } from "next"
-import PostBody from "../post-body"
-import MoreStories from "../more-stories"
-import PostHeader from "../post-header"
-import SectionSeparator from "../section-separator"
 import LayoutJs from "../layoutJs"
-import Tags from "../tags"
-import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api"
-import { CMS_NAME } from "../../lib/constants"
 import { Section, Container, HeroBannerPadding } from "../layoutComponents"
 import { ButtonPrimary } from "../buttons"
 import styled from "styled-components"
@@ -46,7 +37,7 @@ const BannerWrapper = styled.div`
   grid-row: 1 / span 2;
   grid-column: 1 / -1;
   z-index: 1;
-  background: ${(props) => `url(${props.img})`}, rgba(0, 0, 0, 0.5);
+  background: ${(props) => `url(${props?.img})`}, rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -361,33 +352,7 @@ export default function PostPage({ post, posts, preview }) {
               </BlogArticle>
             </Content>
           </Wrapper>
-          {/* <>
-            <article>
-              <Head>
-                <title>
-                  {`${post.title} | Next.js Blog Example with ${CMS_NAME}`}
-                </title>
-                <meta
-                  property="og:image"
-                  content={post.featuredImage?.node.sourceUrl}
-                />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.featuredImage}
-                date={post.date}
-                author={post.author}
-                categories={post.categories}
-              />
-              <PostBody content={post.content} />
-              <footer>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
-              </footer>
-            </article>
-
-            <SectionSeparator />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </> */}
+       
         </Container>
       </Section>
     </LayoutJs>

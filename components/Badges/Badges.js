@@ -1,20 +1,10 @@
 import React from "react";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic(() => import('react-slick'), { ssr: false });
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import styles from "./Badges.module.scss";
-
-const ImgStyle = {
-  marginTop: "auto",
-  marginBottom: "auto",
-  height: "100px",
-  width: "200px",
-  padding: "0em",
-  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
-  margin: "12px 30px",
-
-};
 
 const badgesImg = [
   "best-landscaping-companies-in-calgary-1.svg",
@@ -50,7 +40,7 @@ const gridImg = [
 export default function Badges() {
   const settings = {
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 4000,
@@ -73,9 +63,10 @@ export default function Badges() {
                 <Image
                   src={`/badges/${badge}`}
                   alt="best landscaping companies in calgary"
-                  style={ImgStyle}
-                  width={100}
+                  className={styles.ImgStyle}
+                  width={200}
                   height={100}
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -86,9 +77,10 @@ export default function Badges() {
                 <Image
                   src={`/badges/${badge}`}
                   alt="best landscaping companies in calgary"
-                  style={ImgStyle}
-                  width={100}
+                  className={styles.ImgStyle}
+                  width={200}
                   height={100}
+                  loading="lazy"
                 />
               </div>
             ))}

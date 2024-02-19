@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import dynamic from "next/dynamic";
-const ButtonUnderline = dynamic(()=>import("../buttons").then((module)=>module.ButtonUnderline));
+const ButtonUnderline = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonUnderline)
+);
 import styles from "./MainServices.module.scss";
 
 export default function MainServices() {
@@ -11,7 +13,6 @@ export default function MainServices() {
         <div className="container">
           <div className={styles.text}>
             <div>
-              {/* <p className="subheader accent">find the services you need</p> */}
               <h2 className="title">
                 A Calgary Landscape Company you Can Rely On
               </h2>
@@ -37,10 +38,12 @@ export default function MainServices() {
           <div className={styles.list}>
             <div className={styles.item}>
               <Image
-                height={100}
-                width={600}
+                style={{ width: "auto", height: "auto" }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658578/hardscaping-calgary_mjyioi.webp"
                 alt="calgary hardscaping services"
+                width={1000}
+                height={500}
+                priority={true}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">hardscaping</h3>
@@ -54,10 +57,12 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                height={600}
-                width={600}
+                style={{ width: "auto", height: "auto" }}
+                width={1000}
+                height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658902/softscaping-calgary_tnjycp.webp"
                 alt="calgary softscaping services"
+                priority={true}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">softscaping</h3>
@@ -71,10 +76,12 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                height={600}
-                width={600}
+                style={{ width: "auto", height: "auto" }}
+                width={1000}
+                height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
                 alt="outdoor landscaping services calgary"
+                priority={true}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">outdoor living</h3>

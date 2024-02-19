@@ -23,11 +23,12 @@ export default function NewBlockBlack() {
         <div className="container">
           <div className="flexMobileOpp">
             <Image
+              width={500}
               height={100}
-              width={400}
               style={ImgStyles}
               src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-2024-01-24T115852.914.png"
               alt="calgary landscaping showroom"
+              priority={true}
             />
             <Text className="spacing">
               <div>

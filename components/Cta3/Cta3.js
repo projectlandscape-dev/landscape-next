@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Section } from "../layoutComponents";
-import styled from "styled-components";
-import { ButtonSecondaryLight } from "../buttons";
+import dynamic from "next/dynamic";
+const ButtonSecondaryLight = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonSecondaryLight)
+);
 import styles from "./Cta3.module.scss";
 
 export default function Cta3() {

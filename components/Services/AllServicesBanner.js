@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "../layoutComponents";
 import Link from "next/link";
-import { ButtonPrimary } from "../buttons";
 
 const Text = styled.div`
   max-width: 110ch;
@@ -102,10 +101,11 @@ const ServiceBox = (props) => {
     <Item>
       <Image
         className="service-img"
-        height={100}
         width={600}
+        height={100}
         src={props.src}
         alt={props.alt}
+        priority={true}
       />
       <StyledLink className="upper" href={props.href}>
         {props.text}
@@ -120,7 +120,6 @@ export default function AllServicesBanner() {
     <Section className="spacing-lg">
       <Container>
         <Text>
-          {/* <p className="subheader accent">find the service you need</p> */}
           <h2 className="title">
             take a closer look at our calgary landscaping services
           </h2>
