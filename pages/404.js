@@ -1,14 +1,8 @@
-import dynamic from "next/dynamic";
-const Section = dynamic(() =>
-  import("../components/layoutComponents").then((module) => module.Section)
-);
-const Container = dynamic(() =>
-  import("../components/layoutComponents").then((module) => module.Container)
-);
-const LayoutJs = dynamic(()=> import("../components/layoutJs"));
-const Seo = dynamic(()=>import("../components/seo"))
+import LayoutJs from "../components/layoutJs";
+import { Section, Container } from "../components/layoutComponents";
+import Seo from "../components/seo";
 
-export default function Custom404() {
+function Custom404() {
   return (
     <LayoutJs>
       <Seo title="404: Not Found | Project Landscape Ltd." />
@@ -20,3 +14,4 @@ export default function Custom404() {
     </LayoutJs>
   );
 }
+export default Custom404;

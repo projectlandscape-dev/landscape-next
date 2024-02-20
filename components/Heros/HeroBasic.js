@@ -115,7 +115,7 @@ export default function HeroBasic(props) {
                     width={500}
                     height={500}
                     alt="calgary landscaping"
-                    loading="lazy"
+                    priority={true}
                   />
                 </div>
                 <div className={styles.mobileImg}>
@@ -153,7 +153,7 @@ export default function HeroBasic(props) {
                     width={500}
                     height={500}
                     alt="calgary landscaping"
-                    priority={false}
+                    priority={true}
                   />
                 </div>
                 <div className={styles.mobileImg}>
@@ -163,7 +163,7 @@ export default function HeroBasic(props) {
                     height={500}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
-                    priority={false}
+                    priority={true}
                   />
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default function HeroBasic(props) {
                     width={500}
                     height={500}
                     alt="calgary landscaping"
-                    priority={false}
+                    priority={true}
                   />
                 </div>
                 <div className={styles.mobileImg}>
@@ -203,7 +203,7 @@ export default function HeroBasic(props) {
                     height={500}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
-                    priority={false}
+                    priority={true}
                   />
                 </div>
               </div>
