@@ -114,8 +114,8 @@ export default function HeroBasic(props) {
                 <div className={styles.desktopImg}>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-slider_1_nsnsnr.webp"
-                    width={1000}
-                    height={665}
+                    width={500}
+                    height={500}
                     alt="calgary landscaping"
                     loading="lazy"
                   />
@@ -123,9 +123,8 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-65cf44686732e.webp"
-                    // width={1000}
-                    // height={667}
-                    fill
+                    width={500}
+                    height={500}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
                     loading="lazy"
@@ -154,7 +153,7 @@ export default function HeroBasic(props) {
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                     width={500}
-                    height={100}
+                    height={500}
                     alt="calgary landscaping"
                     priority={true}
                   />
@@ -162,9 +161,8 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    // width={500}
-                    // height={100}
-                    fill
+                    width={500}
+                    height={500}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
                     priority={true}
@@ -195,7 +193,7 @@ export default function HeroBasic(props) {
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                     width={500}
-                    height={100}
+                    height={500}
                     alt="calgary landscaping"
                     priority={true}
                   />
@@ -203,7 +201,9 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    fill
+                    width={500}
+                    height={500}
+                    
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
                     priority={true}

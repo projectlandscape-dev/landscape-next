@@ -49,7 +49,7 @@ export default function ProductsImg() {
                 height={160}
                 alt="image-62"
                 src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
-                priority={true}
+                priority={false}
               />
             </Buttonwrapper>
           </Text>

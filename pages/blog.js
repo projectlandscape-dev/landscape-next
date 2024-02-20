@@ -1,18 +1,17 @@
 import React from "react";
-import LayoutJs from "../components/layoutJs";
-import {
-  Container,
-  Section,
-  HeroBannerPadding,
-} from "../components/layoutComponents";
-import { getPaginatedPosts } from "lib/posts";
-import Link from "next/link";
+import dynamic from "next/dynamic";
 import styled from "styled-components";
-import { ButtonPrimary } from "/components/buttons";
-import Image from "components/Image";
+import Link from "next/link";
+import { getPaginatedPosts } from "lib/posts";
 import { postPathBySlugCategory } from "lib/posts";
-import Seo from "../components/seo";
-import Pagination from "components/Pagination";
+const Image = dynamic(()=>import("components/Image"))
+const LayoutJs = dynamic(()=>import("../components/layoutJs"))
+const Container = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Container));
+const Section = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Section));
+const HeroBannerPadding = dynamic(()=>import("../components/layoutComponents").then((module)=>module.HeroBannerPadding));
+const ButtonPrimary = dynamic(()=>import("/components/buttons").then((module)=>module.ButtonPrimary));
+const Seo = dynamic(()=>import("../components/seo"))
+const Pagination = dynamic(()=>import("components/Pagination"))
 
 const device = {
   md: "48em",

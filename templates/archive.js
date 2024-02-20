@@ -12,7 +12,6 @@ import {
 } from "../components/layoutComponents";
 import Pagination from "components/Pagination/Pagination";
 
-import styles from "styles/templates/Archive.module.scss";
 import styled from "styled-components";
 import Link from "next/link";
 import Seo from "../components/seo";
