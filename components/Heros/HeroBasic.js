@@ -75,7 +75,6 @@ export default function HeroBasic(props) {
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
       alt="long-arrow-left"
-      priority={false}
       {...props}
     />
   );
@@ -86,7 +85,6 @@ export default function HeroBasic(props) {
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
       alt="long-arrow-right--v1"
-      priority={false}
       {...props}
     />
   );
@@ -101,6 +99,7 @@ export default function HeroBasic(props) {
             width={620}
             height={310}
             style={{ width: "100%", height: "auto" }}
+            priority={true}
           />
         </TopRightSection>
       </Link>
@@ -126,7 +125,7 @@ export default function HeroBasic(props) {
                     height={500}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
-                    loading="lazy"
+                    priority={true}
                   />
                 </div>
               </div>

@@ -1,12 +1,37 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import { Section, Container, Flex } from "../components/layoutComponents";
-import { Label, Input, Submit, TextArea } from "../components/Forms/FormItems";
-import { TfiReload } from "react-icons/tfi";
-import Link from "next/link";
-import RulesAndRegulation from "../components/RulesAndRegulation.js/RulesAndRegulation";
-import LayoutJs from "../components/layoutJs";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import styled from "styled-components";
+const Section = dynamic(() =>
+  import("../components/layoutComponents").then((module) => module.Section)
+);
+const Container = dynamic(() =>
+  import("../components/layoutComponents").then((module) => module.Container)
+);
+const Flex = dynamic(() =>
+  import("../components/layoutComponents").then((module) => module.Flex)
+);
+const Label = dynamic(() =>
+  import("../components/Forms/FormItems").then((module) => module.Label)
+);
+const Input = dynamic(() =>
+  import("../components/Forms/FormItems").then((module) => module.Input)
+);
+const TextArea = dynamic(() =>
+  import("../components/Forms/FormItems").then((module) => module.TextArea)
+);
+const Submit = dynamic(() =>
+  import("../components/Forms/FormItems").then((module) => module.Submit)
+);
+
+const TfiReload = dynamic(() =>
+  import("react-icons/tfi").then((module) => module.TfiReload)
+);
+const RulesAndRegulation = dynamic(() =>
+  import("../components/RulesAndRegulation.js/RulesAndRegulation")
+);
+const LayoutJs = dynamic(() => import("../components/layoutJs"));
 
 const FormWrapper = styled.div`
   max-width: 750px;
@@ -92,9 +117,11 @@ export default function PromoContest() {
                     alt=" Phone"
                     width={25}
                     height={25}
-                    loading="lazy"
                   />
-                  <Link href="tel: 403 257 4059" style={{textDecoration:"none", color:'black'}}>
+                  <Link
+                    href="tel: 403 257 4059"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
                     {" "}
                     <span>4032574059</span>
                   </Link>
@@ -105,7 +132,6 @@ export default function PromoContest() {
                     alt="link"
                     width={25}
                     height={25}
-                    loading="lazy"
                   />
                   <Link
                     href="https://projectlandscape.ca"
@@ -261,9 +287,17 @@ export default function PromoContest() {
                 )}
                 <Submit type="submit" id="submit" value="submit" />
                 <center>
-                <p style={{fontWeight:600, fontSize:'30px', color:'red'}}>DON'T FORGET TO FOLLOW US ON INSTAGRAM</p>
+                  <p
+                    style={{ fontWeight: 600, fontSize: "30px", color: "red" }}
+                  >
+                    DON'T FORGET TO FOLLOW US ON INSTAGRAM
+                  </p>
                 </center>
-                <center><p style={{fontWeight:600, fontSize:'30px'}}>No purchase necessary</p></center>
+                <center>
+                  <p style={{ fontWeight: 600, fontSize: "30px" }}>
+                    No purchase necessary
+                  </p>
+                </center>
               </form>
             </FormWrapper>
             <RulesAndRegulation />

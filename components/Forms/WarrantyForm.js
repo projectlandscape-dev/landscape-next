@@ -2,7 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 import { Section, Container, Flex } from "../layoutComponents";
-import { Label, Input, TextArea, Submit, Select } from "./FormItems";
+// import { Label, Input, TextArea, Submit, Select } from "./FormItems";
+const Label = dynamic(() =>
+  import("./FormItems").then((module) => module.Label)
+);
+const Input = dynamic(() =>
+  import("./FormItems").then((module) => module.Input)
+);
+const TextArea = dynamic(() =>
+  import("./FormItems").then((module) => module.TextArea)
+);
+const Submit = dynamic(() =>
+  import("./FormItems").then((module) => module.Submit)
+);
+const Select = dynamic(() =>
+  import("./FormItems").then((module) => module.Select)
+);
 
 const FormWrapper = styled.div`
   // background: var(--clr-dark);

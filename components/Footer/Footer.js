@@ -2,14 +2,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { FaPhone, FaRegClock } from "react-icons/fa";
-import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
-import FormFooter from "../Forms/FormFooter";
-// import Map from "../map";
-const Map = dynamic(()=> import("../map"));
-
-import InstagramFeed from "../instagramFeed";
-import { ButtonInline } from "../buttons";
+const FaRegClock = dynamic(()=>import("react-icons/fa").then((module)=>module.FaRegClock));
+const FaPhone = dynamic(()=>import("react-icons/fa").then((module)=>module.FaPhone));
+const MdLocationOn = dynamic(()=>import("react-icons/md").then((module)=>module.MdLocationOn));
+const MdOutlineEmail = dynamic(()=>import("react-icons/md").then((module)=>module.MdOutlineEmail));
+const FormFooter = dynamic(()=>import("../Forms/FormFooter"))
+const Map = dynamic(() => import("../map"));
+const InstagramFeed = dynamic(()=>import("../instagramFeed"))
+const ButtonInline = dynamic(()=>import("../buttons").then((module)=>module.ButtonInline));
 import styles from "./Footer.module.scss";
 
 const IconStyle = {
@@ -29,7 +29,7 @@ export default function Footer() {
               <div className="spacing">
                 <Image
                   width={200}
-                  height={70}
+                  height={100}
                   src="/project-landscape-logo-light.svg"
                   alt="project landscape logo - calgary landscape company"
                 />
@@ -626,7 +626,6 @@ export default function Footer() {
                     alt="aaron tonner web solutions logo"
                     width={100}
                     height={100}
-                    priority={false}
                   />
                 </Link>
               </div>

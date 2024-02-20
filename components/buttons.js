@@ -100,6 +100,7 @@ export const ButtonSecondaryLight = styled(props => <Link {...props} />)`
   background: var(--clr-tan);
   color: var(--txt-dark);
   border: 1px solid var(--clr-tan);
+  min-width: 120px;
 
   &:hover {
     color: var(--txt-dark);
