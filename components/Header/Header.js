@@ -132,7 +132,7 @@ export default function HeaderBasic() {
                   alt="landscape company calgary logo"
                   width={170}
                   height={85}
-                  priority={true}
+                  priority={false}
                 />
               </Link>
             </div>

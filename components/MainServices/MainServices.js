@@ -43,7 +43,7 @@ export default function MainServices() {
                 alt="calgary hardscaping services"
                 width={1000}
                 height={500}
-                priority={true}
+                priority={false}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">hardscaping</h3>
@@ -62,7 +62,7 @@ export default function MainServices() {
                 height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658902/softscaping-calgary_tnjycp.webp"
                 alt="calgary softscaping services"
-                priority={true}
+                priority={false}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">softscaping</h3>
@@ -81,7 +81,7 @@ export default function MainServices() {
                 height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
                 alt="outdoor landscaping services calgary"
-                priority={true}
+                priority={false}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">outdoor living</h3>

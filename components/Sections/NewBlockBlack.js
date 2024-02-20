@@ -28,7 +28,7 @@ export default function NewBlockBlack() {
               style={ImgStyles}
               src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-2024-01-24T115852.914.png"
               alt="calgary landscaping showroom"
-              priority={true}
+              priority={false}
             />
             <Text className="spacing">
               <div>

@@ -75,7 +75,7 @@ export default function HeroBasic(props) {
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
       alt="long-arrow-left"
-      priority={true}
+      priority={false}
       {...props}
     />
   );
@@ -86,7 +86,7 @@ export default function HeroBasic(props) {
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
       alt="long-arrow-right--v1"
-      priority={true}
+      priority={false}
       {...props}
     />
   );
@@ -101,7 +101,6 @@ export default function HeroBasic(props) {
             width={620}
             height={310}
             style={{ width: "100%", height: "auto" }}
-            loading="lazy"
           />
         </TopRightSection>
       </Link>
@@ -155,7 +154,7 @@ export default function HeroBasic(props) {
                     width={500}
                     height={500}
                     alt="calgary landscaping"
-                    priority={true}
+                    priority={false}
                   />
                 </div>
                 <div className={styles.mobileImg}>
@@ -165,7 +164,7 @@ export default function HeroBasic(props) {
                     height={500}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
-                    priority={true}
+                    priority={false}
                   />
                 </div>
               </div>
@@ -195,7 +194,7 @@ export default function HeroBasic(props) {
                     width={500}
                     height={500}
                     alt="calgary landscaping"
-                    priority={true}
+                    priority={false}
                   />
                 </div>
                 <div className={styles.mobileImg}>
@@ -203,10 +202,9 @@ export default function HeroBasic(props) {
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                     width={500}
                     height={500}
-                    
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
-                    priority={true}
+                    priority={false}
                   />
                 </div>
               </div>

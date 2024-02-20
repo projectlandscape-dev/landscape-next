@@ -626,7 +626,7 @@ export default function Footer() {
                     alt="aaron tonner web solutions logo"
                     width={100}
                     height={100}
-                    priority={true}
+                    priority={false}
                   />
                 </Link>
               </div>

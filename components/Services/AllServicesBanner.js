@@ -105,7 +105,7 @@ const ServiceBox = (props) => {
         height={100}
         src={props.src}
         alt={props.alt}
-        priority={true}
+        priority={false}
       />
       <StyledLink className="upper" href={props.href}>
         {props.text}

@@ -13,7 +13,7 @@ const ServiceBox = (props) => {
         src={props.src}
         alt={props.alt}
         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
-        priority={true}
+        priority={false}
       />
       <Link className={styles.styledLink} href={props.href}>
         {props.text}
