@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
+import dynamic from "next/dynamic";
 import { Section, Container, Flex } from "../layoutComponents";
-// import { Label, Input, TextArea, Submit, Select } from "./FormItems";
 const Label = dynamic(() =>
   import("./FormItems").then((module) => module.Label)
 );

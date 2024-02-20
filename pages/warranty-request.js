@@ -1,4 +1,6 @@
 import React from "react";
+import dynamic from "next/dynamic";
+import styled from "styled-components";
 const Banner = dynamic(()=>import("../components/banners/banner"))
 const LayoutJs = dynamic(()=>import("../components/layoutJs"))
 const WarrantyForm = dynamic(()=>import("../components/Forms/WarrantyForm"))
@@ -17,9 +19,7 @@ const GridThree = dynamic(()=>import("../components/layoutComponents").then((mod
 const GridTwo = dynamic(()=>import("../components/layoutComponents").then((module)=>module.GridTwo));
 const Section = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Section));
 const ButtonPrimary = dynamic(()=>import("../components/buttons").then((module)=>module.ButtonPrimary));
-import styled from "styled-components";
 
-import dynamic from "next/dynamic";
 
 const Wrapper = styled.div`
   background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),
