@@ -22,10 +22,7 @@ const device = {
 const NavList = styled.ul`
   display: flex;
   padding: 0;
-  // margin: 0;
   list-style-type: none;
-  width: fit-content;
-  height: fit-content;
   & > * + * {
     margin-left: 1.5em;
   }
@@ -34,7 +31,7 @@ const NavList = styled.ul`
     display: ${({ nav }) => (nav ? "flex" : "none")};
     align-items: center;
     position: fixed;
-    top: 135px;
+    top: 115px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -119,7 +116,7 @@ export default function HeaderBasic() {
                 403 257 4059
               </Link>
               <ButtonSecondaryLight
-                style={{ fontSize: "0.62em", textAlign: "center"}}
+                style={{ fontSize: "0.62em", textAlign: "center" }}
                 href="/contact"
               >
                 Start Your Project
@@ -130,17 +127,15 @@ export default function HeaderBasic() {
 
         <div className={styles.headerbottom}>
           <div className={styles.container}>
-            {/* <div className={styles.logoContainer}> */}
-              <Link className={styles.styledLink} href="/">
-                <Image
-                  style={{ width: "170px", height: "60px" }}
-                  src="/project-landscape-logo-light.svg"
-                  alt="landscape company calgary logo"
-                  width={170}
-                  height={80}
-                  />
-              </Link>
-            {/* </div> */}
+            <Link className={styles.logImgLink} href="/">
+              <Image
+                className={styled.logoImg}
+                src="/project-landscape-logo-light.svg"
+                alt="landscape company calgary logo"
+                width={170}
+                height={60}
+              />
+            </Link>
             <nav className={styles.nav}>
               <Burger nav={nav} onClick={toggleMenu}>
                 <div />
