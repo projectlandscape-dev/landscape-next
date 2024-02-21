@@ -7,7 +7,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLockedBody } from "usehooks-ts";
 import { useRouter } from "next/router";
-import { ButtonSecondaryLight } from "../buttons";
+import dynamic from "next/dynamic";
+// import { ButtonSecondaryLight } from "../buttons";
+
+const ButtonSecondaryLight = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonSecondaryLight)
+);
 
 const device = {
   sm: "18em",
@@ -17,9 +22,10 @@ const device = {
 const NavList = styled.ul`
   display: flex;
   padding: 0;
-  margin: 0;
+  // margin: 0;
   list-style-type: none;
-
+  width: fit-content;
+  height: fit-content;
   & > * + * {
     margin-left: 1.5em;
   }
@@ -27,8 +33,8 @@ const NavList = styled.ul`
   @media screen and (max-width: ${device.md}) {
     display: ${({ nav }) => (nav ? "flex" : "none")};
     align-items: center;
-    position: absolute;
-    top: 140px;
+    position: fixed;
+    top: 135px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -113,7 +119,7 @@ export default function HeaderBasic() {
                 403 257 4059
               </Link>
               <ButtonSecondaryLight
-                style={{ fontSize: "10px", textAlign: "center" }}
+                style={{ fontSize: "0.62em", textAlign: "center"}}
                 href="/contact"
               >
                 Start Your Project
@@ -124,18 +130,17 @@ export default function HeaderBasic() {
 
         <div className={styles.headerbottom}>
           <div className={styles.container}>
-            <div className={styles.logoContainer}>
+            {/* <div className={styles.logoContainer}> */}
               <Link className={styles.styledLink} href="/">
                 <Image
-                  style={{ width: "auto", height: "60px" }}
+                  style={{ width: "170px", height: "60px" }}
                   src="/project-landscape-logo-light.svg"
                   alt="landscape company calgary logo"
                   width={170}
-                  height={85}
-                  priority={false}
-                />
+                  height={80}
+                  />
               </Link>
-            </div>
+            {/* </div> */}
             <nav className={styles.nav}>
               <Burger nav={nav} onClick={toggleMenu}>
                 <div />

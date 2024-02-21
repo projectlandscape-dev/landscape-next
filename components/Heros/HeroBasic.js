@@ -28,8 +28,6 @@ const TopRightSection = styled.div`
   top: 18%;
   right: 0;
   z-index: 2;
-  // width: 620px; 
-  // height: 310px; 
   &:hover {
     cursor: pointer;
     &:before {
@@ -70,7 +68,7 @@ export const GridThree = styled.div`
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
     <Image
-      style={{ margin: "180px 0 0 80px", width: "auto", height: "150px" }}
+      style={{ margin: "180px 0 0 80px", width: "200px", height: "150px" }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
@@ -80,7 +78,7 @@ export default function HeroBasic(props) {
   );
   const CustomNextIcon = (props) => (
     <Image
-      style={{ margin: "180px 80px 0 0", width: "auto", height: "150px" }}
+      style={{ margin: "180px 80px 0 0", width: "200px", height: "150px" }}
       width={200}
       height={200}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
@@ -91,18 +89,18 @@ export default function HeroBasic(props) {
 
   return (
     <div className={styles.wrapper} style={{ position: "relative" }}>
+        <TopRightSection >
       <Link href="/PromoContest">
-        <TopRightSection>
           <Image
             src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
             alt="promo contest"
             width={620}
             height={310}
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "620px", height: "310px" }}
             priority={true}
           />
-        </TopRightSection>
       </Link>
+        </TopRightSection>
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
@@ -121,9 +119,8 @@ export default function HeroBasic(props) {
                 <div className={styles.mobileImg}>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-65cf44686732e.webp"
-                    width={500}
+                    width={700}
                     height={500}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt="calgary landscaping"
                     priority={true}
                   />

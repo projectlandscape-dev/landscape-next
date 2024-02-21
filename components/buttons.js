@@ -101,6 +101,13 @@ export const ButtonSecondaryLight = styled(props => <Link {...props} />)`
   color: var(--txt-dark);
   border: 1px solid var(--clr-tan);
   min-width: 120px;
+  width: fit-content;
+
+  @media (max-width: 768px) {
+    font-size: var(--fs-xs);
+    padding: 0.2em 0.2em;
+    min-width: auto;
+  }
 
   &:hover {
     color: var(--txt-dark);

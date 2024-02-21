@@ -9,14 +9,13 @@ import styles from "./MainServices.module.scss";
 export default function MainServices() {
   return (
     <section>
-      <div className="spacing">
         <div className="container">
           <div className={styles.text}>
-            <div>
+            {/* <div> */}
               <h2 className="title">
                 A Calgary Landscape Company you Can Rely On
               </h2>
-            </div>
+            {/* </div> */}
             <p>
               Welcome to Project Landscape, Calgary's most trusted and extensive
               residential landscape company, where transforming your outdoor
@@ -43,7 +42,6 @@ export default function MainServices() {
                 alt="calgary hardscaping services"
                 width={1000}
                 height={500}
-                priority={false}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">hardscaping</h3>
@@ -62,7 +60,6 @@ export default function MainServices() {
                 height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658902/softscaping-calgary_tnjycp.webp"
                 alt="calgary softscaping services"
-                priority={false}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">softscaping</h3>
@@ -81,7 +78,6 @@ export default function MainServices() {
                 height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
                 alt="outdoor landscaping services calgary"
-                priority={false}
               />
               <div className={styles.itemText}>
                 <h3 className="subheader">outdoor living</h3>
@@ -96,7 +92,6 @@ export default function MainServices() {
           </div>
           <div className={styles.bg} />
         </div>
-      </div>
     </section>
   );
 }
