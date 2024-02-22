@@ -63,7 +63,6 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
-            // style={{ width: "620px", height: "310px" }}
             priority={true}
           />
         </div>
