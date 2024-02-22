@@ -73,18 +73,22 @@ export default function HeroBasic(props) {
         <div className={styles.heroWrapper}>
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
             <Carousel.Item interval={5000}>
-              <div className={styles.content}>
-                <div className={styles.imageContainer}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                    width={500}
-                    height={500}
-                    alt="calgary landscaping"  
-                    quality={30}  
-                    priority        
-                  />
-                </div>
-                {/* <div className={styles.mobileImg}>
+              <div className={styles.imageContainer}>
+                <Image
+                  style={{
+                    width: '100%',
+                    height: '90vh',
+                  }}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  width={700}
+                  height={100}
+                  sizes="100vw"
+                  alt="calgary landscaping"
+                  fetchPriority="high"
+                  priority
+                />
+              </div>
+              {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-65cf44686732e.webp"
                     width={700}
@@ -94,7 +98,6 @@ export default function HeroBasic(props) {
                     priority={true}
                   />
                 </div> */}
-              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
@@ -112,17 +115,21 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.content}>
-                <div className={styles.imageContainer}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={700}
-                    height={100}
-                    alt="calgary landscaping"
-                    priority={true}
-                  />
-                </div>
-                {/* <div className={styles.mobileImg}>
+              <div className={styles.imageContainer}>
+                <Image
+                  style={{
+                    width: '100%',
+                    height: '90vh',
+                  }}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
+                  width={700}
+                  height={100}
+                  alt="calgary landscaping"
+                  sizes="100vw"
+                  priority={true}
+                />
+              </div>
+              {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                     width={700}
@@ -132,7 +139,6 @@ export default function HeroBasic(props) {
                     priority={true}
                   />
                 </div> */}
-              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
@@ -152,17 +158,21 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.content}>
-                <div className={styles.imageContainer}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    width={700}
-                    height={100}
-                    alt="calgary landscaping"
-                    priority={true}
-                  />
-                </div>
-                {/* <div className={styles.mobileImg}>
+              <div className={styles.imageContainer}>
+                <Image
+                  style={{
+                    width: '100%',
+                    height: '90vh',
+                  }}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
+                  alt="calgary landscaping"
+                  width={700}
+                  height={100}
+                  sizes="100vw"
+                  priority={true}
+                />
+              </div>
+              {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                     width={700}
@@ -172,7 +182,6 @@ export default function HeroBasic(props) {
                     priority={true}
                   />
                 </div> */}
-              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
