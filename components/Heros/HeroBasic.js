@@ -76,15 +76,14 @@ export default function HeroBasic(props) {
               <div className={styles.imageContainer}>
                 <Image
                   style={{
-                    width: '100%',
-                    height: '90vh',
+                    width: "100%",
+                    height: "90vh",
                   }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   width={700}
                   height={100}
                   sizes="100vw"
                   alt="calgary landscaping"
-                  fetchPriority="high"
                   priority
                 />
               </div>
@@ -118,8 +117,8 @@ export default function HeroBasic(props) {
               <div className={styles.imageContainer}>
                 <Image
                   style={{
-                    width: '100%',
-                    height: '90vh',
+                    width: "100%",
+                    height: "90vh",
                   }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                   width={700}
@@ -161,8 +160,8 @@ export default function HeroBasic(props) {
               <div className={styles.imageContainer}>
                 <Image
                   style={{
-                    width: '100%',
-                    height: '90vh',
+                    width: "100%",
+                    height: "90vh",
                   }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   alt="calgary landscaping"
