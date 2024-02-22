@@ -138,7 +138,6 @@ export async function getStaticPaths() {
   // as they have the same path, which will fail the build
  
 //  pages.push(...tempPages)
-
   const paths = pages
     .filter(({ uri }) => typeof uri === "string" && uri !== "/")
     .map(({ uri }) => {

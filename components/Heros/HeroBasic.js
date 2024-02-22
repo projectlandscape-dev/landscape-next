@@ -37,7 +37,7 @@ export default function HeroBasic(props) {
     <Image
       style={{ margin: "180px 0 0 80px", width: "200px", height: "150px" }}
       width={200}
-      height={200}
+      height={150}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
       alt="long-arrow-left"
       {...props}
@@ -47,7 +47,7 @@ export default function HeroBasic(props) {
     <Image
       style={{ margin: "180px 80px 0 0", width: "200px", height: "150px" }}
       width={200}
-      height={200}
+      height={150}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
       alt="long-arrow-right--v1"
       {...props}
@@ -63,6 +63,7 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
+            style={{ objectFit: "cover" }}
             priority={true}
           />
         </div>
@@ -73,24 +74,26 @@ export default function HeroBasic(props) {
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.desktopImg}>
+                <div className={styles.imageContainer}>
                   <Image
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-slider_1_nsnsnr.webp"
-                    width={700}
-                    height={100}
-                    alt="calgary landscaping"
-                    priority={true}
+                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                    width={500}
+                    height={500}
+                    alt="calgary landscaping"  
+                    quality={30}  
+                    priority        
                   />
                 </div>
-                <div className={styles.mobileImg}>
+                {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-65cf44686732e.webp"
                     width={700}
                     height={100}
+                    style={{objectFit:'cover'}}
                     alt="calgary landscaping"
                     priority={true}
                   />
-                </div>
+                </div> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -110,7 +113,7 @@ export default function HeroBasic(props) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.desktopImg}>
+                <div className={styles.imageContainer}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                     width={700}
@@ -119,15 +122,16 @@ export default function HeroBasic(props) {
                     priority={true}
                   />
                 </div>
-                <div className={styles.mobileImg}>
+                {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                     width={700}
                     height={100}
                     alt="calgary landscaping"
+                    style={{objectFit:'cover'}}
                     priority={true}
                   />
-                </div>
+                </div> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -149,7 +153,7 @@ export default function HeroBasic(props) {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <div className={styles.content}>
-                <div className={styles.desktopImg}>
+                <div className={styles.imageContainer}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                     width={700}
@@ -158,15 +162,16 @@ export default function HeroBasic(props) {
                     priority={true}
                   />
                 </div>
-                <div className={styles.mobileImg}>
+                {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                     width={700}
                     height={100}
+                    style={{objectFit:'cover'}}
                     alt="calgary landscaping"
                     priority={true}
                   />
-                </div>
+                </div> */}
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">

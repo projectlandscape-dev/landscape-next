@@ -7,12 +7,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLockedBody } from "usehooks-ts";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
-// import { ButtonSecondaryLight } from "../buttons";
+// import dynamic from "next/dynamic";
+import { ButtonSecondaryLight } from "../buttons";
 
-const ButtonSecondaryLight = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonSecondaryLight)
-);
+// const ButtonSecondaryLight = dynamic(() =>
+//   import("../buttons").then((module) => module.ButtonSecondaryLight)
+// );
 
 const device = {
   sm: "18em",

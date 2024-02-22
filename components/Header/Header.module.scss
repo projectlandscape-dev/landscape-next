@@ -359,3 +359,31 @@
   }
 }
 
+.headerbtn{
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--ff-alfa);
+  font-size: var(--fs-sm);
+  // font-weight: var(--fw-button);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 1em 1.33em;
+  transition: all 0.2s linear;
+  text-transform: uppercase;
+  background: var(--clr-tan);
+  color: var(--txt-dark);
+  border: 1px solid var(--clr-tan);
+  min-width: 120px;
+  width: fit-content;
+
+  // @media (max-width: 768px) {
+  //   font-size: 0.5rem;
+  //   padding: 0.2em 0.2em;
+  //   min-width: auto;
+  // }
+
+  // &:hover {
+  //   color: var(--txt-dark);
+  // }
+}
