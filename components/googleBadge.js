@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { FaStar, FaGoogle } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import styled from "styled-components";
 

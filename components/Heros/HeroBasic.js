@@ -63,7 +63,7 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
-            sizes="100vw"
+            sizes="(max-width:768px) 100vw"
             style={{ objectFit: "cover" }}
             priority={true}
           />
@@ -74,20 +74,17 @@ export default function HeroBasic(props) {
         <div className={styles.heroWrapper}>
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
             <Carousel.Item interval={5000}>
-              <div className={styles.imageContainer}>
-                <Image
-                  style={{
-                    width: "100%",
-                    height: "90vh",
-                  }}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                  width={889}
-                  height={651.59}
-                  sizes="100vw"
-                  alt="calgary landscaping"
-                  priority
-                />
-              </div>
+              <Image
+                style={{
+                  height: "90vh",
+                }}
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                width={1440}
+                height={100}
+                sizes="(max-width:768px) 33vw"
+                alt="calgary landscaping"
+                priority
+              />
               {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-65cf44686732e.webp"
@@ -115,20 +112,17 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.imageContainer}>
                 <Image
                   style={{
-                    width: "100%",
                     height: "90vh",
                   }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                  width={700}
-                  height={100}
+                  width={1440}
+                  height={500}
                   alt="calgary landscaping"
-                  sizes="100vw"
+                  sizes="(max-width:768px) 33vw"
                   priority={true}
                 />
-              </div>
               {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
@@ -158,20 +152,17 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-              <div className={styles.imageContainer}>
                 <Image
                   style={{
-                    width: "100%",
                     height: "90vh",
                   }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   alt="calgary landscaping"
-                  width={700}
+                  width={1440}
                   height={100}
-                  sizes="100vw"
+                  sizes="(max-width:768px) 33vw"
                   priority={true}
                 />
-              </div>
               {/* <div className={styles.mobileImg}>
                   <Image
                     src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
