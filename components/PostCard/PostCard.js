@@ -1,4 +1,5 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { postPathBySlug, sanitizeExcerpt } from "lib/posts";
 import Metadata from "components/Metadata";
 const FaMapPin = dynamic(()=>import("react-icons/fa").then((module)=>module.FaMapPin));
