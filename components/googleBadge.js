@@ -83,11 +83,9 @@ export default function GoogleBadge() {
           <div className="header">
             <span>4.8</span>
             <FlexStars>
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
+              {[...Array(5)].map((_, index) => (
+                <FaStar key={index} style={fontStyle} />
+              ))}
             </FlexStars>
           </div>
           <p className="body--small">Based on 90 reviews</p>
