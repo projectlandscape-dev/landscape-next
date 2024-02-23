@@ -1,6 +1,7 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import dynamic from "next/dynamic";
+const FaStar = dynamic(()=>import("react-icons/fa").then((module)=>module.FaStar));
+const FcGoogle = dynamic(()=>import("react-icons/fc").then((module)=>module.FcGoogle));
 import styled from "styled-components";
 
 const Wrapper = styled.a`

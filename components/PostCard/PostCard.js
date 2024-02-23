@@ -1,10 +1,7 @@
 import Link from "next/link";
-
 import { postPathBySlug, sanitizeExcerpt } from "lib/posts";
-
 import Metadata from "components/Metadata";
-
-import { FaMapPin } from "react-icons/fa";
+const FaMapPin = dynamic(()=>import("react-icons/fa").then((module)=>module.FaMapPin));
 import styles from "./PostCard.module.scss";
 
 const PostCard = ({ post, options = {} }) => {

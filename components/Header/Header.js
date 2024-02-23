@@ -1,18 +1,15 @@
 import styles from "./Header.module.scss";
+import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { FaPhone } from "react-icons/fa";
+const IoMdArrowDropdown = dynamic(()=>import("react-icons/io").then((module)=>module.IoMdArrowDropdown));
+const FaPhone = dynamic(()=>import("react-icons/fa").then((module)=>module.FaPhone));
+
 import Link from "next/link";
 import Image from "next/image";
-import { useLockedBody } from "usehooks-ts";
 import { useRouter } from "next/router";
-// import dynamic from "next/dynamic";
 import { ButtonSecondaryLight } from "../buttons";
 
-// const ButtonSecondaryLight = dynamic(() =>
-//   import("../buttons").then((module) => module.ButtonSecondaryLight)
-// );
 
 const device = {
   sm: "18em",
@@ -86,12 +83,6 @@ export default function HeaderBasic() {
   const [nav, navOpen] = useState(false);
 
   const { asPath } = useRouter();
-
-  const [locked, setLocked] = useLockedBody(false, "__next");
-
-  const toggleLocked = () => {
-    setLocked(!locked);
-  };
 
   function toggleMenu() {
     navOpen(!nav);
