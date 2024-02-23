@@ -85,16 +85,6 @@ export default function HeroBasic(props) {
                 alt="calgary landscaping"
                 priority
               />
-              {/* <div className={styles.mobileImg}>
-                  <Image
-                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-living-65cf44686732e.webp"
-                    width={700}
-                    height={100}
-                    style={{objectFit:'cover'}}
-                    alt="calgary landscaping"
-                    priority={true}
-                  />
-                </div> */}
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
@@ -123,16 +113,6 @@ export default function HeroBasic(props) {
                   sizes="(max-width:768px) 33vw"
                   priority={true}
                 />
-              {/* <div className={styles.mobileImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                    width={700}
-                    height={100}
-                    alt="calgary landscaping"
-                    style={{objectFit:'cover'}}
-                    priority={true}
-                  />
-                </div> */}
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
@@ -163,16 +143,6 @@ export default function HeroBasic(props) {
                   sizes="(max-width:768px) 33vw"
                   priority={true}
                 />
-              {/* <div className={styles.mobileImg}>
-                  <Image
-                    src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                    width={700}
-                    height={100}
-                    style={{objectFit:'cover'}}
-                    alt="calgary landscaping"
-                    priority={true}
-                  />
-                </div> */}
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
