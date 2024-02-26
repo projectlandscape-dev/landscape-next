@@ -63,9 +63,9 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
-            sizes="(max-width:768px) 100vw"
-            style={{ objectFit: "cover" }}
-            priority={true}
+            sizes="100vw"
+            style={{ objectFit: "cover"}}
+            priority
           />
         </div>
       </Link>
@@ -102,17 +102,17 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-                <Image
-                  style={{
-                    height: "90vh",
-                  }}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                  width={1440}
-                  height={500}
-                  alt="calgary landscaping"
-                  sizes="(max-width:768px) 33vw"
-                  priority={true}
-                />
+              <Image
+                style={{
+                  height: "90vh",
+                }}
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
+                width={1440}
+                height={500}
+                alt="calgary landscaping"
+                sizes="(max-width:768px) 33vw"
+                priority={true}
+              />
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
@@ -132,17 +132,17 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-                <Image
-                  style={{
-                    height: "90vh",
-                  }}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                  alt="calgary landscaping"
-                  width={1440}
-                  height={100}
-                  sizes="(max-width:768px) 33vw"
-                  priority={true}
-                />
+              <Image
+                style={{
+                  height: "90vh",
+                }}
+                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
+                alt="calgary landscaping"
+                width={1440}
+                height={100}
+                sizes="(max-width:768px) 33vw"
+                priority={true}
+              />
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">

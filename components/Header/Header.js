@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 const IoMdArrowDropdown = dynamic(()=>import("react-icons/io").then((module)=>module.IoMdArrowDropdown));
 const FaPhone = dynamic(()=>import("react-icons/fa").then((module)=>module.FaPhone));
-
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";

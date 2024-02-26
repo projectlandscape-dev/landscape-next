@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
+import Image from "next/image";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const FaStar = dynamic(() =>
   import("react-icons/fa").then((module) => module.FaStar)
@@ -29,12 +30,11 @@ const ReviewWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 1000px;
-  padding: 10px 5px;
+  position: relative;
+  height: 100%;
+  .text_banner{
+    max-height: 100%;
+  }
 `;
 
 const SliderWrapper = styled.div`
@@ -89,6 +89,16 @@ export default function MainTestimonials() {
         </h2>
       </center>
       <Wrapper>
+        <Image
+        className="test_banner"
+          alt="calgary-landscaping-testimonials-banner"
+          src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg"
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
         <section>
           <div className="container">
             <SliderWrapper>
@@ -112,7 +122,7 @@ export default function MainTestimonials() {
             </SliderWrapper>
           </div>
         </section>
-        <div style={{ textAlign: "end" }}>
+        <div style={{ position: "absolute", right: '10px', bottom:'10px' }}>
           <ButtonPrimary href="/testimonials">Read All Reviews</ButtonPrimary>
         </div>
       </Wrapper>
