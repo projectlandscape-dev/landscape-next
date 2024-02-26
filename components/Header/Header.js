@@ -2,12 +2,14 @@ import styles from "./Header.module.scss";
 import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-const IoMdArrowDropdown = dynamic(()=>import("react-icons/io").then((module)=>module.IoMdArrowDropdown));
-const FaPhone = dynamic(()=>import("react-icons/fa").then((module)=>module.FaPhone));
+import { FaPhone } from "react-icons/fa";
+import { IoMdArrowDropdown } from "react-icons/io";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { ButtonSecondaryLight } from "../buttons";
+const ButtonSecondaryLight = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonSecondaryLight)
+);
 
 
 const device = {
@@ -125,6 +127,7 @@ export default function HeaderBasic() {
                 alt="landscape company calgary logo"
                 width={170}
                 height={60}
+                priority
               />
             </Link>
             <nav className={styles.nav}>

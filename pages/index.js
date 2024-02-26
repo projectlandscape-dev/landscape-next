@@ -158,7 +158,7 @@ export default function Index() {
       <Cta3 />
       <MainTrends />
       <StaticProcessArea />
-      <Why />
+      <Why/>
       <FeaturedWork />
       <MainTestimonials />
       <FaqFeatured />

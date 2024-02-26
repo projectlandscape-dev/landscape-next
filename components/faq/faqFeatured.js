@@ -57,9 +57,11 @@ export default function FaqFeatured(props) {
         src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"
         alt="background image"
         fill
-        sizes= '100vw'
+        sizes="100vw"
+        quality={30}
+        loading="lazy"
       />
-            <DarkOverlay />
+      <DarkOverlay />
 
       <section>
         <div className="container">
