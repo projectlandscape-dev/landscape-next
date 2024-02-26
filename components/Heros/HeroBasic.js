@@ -63,8 +63,8 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
-            sizes="100vw"
-            style={{ objectFit: "cover"}}
+            sizes="(max-width:768px) 33vw"
+            style={{ objectFit: "cover", height: "auto" }}
             priority
           />
         </div>
@@ -81,7 +81,7 @@ export default function HeroBasic(props) {
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                 width={1440}
                 height={100}
-                sizes="(max-width:768px) 33vw"
+                sizes="(max-width:768px) 33vw, 50vw"
                 alt="calgary landscaping"
                 priority
               />

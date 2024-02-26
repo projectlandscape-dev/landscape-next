@@ -4,9 +4,6 @@ import dynamic from "next/dynamic";
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 import Image from "next/image";
-const GridTwo = dynamic(() =>
-  import("./layoutComponents").then((module) => module.GridTwo)
-);
 const Section = dynamic(() =>
   import("./layoutComponents").then((module) => module.Section)
 );
@@ -15,12 +12,7 @@ const ButtonPrimary = dynamic(() =>
 );
 
 const FeaturedWrapper = styled.div`
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"),
-    rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
   color: var(--txt-light);
   .carousel-indicators {
     display: none;
@@ -49,17 +41,42 @@ const BtnSecondary = styled.button`
   }
 `;
 
+export const GridTwo = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  position : relative;
+
+  @media screen and (max-width: 48em) {
+    grid-template-columns: 1fr;
+  }
+`
+
 const FeaturedWork = () => {
   return (
-    <FeaturedWrapper>
+    <>
+      <FeaturedWrapper>
+        <Image
+          className="image_3"
+          alt="image-3"
+          src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            backgroundBlendMode: 'overlay',
+            background:'rgba(0, 0, 0, 0.8)'
+          }}
+          priority
+        />
       <Section>
         <GridTwo>
           <div>
-            <h2 style={{ textAlign: "end", fontSize: "60px" }}>
+            <h2 style={{ textAlign:'center', fontSize: "50px" }}>
               PROJECT SPOTLIGHTS
             </h2>
           </div>
-          <div style={{ width: "80%", fontSize: "18px" }}>
+          <div style={{fontSize: "16px" }}>
             <p>
               Check out some of our most exciting work in Landscape design and
               Outdoor living! At Project Landscape, our landscape designs and
@@ -68,7 +85,6 @@ const FeaturedWork = () => {
             </p>
           </div>
         </GridTwo>
-        <div style={{ padding: "60px 0px" }}>
           <Carousel>
             <Carousel.Item interval={5000}>
               <div
@@ -314,9 +330,10 @@ const FeaturedWork = () => {
               </div>{" "}
             </Carousel.Item>
           </Carousel>
-        </div>
       </Section>
-    </FeaturedWrapper>
+      </FeaturedWrapper>
+
+    </>
   );
 };
 
