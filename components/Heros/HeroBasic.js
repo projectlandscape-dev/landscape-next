@@ -41,6 +41,7 @@ export default function HeroBasic(props) {
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
       alt="long-arrow-left"
       {...props}
+
     />
   );
   const CustomNextIcon = (props) => (
@@ -63,8 +64,7 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
-            sizes="(max-width:768px) 33vw"
-            style={{ objectFit: "cover", height: "auto" }}
+            sizes="100vw"
             priority
           />
         </div>
@@ -80,8 +80,8 @@ export default function HeroBasic(props) {
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                 width={1440}
-                height={100}
-                sizes="(max-width:768px) 33vw, 50vw"
+                height={442}
+                sizes="(max-width:768px) 100vw"
                 alt="calgary landscaping"
                 priority
               />
@@ -108,10 +108,10 @@ export default function HeroBasic(props) {
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                 width={1440}
-                height={500}
+                height={442}
                 alt="calgary landscaping"
-                sizes="(max-width:768px) 33vw"
-                priority={true}
+                sizes="(max-width:768px) 100vw"
+                priority
               />
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -139,9 +139,9 @@ export default function HeroBasic(props) {
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                 alt="calgary landscaping"
                 width={1440}
-                height={100}
-                sizes="(max-width:768px) 33vw"
-                priority={true}
+                height={442}
+                sizes="(max-width:768px) 100vw"
+                priority
               />
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">

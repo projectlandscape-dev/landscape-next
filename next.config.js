@@ -15,6 +15,7 @@ const nextConfig = {
   images: {
     minimumCacheTTL: 60,
   },
+  
   // output: 'export',
   // trailingSlash: true,
   images: {

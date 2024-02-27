@@ -1,8 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import styles from "./Badges.module.scss";
 
@@ -47,11 +45,37 @@ export default function Badges() {
     autoplaySpeed: 0,
     cssEase: "linear",
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className={styles.wrapper}>
-      <section>
-        <div className="spacing">
+    // <div className={styles.wrapper}>
+      // <section>
+        <div className="spacing mt-5">
           <div className="container">
             <h2 className="title center">
               top rated calgary landscaping company
@@ -86,7 +110,7 @@ export default function Badges() {
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      // </section>
+    // </div>
   );
 }

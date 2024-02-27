@@ -2,7 +2,6 @@
   .slick-initialized .slick-slide {
     display: block;
     padding: 2em;
-   
 }
 
 .slick-slide > div {
@@ -14,31 +13,25 @@ img{
     margin: 8px 12px !important;
   }
 }
-
-
 }
-
-.slider {
-  padding:50px 0px ;
-  @media screen and (max-width: 70em) {
-    display: none;
-  }
-}
-
+// .slider {
+//   padding:50px 0px ;
+//   @media screen and (max-width: 70em) {
+//     display: none;
+//   }
+// }
 .grid {
   display: none;
   @media screen and (max-width: 70em) {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 1em;
-
     & > * {
       justify-self: center;
       align-self: center;
     }
   }
 }
-
 .ImgStyle{
   height: 100px;
   width: 200px;
