@@ -1,5 +1,4 @@
 import styles from "./Header.module.scss";
-import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { FaPhone } from "react-icons/fa";
@@ -7,9 +6,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-const ButtonSecondaryLight = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonSecondaryLight)
-);
+import { ButtonSecondaryLight } from "../buttons";
 
 
 const device = {

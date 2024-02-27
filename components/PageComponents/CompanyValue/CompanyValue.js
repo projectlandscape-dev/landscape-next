@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
 import { GridTwo, Section } from "components/layoutComponents";
-const RxCrossCircled = dynamic(()=>import("react-icons/rx").then((module)=>module.RxCrossCircled));
-const FaCheckCircle = dynamic(()=>import("react-icons/fa").then((module)=>module.FaCheckCircle));
+import { RxCrossCircled } from "react-icons/rx";
+import { FaCheckCircle } from "react-icons/fa";
 
 const List = styled.li`
   border-bottom: 1px solid black;

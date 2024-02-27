@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
-const ButtonPrimary = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonPrimary)
-);
-const ButtonInline = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonInline)
-);
+import { ButtonInline } from "../buttons";
+import { ButtonPrimary } from "../buttons";
 import { Carousel } from "react-bootstrap";
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
@@ -35,7 +30,7 @@ export const GridThree = styled.div`
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
     <Image
-      style={{ margin: "180px 0 0 80px", width: "200px", height: "150px" }}
+      style={{ margin: "180px 0 0 80px", width: "100%", height: "auto" }}
       width={200}
       height={150}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
@@ -45,7 +40,7 @@ export default function HeroBasic(props) {
   );
   const CustomNextIcon = (props) => (
     <Image
-      style={{ margin: "180px 80px 0 0", width: "200px", height: "150px" }}
+      style={{ margin: "180px 80px 0 0", width: "100%", height: "auto" }}
       width={200}
       height={150}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
@@ -63,10 +58,11 @@ export default function HeroBasic(props) {
               width: '100%',
               height: 'auto',
             }}
-            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
+            // src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
+            src='https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1-2.webp'
             alt="promo contest"
-            width={620}
-            height={310}
+            width={800}
+            height={450}
             sizes="100vw"
             priority
           />
@@ -111,7 +107,7 @@ export default function HeroBasic(props) {
                   fill
                   alt="calgary landscaping"
                   sizes="100vw"
-                  // priority
+                  priority
                 />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
@@ -140,7 +136,7 @@ export default function HeroBasic(props) {
                   alt="calgary landscaping"
                   fill
                   sizes="100vw"
-                  // priority
+                  priority
                 />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">

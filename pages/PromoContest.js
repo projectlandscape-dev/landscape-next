@@ -24,10 +24,7 @@ const TextArea = dynamic(() =>
 const Submit = dynamic(() =>
   import("../components/Forms/FormItems").then((module) => module.Submit)
 );
-
-const TfiReload = dynamic(() =>
-  import("react-icons/tfi").then((module) => module.TfiReload)
-);
+import { TfiReload } from "react-icons/tfi";
 const RulesAndRegulation = dynamic(() =>
   import("../components/RulesAndRegulation.js/RulesAndRegulation")
 );

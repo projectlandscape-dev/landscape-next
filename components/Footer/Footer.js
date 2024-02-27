@@ -2,14 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-const FaRegClock = dynamic(()=>import("react-icons/fa").then((module)=>module.FaRegClock));
-const FaPhone = dynamic(()=>import("react-icons/fa").then((module)=>module.FaPhone));
-const MdLocationOn = dynamic(()=>import("react-icons/md").then((module)=>module.MdLocationOn));
-const MdOutlineEmail = dynamic(()=>import("react-icons/md").then((module)=>module.MdOutlineEmail));
+import { FaRegClock, FaPhone } from "react-icons/fa";
+import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 const FormFooter = dynamic(()=>import("../Forms/FormFooter"))
 const Map = dynamic(() => import("../map"));
 const InstagramFeed = dynamic(()=>import("../instagramFeed"))
-const ButtonInline = dynamic(()=>import("../buttons").then((module)=>module.ButtonInline));
+import { ButtonInline } from "../buttons";
 import styles from "./Footer.module.scss";
 
 const IconStyle = {

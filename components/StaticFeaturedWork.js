@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Container, GridTwo, Section } from "./layoutComponents";
+import React from "react";
+import { GridTwo, Section } from "./layoutComponents";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 import { ButtonPrimary } from "./buttons";
 import Link from "next/link";
+import Image from "next/image";
 
 const FeaturedWrapper = styled.div`
   background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"),
@@ -39,7 +40,7 @@ const BtnSecondary = styled.button`
     color: var(--clr-accent);
   }
 `;
-const FeaturedImage = styled.img`
+const FeaturedImage = styled(Image)`
   height: 500px;
   width: 550px;
   object-fit: cover;
@@ -51,7 +52,7 @@ const FeaturedWork = () => {
         <GridTwo>
           <div>
             <h2 style={{ textAlign: "end", fontSize: "60px" }}>
-            PROJECT SPOTLIGHTS
+              PROJECT SPOTLIGHTS
             </h2>
           </div>
           <div style={{ width: "80%", fontSize: "18px" }}>
@@ -100,7 +101,12 @@ const FeaturedWork = () => {
                 </div>
 
                 <div>
-                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/21.png" />
+                  <FeaturedImage
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/21.png"
+                    alt="21.png"
+                    height={500}
+                    width={550}
+                  />
                 </div>
               </div>{" "}
             </Carousel.Item>
@@ -135,7 +141,12 @@ const FeaturedWork = () => {
                   </div>
                 </div>
                 <div>
-                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/22.png" />
+                  <FeaturedImage
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/22.png"
+                    alt="22.png"
+                    height={500}
+                    width={550}
+                  />
                 </div>
               </div>{" "}
             </Carousel.Item>
@@ -162,7 +173,7 @@ const FeaturedWork = () => {
                     </p>
                     <div>
                       <ButtonPrimary href="/projects">
-                       View Case Study
+                        View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
@@ -174,7 +185,12 @@ const FeaturedWork = () => {
                 </div>
 
                 <div>
-                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/24.png" />
+                  <FeaturedImage
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/24.png"
+                    alt="24.png"
+                    height={500}
+                    width={550}
+                  />
                 </div>
               </div>{" "}
             </Carousel.Item>
@@ -202,7 +218,7 @@ const FeaturedWork = () => {
                     </p>
                     <div>
                       <ButtonPrimary href="/projects">
-                       View Case Study
+                        View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
@@ -214,7 +230,12 @@ const FeaturedWork = () => {
                 </div>
 
                 <div>
-                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/25.png" />
+                  <FeaturedImage
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/12/25.png"
+                    alt="25.png"
+                    height={500}
+                    width={550}
+                  />
                 </div>
               </div>{" "}
             </Carousel.Item>
@@ -241,7 +262,7 @@ const FeaturedWork = () => {
                     </p>
                     <div>
                       <ButtonPrimary href="/projects">
-                      View Case Study
+                        View Case Study
                       </ButtonPrimary>
                     </div>
                     <div style={{ marginTop: "20px" }}>
@@ -253,7 +274,12 @@ const FeaturedWork = () => {
                 </div>
 
                 <div>
-                  <FeaturedImage src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-63-1.png" />
+                  <FeaturedImage
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-63-1.png"
+                    alt="63.png"
+                    height={500}
+                    width={550}
+                  />
                 </div>
               </div>{" "}
             </Carousel.Item>

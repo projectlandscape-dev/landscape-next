@@ -1,6 +1,5 @@
 import React from "react";
-import dynamic from "next/dynamic";
-const Slider = dynamic(() => import('react-slick'), { ssr: false });
+import Slider from "react-slick";
 import Image from "next/image";
 import styles from "./Badges.module.scss";
 
@@ -73,8 +72,6 @@ export default function Badges() {
     ],
   };
   return (
-    // <div className={styles.wrapper}>
-      // <section>
         <div className="spacing mt-5">
           <div className="container">
             <h2 className="title center">
@@ -110,7 +107,5 @@ export default function Badges() {
             ))}
           </div>
         </div>
-      // </section>
-    // </div>
   );
 }

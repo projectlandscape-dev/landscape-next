@@ -10,9 +10,7 @@ const Section = dynamic(() =>
   import("components/layoutComponents").then((module) => module.Section)
 );
 import styled from "styled-components";
-const FaStar = dynamic(() =>
-  import("react-icons/fa").then((module) => module.FaStar)
-);
+import { FaStar } from "react-icons/fa";
 const ButtonPrimary = dynamic(() =>
   import("../../buttons").then((module) => module.ButtonPrimary)
 );
