@@ -1,8 +1,4 @@
 import React from "react";
-import dynamic from "next/dynamic";
-import styled from "styled-components";
-import Image from "next/image";
-
 import {
   Accordion,
   AccordionItem,
@@ -11,35 +7,17 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-const ButtonPrimary = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonPrimary)
-);
+import styled from "styled-components";
+import { ButtonPrimary } from "../buttons";
 
 const Wrapper = styled.div`
-  position: relative;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: var(--txt-light);
-`;
-
-const BackgroundImage = styled(Image)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity:2;
-  background-color: rgba(0, 0, 0, 0.8)
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),
+    rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
-  object-fit:cover;
-`;
-const DarkOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--txt-light);
 `;
 
 const AccordionStyle = {
@@ -53,16 +31,6 @@ const AccordionStyle = {
 export default function FaqFeatured(props) {
   return (
     <Wrapper>
-      <BackgroundImage
-        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"
-        alt="background image"
-        fill
-        sizes="100vw"
-        quality={30}
-        loading="lazy"
-      />
-      <DarkOverlay />
-
       <section>
         <div className="container">
           <div className="flexMobileOpp">

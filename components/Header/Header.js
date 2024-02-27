@@ -127,7 +127,6 @@ export default function HeaderBasic() {
                 alt="landscape company calgary logo"
                 width={170}
                 height={60}
-                priority
               />
             </Link>
             <nav className={styles.nav}>

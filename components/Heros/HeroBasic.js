@@ -59,12 +59,15 @@ export default function HeroBasic(props) {
       <Link href="/PromoContest">
         <div className={styles.promobgImg}>
           <Image
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
             src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
             alt="promo contest"
             width={620}
             height={310}
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-            style={{ objectFit: "cover" }}
+            sizes="100vw"
             priority
           />
         </div>
@@ -75,16 +78,14 @@ export default function HeroBasic(props) {
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
-              <Image
-                style={{
-                  objectFit:'cover'
-                }}
-                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                fill
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                alt="calgary landscaping"
-                priority
-              />
+                <Image
+                  style={{ objectFit: "cover" }}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  fill
+                  sizes="100vw"
+                  alt="calgary landscaping"
+                  priority
+                />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -103,18 +104,15 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-            <div className={styles.imgContainer}>
-
-              <Image
-                style={{
-                  objectFit:'cover'
-                }}
-                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                fill
-                alt="calgary landscaping"
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                priority={true}
-              />
+              <div className={styles.imgContainer}>
+                <Image
+                  style={{ objectFit: "cover" }}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
+                  fill
+                  alt="calgary landscaping"
+                  sizes="100vw"
+                  // priority
+                />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
@@ -135,18 +133,15 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
-            <div className={styles.imgContainer}>
-
-              <Image
-                style={{
-                  objectFit:'cover'
-                }}
-                src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                alt="calgary landscaping"
-                fill
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                priority={true}
-              />
+              <div className={styles.imgContainer}>
+                <Image
+                  style={{ objectFit: "cover" }}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
+                  alt="calgary landscaping"
+                  fill
+                  sizes="100vw"
+                  // priority
+                />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">

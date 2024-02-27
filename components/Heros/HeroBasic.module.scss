@@ -34,11 +34,13 @@
   }
 }
 
-.imgContainer{
+.imgContainer {
+  position: relative;
   height: 90vh;
+  width: 100vw;
 }
 
-.content_container{
+.content_container {
   position: absolute;
   bottom: 15px;
   left: 12px;
@@ -47,7 +49,7 @@
   display: flex;
   gap: 10px;
 }
-.contacts{
+.contacts {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -60,8 +62,8 @@
 .button {
   font-size: 15px;
   border: none;
-  background: #ED3833;
-  color: #fff; 
+  background: #ed3833;
+  color: #fff;
   padding: 8px 9px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -72,8 +74,7 @@
   top: 20%;
   right: 0;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
+
   &:hover {
     cursor: pointer;
     &:before {
@@ -101,7 +102,3 @@
     top: 19%;
   }
 }
-
-
-
-
