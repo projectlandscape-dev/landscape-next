@@ -79,8 +79,8 @@ export default function HeroBasic(props) {
                   height: "90vh",
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                width={1440}
-                height={442}
+                width={1920}
+                height={1281}
                 sizes="(max-width:768px) 100vw"
                 alt="calgary landscaping"
                 priority
@@ -105,10 +105,11 @@ export default function HeroBasic(props) {
               <Image
                 style={{
                   height: "90vh",
+                  width:"100%"
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                width={1440}
-                height={442}
+                width={1200}
+                height={789}
                 alt="calgary landscaping"
                 sizes="(max-width:768px) 100vw"
                 priority
@@ -135,11 +136,12 @@ export default function HeroBasic(props) {
               <Image
                 style={{
                   height: "90vh",
+                  width:"100%"
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                 alt="calgary landscaping"
-                width={1440}
-                height={442}
+                width={1154}
+                height={850}
                 sizes="(max-width:768px) 100vw"
                 priority
               />
