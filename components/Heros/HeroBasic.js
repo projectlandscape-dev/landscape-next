@@ -41,7 +41,6 @@ export default function HeroBasic(props) {
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
       alt="long-arrow-left"
       {...props}
-
     />
   );
   const CustomNextIcon = (props) => (
@@ -64,7 +63,8 @@ export default function HeroBasic(props) {
             alt="promo contest"
             width={620}
             height={310}
-            sizes="100vw"
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            style={{ objectFit: "cover" }}
             priority
           />
         </div>
@@ -74,17 +74,18 @@ export default function HeroBasic(props) {
         <div className={styles.heroWrapper}>
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
             <Carousel.Item interval={5000}>
+              <div className={styles.imgContainer}>
               <Image
                 style={{
-                  height: "90vh",
+                  objectFit:'cover'
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                width={1920}
-                height={1281}
-                sizes="(max-width:768px) 100vw"
+                fill
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
                 alt="calgary landscaping"
                 priority
               />
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
@@ -102,18 +103,19 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
+            <div className={styles.imgContainer}>
+
               <Image
                 style={{
-                  height: "90vh",
-                  width:"100%"
+                  objectFit:'cover'
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                width={1200}
-                height={789}
+                fill
                 alt="calgary landscaping"
-                sizes="(max-width:768px) 100vw"
-                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                priority={true}
               />
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
@@ -133,18 +135,19 @@ export default function HeroBasic(props) {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={5000}>
+            <div className={styles.imgContainer}>
+
               <Image
                 style={{
-                  height: "90vh",
-                  width:"100%"
+                  objectFit:'cover'
                 }}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                 alt="calgary landscaping"
-                width={1154}
-                height={850}
-                sizes="(max-width:768px) 100vw"
-                priority
+                fill
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                priority={true}
               />
+              </div>
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
