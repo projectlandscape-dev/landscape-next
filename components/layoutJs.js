@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ContactBanner = dynamic(()=>import("./contactBanner"))
 const Footer = dynamic(()=>import("./Footer/Footer"))
 const GoogleBadge = dynamic(()=>import("./googleBadge"))
-import Header from "./Header/Header";
+const Header = dynamic(()=>import("./Header/Header"))
 
 const Wrapper = styled.div`
   position: relative;

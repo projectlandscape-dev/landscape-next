@@ -1,13 +1,15 @@
-import styles from "./Header.module.scss";
-import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { FaPhone } from "react-icons/fa";
-import { IoMdArrowDropdown } from "react-icons/io";
+import styles from "./Header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { FaPhone } from "react-icons/fa";
+import { IoMdArrowDropdown } from "react-icons/io";
 import { useRouter } from "next/router";
-import { ButtonSecondaryLight } from "../buttons";
-
+import dynamic from "next/dynamic";
+const ButtonSecondaryLight = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonSecondaryLight)
+);
 
 const device = {
   sm: "18em",

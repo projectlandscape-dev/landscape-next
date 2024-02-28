@@ -7,7 +7,9 @@ import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 const FormFooter = dynamic(()=>import("../Forms/FormFooter"))
 const Map = dynamic(() => import("../map"));
 const InstagramFeed = dynamic(()=>import("../instagramFeed"))
-import { ButtonInline } from "../buttons";
+const ButtonInline = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonInline)
+);
 import styles from "./Footer.module.scss";
 
 const IconStyle = {

@@ -1,9 +1,10 @@
+import Link from "next/link";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import styled from "styled-components";
 
-const Wrapper = styled.a`
+const Wrapper = styled(Link)`
   padding: 0.8em;
   border-top: 6px solid green;
   border-radius: var(--br);

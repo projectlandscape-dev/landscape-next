@@ -1,7 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import { FaStar } from "react-icons/fa";
 import { ButtonPrimary } from "../buttons";
@@ -24,7 +22,7 @@ const ReviewWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg");
+  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,11 +58,9 @@ const ReviewBox = (props) => {
       <p className="italics">"{props.review}"</p>
       <p className="bold caps">{props.name}</p>
       <FlexStars>
-        <FaStar />
-        <FaStar />
-        <FaStar />
-        <FaStar />
-        <FaStar />
+        {[...Array(5)].map((_, index) => (
+          <FaStar key={index} />
+        ))}
       </FlexStars>
     </ReviewWrapper>
   );

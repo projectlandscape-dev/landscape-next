@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { ButtonInline } from "../buttons";
 import { ButtonPrimary } from "../buttons";
@@ -77,7 +76,7 @@ export default function HeroBasic(props) {
                   style={{ objectFit: "cover", objectPosition:'center' }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   fill
-                  sizes="(max-width: 768px) 33vw, 40vw"
+                  sizes="(max-width: 768px) 33vw, 100vw"
                   alt="calgary landscaping"
                   priority
                 />
@@ -105,7 +104,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                   fill
                   alt="calgary landscaping"
-                  sizes="(max-width: 768px) 33vw, 40vw"
+                  sizes="(max-width: 768px) 33vw, 100vw"
                   priority
                 />
               </div>
@@ -134,7 +133,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   alt="calgary landscaping"
                   fill
-                  sizes="(max-width: 768px) 33vw, 40vw"
+                  sizes="(max-width: 768px) 33vw, 100vw"
                   priority
                 />
               </div>

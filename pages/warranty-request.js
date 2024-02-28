@@ -22,7 +22,7 @@ const ButtonPrimary = dynamic(()=>import("../components/buttons").then((module)=
 
 
 const Wrapper = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),
+  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),
     rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
   background-position: center;
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   color: var(--txt-light);
 `;
-
+s
 const AccordionStyle = {
   background: "var(--clr-accent)",
   borderRadius: "var(--br)",

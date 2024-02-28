@@ -1,5 +1,4 @@
-import React from "react";
-import { Container } from "./layoutComponents";
+import React,{useEffect} from "react";
 import styled from "styled-components";
 
 const Feed = styled.div`
@@ -17,19 +16,26 @@ const Feed = styled.div`
 `;
 
 export default function InstagramFeed() {
+  
+  useEffect(() => {
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad';
+    iframe.frameBorder = 0;
+    iframe.marginHeight = 0;
+    iframe.marginWidth = 0;
+
+    const feedContainer = document.getElementById('feed-container');
+    feedContainer.appendChild(iframe);
+
+    return () => {
+      feedContainer.removeChild(iframe);
+    };
+  }, []);
   return (
     <div className="spacing">
-      <Feed>
-        <iframe
-          src="https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad"
-          // width="900px"
-          // height="400px"
-          frameBorder={0}
-          marginHeight={0}
-          marginWidth={0}
-        />
-        <hr />
-      </Feed>
-    </div>
+    <Feed id="feed-container">
+      <hr />
+    </Feed>
+  </div>
   );
 }

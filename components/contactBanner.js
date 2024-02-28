@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, GridThree, Section } from "./layoutComponents";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { BsFillCalendar2DateFill } from "react-icons/bs";
 import { AiOutlinePhone } from "react-icons/ai";
