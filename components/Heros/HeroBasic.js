@@ -2,17 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { ButtonInline } from "../buttons";
 import { ButtonPrimary } from "../buttons";
-import { Carousel } from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel';
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
 const captionStyle = {
   textAlign: "left",
-  display: "flex",
-  alignItems: "center",
-  height: "90%",
-  left: "12%",
+  height:'60%',
   color: "var(--txt-light)",
   textShadow: "-3px 3px 3px #000000",
 };
@@ -30,7 +27,8 @@ export const GridThree = styled.div`
 export default function HeroBasic(props) {
   const CustomPrevIcon = (props) => (
     <Image
-      style={{ margin: "180px 0 0 80px", width: "100%", height: "auto" }}
+      // style={{ margin: "180px 0 0 80px", width: "100%", height: "auto" }}
+      style={{  width: "100%", height: "auto" }}
       width={200}
       height={150}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
@@ -40,7 +38,8 @@ export default function HeroBasic(props) {
   );
   const CustomNextIcon = (props) => (
     <Image
-      style={{ margin: "180px 80px 0 0", width: "100%", height: "auto" }}
+      // style={{ margin: "180px 80px 0 0", width: "100%", height: "auto" }}
+      style={{  width: "100%", height: "auto" }}
       width={200}
       height={150}
       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
@@ -58,12 +57,12 @@ export default function HeroBasic(props) {
               width: "100%",
               height: "auto",
             }}
-            // src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
-            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1-2.webp"
+            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
+            // src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1-2.webp"
             alt="promo contest"
             width={800}
             height={450}
-            sizes="(max-width: 768px) 20vw, 100vw"
+            sizes="(max-width: 768px) 50vw, 100vw"
             priority
           />
         </div>
@@ -71,19 +70,19 @@ export default function HeroBasic(props) {
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
-          <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
+          <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />} >
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
                 <Image
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover", objectPosition:'center' }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   fill
-                  sizes="(max-width: 768px) 20vw"
+                  sizes="(max-width: 768px) 33vw, 40vw"
                   alt="calgary landscaping"
                   priority
                 />
               </div>
-              <Carousel.Caption style={captionStyle} className="spacing">
+              <Carousel.Caption style={captionStyle} >
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
                     Award Winning Calgary Landscape Services
@@ -106,7 +105,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                   fill
                   alt="calgary landscaping"
-                  sizes="(max-width: 768px) 33vw, 100vw"
+                  sizes="(max-width: 768px) 33vw, 40vw"
                   priority
                 />
               </div>
@@ -135,7 +134,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   alt="calgary landscaping"
                   fill
-                  sizes="(max-width: 768px) 33vw, 100vw"
+                  sizes="(max-width: 768px) 33vw, 40vw"
                   priority
                 />
               </div>
