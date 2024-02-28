@@ -55,15 +55,15 @@ export default function HeroBasic(props) {
         <div className={styles.promobgImg}>
           <Image
             style={{
-              width: '100%',
-              height: 'auto',
+              width: "100%",
+              height: "auto",
             }}
             // src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
-            src='https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1-2.webp'
+            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1-2.webp"
             alt="promo contest"
             width={800}
             height={450}
-            sizes="100vw"
+            sizes="(max-width: 768px) 20vw, 100vw"
             priority
           />
         </div>
@@ -78,7 +78,7 @@ export default function HeroBasic(props) {
                   style={{ objectFit: "cover" }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   fill
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 20vw"
                   alt="calgary landscaping"
                   priority
                 />
@@ -106,7 +106,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                   fill
                   alt="calgary landscaping"
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 33vw, 100vw"
                   priority
                 />
               </div>
@@ -135,7 +135,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   alt="calgary landscaping"
                   fill
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 33vw, 100vw"
                   priority
                 />
               </div>
