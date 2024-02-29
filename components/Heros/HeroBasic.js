@@ -73,7 +73,7 @@ export default function HeroBasic(props) {
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
                 <Image
-                  style={{ objectFit: "cover", objectPosition:'center' }}
+                  style={{ objectFit: "cover" }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   fill
                   sizes="(max-width: 768px) 33vw, 100vw"

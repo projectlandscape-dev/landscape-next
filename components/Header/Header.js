@@ -6,10 +6,7 @@ import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
-const ButtonSecondaryLight = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonSecondaryLight)
-);
+import { ButtonSecondaryLight } from "../buttons";
 
 const device = {
   sm: "18em",
