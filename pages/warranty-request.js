@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   color: var(--txt-light);
 `;
-s
+
 const AccordionStyle = {
   background: "var(--clr-accent)",
   borderRadius: "var(--br)",

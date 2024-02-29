@@ -37,6 +37,7 @@ const gridImg = [
 export default function Badges() {
   const settings = {
     infinite: true,
+    lazyLoad: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
