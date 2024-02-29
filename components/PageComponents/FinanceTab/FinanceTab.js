@@ -6,7 +6,7 @@ import { ButtonPrimary } from "components/buttons";
 
 const FinanceTab = ({ title, subheader, innerHeading, body }) => {
   const Wrapper = styled.div`
-    background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"),
+    background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"),
       rgba(255, 255, 255, 0.7);
     background-blend-mode: overlay;
     background-position: center;

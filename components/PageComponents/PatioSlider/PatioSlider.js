@@ -29,7 +29,6 @@ export default function PatioSlider({ title }) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1686787112/patios-banner-1_xz18e1.webp"
                   width={1200}
                   height={100}
-                  priority={true}
                 />
                 {/* <div className={styles.content1} /> */}
               </div>
@@ -50,7 +49,6 @@ export default function PatioSlider({ title }) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1690332721/image_1_ojcc9l.png"
                   width={1200}
                   height={100}
-                  priority={true}
                 />
                 {/* <div className={styles.content2} /> */}
               </div>
@@ -71,7 +69,6 @@ export default function PatioSlider({ title }) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1686787111/patios-banner-3_trstay.webp"
                   width={1200}
                   height={100}
-                  priority={true}
                 />
                 {/* <div className={styles.content3} /> */}
               </div>

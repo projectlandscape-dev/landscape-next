@@ -17,7 +17,6 @@ export default function StaticProcessArea() {
         alt="Background Image"
         fill
         quality={50}
-        priority
       />
       <div className={Styles.bgoverlay}></div>
       <Section>

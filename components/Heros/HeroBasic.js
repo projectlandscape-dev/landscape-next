@@ -62,7 +62,6 @@ export default function HeroBasic(props) {
             width={800}
             height={450}
             sizes="(max-width: 768px) 50vw, 100vw"
-            priority
           />
         </div>
       </Link>
@@ -73,12 +72,13 @@ export default function HeroBasic(props) {
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
                 <Image
-                  style={{ objectFit: "cover" }}
+                
+                  style={{ objectFit: "cover", aspectRatio :"16/9" }}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   fill
-                  sizes="(max-width: 768px) 33vw, 100vw"
+                  sizes="(max-width: 768px) 33vw, 50vw"
                   alt="calgary landscaping"
-                  priority
+                  priority={true}
                 />
               </div>
               <Carousel.Caption style={captionStyle} >
@@ -105,7 +105,7 @@ export default function HeroBasic(props) {
                   fill
                   alt="calgary landscaping"
                   sizes="(max-width: 768px) 33vw, 100vw"
-                  priority
+                  // priority
                 />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">
@@ -134,7 +134,7 @@ export default function HeroBasic(props) {
                   alt="calgary landscaping"
                   fill
                   sizes="(max-width: 768px) 33vw, 100vw"
-                  priority
+                  // priority
                 />
               </div>
               <Carousel.Caption style={captionStyle} className="spacing">

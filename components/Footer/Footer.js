@@ -5,10 +5,10 @@ import dynamic from "next/dynamic";
 import { FaRegClock, FaPhone } from "react-icons/fa";
 import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
 const FormFooter = dynamic(()=>import("../Forms/FormFooter"))
-// const Map = dynamic(() => import("../map"));
-import Map from "../map";
-// const InstagramFeed = dynamic(()=>import("../instagramFeed"))
-import InstagramFeed from "../instagramFeed";
+const Map = dynamic(() => import("../map"));
+// import Map from "../map";
+const InstagramFeed = dynamic(()=>import("../instagramFeed"))
+// import InstagramFeed from "../instagramFeed";
 import { ButtonInline } from "../buttons";
 import styles from "./Footer.module.scss";
 

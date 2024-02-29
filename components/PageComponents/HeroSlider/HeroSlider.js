@@ -33,7 +33,6 @@ export default function HeroSlider({ title }) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-1_qybaa7.webp"
                   width={1200}
                   height={100}
-                  priority={true}
                 />
                 {/* <div className={styles.content1} /> */}
               </div>
@@ -52,7 +51,6 @@ export default function HeroSlider({ title }) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-3_c5kayc.webp"
                   width={1200}
                   height={100}
-                  priority={true}
                 />
                 {/* <div className={styles.content2} /> */}
               </div>
@@ -71,7 +69,6 @@ export default function HeroSlider({ title }) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1686786686/deck-banners-2_xekffg.webp"
                   width={1200}
                   height={100}
-                  priority={true}
                 />
                 {/* <div className={styles.content3} /> */}
               </div>

@@ -29,7 +29,6 @@ export default function ShowroomSection() {
               style={ImgStyles}
               src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659853/calgary-landscaping-showroom-banner_tamdfs.png"
               alt="calgary landscaping showroom"
-              priority={false}
             />
             <Text className="spacing">
               <div>
