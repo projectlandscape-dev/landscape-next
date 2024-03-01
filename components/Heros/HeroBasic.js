@@ -77,6 +77,7 @@ export default function HeroBasic(props) {
                   fill
                   sizes="(max-width: 768px) 33vw, 50vw"
                   alt="calgary landscaping"
+                  priority
                 />
               </div>
               <Carousel.Caption style={captionStyle} >
