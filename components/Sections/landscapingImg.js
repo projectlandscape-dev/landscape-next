@@ -16,6 +16,8 @@ const Text = styled.div`
 `;
 
 const ImgStyles = {
+  width:'100%',
+  height:'auto',
   boxShadow: "-20px 20px 0px 1px var(--clr-tan)",
   marginTop: "2em",
   maxHeight: "450px",
