@@ -24,11 +24,13 @@ const OasisImg = dynamic(() => import("../components/Sections/oasisImg"));
 const ProjectImg = dynamic(() => import("../components/Sections/ProjectImg"));
 const MainTrends = dynamic(() => import("../components/trends/mainTrends"));
 const Why = dynamic(() => import("../components/why"));
-const MainTestimonials = dynamic(() =>
-  import("../components/testimonials/mainTestimonials")
-);
+// const MainTestimonials = dynamic(() =>
+//   import("../components/testimonials/mainTestimonials")
+// );
+import MainTestimonials from "../components/testimonials/mainTestimonials";
 const Videos = dynamic(() => import("../components/videos"));
-const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
+// const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
+import FaqFeatured from "../components/faq/faqFeatured";
 const MainServices = dynamic(() =>
   import("../components/MainServices/MainServices")
 );
@@ -36,7 +38,8 @@ const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
 const StaticProcessArea = dynamic(() =>
   import("../components/PageComponents/StaticProcessArea")
 );
-const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"));
+// const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"));
+import FeaturedWork from "../components/StaticFeaturedWork";
 const FinanceBanner = dynamic(() => import("../components/financeBanner"));
 const ScrollCount = dynamic(() =>
   import("../components/PageComponents/ScrollCount/ScrollCount")

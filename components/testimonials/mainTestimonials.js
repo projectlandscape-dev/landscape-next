@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import { FaStar } from "react-icons/fa";
 import { ButtonPrimary } from "../buttons";
+import Image from "next/image";
 
 const ReviewWrapper = styled.div`
   border: 1px solid var(--clr-accent);
@@ -22,12 +23,15 @@ const ReviewWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 1000px;
-  padding: 10px 5px;
+  position: relative;
+  z-index: 1;
+  .testimonial_banner {
+    position: absolute;
+    top0: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 `;
 
 const SliderWrapper = styled.div`
@@ -82,6 +86,14 @@ export default function MainTestimonials() {
         </h2>
       </center>
       <Wrapper>
+      <Image
+          className="testimonial_banner"
+          src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg"
+          alt="hardscaping-slider_1_mj4mkv"
+          width={500}
+          height={500}
+          sizes="(max-width:768px) , 33vw, 50vw"
+        />
         <section>
           <div className="container">
             <SliderWrapper>

@@ -1,4 +1,3 @@
-import React from "react";
 import { GridTwo, Section } from "./layoutComponents";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";

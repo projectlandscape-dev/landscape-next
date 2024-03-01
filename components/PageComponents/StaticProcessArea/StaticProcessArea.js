@@ -6,13 +6,11 @@ const Section = dynamic(() =>
   import("components/layoutComponents").then((module) => module.Section)
 );
 
-
-
 export default function StaticProcessArea() {
   return (
     <div className={Styles.wrapper}>
-       <Image
-       className={Styles.image_3}
+      <Image
+        className={Styles.image_3}
         src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-kitchen.webp"
         alt="static process Image"
         width={500}

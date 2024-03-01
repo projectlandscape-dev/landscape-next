@@ -4,15 +4,19 @@ import { ButtonPrimary } from "./buttons";
 import Image from "next/image";
 
 const Wrapper = styled.div`
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"),
-    rgba(255, 255, 255, 0.7);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 4em;
   position: relative;
-  z-index: 2;
+  padding: 4em;
+  z-index: 1;
+  .finance_banner {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    opacity:0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
   .finance-img {
     position: absolute;
@@ -21,6 +25,7 @@ const Wrapper = styled.div`
     z-index: 3;
   }
 `;
+
 
 export default function FinanceBanner() {
   return (
@@ -32,6 +37,14 @@ export default function FinanceBanner() {
       </center>
       <div className="container">
         <Wrapper>
+        <Image
+          className="finance_banner"
+          src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"
+          alt="finance-banner"
+          width={500}
+          height={500}
+          sizes="(max-width:768px) , 33vw, 50vw"
+        />
           <div>
             <p className="subheader">get the landscape financing you need</p>
             <h2 className="title">payment plans to match any budget</h2>
