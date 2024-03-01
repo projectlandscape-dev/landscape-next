@@ -3,10 +3,11 @@ import Image from "next/image";
 import styles from "./ScrollCount.module.css";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
-const Section = dynamic(()=>import("components/layoutComponents").then((module)=>module.Section));
-const Container = dynamic(()=>import("components/layoutComponents").then((module)=>module.Container));
-const ButtonPrimary = dynamic(()=>import("../../buttons").then((module)=>module.ButtonPrimary));
-
+// const Section = dynamic(()=>import("components/layoutComponents").then((module)=>module.Section));
+// const Container = dynamic(()=>import("components/layoutComponents").then((module)=>module.Container));
+// const ButtonPrimary = dynamic(()=>import("../../buttons").then((module)=>module.ButtonPrimary));
+import { Section, Container } from "../../layoutComponents";
+import { ButtonPrimary } from "../../buttons";
 const device = {
   md: "48em",
 };

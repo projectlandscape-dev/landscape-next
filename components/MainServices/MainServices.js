@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import dynamic from "next/dynamic";
-const ButtonUnderline = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonUnderline));
+// import dynamic from "next/dynamic";
+// const ButtonUnderline = dynamic(() =>
+//   import("../buttons").then((module) => module.ButtonUnderline));
+  import { ButtonUnderline } from "../buttons";
 import styles from "./MainServices.module.scss";
 
 export default function MainServices() {

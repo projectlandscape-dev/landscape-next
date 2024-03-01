@@ -4,7 +4,8 @@ import dynamic from "next/dynamic";
 import LayoutJs from "../components/layoutJs";
 import HeroBasic from "../components/Heros/HeroBasic";
 import Image from "next/image";
-const Badges = dynamic(() => import("../components/Badges/Badges"));
+// const Badges = dynamic(() => import("../components/Badges/Badges"));
+import Badges from "../components/Badges/Badges";
 const AllServices = dynamic(() =>
   import("../components/AllServices/AllServices")
 );
@@ -35,6 +36,7 @@ const MainServices = dynamic(() =>
   import("../components/MainServices/MainServices")
 );
 const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
+
 const StaticProcessArea = dynamic(() =>
   import("../components/PageComponents/StaticProcessArea")
 );
