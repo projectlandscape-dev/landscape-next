@@ -9,7 +9,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <Script src="/pages/index.js" strategy="worker"/>
+        {/* <Script src="/pages/index.js" strategy="worker"/> */}
       </body>
     </Html>
   );

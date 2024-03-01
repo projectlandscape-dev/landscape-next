@@ -1,45 +1,71 @@
 import React from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
-// const LayoutJs = dynamic(()=> import("../components/layoutJs"));
 import LayoutJs from "../components/layoutJs";
-// const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
 import HeroBasic from "../components/Heros/HeroBasic";
-const Badges = dynamic(()=> import("../components/Badges/Badges"));
-const AllServices = dynamic(()=> import("../components/AllServices/AllServices"));
-const ButtonInline = dynamic(() => import('../components/buttons').then((module) => module.ButtonInline));
-const Cta3 = dynamic(()=> import("../components/Cta3/Cta3"));
-const ProductsImg = dynamic(()=> import("../components/Sections/productsImg"));
-const ShowroomSection = dynamic(()=> import("../components/Sections/ShowroomSection"));
-const MainVideo = dynamic(()=> import("../components/Sections/MainVideo"));
-const LandscapingImg = dynamic(()=> import("../components/Sections/landscapingImg"));
-const OasisImg = dynamic(()=> import("../components/Sections/oasisImg"));
-const ProjectImg = dynamic(()=> import("../components/Sections/ProjectImg"));
-const MainTrends = dynamic(()=> import("../components/trends/mainTrends"));
-const Why = dynamic(()=> import("../components/why"));
-const MainTestimonials = dynamic(()=> import("../components/testimonials/mainTestimonials"));
-const Videos = dynamic(()=> import("../components/videos"));
-const FaqFeatured = dynamic(()=> import("../components/faq/faqFeatured"));
-const MainServices = dynamic(()=> import("../components/MainServices/MainServices"));
-const PortfolioBanner = dynamic(()=> import("../components/portfolioBanner"));
-const StaticProcessArea = dynamic(()=> import("../components/PageComponents/StaticProcessArea"));
-const FeaturedWork = dynamic(()=> import("../components/StaticFeaturedWork"));
-const FinanceBanner = dynamic(()=> import("../components/financeBanner"));
-const ScrollCount = dynamic(()=> import("../components/PageComponents/ScrollCount/ScrollCount"),{ssr:false});
-const NewBlockBlack = dynamic(()=> import("../components/Sections/NewBlockBlack"));
-const Seo = dynamic(()=>import("../components/seo"));
-
-
+import Image from "next/image";
+const Badges = dynamic(() => import("../components/Badges/Badges"));
+const AllServices = dynamic(() =>
+  import("../components/AllServices/AllServices")
+);
+const ButtonInline = dynamic(() =>
+  import("../components/buttons").then((module) => module.ButtonInline)
+);
+const Cta3 = dynamic(() => import("../components/Cta3/Cta3"));
+const ProductsImg = dynamic(() => import("../components/Sections/productsImg"));
+const ShowroomSection = dynamic(() =>
+  import("../components/Sections/ShowroomSection")
+);
+const MainVideo = dynamic(() => import("../components/Sections/MainVideo"));
+const LandscapingImg = dynamic(() =>
+  import("../components/Sections/landscapingImg")
+);
+const OasisImg = dynamic(() => import("../components/Sections/oasisImg"));
+const ProjectImg = dynamic(() => import("../components/Sections/ProjectImg"));
+const MainTrends = dynamic(() => import("../components/trends/mainTrends"));
+const Why = dynamic(() => import("../components/why"));
+const MainTestimonials = dynamic(() =>
+  import("../components/testimonials/mainTestimonials")
+);
+const Videos = dynamic(() => import("../components/videos"));
+const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
+const MainServices = dynamic(() =>
+  import("../components/MainServices/MainServices")
+);
+const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
+const StaticProcessArea = dynamic(() =>
+  import("../components/PageComponents/StaticProcessArea")
+);
+const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"));
+const FinanceBanner = dynamic(() => import("../components/financeBanner"));
+const ScrollCount = dynamic(() =>
+  import("../components/PageComponents/ScrollCount/ScrollCount")
+);
+const NewBlockBlack = dynamic(() =>
+  import("../components/Sections/NewBlockBlack")
+);
+const Seo = dynamic(() => import("../components/seo"));
 
 const Wrapper = styled.div`
-  background: url("https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"),
-    rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
   color: var(--txt-light);
+  .hardscapingBgImg {
+    position: absolute;
+    top0: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 `;
+const Bgoverlay = styled.div`
+position: absolute;
+top0: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+z-index: -1;
+`
 
 const Divider = styled.div`
   width: 3px;
@@ -59,13 +85,20 @@ export default function Index() {
         description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
       />
       <HeroBasic />
-      {/* <div > */}
-        <PortfolioBanner />
-      {/* </div> */}
+      <PortfolioBanner />
       <MainServices />
-      <NewBlockBlack/>
+      <NewBlockBlack />
       <AllServices />
       <Wrapper>
+        <Image
+          className="hardscapingBgImg"
+          src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
+          alt="hardscaping-slider_1_mj4mkv"
+          width={500}
+          height={500}
+          sizes="(max-width:768px) , 33vw, 50vw"
+        />
+        <Bgoverlay/>
         <section>
           <div className="container">
             <div className="flex">
@@ -144,7 +177,7 @@ export default function Index() {
       <Badges />
       <ProductsImg />
       <ShowroomSection />
-      <ScrollCount/>
+      <ScrollCount />
       <ProjectImg />
       <MainVideo />
       <LandscapingImg
@@ -160,7 +193,7 @@ export default function Index() {
       <Cta3 />
       <MainTrends />
       <StaticProcessArea />
-      <Why/>
+      <Why />
       <FeaturedWork />
       <MainTestimonials />
       <FaqFeatured />

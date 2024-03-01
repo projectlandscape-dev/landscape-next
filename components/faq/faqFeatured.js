@@ -9,15 +9,28 @@ import {
 } from "@chakra-ui/react";
 import styled from "styled-components";
 import { ButtonPrimary } from "../buttons";
+import Image from "next/image";
 
 const Wrapper = styled.div`
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),
-    rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
   color: var(--txt-light);
+  .faqHeroBgImg {
+    position: absolute;
+    top0: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+  }
+`;
+const Bgoverlay = styled.div`
+  position: absolute;
+  top0: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 `;
 
 const AccordionStyle = {
@@ -31,6 +44,16 @@ const AccordionStyle = {
 export default function FaqFeatured(props) {
   return (
     <Wrapper>
+      <Image
+        className="faqHeroBgImg"
+        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"
+        alt="Faqhero"
+        width={500}
+        height={500}
+        sizes="(max-width:768px) , 33vw, 50vw"
+      />
+      <Bgoverlay />
+
       <section>
         <div className="container">
           <div className="flexMobileOpp">

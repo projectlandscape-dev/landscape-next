@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const ButtonPrimary = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimary));
+const ButtonPrimary = dynamic(() =>
+  import("../buttons").then((module) => module.ButtonPrimary)
+);
 
 const Text = styled.div``;
 
@@ -12,7 +14,7 @@ const ImgStyle = {
 };
 const Buttonwrapper = styled.div`
   display: flex;
-  height: 50px;
+  height: 60px;
 `;
 
 export default function ProductsImg() {
@@ -45,10 +47,12 @@ export default function ProductsImg() {
                 discover products
               </ButtonPrimary>
               <Image
-                width={160}
-                height={160}
+                style={{ width: "100%", height: "auto" }}
+                width={100}
+                height={100}
                 alt="image-62"
                 src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62.png"
+                sizes="(max-width:768px) 100vw , 33vw"
               />
             </Buttonwrapper>
           </Text>

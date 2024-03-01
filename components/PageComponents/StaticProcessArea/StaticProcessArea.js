@@ -13,9 +13,10 @@ export default function StaticProcessArea() {
     <div className={Styles.wrapper}>
        <Image
        className={Styles.image_3}
-        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"
-        alt="Background Image"
-        fill
+        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-kitchen.webp"
+        alt="static process Image"
+        width={500}
+        height={500}
         quality={50}
       />
       <div className={Styles.bgoverlay}></div>

@@ -24,11 +24,6 @@
   @media screen and (max-width: 48em) {
     grid-template-columns: 1fr;
   }
-
-  // & > * {
-  //   justify-self: center;
-  //   align-self: center;
-  // }
 }
 
 .bg {
@@ -50,4 +45,10 @@
 
 .itemText {
   padding: 1em;
+}
+
+.itemImg{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }

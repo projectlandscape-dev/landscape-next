@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import dynamic from "next/dynamic";
 const ButtonUnderline = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonUnderline),
-  { ssr: false }
-);
+  import("../buttons").then((module) => module.ButtonUnderline));
 import styles from "./MainServices.module.scss";
 
 export default function MainServices() {
@@ -30,9 +28,7 @@ export default function MainServices() {
     <section>
         <div className="container">
           <div className={styles.text}>
-            {/* <div> */}
               <h2 className="title"> { paragraphContent.title } </h2>
-            {/* </div> */}
             <p>
               { paragraphContent.description }
             </p>
@@ -42,13 +38,13 @@ export default function MainServices() {
           <div className={styles.list}>
             <div className={styles.item}>
               <Image
-                style={{ width: "100%", height: "auto" }}
+                className={styles.itemImg}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658578/hardscaping-calgary_mjyioi.webp"
                 alt="calgary hardscaping services"
-                width={1000}
-                height={500}
-                sizes="100vw"
-              />
+                width={750}
+                height={877}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               <div className={styles.itemText}>
                 <h3 className="subheader">hardscaping</h3>
                 <ButtonUnderline
@@ -61,12 +57,12 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                style={{ width: "100%", height: "auto" }}
+                className={styles.itemImg}
                 width={1000}
                 height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658902/softscaping-calgary_tnjycp.webp"
                 alt="calgary softscaping services"
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 
               />
               <div className={styles.itemText}>
@@ -81,13 +77,13 @@ export default function MainServices() {
             </div>
             <div className={styles.item}>
               <Image
-                style={{ width: "100%", height: "auto" }}
-                width={1000}
+                className={styles.itemImg}
+                width={500}
                 height={500}
                 src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
                 alt="outdoor landscaping services calgary"
-                sizes="100vw"
-              />
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               <div className={styles.itemText}>
                 <h3 className="subheader">outdoor living</h3>
                 <ButtonUnderline

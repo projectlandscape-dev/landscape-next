@@ -70,17 +70,18 @@ export default function HeroBasic(props) {
         <div className={styles.heroWrapper}>
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />} >
             <Carousel.Item interval={5000}>
-              <div className={styles.imgContainer}>
+              {/* <div className={styles.imgContainer}> */}
                 <Image
-                
-                  style={{ objectFit: "cover", aspectRatio :"16/9" }}
+                  style={{ objectFit: "cover", width:'100%', height:"100%"}}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                  fill
+                  // fill
+                  width={500}
+                  height={500}
                   sizes="(max-width: 768px) 33vw, 50vw"
                   alt="calgary landscaping"
-                  priority={true}
+                  // priority
                 />
-              </div>
+              {/* </div> */}
               <Carousel.Caption style={captionStyle} >
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">

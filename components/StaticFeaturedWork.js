@@ -7,17 +7,29 @@ import Link from "next/link";
 import Image from "next/image";
 
 const FeaturedWrapper = styled.div`
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"),
-    rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
   color: var(--txt-light);
+  .faqHeroBgImg {
+    position: absolute;
+    top0: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
   .carousel-indicators {
     display: none;
   }
 `;
+const Bgoverlay = styled.div`
+  position: absolute;
+  top0: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+`;
+
 const BtnSecondary = styled.button`
   cursor: pointer;
   display: inline-block;
@@ -48,14 +60,21 @@ const FeaturedImage = styled(Image)`
 const FeaturedWork = () => {
   return (
     <FeaturedWrapper>
+      <Image
+        className="faqHeroBgImg"
+        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/outdoor-kitchen.webp"
+        alt="outdoor-kitchen"
+        width={500}
+        height={500}
+        sizes="(max-width:768px) , 33vw, 50vw"
+      />
+      <Bgoverlay />
       <Section>
         <GridTwo>
-          <div>
-            <h2 style={{ textAlign: "end", fontSize: "60px" }}>
+            <h2 style={{ textAlign: "center", fontSize: "60px" }}>
               PROJECT SPOTLIGHTS
             </h2>
-          </div>
-          <div style={{ width: "80%", fontSize: "18px" }}>
+          <div style={{ textAlign:'center', fontSize: "18px" }}>
             <p>
               Check out some of our most exciting work in Landscape design and
               Outdoor living! At Project Landscape, our landscape designs and
