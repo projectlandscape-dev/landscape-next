@@ -4,9 +4,12 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { FaRegClock, FaPhone } from "react-icons/fa";
 import { MdLocationOn, MdOutlineEmail } from "react-icons/md";
-const FormFooter = dynamic(()=>import("../Forms/FormFooter"),{ssr:false})
-const Map = dynamic(() => import("../map"),{ssr:false});
-const InstagramFeed = dynamic(()=>import("../instagramFeed"),{ssr:false})
+// const FormFooter = dynamic(()=>import("../Forms/FormFooter"),{ssr:false})
+import FormFooter from "../Forms/FormFooter";
+// const Map = dynamic(() => import("../map"),{ssr:false});
+import Map from "../map";
+// const InstagramFeed = dynamic(()=>import("../instagramFeed"),{ssr:false})
+import InstagramFeed from "../instagramFeed";
 import { ButtonInline } from "../buttons";
 import styles from "./Footer.module.scss";
 

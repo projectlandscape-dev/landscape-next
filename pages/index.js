@@ -1,54 +1,52 @@
 import React from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
-import Image from "next/image";
+// const LayoutJs = dynamic(()=> import("../components/layoutJs"));
 import LayoutJs from "../components/layoutJs";
-// import HeroBasic from "../components/Heros/HeroBasic";
-const HeroBasic = dynamic(() => import("../components/Heros/HeroBasic"));
-
-const Badges = dynamic(() => import("../components/Badges/Badges"),{ssr:false});
+// const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
+import HeroBasic from "../components/Heros/HeroBasic";
+import Image from "next/image";
+const Badges = dynamic(() => import("../components/Badges/Badges"));
 const AllServices = dynamic(() =>
-  import("../components/AllServices/AllServices"),{ssr:false}
+  import("../components/AllServices/AllServices")
 );
 const ButtonInline = dynamic(() =>
   import("../components/buttons").then((module) => module.ButtonInline)
 );
-const Cta3 = dynamic(() => import("../components/Cta3/Cta3"),{ssr:false});
-const ProductsImg = dynamic(() => import("../components/Sections/productsImg"),{ssr:false});
+const Cta3 = dynamic(() => import("../components/Cta3/Cta3"));
+const ProductsImg = dynamic(() => import("../components/Sections/productsImg"));
 const ShowroomSection = dynamic(() =>
-  import("../components/Sections/ShowroomSection"),{ssr:false}
+  import("../components/Sections/ShowroomSection")
 );
-const MainVideo = dynamic(() => import("../components/Sections/MainVideo"),{ssr:false});
+const MainVideo = dynamic(() => import("../components/Sections/MainVideo"));
 const LandscapingImg = dynamic(() =>
-  import("../components/Sections/landscapingImg"),{ssr:false}
+  import("../components/Sections/landscapingImg")
 );
-const OasisImg = dynamic(() => import("../components/Sections/oasisImg"),{ssr:false});
-const ProjectImg = dynamic(() => import("../components/Sections/ProjectImg"),{ssr:false});
-const MainTrends = dynamic(() => import("../components/trends/mainTrends"),{ssr:false});
-const Why = dynamic(() => import("../components/why"),{ssr:false});
-// const MainTestimonials = dynamic(() =>
-//   import("../components/testimonials/mainTestimonials"),{ssr:false}
-// );
-import MainTestimonials from "../components/testimonials/mainTestimonials";
+const OasisImg = dynamic(() => import("../components/Sections/oasisImg"));
+const ProjectImg = dynamic(() => import("../components/Sections/ProjectImg"));
+const MainTrends = dynamic(() => import("../components/trends/mainTrends"));
+const Why = dynamic(() => import("../components/why"));
+const MainTestimonials = dynamic(() =>
+  import("../components/testimonials/mainTestimonials")
+);
 const Videos = dynamic(() => import("../components/videos"));
-// const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"),{ssr:false});
-import FaqFeatured from "../components/faq/faqFeatured";
+const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
 const MainServices = dynamic(() =>
-  import("../components/MainServices/MainServices"),{ssr:false}
+  import("../components/MainServices/MainServices")
 );
-const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"),{ssr:false});
+const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
 const StaticProcessArea = dynamic(() =>
-  import("../components/PageComponents/StaticProcessArea"),{ssr:false}
+  import("../components/PageComponents/StaticProcessArea")
 );
-const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"),{ssr:false});
-const FinanceBanner = dynamic(() => import("../components/financeBanner"),{ssr:false});
+const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"));
+const FinanceBanner = dynamic(() => import("../components/financeBanner"));
 const ScrollCount = dynamic(() =>
-  import("../components/PageComponents/ScrollCount/ScrollCount"),{ssr:false}
+  import("../components/PageComponents/ScrollCount/ScrollCount")
 );
 const NewBlockBlack = dynamic(() =>
-  import("../components/Sections/NewBlockBlack"),{ssr:false}
+  import("../components/Sections/NewBlockBlack")
 );
-import Seo from "../components/seo";
+const Seo = dynamic(() => import("../components/seo"));
 
 const Wrapper = styled.div`
   position: relative;
@@ -59,6 +57,8 @@ const Wrapper = styled.div`
     top0: 0;
     width: 100%;
     height: 100%;
+    // background: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
     z-index: -1;
   }
 `;
