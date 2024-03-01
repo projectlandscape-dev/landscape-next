@@ -62,6 +62,7 @@ export default function HeroBasic(props) {
             width={800}
             height={450}
             sizes="(max-width: 768px) 50vw, 100vw"
+            priority
           />
         </div>
       </Link>

@@ -14,6 +14,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig = {
   // output: 'export',
   // trailingSlash: true,
+  
   images: {
     // unoptimized : true,
     minimumCacheTTL: 60,

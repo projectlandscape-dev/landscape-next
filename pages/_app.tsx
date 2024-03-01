@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Seo />
       <Component {...pageProps} />
-      <Script src="/pages/index.js" strategy="worker" />
     </>
   );
 }

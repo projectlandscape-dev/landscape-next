@@ -4,8 +4,7 @@ import dynamic from "next/dynamic";
 import LayoutJs from "../components/layoutJs";
 import HeroBasic from "../components/Heros/HeroBasic";
 import Image from "next/image";
-// const Badges = dynamic(() => import("../components/Badges/Badges"));
-import Badges from "../components/Badges/Badges";
+const Badges = dynamic(() => import("../components/Badges/Badges"),{ssr:false});
 const AllServices = dynamic(() =>
   import("../components/AllServices/AllServices")
 );
@@ -25,23 +24,19 @@ const OasisImg = dynamic(() => import("../components/Sections/oasisImg"));
 const ProjectImg = dynamic(() => import("../components/Sections/ProjectImg"));
 const MainTrends = dynamic(() => import("../components/trends/mainTrends"));
 const Why = dynamic(() => import("../components/why"));
-// const MainTestimonials = dynamic(() =>
-//   import("../components/testimonials/mainTestimonials")
-// );
-import MainTestimonials from "../components/testimonials/mainTestimonials";
+const MainTestimonials = dynamic(() =>
+  import("../components/testimonials/mainTestimonials")
+);
 const Videos = dynamic(() => import("../components/videos"));
-// const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
-import FaqFeatured from "../components/faq/faqFeatured";
+const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"),{ssr:false});
 const MainServices = dynamic(() =>
   import("../components/MainServices/MainServices")
 );
 const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
-
 const StaticProcessArea = dynamic(() =>
   import("../components/PageComponents/StaticProcessArea")
 );
-// const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"));
-import FeaturedWork from "../components/StaticFeaturedWork";
+const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"),{ssr:false});
 const FinanceBanner = dynamic(() => import("../components/financeBanner"));
 const ScrollCount = dynamic(() =>
   import("../components/PageComponents/ScrollCount/ScrollCount")

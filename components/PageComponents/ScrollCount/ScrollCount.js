@@ -2,12 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./ScrollCount.module.css";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
-// const Section = dynamic(()=>import("components/layoutComponents").then((module)=>module.Section));
-// const Container = dynamic(()=>import("components/layoutComponents").then((module)=>module.Container));
-// const ButtonPrimary = dynamic(()=>import("../../buttons").then((module)=>module.ButtonPrimary));
 import { Section, Container } from "../../layoutComponents";
 import { ButtonPrimary } from "../../buttons";
+
 const device = {
   md: "48em",
 };
@@ -66,7 +63,7 @@ const CounterBox = ({ imageSrc, alt, targetValue, description, isOnlyBox }) => {
   return (
     <div className={styles.counterBox} ref={boxRef}>
       <center>
-        <Image src={imageSrc} alt={alt} width={80} height={80} loading="lazy"/>
+        <Image src={imageSrc} alt={alt} width={80} height={80}/>
         {isOnlyBox && <div className={styles.only}>Only</div>}
         <div className={styles.count}>{counter}%</div>
         <div className={styles.description}>{description}</div>
