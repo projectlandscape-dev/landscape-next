@@ -145,7 +145,7 @@ export const ButtonUnderline = styled(props => <Link {...props} />)`
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--clr-accent);
-
+  transition: color 0.3s ease;
   // this is for when an icon is used inside too
   div {
     display: flex;
@@ -157,7 +157,7 @@ export const ButtonUnderline = styled(props => <Link {...props} />)`
     }
   }
   &:hover {
-    color: var(--clr-accent);
+    color: var(--clr-hover);
   }
 `
 export const ButtonInline = styled(props => <Link {...props} />)`

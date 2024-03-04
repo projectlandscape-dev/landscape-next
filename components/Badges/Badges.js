@@ -72,6 +72,12 @@ export default function Badges() {
       },
     ],
   };
+
+  const handleLazyLoad = (slideIndex) => {
+    if (slideIndex >= badgesImg.length) {
+      console.log(`Slide ${slideIndex} is about to be loaded.`);
+    }
+  };
   return (
         <div className="spacing mt-5">
           <div className="container">
@@ -79,7 +85,7 @@ export default function Badges() {
               top rated calgary landscaping company
             </h2>
           </div>
-          <Slider className={styles.slider} {...settings}>
+          <Slider className={styles.slider} {...settings} onLazyLoad={handleLazyLoad}>
             {badgesImg.map((badge) => (
               <div key={badge}>
                 <Image
