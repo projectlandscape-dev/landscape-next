@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import styles from "./Badges.module.scss";
@@ -35,6 +35,10 @@ const gridImg = [
 ];
 
 export default function Badges() {
+  const [visibleBadges, setVisibleBadges] = useState(10); // Initial number of visible badges
+  const [hasMore, setHasMore] = useState(true);
+  const containerRef = useRef(null);
+
   const settings = {
     infinite: true,
     lazyLoad: true,
@@ -73,46 +77,80 @@ export default function Badges() {
     ],
   };
 
+  const handleScroll = () => {
+    if (containerRef.current) {
+      const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
+      if (scrollTop + clientHeight >= scrollHeight - 100 && hasMore) {
+        loadMore();
+      }
+    }
+  };
+
+  const loadMore = () => {
+    setVisibleBadges((prevVisibleBadges) => prevVisibleBadges + 10);
+    if (visibleBadges >= badgesImg.length) {
+      setHasMore(false);
+    }
+  };
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [handleScroll]);
+
   const handleLazyLoad = (slideIndex) => {
     if (slideIndex >= badgesImg.length) {
       console.log(`Slide ${slideIndex} is about to be loaded.`);
     }
   };
   return (
-        <div className="spacing mt-5">
-          <div className="container">
-            <h2 className="title center">
-              top rated calgary landscaping company
-            </h2>
+    <div
+      className="spacing mt-5"
+      ref={containerRef}
+    >
+      <div className="container">
+        <h2 className="title center">top rated calgary landscaping company</h2>
+      </div>
+      <Slider
+        className={styles.slider}
+        {...settings}
+        onLazyLoad={handleLazyLoad}
+      >
+        {badgesImg.slice(0, visibleBadges).map((badge, index) => (
+          <div key={badge}>
+            <Image
+              src={`/badges/${badge}`}
+              alt="best landscaping companies in calgary"
+              className={styles.ImgStyle}
+              width={200}
+              height={100}
+              loading="lazy"
+            />
           </div>
-          <Slider className={styles.slider} {...settings} onLazyLoad={handleLazyLoad}>
-            {badgesImg.map((badge) => (
-              <div key={badge}>
-                <Image
-                  src={`/badges/${badge}`}
-                  alt="best landscaping companies in calgary"
-                  className={styles.ImgStyle}
-                  width={200}
-                  height={100}
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </Slider>
-          <div className={styles.grid}>
-            {gridImg.map((badge) => (
-              <div key={badge}>
-                <Image
-                  src={`/badges/${badge}`}
-                  alt="best landscaping companies in calgary"
-                  className={styles.ImgStyle}
-                  width={200}
-                  height={100}
-                  loading="lazy"
-                />
-              </div>
-            ))}
+        ))}
+      </Slider>
+      <div className={styles.grid}>
+        {gridImg.map((badge) => (
+          <div key={badge}>
+            <Image
+              src={`/badges/${badge}`}
+              alt="best landscaping companies in calgary"
+              className={styles.ImgStyle}
+              width={200}
+              height={100}
+              loading="lazy"
+            />
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
-import { FaStar } from "react-icons/fa";
 import { ButtonPrimary } from "../buttons";
 import Image from "next/image";
 
@@ -54,6 +53,22 @@ const FlexStars = styled.div`
     color: var(--clr-tan);
   }
 `;
+const StarRating = () => {
+  return (
+    <FlexStars>
+      {[...Array(5)].map((_, index) => (
+        <Image
+        key={index}
+        src='/Reviewstar.png'
+        alt="s"
+        width={20}
+        height={20}
+        loading="lazy"
+        />
+      ))}
+    </FlexStars>
+  );
+};
 
 const ReviewBox = (props) => {
   return (
@@ -61,11 +76,7 @@ const ReviewBox = (props) => {
       <h3 className="subheader">{props.title}</h3>
       <p className="italics">"{props.review}"</p>
       <p className="bold caps">{props.name}</p>
-      <FlexStars>
-        {[...Array(5)].map((_, index) => (
-          <FaStar key={index} />
-        ))}
-      </FlexStars>
+      <StarRating />
     </ReviewWrapper>
   );
 };
@@ -77,6 +88,7 @@ export default function MainTestimonials() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    lazyLoad: true,
   };
   return (
     <div style={{ padding: "30px 0px" }}>
@@ -97,7 +109,7 @@ export default function MainTestimonials() {
         <section>
           <div className="container">
             <SliderWrapper>
-              <Slider {...settings}>
+              <Slider {...settings} >
                 <ReviewBox
                   title="I am certainly happy I made the choice to go with them"
                   review="After attending the Calgary Home and Garden show with my neighbor and seeing their excellent display we decided to use them for our backyard projects. I am certainly happy I made the choice to go with them. The workers  attention to detail and excellent preparation greatly contributed the success of the project."
