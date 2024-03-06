@@ -7,52 +7,67 @@
 }
 
 .headertop {
-  padding: 0.5em 0.1em;
+  padding: 0.2em 0.1em;
   background: var(--clr-accent);
 }
 @media screen and (max-width: 768px) {
   .containerTop .containerTopText {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
-
+ .header .containerTop {
+    gap:0.6em;
+  }
+ .header .containerTop {
+    margin-left: 0;
+  }
+  .containerTop .location {
+    font-size: 0.7em;
+  }
   .containerTop .phone_container .navLinkTop {
-    font-size: 15px;
-  }
-  .containerTop .phone_container {
-    gap: 1.1em;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .containerTop .containerTopText {
-    font-size: 0.8em;
+    font-size: 0.55em;
+  }
+  .header .containerTop {
+    gap:0.6em;
+  }
+  .header .containerTop {
+    margin-left: 0;
+  }
+  .containerTop .phone_container .navLinkTop {
+    font-size: 9px;
+  }
+  .containerTop .location {
+    font-size: 0.55em;
   }
 
-  .containerTop .phone_container .navLinkTop {
-    font-size: 12px;
-  }
-  .containerTop .phone_container {
-    gap: 1em;
-  }
 }
 .containerTopText {
   color: white;
-  font-size: 1.5em;
-  font-weight: 600;
-  width: 289.27px;
-  height: 36px;
+  font-size: 1em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
-
+.location{
+  color: var(--txt-light);
+  align-items: center;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
 .phone_container {
   display: flex;
-  gap: 4em;
   align-items: center;
-  width: 436.52px;
-  height: 37px;
 }
 .phone_container .navLinkTop {
-  font-weight: bolder;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 20px;
 }
 .navLinkTop {
   text-decoration: none;
@@ -66,55 +81,38 @@
   display: flex;
   align-items: center;
   gap: 2px;
-  width: 199.67px;
-  height: 33px;
   :hover,
   :focus {
     opacity: 0.7;
   }
 }
-@media screen and (max-width: 768px) {
-  .navLinkTop {
-    width: 145px;
-    height: 25px;
-  }
-}
-
 .headerbottom {
   background: var(--clr-dark);
   padding: 1em 0 0.4em 0;
+  width: 100%;
+  height: 78px;
 }
 
 .container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .containerTop {
-  margin: 0 auto;
-  max-width: 95rem;
+  margin-left: 135px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:flex-start;
+  gap: 2em;
+  // margin-left: 20px;
 }
-.logoImg{
-  width: 170px;
-  height: 60px;
-}
-.logImgLink {
-  width: 170px;
-  height: 60px;
-}
-@media screen and (max-width: 768px) {
-  .logImgLink {
-    width: 120px;
-    height: 45px;
-  }
-}
+
 .nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .dropdown {

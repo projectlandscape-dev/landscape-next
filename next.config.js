@@ -14,10 +14,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig = {
   // output: 'export',
   // trailingSlash: true,
-  
+  optimizeFonts : true,
   images: {
     // unoptimized : true,
-    minimumCacheTTL: 60,
+    minimumCacheTTL: 31536000,
     domains: [
       process.env.WORDPRESS_API_URL.match(/(?!(w+)\.)\w*(?:\w+\.)+\w+/)[0], // Valid WP Image domain.
       "0.gravatar.com",
@@ -38,6 +38,7 @@ const nextConfig = {
       },
     ],
   },
+  
 };
 
 module.exports = withBundleAnalyzer(nextConfig)

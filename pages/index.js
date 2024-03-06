@@ -3,11 +3,10 @@ import styled from "styled-components";
 import dynamic from "next/dynamic";
 // const LayoutJs = dynamic(()=> import("../components/layoutJs"));
 import LayoutJs from "../components/layoutJs";
-// const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
-import HeroBasic from "../components/Heros/HeroBasic";
+const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
+// import HeroBasic from "../components/Heros/HeroBasic";
 import Image from "next/image";
-// const Badges = dynamic(() => import("../components/Badges/Badges"));
-import Badges from "../components/Badges/Badges";
+const Badges = dynamic(() => import("../components/Badges/Badges"));
 const AllServices = dynamic(() =>
   import("../components/AllServices/AllServices")
 );
@@ -31,8 +30,7 @@ const MainTestimonials = dynamic(() =>
   import("../components/testimonials/mainTestimonials")
 );
 const Videos = dynamic(() => import("../components/videos"));
-// const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
-import FaqFeatured from "../components/faq/faqFeatured";
+const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
 const MainServices = dynamic(() =>
   import("../components/MainServices/MainServices")
 );
@@ -40,8 +38,7 @@ const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
 const StaticProcessArea = dynamic(() =>
   import("../components/PageComponents/StaticProcessArea")
 );
-// const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"));
-import FeaturedWork from "../components/StaticFeaturedWork";
+const FeaturedWork = dynamic(() => import("../components/StaticFeaturedWork"));
 const FinanceBanner = dynamic(() => import("../components/financeBanner"));
 const ScrollCount = dynamic(() =>
   import("../components/PageComponents/ScrollCount/ScrollCount")
@@ -52,14 +49,13 @@ const NewBlockBlack = dynamic(() =>
 const Seo = dynamic(() => import("../components/seo"));
 
 
-
 const Wrapper = styled.div`
   position: relative;
   z-index: 1;
   color: var(--txt-light);
   .hardscapingBgImg {
     position: absolute;
-    top0: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     // background: rgba(0, 0, 0, 0.8);
@@ -69,7 +65,7 @@ const Wrapper = styled.div`
 `;
 const Bgoverlay = styled.div`
 position: absolute;
-top0: 0;
+top: 0;
 width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 0.8);
@@ -87,6 +83,7 @@ const Divider = styled.div`
 `;
 
 export default function Index() {
+  
   return (
     <>
       <LayoutJs>

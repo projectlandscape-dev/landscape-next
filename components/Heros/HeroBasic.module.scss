@@ -2,10 +2,6 @@
   p {
     margin-bottom: 0;
   }
-
-  .carousel-indicators {
-    margin-bottom: 4rem;
-  }
 }
 
 .heroGrid {
@@ -68,35 +64,11 @@
   text-transform: uppercase;
   font-weight: 700;
 }
-.promobgImg {
-  position: absolute;
-  top: 20%;
-  right: 0;
-  z-index: 2;
-  &:hover {
-    cursor: pointer;
-    &:before {
-      content: "Click to participate";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgb(82, 178, 44);
-      color: black;
-      padding: 10px;
-      border-radius: 5px;
-      z-index: 4;
-      opacity: 1;
-      visibility: visible;
-      transition: visibility 0s, opacity 0.3s ease;
-    }
-  }
-  &:before {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s ease;
-  }
-  @media screen and (max-width: 768px) {
-    top: 19%;
-  }
+.subheader {
+  font-family: var(--ff-alfa);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-400);
+  text-transform: capitalize;
+  line-height: 1.1;
+  color: var(--clr-tan);
 }

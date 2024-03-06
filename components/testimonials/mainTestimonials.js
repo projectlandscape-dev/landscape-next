@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   z-index: 1;
   .testimonial_banner {
     position: absolute;
-    top0: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: -1;

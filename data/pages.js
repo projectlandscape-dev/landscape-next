@@ -712,6 +712,32 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
           }
         }
+        ... on Page_Pagecomponents_PageComponents_FourRowImage {
+          subheader
+          title
+          imagesRow {
+            image {
+              altText
+              sourceUrl
+            }
+            title
+          }
+        }
+        ... on Page_Pagecomponents_PageComponents_TextLeftWhite {
+          body
+          title
+        }
+        ... on Page_Pagecomponents_PageComponents_ExceptTheBest1 {
+          body
+          fields {
+            title
+            image {
+              altText
+              sourceUrl
+            }
+            description
+          }
+        }
       }
     }
   }

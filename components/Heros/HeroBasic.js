@@ -4,7 +4,6 @@ import { ButtonPrimary } from "../buttons";
 import Carousel from 'react-bootstrap/Carousel';
 import styles from "./HeroBasic.module.scss";
 import Image from "next/image";
-import Link from "next/link";
 
 const captionStyle = {
   textAlign: "left",
@@ -48,24 +47,7 @@ export default function HeroBasic(props) {
   );
 
   return (
-    <div className={styles.wrapper} style={{ position: "relative" }}>
-      <Link href="/PromoContest">
-        <div className={styles.promobgImg}>
-          <Image
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/THE-ULTIMATE-BACKYARD-GIVEAWAY-online-banner-1.jpg"
-            // src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/02/unnamed-1-1-2.webp"
-            alt="promo contest"
-            width={800}
-            height={450}
-            sizes="(max-width: 768px) 50vw, 100vw"
-            priority
-          />
-        </div>
-      </Link>
+    <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
@@ -76,7 +58,7 @@ export default function HeroBasic(props) {
                   style={{ objectFit: "cover"}}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   fill
-                  sizes="(max-width: 768px) 33vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 50vw, 33.33vw"
                   alt="calgary landscaping"
                   priority
                 />
@@ -87,7 +69,7 @@ export default function HeroBasic(props) {
                     Award Winning Calgary Landscape Services
                   </p>
                   <h2 className="title">Calgary Outdoor living : Done Right</h2>
-                  <p className="subheader tan">
+                  <p className={styles.subheader}>
                     Where outdoor living happens Decks, Pergolas, landscape
                     design & more
                   </p>

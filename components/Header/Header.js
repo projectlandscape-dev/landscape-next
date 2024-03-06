@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useRouter } from "next/router";
-import { ButtonSecondaryLight } from "../buttons";
+import { MdLocationPin } from "react-icons/md";
+import { IoMdMail } from "react-icons/io";
 
 const device = {
   sm: "18em",
@@ -16,8 +17,9 @@ const device = {
 const NavList = styled.ul`
   display: flex;
   padding: 0;
-  
+  margin: 0;
   list-style-type: none;
+
   & > * + * {
     margin-left: 1.5em;
   }
@@ -25,8 +27,8 @@ const NavList = styled.ul`
   @media screen and (max-width: ${device.md}) {
     display: ${({ nav }) => (nav ? "flex" : "none")};
     align-items: center;
-    position: fixed;
-    top: 115px;
+    position: absolute;
+    top: 98px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -78,7 +80,6 @@ const Burger = styled.div`
 
 export default function HeaderBasic() {
   const [nav, navOpen] = useState(false);
-
   const { asPath } = useRouter();
 
   function toggleMenu() {
@@ -88,35 +89,32 @@ export default function HeaderBasic() {
   useEffect(() => {
     navOpen(false);
   }, [asPath]);
-
   return (
     <div>
       <div className={styles.header}>
         <div className={styles.headertop}>
           <div className={styles.containerTop}>
-            <div className={styles.containerTopText}>
-              OutDoor Living Done Right
-            </div>
             <div className={styles.phone_container}>
               <Link className={styles.navLinkTop} href="tel: 403 257 4059">
-                <div>
-                  <FaPhone />
-                </div>
-                403 257 4059
+                <FaPhone />
+                <span>403 257 4059</span>
               </Link>
-              <ButtonSecondaryLight
-                style={{ fontSize: "0.62em", textAlign: "center" }}
-                href="/contact"
-              >
-                Start Your Project
-              </ButtonSecondaryLight>
+            </div>
+
+            <div className={styles.containerTopText}>
+              <IoMdMail />
+              <span>OFFICE@PROJECTLANDSCAPE.CA</span>
+            </div>
+            <div className={styles.location}>
+              <MdLocationPin />
+              <span> 3511 64 AVE CALGARY</span>
             </div>
           </div>
         </div>
 
         <div className={styles.headerbottom}>
           <div className={styles.container}>
-            <Link className={styles.logImgLink} href="/">
+            <Link href="/">
               <Image
                 className={styled.logoImg}
                 src="/project-landscape-logo-light.svg"
