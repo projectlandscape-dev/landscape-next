@@ -13,37 +13,6 @@ const device = {
   sm: "18em",
   md: "70em",
 };
-
-const NavList = styled.ul`
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-
-  & > * + * {
-    margin-left: 1.5em;
-  }
-
-  @media screen and (max-width: ${device.md}) {
-    display: ${({ nav }) => (nav ? "flex" : "none")};
-    align-items: center;
-    position: absolute;
-    top: 98px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-    background: var(--clr-light);
-    box-shadow: var(--shadow-bottom);
-    border-radius: var(--br);
-    border-top: 1px solid var(--txt-dark-secondary);
-    padding: 1em 2em 16em 2em;
-    height: 100vh;
-    overflow: auto;
-  }
-`;
-
 const Burger = styled.div`
   position: absolute;
   visibility: hidden;
@@ -129,7 +98,7 @@ export default function HeaderBasic() {
                 <div />
                 <div />
               </Burger>
-              <NavList nav={nav}>
+              <div className={`${styles.NavList} ${nav ? styles.navOpen : ''}`}>
                 <div className={styles.dropdown}>
                   <p>
                     residential services <IoMdArrowDropdown size={20} />
@@ -570,7 +539,7 @@ export default function HeaderBasic() {
                     contact
                   </Link>
                 </li>
-              </NavList>
+              </div>
             </nav>
           </div>
         </div>

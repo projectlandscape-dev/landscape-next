@@ -280,3 +280,60 @@
     color: var(--txt-dark);
   }
 }
+
+
+.NavList {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  & > * + * {
+    margin-left: 1.5em;
+  }
+
+  /* Your existing styles for desktop view */
+
+  @media screen and (max-width: 70em) {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 98px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    background: var(--clr-light);
+    box-shadow: var(--shadow-bottom);
+    border-radius: var(--br);
+    border-top: 1px solid var(--txt-dark-secondary);
+    padding: 1em 2em 16em 2em;
+    height: 100vh;
+    overflow: auto;
+  }
+  @media screen and (max-width: 18em) {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 98px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    background: var(--clr-light);
+    box-shadow: var(--shadow-bottom);
+    border-radius: var(--br);
+    border-top: 1px solid var(--txt-dark-secondary);
+    padding: 1em 2em 16em 2em;
+    height: 100vh;
+    overflow: auto;
+  }
+  /* Additional styles for mobile view */
+}
+
+.navOpen {
+  display: flex;
+  /* Additional styles for mobile view when nav is open */
+}
