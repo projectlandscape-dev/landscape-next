@@ -62,7 +62,7 @@ const FullImageOverlay = styled.div`
   }
 `;
 
-function ImageSliderZoom({ imageSection, title }) {
+export default function  ImageSliderZoom({ imageSection, title }) {
     const [showFullImage, setShowFullImage] = useState(false);
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
     const mainSliderRef = useRef(null);
@@ -197,4 +197,3 @@ function ImageSliderZoom({ imageSection, title }) {
   );
 }
 
-export default ImageSliderZoom;
