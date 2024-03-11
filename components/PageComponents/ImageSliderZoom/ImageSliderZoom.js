@@ -67,7 +67,6 @@ export default function  ImageSliderZoom({ imageSection, title }) {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
     const mainSliderRef = useRef(null);
     const fullscreenSliderRef = useRef(null);
-  
   const settings = {
     dots: true,
     infinite: true,
