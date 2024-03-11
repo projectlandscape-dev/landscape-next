@@ -738,6 +738,16 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             description
           }
         }
+        ... on Page_Pagecomponents_PageComponents_ImageSliderZoom {
+          title
+          imageSection {
+            image {
+              altText
+              sourceUrl
+            }
+            title
+          }
+        }
       }
     }
   }

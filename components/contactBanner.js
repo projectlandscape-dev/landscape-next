@@ -1,9 +1,11 @@
 import React from "react";
-import { VscWorkspaceTrusted } from "react-icons/vsc";
-import { BsFillCalendar2DateFill } from "react-icons/bs";
-import { AiOutlinePhone } from "react-icons/ai";
 import styled from "styled-components";
 import Link from "next/link";
+import {
+  WorkspaceTrusted,
+  BsFillCalendar2DateFill,
+  Phone,
+} from "../public/svg/Svg";
 
 const IconStyle = {
   color: "var(--clr-tan)",
@@ -50,7 +52,7 @@ export default function ContactBanner() {
       <div className="container">
         <div className="gridThree">
           <Item className="spacing">
-            <VscWorkspaceTrusted style={IconStyle} />
+            <WorkspaceTrusted style={IconStyle} />
             <StyledLink href="/about">trusted care</StyledLink>
             <p>
               When professional is what you want, professional is what you’ll
@@ -68,7 +70,7 @@ export default function ContactBanner() {
             </p>
           </Item>
           <Item className="spacing">
-            <AiOutlinePhone style={IconStyle} />
+            <Phone style={IconStyle} />
             <StyledLink href="/contact">contact us</StyledLink>
             <p>
               Questions? Our support has you covered. Get in touch with us today

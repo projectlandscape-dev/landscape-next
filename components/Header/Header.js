@@ -3,11 +3,8 @@ import styles from "./Header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FaPhone } from "react-icons/fa";
-import { IoMdArrowDropdown } from "react-icons/io";
 import { useRouter } from "next/router";
-import { MdLocationPin } from "react-icons/md";
-import { IoMdMail } from "react-icons/io";
+import {Mail, Phone, Location, DropdownArrow} from "../../public/svg/Svg";
 
 const device = {
   sm: "18em",
@@ -65,17 +62,18 @@ export default function HeaderBasic() {
           <div className={styles.containerTop}>
             <div className={styles.phone_container}>
               <Link className={styles.navLinkTop} href="tel: 403 257 4059">
-                <FaPhone />
+                <Phone />
                 <span>403 257 4059</span>
               </Link>
             </div>
 
             <div className={styles.containerTopText}>
-              <IoMdMail />
+              {/* <IoMdMail /> */}
+              <Mail/>
               <span>OFFICE@PROJECTLANDSCAPE.CA</span>
             </div>
             <div className={styles.location}>
-              <MdLocationPin />
+              <Location />
               <span> 3511 64 AVE CALGARY</span>
             </div>
           </div>
@@ -98,19 +96,21 @@ export default function HeaderBasic() {
                 <div />
                 <div />
               </Burger>
-              <div className={`${styles.NavList} ${nav ? styles.navOpen : ''}`}>
+              <div className={`${styles.NavList} ${nav ? styles.navOpen : ""}`}>
                 <div className={styles.dropdown}>
                   <p>
-                    residential services <IoMdArrowDropdown size={20} />
+                    residential services <DropdownArrow />
                   </p>
                   <div>
                     <ul>
-                      <Link
-                        className={styles.linkDark}
-                        href="/residential-services/hardscaping"
-                      >
-                        <h3 className="subheader">hardscaping</h3>
-                      </Link>
+                      <li>
+                        <Link
+                          className={styles.linkDark}
+                          href="/residential-services/hardscaping"
+                        >
+                          <h3 className="subheader">hardscaping</h3>
+                        </Link>
+                      </li>
                       <li>
                         <Link
                           className={styles.styledLink}
@@ -348,7 +348,7 @@ export default function HeaderBasic() {
                 </div>
                 <div className={styles.dropdown}>
                   <p>
-                    about <IoMdArrowDropdown size={20} />
+                    about <DropdownArrow/>
                   </p>
                   <div>
                     <ul>
@@ -460,7 +460,7 @@ export default function HeaderBasic() {
                 </div>
                 <div className={styles.dropdown}>
                   <p>
-                    resources <IoMdArrowDropdown size={20} />
+                    resources <DropdownArrow />
                   </p>
                   <div>
                     <ul>

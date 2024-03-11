@@ -1,8 +1,8 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import styled from "styled-components";
 import { ButtonPrimaryDark } from "./buttons";
 import { Container , Flex, Section} from "./layoutComponents";
+
 
 const Wrapper = styled.div`
   background: linear-gradient(

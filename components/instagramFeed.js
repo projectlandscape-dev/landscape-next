@@ -1,3 +1,4 @@
+import Script from "next/script";
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
@@ -20,8 +21,9 @@ export default function InstagramFeed() {
 
   useEffect(() => {
     const loadIframe = async () => {
-      const iframe = document.createElement('iframe');
-      iframe.src = 'https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad';
+      const iframe = document.createElement("iframe");
+      iframe.src =
+        "https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad";
       iframe.frameBorder = 0;
       iframe.marginHeight = 0;
       iframe.marginWidth = 0;
@@ -38,7 +40,7 @@ export default function InstagramFeed() {
       cancelAnimationFrame(requestAnimationFrameId);
 
       if (feedContainerRef.current) {
-        const iframe = feedContainerRef.current.querySelector('iframe');
+        const iframe = feedContainerRef.current.querySelector("iframe");
         if (iframe) {
           feedContainerRef.current.removeChild(iframe);
         }
@@ -48,6 +50,11 @@ export default function InstagramFeed() {
 
   return (
     <div className="spacing">
+      <Script
+        src="https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad"
+        async
+        strategy="worker"
+      />
       <Feed ref={feedContainerRef}>
         <hr />
       </Feed>

@@ -36,9 +36,9 @@ export default function MainServices() {
               className={styles.itemImg}
               src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658578/hardscaping-calgary_mjyioi.webp"
               alt="calgary hardscaping services"
-              width={500}
-              height={500}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              width={700}
+              height={585}
+              // sizes="(max-width: 768px) 33vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className={styles.itemText}>
               <h3 className="subheader">hardscaping</h3>
@@ -53,11 +53,10 @@ export default function MainServices() {
           <div className={styles.item}>
             <Image
               className={styles.itemImg}
-              width={500}
-              height={500}
+              width={700}
+              height={700}
               src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658902/softscaping-calgary_tnjycp.webp"
               alt="calgary softscaping services"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className={styles.itemText}>
               <h3 className="subheader">softscaping</h3>
@@ -72,11 +71,10 @@ export default function MainServices() {
           <div className={styles.item}>
             <Image
               className={styles.itemImg}
-              width={500}
-              height={500}
+              width={700}
+              height={702}
               src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658588/outdoor-living-calgary_fhbpev.webp"
               alt="outdoor landscaping services calgary"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className={styles.itemText}>
               <h3 className="subheader">outdoor living</h3>

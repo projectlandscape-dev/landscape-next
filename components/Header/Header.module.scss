@@ -292,13 +292,11 @@
     margin-left: 1.5em;
   }
 
-  /* Your existing styles for desktop view */
-
   @media screen and (max-width: 70em) {
     display: none;
     align-items: center;
     position: absolute;
-    top: 98px;
+    top: 120px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -316,7 +314,7 @@
     display: none;
     align-items: center;
     position: absolute;
-    top: 98px;
+    top: 100px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -330,10 +328,8 @@
     height: 100vh;
     overflow: auto;
   }
-  /* Additional styles for mobile view */
 }
 
 .navOpen {
   display: flex;
-  /* Additional styles for mobile view when nav is open */
 }

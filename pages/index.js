@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
-const LayoutJs = dynamic(()=> import("../components/layoutJs"));
-// import LayoutJs from "../components/layoutJs";
-const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
-// import HeroBasic from "../components/Heros/HeroBasic";
 import Image from "next/image";
+const LayoutJs = dynamic(()=> import("../components/layoutJs"));
+const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
 const Badges = dynamic(() => import("../components/Badges/Badges"));
 const AllServices = dynamic(() =>
   import("../components/AllServices/AllServices")
