@@ -122,7 +122,6 @@ function ImageSliderZoom({ imageSection, title }) {
   const handleFullscreenSliderAfterChange = (index) => {
     setCurrentSlideIndex(index);
 
-    // Scroll the main slider programmatically
     if (mainSliderRef.current) {
       mainSliderRef.current.slickGoTo(index);
     }
