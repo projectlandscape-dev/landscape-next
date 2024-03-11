@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import { Container, Section } from "../../layoutComponents";
 import styled from "styled-components";
@@ -58,14 +58,19 @@ const FullImageOverlay = styled.div`
   .full-image-slider {
     width: 60%;
   }
+
+  /* Add the following event listener to close the fullscreen image when clicking outside of it */
+  &:not(.closing) {
+    cursor: pointer;
+  }
 `;
 
 function ImageSliderZoom({ imageSection, title }) {
-  const [showFullImage, setShowFullImage] = useState(false);
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const mainSliderRef = useRef(null);
-  const fullscreenSliderRef = useRef(null);
-
+    const [showFullImage, setShowFullImage] = useState(false);
+    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+    const mainSliderRef = useRef(null);
+    const fullscreenSliderRef = useRef(null);
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -126,6 +131,20 @@ function ImageSliderZoom({ imageSection, title }) {
     }
   };
 
+  const handleCloseOutsideClick = (event) => {
+    if (event.target.classList.contains("full-image-overlay")) {
+      setShowFullImage(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleCloseOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleCloseOutsideClick);
+    };
+  }, []);
+
   return (
     <Section>
       <Container style={{ position: "relative" }}>
@@ -134,24 +153,25 @@ function ImageSliderZoom({ imageSection, title }) {
         </center>
         <SliderWrapper>
           <Slider {...settings} ref={mainSliderRef}>
-            {imageSection?.map((item, index) => {
-              return (
-                <SliderItem key={index} onClick={() => openFullImage(index)}>
-                  <Image
-                    className="main_slider"
-                    src={item?.image?.sourceUrl}
-                    alt={item?.image?.altText}
-                    width={500}
-                    height={300}
-                  />
-                  <h3>{item.title}</h3>
-                </SliderItem>
-              );
-            })}
+            {imageSection?.map((item, index) => (
+              <SliderItem key={index} onClick={() => openFullImage(index)}>
+                <Image
+                  className="main_slider"
+                  src={item?.image?.sourceUrl}
+                  alt={item?.image?.altText}
+                  width={500}
+                  height={300}
+                />
+                <h3>{item.title}</h3>
+              </SliderItem>
+            ))}
           </Slider>
         </SliderWrapper>
         {showFullImage && (
-          <FullImageOverlay>
+          <FullImageOverlay
+            className="full-image-overlay"
+            onClick={handleCloseOutsideClick}
+          >
             <div className="close-icon" onClick={closeFullImage}>
               &#10006;
             </div>
