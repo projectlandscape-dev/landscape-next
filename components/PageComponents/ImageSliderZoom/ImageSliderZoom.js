@@ -18,8 +18,6 @@ const SliderWrapper = styled.div`
 `;
 const SliderItem = styled.div`
   cursor: pointer;
-  //   transition: transform 0.3s ease-in-out;
-
   .main_slider {
     height: 400px;
     width: 100%;
@@ -59,7 +57,6 @@ const FullImageOverlay = styled.div`
     width: 60%;
   }
 
-  /* Add the following event listener to close the fullscreen image when clicking outside of it */
   &:not(.closing) {
     cursor: pointer;
   }
