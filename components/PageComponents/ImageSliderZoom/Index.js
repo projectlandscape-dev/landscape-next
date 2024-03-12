@@ -1,1 +1,1 @@
-export { default } from "./ImageSliderZoom"
+export { default } from "./ImageSliderZoom";

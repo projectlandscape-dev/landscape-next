@@ -22,7 +22,7 @@ const SliderItem = styled.div`
     height: 400px;
     width: 100%;
     object-fit: cover;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     &:hover {
       transform: scale(1.1);
     }
@@ -62,11 +62,11 @@ const FullImageOverlay = styled.div`
   }
 `;
 
-export default function  ImageSliderZoom({ imageSection, title }) {
-    const [showFullImage, setShowFullImage] = useState(false);
-    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-    const mainSliderRef = useRef(null);
-    const fullscreenSliderRef = useRef(null);
+export default function ImageSliderZoom({ imageSection, title }) {
+  const [showFullImage, setShowFullImage] = useState(false);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const mainSliderRef = useRef(null);
+  const fullscreenSliderRef = useRef(null);
   const settings = {
     dots: true,
     infinite: true,
@@ -195,4 +195,3 @@ export default function  ImageSliderZoom({ imageSection, title }) {
     </Section>
   );
 }
-
