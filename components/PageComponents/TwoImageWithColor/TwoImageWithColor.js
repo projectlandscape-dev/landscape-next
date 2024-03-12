@@ -3,95 +3,79 @@ import { Container } from "../../layoutComponents";
 import Image from "next/image";
 import styled from "styled-components";
 
+const device = {
+  md: "48em",
+};
 export const GridAuto = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
   grid-gap: 2em;
-  margin-top: 4em;
-
+  margin-top: 2em;
 `;
 const GridTwo = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-item: center;
+  gap: 1em;
   margin-top: 1em;
+  @media screen and (max-width: ${device.md}) {
+    flex-direction: column;
+  }
 `;
-const TwoImageWithColor = () => {
+
+const TwoImageWithColor = ({
+  bigImage,
+  title,
+  colorHeading,
+  colorItem,
+  description,
+  descriptionTitle,
+}) => {
   return (
     <section style={{ marginTop: "4em" }}>
       <Container>
         <center>
-          <h1 className="title">title</h1>
+          <h1 className="title">{title}</h1>
         </center>
+        <GridTwo>
+          {bigImage?.map((item, index) => {
+            return (
+              <>
+                <Image
+                  style={{ maxWidth: "100%", height: "400px" }}
+                  src={item?.image?.sourceUrl}
+                  alt=""
+                  width={500}
+                  height={300}
+                />
+              </>
+            );
+          })}
+        </GridTwo>
         <center>
-          <GridTwo>
-            <Image
-              style={{ maxWidth: "100%", height: "400px" }}
-              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/image.png"
-              alt=""
-              width={500}
-              height={300}
-            />
-            <Image
-              style={{ maxWidth: "100%", height: "400px" }}
-              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/image-1.png"
-              alt=""
-              width={500}
-              height={300}
-            />
-          </GridTwo>
+          <h3 className="subheader mt-5">{colorHeading}</h3>
           <GridAuto>
-            <div>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/18.png"
-                alt=""
-                width={100}
-                height={100}
-              />
-              <div></div>
-            </div>
-            <div>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/18.png"
-                alt=""
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/18.png"
-                alt=""
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/18.png"
-                alt=""
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/18.png"
-                alt=""
-                width={100}
-                height={100}
-              />
-            </div>
-            <div>
-              <Image
-                src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/18.png"
-                alt=""
-                width={100}
-                height={100}
-              />
-            </div>
+            {colorItem.map((item, index) => {
+              return (
+                <div>
+                  <Image
+                    src={item?.image?.sourceUrl}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                  <h4>{item.title}</h4>
+                </div>
+              );
+            })}
           </GridAuto>
         </center>
+        <h4 className="subheader mt-4">{descriptionTitle}</h4>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${description}`,
+          }}
+        />
       </Container>
     </section>
   );
