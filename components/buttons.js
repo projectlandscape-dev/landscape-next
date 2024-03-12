@@ -171,7 +171,7 @@ export const ButtonInline = styled(props => <Link {...props} />)`
 `
 
 // Anchors
-export const AnchorPrimary = styled.a`
+export const AnchorPrimary = styled(Link)`
   cursor: pointer;
   display: inline-block;
   font-family: var(--ff-alfa);
@@ -204,7 +204,7 @@ export const AnchorPrimary = styled.a`
   }
 `
 
-export const AnchorSecondary = styled.a`
+export const AnchorSecondary = styled(Link)`
   cursor: pointer;
   display: inline-block;
   font-size: var(--fs-sm);
@@ -223,7 +223,7 @@ export const AnchorSecondary = styled.a`
     opacity: 0.8;
   }
 `
-export const AnchorSecondaryDark = styled.a`
+export const AnchorSecondaryDark = styled(Link)`
   cursor: pointer;
   display: inline-block;
   font-size: var(--fs-sm);
@@ -243,7 +243,7 @@ export const AnchorSecondaryDark = styled.a`
   }
 `
 
-export const AnchorUnderline = styled.a`
+export const AnchorUnderline = styled(Link)`
   cursor: pointer;
   display: inline-block;
   font-size: var(--fs-sm);
@@ -268,7 +268,7 @@ export const AnchorUnderline = styled.a`
   }
 `
 
-export const AnchorInline = styled.a`
+export const AnchorInline = styled(Link)`
   cursor: pointer;
   display: inline;
   color: var(--clr-accent);

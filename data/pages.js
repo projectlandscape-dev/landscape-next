@@ -713,14 +713,15 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           }
         }
         ... on Page_Pagecomponents_PageComponents_FourRowImage {
-          subheader
           title
+          subheader
           imagesRow {
             image {
               altText
               sourceUrl
             }
             title
+            link
           }
         }
         ... on Page_Pagecomponents_PageComponents_TextLeftWhite {
@@ -747,6 +748,25 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
             }
             title
           }
+        }
+        ... on Page_Pagecomponents_PageComponents_TwoImageWithColor {
+          title
+          bigImage {
+            image {
+              altText
+              sourceUrl
+            }
+          }
+          colorHeading
+          colorItem {
+            image {
+              altText
+              sourceUrl
+            }
+            title
+          }
+          descriptionTitle
+          description
         }
       }
     }

@@ -44,8 +44,8 @@ const ScrollCount = dynamic(() =>
 const NewBlockBlack = dynamic(() =>
   import("../components/Sections/NewBlockBlack")
 );
-const Seo = dynamic(() => import("../components/seo"));
-
+import Seo from "../components/seo";
+import TwoImageWithColor from "../components/PageComponents/TwoImageWithColor/TwoImageWithColor";
 const Wrapper = styled.div`
   position: relative;
   z-index: 1;
@@ -89,6 +89,7 @@ export default function Index() {
           description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
         />
         <HeroBasic />
+        <TwoImageWithColor/>
         <PortfolioBanner />
         <MainServices />
         <NewBlockBlack />
