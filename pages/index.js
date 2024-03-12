@@ -46,7 +46,6 @@ const NewBlockBlack = dynamic(() =>
 );
 const Seo = dynamic(() => import("../components/seo"));
 
-
 const Wrapper = styled.div`
   position: relative;
   z-index: 1;
