@@ -44,19 +44,6 @@ const FourRowImage = ({ imagesRow, title }) => {
                     </>
                   )}
                 </Box>
-                //  {item.link ? (
-                //   <Link href={item.link}>
-                //     <Image
-                //       src={item?.image?.sourceUrl}
-                //       alt={item?.image?.altText}
-                //     />
-                //   </Link>
-                // ) : (
-                //   <Image
-                //     src={item?.image?.sourceUrl}
-                //     alt={item?.image?.altText}
-                //   />
-                // )}
               );
             })}
           </GridFour>
