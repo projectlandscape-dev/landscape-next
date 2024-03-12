@@ -29,6 +29,7 @@ export default function Videos() {
             <div className="flex">
               {videos.map((video) => (
                 <YouTubeEmbed
+                key={video}
                   videoid={video.id}
                   width={500}
                   params="controls=0"

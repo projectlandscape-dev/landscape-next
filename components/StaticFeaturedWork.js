@@ -348,6 +348,44 @@ const FeaturedWork = () => {
                 </div>
               </div>{" "}
             </Carousel.Item>
+            <Carousel.Item interval={5000}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <div style={{ width: "40%" }}>
+                  <div style={{ width: "60%", marginLeft: "50px" }}>
+                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                    3 time best landscaping 
+                    </h2>
+                    <p style={{ marginBottom: "40px" }}>
+                    Project Landscape has proudly set a new standard in Calgary, becoming the only outdoor living company to clinch the "Best Landscaping" award for three years running at the Calgary Home and Garden Show. Dive into our award-winning showcases from 2022, 2023, and 2024, brimming with inspiration for your backyard revamp. From hassle-free decking solutions and bespoke pergolas to tailor-made saunas, lush plants, tranquil water features, and paving stone options designed to complement any home exterior, we've got your outdoor makeover dreams covered.
+                    </p>
+                    <div>
+                      <ButtonPrimary href="/projects">
+                        View Case Study
+                      </ButtonPrimary>
+                    </div>
+                    <div style={{ marginTop: "20px" }}>
+                      <Link href="/portfolio">
+                        <BtnSecondary> See All Our Work</BtnSecondary>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <FeaturedImage
+                    src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/03/image-2.png"
+                    alt="image-2.png"
+                    height={500}
+                    width={550}
+                  />
+                </div>
+              </div>{" "}
+            </Carousel.Item>
           </Carousel>
         </div>
       </Section>

@@ -8,13 +8,19 @@ const BackgroundWrapper = styled.div`
   z-index: 1;
   color: white;
   padding: 50px 0px;
-  margin-top: 51px;
+  margin-top: 114px;
   .thinbanner {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 102px; 
+  }
+  @media only screen and (max-width: 400px) {
+    margin-top: 98px; 
   }
 `;
 
@@ -32,7 +38,6 @@ const OverlayBox = styled.div`
 `;
 const ThinBanner = ({ title }) => {
   return (
-    <Section>
       <BackgroundWrapper>
         <Image
           className="thinbanner"
@@ -54,7 +59,6 @@ const ThinBanner = ({ title }) => {
         </h1>
         <OverlayBox />
       </BackgroundWrapper>
-    </Section>
   );
 };
 
