@@ -12,7 +12,7 @@ const Text = styled.div`
   margin-left: auto;
 `
 const Item = styled.h3`
-  font-family: var(--ff-gentium);
+  font-family: var(--font-open-sans);
   text-align: center;
 `
 

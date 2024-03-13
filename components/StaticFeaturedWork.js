@@ -33,7 +33,7 @@ const BtnSecondary = styled.button`
   cursor: pointer;
   display: inline-block;
   width: 230px;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;

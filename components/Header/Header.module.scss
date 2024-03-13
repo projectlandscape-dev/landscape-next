@@ -14,10 +14,10 @@
   .containerTop .containerTopText {
     font-size: 0.7em;
   }
- .header .containerTop {
-    gap:0.6em;
+  .header .containerTop {
+    gap: 0.6em;
   }
- .header .containerTop {
+  .header .containerTop {
     margin-left: 0;
   }
   .containerTop .location {
@@ -33,7 +33,7 @@
     font-size: 0.55em;
   }
   .header .containerTop {
-    gap:0.6em;
+    gap: 0.6em;
   }
   .header .containerTop {
     margin-left: 0;
@@ -44,7 +44,6 @@
   .containerTop .location {
     font-size: 0.55em;
   }
-
 }
 .containerTopText {
   color: white;
@@ -54,7 +53,7 @@
   align-items: center;
   gap: 3px;
 }
-.location{
+.location {
   color: var(--txt-light);
   align-items: center;
   display: flex;
@@ -103,7 +102,7 @@
   margin-left: 135px;
   display: flex;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   gap: 2em;
   // margin-left: 20px;
 }
@@ -280,7 +279,6 @@
     color: var(--txt-dark);
   }
 }
-
 
 .NavList {
   display: flex;

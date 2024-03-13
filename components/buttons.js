@@ -4,7 +4,7 @@ import Link from "next/link";
 export const ButtonPrimary = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;
@@ -46,7 +46,7 @@ export const ButtonPrimary = styled(props => <Link {...props} />)`
 export const ButtonPrimaryDark = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;
@@ -68,7 +68,7 @@ export const ButtonPrimaryDark = styled(props => <Link {...props} />)`
 export const ButtonSecondary = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;
@@ -89,7 +89,7 @@ export const ButtonSecondary = styled(props => <Link {...props} />)`
 export const ButtonSecondaryLight = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;
@@ -116,7 +116,7 @@ export const ButtonSecondaryLight = styled(props => <Link {...props} />)`
 export const ButtonSecondaryDark = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;
@@ -138,7 +138,7 @@ export const ButtonSecondaryDark = styled(props => <Link {...props} />)`
 export const ButtonUnderline = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   font-style: italic;
@@ -174,7 +174,7 @@ export const ButtonInline = styled(props => <Link {...props} />)`
 export const AnchorPrimary = styled(Link)`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;

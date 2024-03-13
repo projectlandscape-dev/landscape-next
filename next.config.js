@@ -38,6 +38,13 @@ const nextConfig = {
       },
     ],
   },
+  compiler:{
+    styledComponents: {
+      ssr: true
+    }
+  },
+  presets: ["@babel/preset-react"],
+
 };
 
 module.exports = withBundleAnalyzer(nextConfig)

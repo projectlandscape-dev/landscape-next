@@ -24,7 +24,7 @@ const ProcessItem = styled.div`
 
   h3 {
     font-size: 6rem;
-    font-family: var(-ff-alfa);
+    font-family: var(--font-alfa-slab-one);
     text-shadow: 2px 2px 2px rgba(47, 184, 20, 0.9);
   }
 `

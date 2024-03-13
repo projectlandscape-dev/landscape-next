@@ -60,7 +60,7 @@ const AdditionalText = styled.div`
 const ReadMoreButton = styled.button`
   cursor: pointer;
   display: inline-block;
-  font-family: var(--ff-alfa);
+  font-family: var(--font-alfa-slab-one);
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
   letter-spacing: 0.1em;

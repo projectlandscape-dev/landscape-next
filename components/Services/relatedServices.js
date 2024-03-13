@@ -28,7 +28,7 @@ const ItemLink = styled(props => <Link {...props} />)`
     height: 400px;
   }
   h3 {
-    font-family: var(--ff-alfa);
+    font-family: var(--font-alfa-slab-one);
     font-size: var(--fs-2);
     color: var(--txt-light);
     position: absolute;

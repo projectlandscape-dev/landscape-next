@@ -96,7 +96,7 @@ const Button = styled.div`
   & > * {
     cursor: pointer;
     display: inline-block;
-    font-family: var(--ff-alfa);
+    font-family: var(--font-alfa-slab-one);
     font-size: var(--fs-sm);
     font-weight: var(--fw-button);
     text-decoration: underline;

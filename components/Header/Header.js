@@ -68,7 +68,6 @@ export default function HeaderBasic() {
             </div>
 
             <div className={styles.containerTopText}>
-              {/* <IoMdMail /> */}
               <Mail/>
               <span>OFFICE@PROJECTLANDSCAPE.CA</span>
             </div>

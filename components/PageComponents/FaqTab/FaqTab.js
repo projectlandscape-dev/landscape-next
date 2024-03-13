@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   }
 
   .css-5wl5ud {
-    font-family: var(--ff-alfa);
+    font-family: var(--font-alfa-slab-one);
     font-size: var(--fs-sm);
     font-weight: var(--fw-button);
     letter-spacing: 0.1em;

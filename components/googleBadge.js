@@ -18,7 +18,7 @@ const Wrapper = styled(Link)`
     margin-bottom: 0;
   }
   .header {
-    font-family: var(--ff-alfa);
+    font-family: var(--font-alfa-slab-one);
     font-size: var(--fs-2);
     font-weight: var(--fw-400);
     text-transform: capitalize;
