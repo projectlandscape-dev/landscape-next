@@ -86,7 +86,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
                   fill
                   alt="calgary landscaping"
-                  sizes="(max-width: 768px) 33vw, 100vw"
+                  sizes="(min-width: 808px) 50vw, 100vw"
                   // priority
                 />
               </div>
@@ -115,7 +115,7 @@ export default function HeroBasic(props) {
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
                   alt="calgary landscaping"
                   fill
-                  sizes="(max-width: 768px) 33vw, 100vw"
+                  sizes="(min-width: 808px) 50vw, 100vw"
                   // priority
                 />
               </div>

@@ -53,22 +53,28 @@ const FlexStars = styled.div`
     color: var(--clr-tan);
   }
 `;
-const StarRating = () => {
+const StarIcon = React.memo(() => {
+  return (
+    <Image
+      src='/Reviewstar.png'
+      alt="Star"
+      width={20}
+      height={20}
+      loading="lazy"
+    />
+  );
+});
+
+const StarRating = React.memo(() => {
   return (
     <FlexStars>
       {[...Array(5)].map((_, index) => (
-        <Image
-        key={index}
-        src='/Reviewstar.png'
-        alt="s"
-        width={20}
-        height={20}
-        loading="lazy"
-        />
+        <StarIcon key={index} />
       ))}
     </FlexStars>
   );
-};
+});
+
 
 const ReviewBox = (props) => {
   return (
@@ -91,7 +97,7 @@ export default function MainTestimonials() {
     lazyLoad: true,
   };
   return (
-    <div style={{ padding: "30px 0px" }}>
+    <div>
       <center>
         <h2 className="title" style={{ padding: "20px 0px" }}>
           What Clients Say About Us

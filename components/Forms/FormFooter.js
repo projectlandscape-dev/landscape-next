@@ -1,16 +1,10 @@
 import React from "react";
-import styled from "styled-components";
 import { Input, TextArea, Submit } from "./FormItems";
 
-const FormWrapper = styled.div`
-  // background: var(--clr-dark);
-  // color: var(--txt-light);
-  // padding: 2em;
-`;
 
 export default function FormFooter(props) {
   return (
-    <FormWrapper>
+    <div>
       <form
         name="footer"
         className="spacing"
@@ -63,6 +57,6 @@ export default function FormFooter(props) {
         </div>
         <Submit type="submit" id="submit" value="submit" />
       </form>
-    </FormWrapper>
+    </div>
   );
 }

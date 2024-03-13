@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import styles from "./Badges.module.scss";
@@ -35,7 +35,7 @@ const gridImg = [
 ];
 
 export default function Badges() {
-  const [visibleBadges, setVisibleBadges] = useState(10); // Initial number of visible badges
+  const [visibleBadges, setVisibleBadges] = useState(10);
   const [hasMore, setHasMore] = useState(true);
   const containerRef = useRef(null);
 
@@ -77,14 +77,14 @@ export default function Badges() {
     ],
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (containerRef.current) {
       const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
       if (scrollTop + clientHeight >= scrollHeight - 100 && hasMore) {
         loadMore();
       }
     }
-  };
+  }, [hasMore]);
 
   const loadMore = () => {
     setVisibleBadges((prevVisibleBadges) => prevVisibleBadges + 10);
@@ -111,24 +111,18 @@ export default function Badges() {
       console.log(`Slide ${slideIndex} is about to be loaded.`);
     }
   };
+
   return (
-    <div
-      className="spacing mt-5"
-      ref={containerRef}
-    >
+    <div className="spacing mt-5" ref={containerRef}>
       <div className="container">
-        <h2 className="title center">top rated calgary landscaping company</h2>
+        <h2 className="title center">Top Rated Calgary Landscaping Company</h2>
       </div>
-      <Slider
-        className={styles.slider}
-        {...settings}
-        onLazyLoad={handleLazyLoad}
-      >
-        {badgesImg.slice(0, visibleBadges).map((badge, index) => (
+      <Slider className={styles.slider} {...settings} onLazyLoad={handleLazyLoad}>
+        {badgesImg.slice(0, visibleBadges).map((badge) => (
           <div key={badge}>
             <Image
               src={`/badges/${badge}`}
-              alt="best landscaping companies in calgary"
+              alt="Best Landscaping Companies in Calgary"
               className={styles.ImgStyle}
               width={200}
               height={100}
@@ -142,7 +136,7 @@ export default function Badges() {
           <div key={badge}>
             <Image
               src={`/badges/${badge}`}
-              alt="best landscaping companies in calgary"
+              alt="Best Landscaping Companies in Calgary"
               className={styles.ImgStyle}
               width={200}
               height={100}

@@ -43,8 +43,6 @@ const nextConfig = {
       ssr: true
     }
   },
-  presets: ["@babel/preset-react"],
-
 };
 
 module.exports = withBundleAnalyzer(nextConfig)
