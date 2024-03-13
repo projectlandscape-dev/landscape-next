@@ -28,9 +28,6 @@ const BodyWrapper = styled.div`
   gap: 20px;
   border-left: 2px solid var(--clr-accent);
   padding-left: 45px;
-  .rightSide{
-    white-space: nowrap;
-}
   @media screen and (max-width: 48em) {
     padding-left: 8px;
     width: 100%;
@@ -41,9 +38,7 @@ const ExceptTheBest1 = ({ fields, body }) => {
   return (
     <Section>
       <ContentWrapper>
-        <div
-          className="leftSide"
-        >
+        <div className="leftSide">
           <div
             dangerouslySetInnerHTML={{
               __html: `${body}`,
