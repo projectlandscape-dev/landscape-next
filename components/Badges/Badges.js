@@ -34,7 +34,7 @@ const gridImg = [
   "landscaping-calgary-top-rated-experts-11.svg",
 ];
 
-export default function Badges() {
+const Badges = () => {
   const [visibleBadges, setVisibleBadges] = useState(10);
   const [hasMore, setHasMore] = useState(true);
   const containerRef = useRef(null);
@@ -113,13 +113,17 @@ export default function Badges() {
   };
 
   return (
-    <div className="spacing mt-5" ref={containerRef}>
+    <div className={`spacing mt-5 ${styles.container}`} ref={containerRef}>
       <div className="container">
         <h2 className="title center">Top Rated Calgary Landscaping Company</h2>
       </div>
-      <Slider className={styles.slider} {...settings} onLazyLoad={handleLazyLoad}>
-        {badgesImg.slice(0, visibleBadges).map((badge) => (
-          <div key={badge}>
+      <Slider
+        className={styles.slider}
+        {...settings}
+        onLazyLoad={handleLazyLoad}
+      >
+        {badgesImg.slice(0, visibleBadges).map((badge, index) => (
+          <div key={index}>
             <Image
               src={`/badges/${badge}`}
               alt="Best Landscaping Companies in Calgary"
@@ -132,8 +136,8 @@ export default function Badges() {
         ))}
       </Slider>
       <div className={styles.grid}>
-        {gridImg.map((badge) => (
-          <div key={badge}>
+        {gridImg.map((badge, index) => (
+          <div key={index}>
             <Image
               src={`/badges/${badge}`}
               alt="Best Landscaping Companies in Calgary"
@@ -147,4 +151,6 @@ export default function Badges() {
       </div>
     </div>
   );
-}
+};
+
+export default Badges;

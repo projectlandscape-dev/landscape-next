@@ -21,11 +21,11 @@ const ContentWrapper = styled.div`
   }
 `;
 const BodyWrapper = styled.div`
-  width: 60%;
+  width: 50%;
   display: flex;
   align-items: start;
   justify-content: space-between;
-  gap: 20px;
+  gap: 4em;
   border-left: 2px solid var(--clr-accent);
   padding-left: 45px;
   @media screen and (max-width: 48em) {
@@ -39,6 +39,9 @@ const ExceptTheBest1 = ({ fields, body }) => {
     <Section>
       <ContentWrapper>
         <div className="leftSide">
+          <center>
+        <h3 className="title mb-3">title</h3>
+        </center>
           <div
             dangerouslySetInnerHTML={{
               __html: `${body}`,

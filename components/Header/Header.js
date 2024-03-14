@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import {Mail, Phone, Location, DropdownArrow} from "../../public/svg/Svg";
-
+import Logo from "../../public/project-landscape-logo-light.svg"
 const device = {
   sm: "18em",
   md: "70em",
@@ -82,11 +82,11 @@ export default function HeaderBasic() {
           <div className={styles.container}>
             <Link href="/">
               <Image
-                className={styled.logoImg}
-                src="/project-landscape-logo-light.svg"
+              src={Logo}
+                // src="/project-landscape-logo-light.svg"
                 alt="landscape company calgary logo"
                 width={170}
-                height={60}
+                // height={60}
               />
             </Link>
             <nav className={styles.nav}>

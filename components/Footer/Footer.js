@@ -233,32 +233,28 @@ export default function Footer() {
                     community. We are landscaping experts in Calgary.
                   </p>
                 </div>
-                
-                
               </div>
-
               <div className={styles.divider} />
             </div>
             <div>
               <h4 className="subheader">email us</h4>
               <FormFooter />
-              <div style={{marginTop:'30px'}}>
-                <ul className={styles.cities}>
+              <div style={{ marginTop: "30px" }}>
                 <h4 className="subheader">Cities</h4>
-                  <li>Calgary landscaping</li>
-                  <li>Okotoks Landscaping </li>
-                  <li>Airdrie Landscaping </li>
-                  <li>Chestermere Landscaping </li>
-                  <li>Langdon Landscaping</li>
-                  <li>Boulder Creek Landscaping</li>
-                  <li>Heritage Pointe Landscaping</li>
-                  <li>Priddis Landscaping</li>
-                  <li>Bearspaw Landscaping</li>
-                  <li>Springbank Landscaping</li>
-                </ul>
+                <div className={styles.cities}>
+                  <div>Calgary landscaping</div>
+                  <div>Okotoks Landscaping </div>
+                  <div>Airdrie Landscaping </div>
+                  <div>Chestermere Landscaping </div>
+                  <div>Langdon Landscaping</div>
+                  <div>Boulder Creek Landscaping</div>
+                  <div>Heritage Pointe Landscaping</div>
+                  <div>Priddis Landscaping</div>
+                  <div>Bearspaw Landscaping</div>
+                  <div>Springbank Landscaping</div>
+                </div>
               </div>
             </div>
-            
           </div>
 
           <hr />

@@ -16,11 +16,17 @@ const BackgroundWrapper = styled.div`
     height: 100%;
     z-index: -1;
   }
+  .thin_banner_title {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    font-size: 60px;
+  }
   @media only screen and (max-width: 768px) {
-    margin-top: 102px; 
+    margin-top: 102px;
   }
   @media only screen and (max-width: 400px) {
-    margin-top: 98px; 
+    margin-top: 98px;
   }
 `;
 
@@ -38,27 +44,19 @@ const OverlayBox = styled.div`
 `;
 const ThinBanner = ({ title }) => {
   return (
-      <BackgroundWrapper>
-        <Image
-          className="thinbanner"
-          src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"
-          alt="image-3"
-          fill
-          sizes="100vw"
-        />
-        <h1
-          style={{
-            zIndex: 2,
-            position: "relative",
-            width: "85%",
-            margin: "0 auto",
-            fontSize: "50px",
-          }}
-        >
-          {title}
-        </h1>
-        <OverlayBox />
-      </BackgroundWrapper>
+    <BackgroundWrapper>
+      <Image
+        className="thinbanner"
+        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/07/image-3.png"
+        alt="image-3"
+        fill
+        sizes="100vw"
+      />
+      <center>
+        <h1 className="thin_banner_title">{title}</h1>
+      </center>
+      <OverlayBox />
+    </BackgroundWrapper>
   );
 };
 

@@ -317,7 +317,7 @@
     right: 0;
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    width: 19%;
     background: var(--clr-light);
     box-shadow: var(--shadow-bottom);
     border-radius: var(--br);
@@ -325,6 +325,9 @@
     padding: 1em 2em 16em 2em;
     height: 100vh;
     overflow: auto;
+  }
+  @media screen and (max-width : 400px) {
+    top: 98px;
   }
 }
 

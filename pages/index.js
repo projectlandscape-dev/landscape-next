@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-// const LayoutJs = dynamic(()=> import("../components/layoutJs"));
 import LayoutJs from "../components/layoutJs";
-// const HeroBasic = dynamic(()=> import("../components/Heros/HeroBasic"));
 import HeroBasic from "../components/Heros/HeroBasic";
 const Badges = dynamic(() => import("../components/Badges/Badges"));
 const AllServices = dynamic(() =>
@@ -34,8 +32,7 @@ const FaqFeatured = dynamic(() => import("../components/faq/faqFeatured"));
 const MainServices = dynamic(() =>
   import("../components/MainServices/MainServices")
 );
-// const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
-import PortfolioBanner from "../components/portfolioBanner";
+const PortfolioBanner = dynamic(() => import("../components/portfolioBanner"));
 const StaticProcessArea = dynamic(() =>
   import("../components/PageComponents/StaticProcessArea")
 );
@@ -59,7 +56,6 @@ const Wrapper = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
-    // background: rgba(0, 0, 0, 0.8);
     opacity: 0.8;
     z-index: -1;
   }

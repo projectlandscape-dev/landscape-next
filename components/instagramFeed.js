@@ -25,16 +25,16 @@ export default function InstagramFeed() {
         id="embeded"
         dangerouslySetInnerHTML={{
           __html: `document.getElementById('embeded').classList.remove('embeded')`,
-        }}      
+        }}
         src="https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad"
         strategy="lazyOnload"
       />
       <Feed ref={feedContainerRef}>
         <iframe
-        id="embeded"
           src="https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad"
           allowtransparency="true"
           referrerPolicy="no-referrer-when-downgrade"
+          title="pro_hashtag"
           loading="lazy"
         ></iframe>
         <hr />

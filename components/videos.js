@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+import Script from "next/script";
 import React from "react";
 import styled from "styled-components";
 
@@ -13,46 +16,45 @@ const Items = styled.div`
     display: flex;
     justify-content: center;
   }
-
-  iframe {
-    width: 500px;
-    @media screen and (max-width: 1200px) {
-      max-width: 640px;
-      width: 100%;
-    }
-  }
 `;
 
-const VideoIframe = ({ videoId, thumbnailUrl }) => (
-  <iframe
-    srcDoc={`
-      <style>
-        body, .full {
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          position: absolute;
-          display: flex;
-          justify-content: center;
-          object-fit: cover;
-        }
-      </style>
-      <a href='https://www.youtube.com/embed/${videoId}?autoplay=1' class='full'>
-        <img src='${thumbnailUrl}' class='full' />
-        <svg version='1.1' viewBox='0 0 68 48' width='68px' style='position: relative;'>
-          <path d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='#f00'></path>
-          <path d='M 45,24 27,14 27,34' fill='#fff'></path>
-        </svg>
-      </a>
-    `}
-    style={{ aspectRatio: "16/9" }}
-    frameBorder={0}
-    loading="lazy"
-    title="you tube video player"
-  />
-);
+const VideoIframe = React.memo(({ videoId, thumbnailUrl }) => {
+  return (
+    <div className="video-container">
+      <Script
+        id="youtube"
+        dangerouslySetInnerHTML={{
+          __html: `document.getElementById('youtube').classList.remove('youtube')`,
+        }}
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+        strategy="lazyOnload"
+      />
+      <Link
+        href={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+        className="full"   
+      >
+        <Image
+          style={{ width: "100%", height: "auto" }}
+          src={thumbnailUrl}
+          alt={`Thumbnail for video ${videoId}`}
+          width={500}
+          height={360}
+        />
+      </Link>
+      {/* <iframe
+        id="youtube"
+        width="500"
+        height="360"
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+        frameBorder="0"
+        allowFullScreen
+        title={`YouTube video player for video ${videoId}`}
+      ></iframe> */}
+    </div>
+  );
+});
 
-export default function Videos() {
+const Videos = () => {
   const videos = [
     { id: "msrESLwoj8Y", thumbnail: "https://vumbnail.com/msrESLwoj8Y.jpg" },
     { id: "efRlX9MxKoU", thumbnail: "https://vumbnail.com/efRlX9MxKoU.jpg" },
@@ -65,7 +67,12 @@ export default function Videos() {
           <Items>
             <div className="flex">
               {videos.map((video) => (
-                <VideoIframe key={video.id} videoId={video.id} thumbnailUrl={video.thumbnail}  />
+                <div className="video-item" key={video.id} data-id={video.id}>
+                  <VideoIframe
+                    videoId={video.id}
+                    thumbnailUrl={video.thumbnail}
+                  />
+                </div>
               ))}
             </div>
           </Items>
@@ -73,4 +80,6 @@ export default function Videos() {
       </section>
     </Wrapper>
   );
-}
+};
+
+export default Videos;

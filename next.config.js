@@ -36,6 +36,11 @@ const nextConfig = {
         hostname: "21-pl.purpleparrotwebsites.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "vumbnail.com",
+        port: "",
+      },
     ],
   },
   compiler:{
