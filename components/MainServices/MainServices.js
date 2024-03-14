@@ -36,10 +36,10 @@ export default function MainServices() {
               className={styles.itemImg}
               src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658578/hardscaping-calgary_mjyioi.webp"
               alt="calgary hardscaping services"
-              width={700}
-              height={585}
-              // sizes="(max-width: 768px) 33vw, (max-width: 1200px) 50vw, 33vw"
-            />
+              width={750}
+              height={877}            
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw"
+              />
             <div className={styles.itemText}>
               <h3 className="subheader">hardscaping</h3>
               <ButtonUnderline

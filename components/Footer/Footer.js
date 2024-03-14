@@ -37,7 +37,7 @@ export default function Footer() {
             <div className={styles.flex}>
               <div className="spacing-lg">
                 <div className="spacing">
-                  <h4 className="subheader">contact us</h4>
+                  <h1 className="subheader tan">contact us</h1>
                   <ul>
                     <li>
                       <Link
@@ -237,7 +237,7 @@ export default function Footer() {
               <div className={styles.divider} />
             </div>
             <div>
-              <h4 className="subheader">email us</h4>
+              <h1 className="subheader tan">email us</h1>
               <FormFooter />
               <div style={{ marginTop: "30px" }}>
                 <h4 className="subheader">Cities</h4>
@@ -266,11 +266,11 @@ export default function Footer() {
             <div className={styles.flex}>
               <div>
                 <ul>
-                  <h3 className="subheader">
+                  <h1 className="subheader">
                     <Link href="/residential-services/hardscaping">
                       hardscaping
                     </Link>
-                  </h3>
+                  </h1>
                   <li>
                     <Link
                       className={styles.styledLink}
@@ -347,11 +347,11 @@ export default function Footer() {
               </div>
               <div>
                 <ul>
-                  <h3 className="subheader">
+                  <h1 className="subheader">
                     <Link href="/residential-services/softscaping">
                       softscaping
                     </Link>
-                  </h3>
+                  </h1>
                   <li>
                     <Link
                       className={styles.styledLink}
@@ -404,11 +404,11 @@ export default function Footer() {
               </div>
               <div>
                 <ul>
-                  <h3 className="subheader">
+                  <h1 className="subheader">
                     <Link href="/residential-services/outdoor-living">
                       outdoor living
                     </Link>
-                  </h3>
+                  </h1>
                   <li>
                     <Link className={styles.styledLink} href="/decks-calgary">
                       decks
@@ -493,9 +493,9 @@ export default function Footer() {
               </div>
               <div>
                 <ul>
-                  <h3 className="subheader">
+                  <h1 className="subheader">
                     <Link href="/about">company information</Link>
-                  </h3>
+                  </h1>
                   <li>
                     <Link className={styles.styledLink} href="/about">
                       about us

@@ -34,13 +34,13 @@ const BodyWrapper = styled.div`
     flex-direction: column;
   }
 `;
-const ExceptTheBest1 = ({ fields, body }) => {
+const ExceptTheBest1 = ({ fields, body, title }) => {
   return (
     <Section>
       <ContentWrapper>
         <div className="leftSide">
           <center>
-        <h3 className="title mb-3">title</h3>
+        <h3 className="title mb-3">{title}</h3>
         </center>
           <div
             dangerouslySetInnerHTML={{

@@ -729,6 +729,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           title
         }
         ... on Page_Pagecomponents_PageComponents_ExceptTheBest1 {
+          title
           body
           fields {
             title
