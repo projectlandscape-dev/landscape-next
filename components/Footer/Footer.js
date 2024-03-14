@@ -92,7 +92,7 @@ export default function Footer() {
                   />
                 </div>
                 <div className="spacing">
-                  <h4 className="subheader">showroom</h4>
+                  <h1 className="subheader tan">showroom</h1>
                   <ul>
                     <li>
                       <Link
@@ -133,7 +133,7 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div className={styles.socials}>
-                  <h4 className="subheader">let's connect!</h4>
+                  <h1 className="subheader tan">let's connect!</h1>
                   <div>
                     <Link
                       target="_blank"
@@ -214,7 +214,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="subheader">about us</h4>
+                  <h1 className="subheader tan">about us</h1>
                   <p className={styles.about}>
                     Project landscape redefines the fundamentals of landscape
                     installation, landscape maintenance and service through-out
@@ -240,7 +240,7 @@ export default function Footer() {
               <h1 className="subheader tan">email us</h1>
               <FormFooter />
               <div style={{ marginTop: "30px" }}>
-                <h4 className="subheader">Cities</h4>
+                <h1 className="subheader tan">Cities</h1>
                 <div className={styles.cities}>
                   <div>Calgary landscaping</div>
                   <div>Okotoks Landscaping </div>
