@@ -58,7 +58,7 @@ export default function HeroBasic(props) {
                   style={{ objectFit: "cover"}}
                   src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
                   fill
-                  sizes="(min-width: 808px) 50vw, 50vw"
+                  sizes="(min-width: 808px) 50vw, 100vw"
                   alt="calgary landscaping"
                   priority
                 />

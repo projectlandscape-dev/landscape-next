@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -21,13 +20,6 @@ const Items = styled.div`
 const VideoIframe = React.memo(({ videoId, thumbnailUrl }) => {
   return (
     <div className="video-container">
-      {/* <Script
-        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-        // strategy="lazyOnload"
-        onLoad={() => {
-          console.log('Script has loaded')
-        }}
-      /> */}
       <Link
         href={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
         className="full"   

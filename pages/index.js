@@ -3,7 +3,8 @@ import styled from "styled-components";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import LayoutJs from "../components/layoutJs";
-import HeroBasic from "../components/Heros/HeroBasic";
+// import HeroBasic from "../components/Heros/HeroBasic";
+const HeroBasic = dynamic(() => import("../components/Heros/HeroBasic"));
 const Badges = dynamic(() => import("../components/Badges/Badges"));
 const AllServices = dynamic(() =>
   import("../components/AllServices/AllServices")
