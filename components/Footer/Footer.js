@@ -242,21 +242,90 @@ export default function Footer() {
               <div style={{ marginTop: "30px" }}>
                 <h1 className="subheader tan">Cities</h1>
                 <div className={styles.cities}>
-                  <div>Calgary landscaping</div>
-                  <div>Okotoks Landscaping </div>
-                  <div>Airdrie Landscaping </div>
-                  <div>Chestermere Landscaping </div>
-                  <div>Langdon Landscaping</div>
-                  <div>Boulder Creek Landscaping</div>
-                  <div>Heritage Pointe Landscaping</div>
-                  <div>Priddis Landscaping</div>
-                  <div>Bearspaw Landscaping</div>
-                  <div>Springbank Landscaping</div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/calgary-landscaping-company"
+                    >
+                      Calgary landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/okotoks-landscaping-company"
+                    >
+                      Okotoks Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/airdrie-landscaping-company"
+                    >
+                      Airdrie Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/chestermere-landscaping-company"
+                    >
+                      Chestermere Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/langdon-landscaping-company"
+                    >
+                      Langdon Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/boulder-creek-landscaping-company"
+                    >
+                      Boulder Creek Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/heritage-pointe-landscaping-company"
+                    >
+                      Heritage Pointe Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/priddis-landscaping-company"
+                    >
+                      Priddis Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/bearspaw-landscaping-company"
+                    >
+                      Bearspaw Landscaping
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      className={styles.styledLink}
+                      href="/springbank-landscaping-company"
+                    >
+                      <div>Springbank Landscaping</div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
           <hr />
         </div>
       </div>
@@ -266,11 +335,11 @@ export default function Footer() {
             <div className={styles.flex}>
               <div>
                 <ul>
-                  <h1 className="subheader">
+                  <li>
                     <Link href="/residential-services/hardscaping">
-                      hardscaping
+                      <h1 className="subheader">hardscaping</h1>
                     </Link>
-                  </h1>
+                  </li>
                   <li>
                     <Link
                       className={styles.styledLink}
@@ -347,11 +416,11 @@ export default function Footer() {
               </div>
               <div>
                 <ul>
-                  <h1 className="subheader">
+                  <li>
                     <Link href="/residential-services/softscaping">
-                      softscaping
+                      <h1 className="subheader">softscaping</h1>
                     </Link>
-                  </h1>
+                  </li>
                   <li>
                     <Link
                       className={styles.styledLink}
@@ -404,11 +473,11 @@ export default function Footer() {
               </div>
               <div>
                 <ul>
-                  <h1 className="subheader">
+                  <li>
                     <Link href="/residential-services/outdoor-living">
-                      outdoor living
+                      <h1 className="subheader">outdoor living</h1>
                     </Link>
-                  </h1>
+                  </li>
                   <li>
                     <Link className={styles.styledLink} href="/decks-calgary">
                       decks
@@ -493,9 +562,11 @@ export default function Footer() {
               </div>
               <div>
                 <ul>
-                  <h1 className="subheader">
-                    <Link href="/about">company information</Link>
-                  </h1>
+                  <li>
+                    <Link href="/about">
+                      <h1 className="subheader">company information</h1>
+                    </Link>
+                  </li>
                   <li>
                     <Link className={styles.styledLink} href="/about">
                       about us

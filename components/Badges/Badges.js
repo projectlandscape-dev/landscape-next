@@ -35,7 +35,7 @@ const gridImg = [
 ];
 
 const Badges = () => {
-  const [visibleBadges, setVisibleBadges] = useState(10);
+  const [visibleBadges, setVisibleBadges] = useState(6);
   const [hasMore, setHasMore] = useState(true);
   const containerRef = useRef(null);
 

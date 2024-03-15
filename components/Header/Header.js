@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import {Mail, Phone, Location, DropdownArrow} from "../../public/svg/Svg";
-import Logo from "../../public/project-landscape-logo-light.svg"
+import { Mail, Phone, Location, DropdownArrow } from "../../public/svg/Svg";
+import Logo from "../../public/project-landscape-logo-light.svg";
 const device = {
   sm: "18em",
   md: "70em",
@@ -68,7 +68,7 @@ export default function HeaderBasic() {
             </div>
 
             <div className={styles.containerTopText}>
-              <Mail/>
+              <Mail />
               <span>OFFICE@PROJECTLANDSCAPE.CA</span>
             </div>
             <div className={styles.location}>
@@ -82,7 +82,7 @@ export default function HeaderBasic() {
           <div className={styles.container}>
             <Link href="/">
               <Image
-              src={Logo}
+                src={Logo}
                 // src="/project-landscape-logo-light.svg"
                 alt="landscape company calgary logo"
                 width={170}
@@ -347,13 +347,15 @@ export default function HeaderBasic() {
                 </div>
                 <div className={styles.dropdown}>
                   <p>
-                    about <DropdownArrow/>
+                    about <DropdownArrow />
                   </p>
                   <div>
                     <ul>
-                      <Link className={styles.linkDark} href="/about">
-                        <h3 className="subheader">company information</h3>
-                      </Link>
+                      <li>
+                        <Link className={styles.linkDark} href="/about">
+                          <h3 className="subheader">company information</h3>
+                        </Link>
+                      </li>
                       <li>
                         <Link className={styles.styledLink} href="/about">
                           about
@@ -525,19 +527,19 @@ export default function HeaderBasic() {
                     </ul>
                   </div>
                 </div>
-                <li>
+                <div>
                   <Link
                     className={styles.styledNavLink}
                     href="/commercial-services"
                   >
                     commercial services
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                   <Link className={styles.styledNavLink} href="/contact">
                     contact
                   </Link>
-                </li>
+                </div>
               </div>
             </nav>
           </div>
