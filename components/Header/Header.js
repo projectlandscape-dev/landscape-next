@@ -69,11 +69,15 @@ export default function HeaderBasic() {
 
             <div className={styles.containerTopText}>
               <Mail />
-              <span>OFFICE@PROJECTLANDSCAPE.CA</span>
+              <Link href="mailto: office@projectlandscape.ca">
+                OFFICE@PROJECTLANDSCAPE.CA
+              </Link>
             </div>
             <div className={styles.location}>
               <Location />
-              <span> 3511 64 AVE CALGARY</span>
+              <Link href="https://www.google.com/search?q=project%20landscape&oq=project+landscape&aqs=chrome..69i57j69i64j69i60l3.2120j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AJOqlzVRUU_ZaNptPsOjzHtILa57paj9uQ:1676341266052&rflfq=1&num=10&rldimm=11747008283103314784&lqi=ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg&ved=2ahUKEwjnu73t-ZP9AhVKGzQIHdw6BLIQvS56BAgWEAE&sa=X&rlst=f#rlfi=hd:;si:11747008283103314784,l,ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg;mv:[[50.997355899999995,-113.98204679999999],[50.9522124,-114.01662379999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:14">
+                3511 64 AVE CALGARY
+              </Link>
             </div>
           </div>
         </div>
@@ -83,10 +87,9 @@ export default function HeaderBasic() {
             <Link href="/">
               <Image
                 src={Logo}
-                // src="/project-landscape-logo-light.svg"
                 alt="landscape company calgary logo"
                 width={170}
-                // height={60}
+                height={60}
               />
             </Link>
             <nav className={styles.nav}>

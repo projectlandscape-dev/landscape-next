@@ -20,7 +20,7 @@ const FourRowImage = ({ imagesRow, title }) => {
                   {item.link ? (
                     <Link href={item.link}>
                       <Image
-                        style={{ width:'100%', height: "250px" }}
+                        style={{ width:'700px', height: "250px" }}
                         src={item.image.sourceUrl}
                         alt={item.image.altText}
                         width={500}
@@ -31,7 +31,7 @@ const FourRowImage = ({ imagesRow, title }) => {
                   ) : (
                     <>
                       <Image
-                        style={{ width: "100%", height: "250px" }}
+                        style={{ width: "700px", height: "250px" }}
                         src={item.image.sourceUrl}
                         alt={item.image.altText}
                         width={500}
