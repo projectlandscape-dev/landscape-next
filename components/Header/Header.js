@@ -105,14 +105,12 @@ export default function HeaderBasic() {
                   </p>
                   <div>
                     <ul>
-                      <li>
                         <Link
                           className={styles.linkDark}
                           href="/residential-services/hardscaping"
                         >
                           <h3 className="subheader">hardscaping</h3>
                         </Link>
-                      </li>
                       <li>
                         <Link
                           className={styles.styledLink}
@@ -354,11 +352,9 @@ export default function HeaderBasic() {
                   </p>
                   <div>
                     <ul>
-                      <li>
                         <Link className={styles.linkDark} href="/about">
                           <h3 className="subheader">company information</h3>
                         </Link>
-                      </li>
                       <li>
                         <Link className={styles.styledLink} href="/about">
                           about
