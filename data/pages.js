@@ -769,6 +769,16 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           descriptionTitle
           description
         }
+        ... on Page_Pagecomponents_PageComponents_RoundSection {
+          subheader
+          title
+          price
+          description
+          image {
+            altText
+            sourceUrl
+          }
+        }
       }
     }
   }

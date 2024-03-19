@@ -46,7 +46,6 @@ const NewBlockBlack = dynamic(() =>
 );
 import Seo from "../components/seo";
 
-import RoundSection from "../components/PageComponents/RoundSection/RoundSection";
 
 const Wrapper = styled.div`
   position: relative;
@@ -90,7 +89,6 @@ export default function Index() {
           description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
         />
         <HeroBasic />
-        <RoundSection/>
         <PortfolioBanner />
         <MainServices />
         <NewBlockBlack />
