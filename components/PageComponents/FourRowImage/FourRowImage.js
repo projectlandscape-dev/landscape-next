@@ -20,7 +20,7 @@ const FourRowImage = ({ imagesRow, title }) => {
                   {item.link ? (
                     <Link href={item.link}>
                       <Image
-                        style={{ width:'700px', height: "300px" }}
+                        style={{ width:'700px', height: "250px" }}
                         src={item.image.sourceUrl}
                         alt={item.image.altText}
                         width={500}
