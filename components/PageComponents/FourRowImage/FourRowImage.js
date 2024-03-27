@@ -26,7 +26,7 @@ const FourRowImage = ({ imagesRow, title }) => {
                         width={500}
                         height={500}
                       />
-                      <h3>{item.title}</h3>
+                      <h4>{item.title}</h4>
                     </Link>
                   ) : (
                     <>
@@ -37,7 +37,7 @@ const FourRowImage = ({ imagesRow, title }) => {
                         width={500}
                         height={500}
                       />
-                      <h3>{item.title}</h3>
+                      <h4>{item.title}</h4>
                     </>
                   )}
                 </div>

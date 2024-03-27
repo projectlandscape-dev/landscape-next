@@ -45,36 +45,22 @@ const FlexStars = styled.div`
   display: flex;
   justify-content: center;
 
-  & > * + * {
-    margin-left: 2px;
-  }
-
-  & > * {
+  .star {
     color: var(--clr-tan);
+    font-size: 20px;
+    margin-right: 2px;
   }
 `;
-const StarIcon = React.memo(() => {
-  return (
-    <Image
-      src='/Reviewstar.png'
-      alt="Star"
-      width={20}
-      height={20}
-      loading="lazy"
-    />
-  );
-});
 
-const StarRating = React.memo(() => {
+const StarRating = React.memo(({ rating }) => {
   return (
     <FlexStars>
-      {[...Array(5)].map((_, index) => (
-        <StarIcon key={index} />
-      ))}
+      <span className="star" style={{ width: `${rating * 20}%` }}>
+        ★★★★★
+      </span>
     </FlexStars>
   );
 });
-
 
 const ReviewBox = (props) => {
   return (
@@ -104,7 +90,7 @@ export default function MainTestimonials() {
         </h2>
       </center>
       <Wrapper>
-      <Image
+        <Image
           className="testimonial_banner"
           src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/calgary-landscaping-testimonials-banner.jpg"
           alt="hardscaping-slider_1_mj4mkv"
@@ -115,7 +101,7 @@ export default function MainTestimonials() {
         <section>
           <div className="container">
             <SliderWrapper>
-              <Slider {...settings} >
+              <Slider {...settings}>
                 <ReviewBox
                   title="I am certainly happy I made the choice to go with them"
                   review="After attending the Calgary Home and Garden show with my neighbor and seeing their excellent display we decided to use them for our backyard projects. I am certainly happy I made the choice to go with them. The workers  attention to detail and excellent preparation greatly contributed the success of the project."
