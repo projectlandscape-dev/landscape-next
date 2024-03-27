@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import styles from "./Badges.module.scss";

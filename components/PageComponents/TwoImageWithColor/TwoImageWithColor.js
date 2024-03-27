@@ -6,6 +6,13 @@ import styled from "styled-components";
 const device = {
   md: "48em",
 };
+const GridTwoContainer = styled.div`
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  margin-top: 1em;
+`;
+
 export const GridAuto = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
@@ -18,9 +25,10 @@ const GridTwo = styled.div`
   align-item: center;
   gap: 1em;
   margin-top: 1em;
-  @media screen and (max-width: ${device.md}) {
-    flex-direction: column;
-  }
+  flex-shrink: 0;
+  // @media screen and (max-width: ${device.md}) {
+  //   flex-direction: column;
+  // }
 `;
 
 const TwoImageWithColor = ({
@@ -37,28 +45,33 @@ const TwoImageWithColor = ({
         <center>
           <h1 className="title">{title}</h1>
         </center>
-        <GridTwo>
-          {bigImage?.map((item, index) => {
-            return (
-              <>
-                <Image
-                  style={{ maxWidth: "100%", height: "400px" }}
-                  src={item?.image?.sourceUrl}
-                  alt=""
-                  width={500}
-                  height={300}
-                />
-              </>
-            );
-          })}
-        </GridTwo>
+        <GridTwoContainer>
+          <GridTwo>
+            {bigImage?.map((item) => {
+              return (
+                <>
+                  <Image
+                    key={item}
+                    style={{ maxWidth: "100%", height: "400px" }}
+                    src={item?.image?.sourceUrl}
+                    alt=""
+                    width={500}
+                    height={300}
+                  />
+                </>
+              );
+            })}
+          </GridTwo>
+        </GridTwoContainer>
+
         <center>
           <h3 className="subheader mt-5">{colorHeading}</h3>
           <GridAuto>
-            {colorItem.map((item, index) => {
+            {colorItem.map((item) => {
               return (
                 <div>
                   <Image
+                    key={item}
                     src={item?.image?.sourceUrl}
                     alt=""
                     width={100}
@@ -70,8 +83,9 @@ const TwoImageWithColor = ({
             })}
           </GridAuto>
         </center>
-        <h4 className="subheader mt-4">{descriptionTitle}</h4>
+        <h4 className="subheader mt-5">{descriptionTitle}</h4>
         <div
+        className="mt-2"
           dangerouslySetInnerHTML={{
             __html: `${description}`,
           }}

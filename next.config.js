@@ -14,6 +14,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig = {
   // output: 'export',
   // trailingSlash: true,
+  experimental:{
+    swcMinify:true
+  },
   optimizeFonts : true,
   images: {
     // unoptimized : true,
@@ -44,8 +47,10 @@ const nextConfig = {
     ],
   },
   compiler:{
+    removeConsole: true,
     styledComponents: {
-      ssr: true
+      ssr: true,
+      minify: true
     }
   },
 };
