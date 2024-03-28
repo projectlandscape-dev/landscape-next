@@ -12,14 +12,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  // output: 'export',
-  // trailingSlash: true,
-  experimental:{
-    swcMinify:true
-  },
   optimizeFonts : true,
   images: {
-    // unoptimized : true,
     minimumCacheTTL: 31536000,
     domains: [
       process.env.WORDPRESS_API_URL.match(/(?!(w+)\.)\w*(?:\w+\.)+\w+/)[0], // Valid WP Image domain.
@@ -47,7 +41,7 @@ const nextConfig = {
     ],
   },
   compiler:{
-    removeConsole: true,
+    // removeConsole: true,
     styledComponents: {
       ssr: true,
       minify: true
