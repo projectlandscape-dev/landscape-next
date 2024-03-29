@@ -56,7 +56,7 @@ const TwoImageWithColor = ({
             <Slider {...settings}>
               {bigImage.map((item) => {
                 return (
-                  <div>
+                  <div key={item}>
                     <Image
                       style={{ width: "100%", height: "400px" }}
                       src={item?.image?.sourceUrl}
