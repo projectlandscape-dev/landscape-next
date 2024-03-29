@@ -2,68 +2,85 @@ import React from "react";
 import { Container } from "../../layoutComponents";
 import Image from "next/image";
 import styled from "styled-components";
-
-const device = {
-  md: "48em",
-};
-const GridTwoContainer = styled.div`
-  display: flex;
-  overflow-x: auto;
-  gap: 1em;
-  margin-top: 1em;
-`;
+import Slider from "react-slick";
 
 export const GridAuto = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-  grid-gap: 2em;
+  grid-gap: 3em;
   margin-top: 2em;
 `;
-const GridTwo = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-item: center;
-  gap: 1em;
-  margin-top: 1em;
-  flex-shrink: 0;
-  // @media screen and (max-width: ${device.md}) {
-  //   flex-direction: column;
-  // }
+const SliderWrapper = styled.div`
+  .slick-prev:before,
+  .slick-next:before {
+    color: var(--clr-accent);
+    font-size: 30px;
+  }
+  .slick-slide {
+    padding: 0px 15px;
+  }
+  .slick-dots {
+    li {
+      height: 30px;
+      width: 30px;
+    }
+  }
 `;
 
 const TwoImageWithColor = ({
   bigImage,
+  stationaryImage,
   title,
   colorHeading,
   colorItem,
   description,
   descriptionTitle,
 }) => {
+  const settings = {
+    dots: false,
+    lazyLoad: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 1,
+  };
   return (
     <section style={{ marginTop: "4em" }}>
       <Container>
         <center>
           <h1 className="title">{title}</h1>
         </center>
-        <GridTwoContainer>
-          <GridTwo>
-            {bigImage?.map((item) => {
-              return (
-                <>
-                  <Image
-                    key={item}
-                    style={{ maxWidth: "100%", height: "400px" }}
-                    src={item?.image?.sourceUrl}
-                    alt=""
-                    width={500}
-                    height={300}
-                  />
-                </>
-              );
-            })}
-          </GridTwo>
-        </GridTwoContainer>
-
+        <GridAuto>
+          <SliderWrapper>
+            <Slider {...settings}>
+              {bigImage.map((item) => {
+                return (
+                  <div>
+                    <Image
+                      style={{ width: "100%", height: "400px" }}
+                      src={item?.image?.sourceUrl}
+                      alt={item?.image?.altText}
+                      width={500}
+                      height={300}
+                    />
+                  </div>
+                );
+              })}
+            </Slider>
+          </SliderWrapper>
+          {stationaryImage && (
+            <div>
+              <Image
+                style={{ width: "100%", height: "400px" }}
+                src={stationaryImage?.sourceUrl}
+                alt={stationaryImage?.altText}
+                width={500}
+                height={300}
+              />
+            </div>
+          )}
+        </GridAuto>
         <center>
           <h3 className="subheader mt-5">{colorHeading}</h3>
           <GridAuto>
@@ -73,7 +90,7 @@ const TwoImageWithColor = ({
                   <Image
                     key={item}
                     src={item?.image?.sourceUrl}
-                    alt=""
+                    alt={item?.image?.altText}
                     width={100}
                     height={100}
                   />
@@ -85,7 +102,7 @@ const TwoImageWithColor = ({
         </center>
         <h4 className="subheader mt-5">{descriptionTitle}</h4>
         <div
-        className="mt-2"
+          className="mt-2"
           dangerouslySetInnerHTML={{
             __html: `${description}`,
           }}

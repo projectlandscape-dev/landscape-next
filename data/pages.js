@@ -752,6 +752,10 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         }
         ... on Page_Pagecomponents_PageComponents_TwoImageWithColor {
           title
+          stationaryImage {
+            altText
+            sourceUrl
+          }
           bigImage {
             image {
               altText
@@ -777,6 +781,16 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           image {
             altText
             sourceUrl
+          }
+        }
+        ... on Page_Pagecomponents_PageComponents_RoundCorner2 {
+          title
+          roundedSections {
+            image {
+              altText
+              sourceUrl
+            }
+            description
           }
         }
       }
