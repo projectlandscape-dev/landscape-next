@@ -7,14 +7,14 @@ import Slider from "react-slick";
 export const GridAuto = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-  grid-gap: 3em;
+  grid-gap: 2em;
   margin-top: 2em;
 `;
 const SliderWrapper = styled.div`
   .slick-prev:before,
   .slick-next:before {
     color: var(--clr-accent);
-    font-size: 31px;
+    font-size: 30px;
   }
   .slick-slide {
     padding: 0px 15px;
@@ -36,14 +36,38 @@ const TwoImageWithColor = ({
   description,
   descriptionTitle,
 }) => {
-  const settings = {
+  var settings = {
     dots: false,
-    lazyLoad: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <section style={{ marginTop: "4em" }}>
@@ -64,22 +88,13 @@ const TwoImageWithColor = ({
                       width={500}
                       height={300}
                     />
+
+                    <h3 className="subheader center mt-2">{item.imageTitle}</h3>
                   </div>
                 );
               })}
             </Slider>
           </SliderWrapper>
-          {stationaryImage && (
-            <div>
-              <Image
-                style={{ width: "100%", height: "400px" }}
-                src={stationaryImage?.sourceUrl}
-                alt={stationaryImage?.altText}
-                width={500}
-                height={300}
-              />
-            </div>
-          )}
         </GridAuto>
         <center>
           <h3 className="subheader mt-5">{colorHeading}</h3>

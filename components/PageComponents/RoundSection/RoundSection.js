@@ -18,10 +18,12 @@ const RoundSection = ({ description, price, subheader, title, image }) => {
             />
           </div>
           <div className={styles.contentSection}>
-            <button className={styles.content_btn}>{subheader}</button>
+            {subheader && (
+              <button className={styles.content_btn}>{subheader}</button>
+            )}
             <div className={styles.content_title}>
               <h2 className="subheader">{title}</h2>
-              <span className={styles.price}>{price}</span>
+              {price && <span className={styles.price}>{price}</span>}
             </div>
             <div
               dangerouslySetInnerHTML={{
