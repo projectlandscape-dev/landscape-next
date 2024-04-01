@@ -752,15 +752,12 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         }
         ... on Page_Pagecomponents_PageComponents_TwoImageWithColor {
           title
-          stationaryImage {
-            altText
-            sourceUrl
-          }
           bigImage {
             image {
               altText
               sourceUrl
             }
+            imageTitle
           }
           colorHeading
           colorItem {
@@ -773,6 +770,7 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           descriptionTitle
           description
         }
+
         ... on Page_Pagecomponents_PageComponents_RoundSection {
           subheader
           title
@@ -786,11 +784,40 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
         ... on Page_Pagecomponents_PageComponents_RoundCorner2 {
           title
           roundedSections {
+            title
+            subheader
             image {
               altText
               sourceUrl
             }
             description
+            tableHeaders {
+              tableColName
+            }
+            tableData {
+              tableRow
+            }
+          }
+        }
+        ... on Page_Pagecomponents_PageComponents_FourOrderImage {
+          title
+          section {
+            image {
+              altText
+              sourceUrl
+            }
+            description
+          }
+        }
+        ... on Page_Pagecomponents_PageComponents_SliderWithContent {
+          title
+          boxTitle
+          boxContent
+          imageBox {
+            image {
+              altText
+              sourceUrl
+            }
           }
         }
       }

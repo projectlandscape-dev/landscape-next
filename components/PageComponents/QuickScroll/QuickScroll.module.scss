@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.tab {
+  margin-right: 10px;
+}
+
+.tab button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ddd;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
