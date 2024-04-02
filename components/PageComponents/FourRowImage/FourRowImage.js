@@ -2,8 +2,15 @@ import React from "react";
 import { Section, Container, GridFour } from "../../layoutComponents";
 import Image from "next/image";
 import Link from "next/link";
+import styled from "styled-components";
+import styles from "./FourRowImage.module.scss";
 
-
+const StyledTitle = styled.div`
+  border: 2px solid #093057;
+  background-color: #093057;
+  color: #fff;
+  padding: 10px;
+`;
 
 const FourRowImage = ({ imagesRow, title }) => {
   return (
@@ -11,14 +18,16 @@ const FourRowImage = ({ imagesRow, title }) => {
       <Section>
         <Container>
           <center>
-            <h1 className="title mb-5">{title}</h1>
+          <StyledTitle>
+          <h1 className="title">{title}</h1>
+          </StyledTitle>
           </center>
           <GridFour>
             {imagesRow.map((item, index) => {
               return (
-                <div key={index}>
+                <div key={index} className="mt-4">
                   {item.link ? (
-                    <Link href={item.link}>
+                    <Link href={item.link} className={styles.Img_Container}>
                       <Image
                         style={{ width:'700px', height: "250px" }}
                         src={item.image.sourceUrl}
