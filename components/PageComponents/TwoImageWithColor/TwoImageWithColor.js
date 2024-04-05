@@ -14,7 +14,7 @@ const SliderWrapper = styled.div`
   .slick-prev:before,
   .slick-next:before {
     color: var(--clr-accent);
-    font-size: 30px;
+    font-size: 31px;
   }
   .slick-slide {
     padding: 0px 15px;
