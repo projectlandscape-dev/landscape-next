@@ -6,6 +6,7 @@ import styles from "./CustomPagingImage.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Section } from "../../layoutComponents";
 
 export const GridAuto = styled.div`
   display: grid;
@@ -13,29 +14,7 @@ export const GridAuto = styled.div`
   grid-gap: 2em;
   margin-top: 2em;
 `;
-const SliderWrapper = styled.div`
-  .slick-prev:before,
-  .slick-next:before {
-    color: var(--clr-accent);
-    font-size: 31px;
-  }
-  .slick-slide {
-    padding: 0px 15px;
-  }
-  .slick-dots {
-    li {
-      height: 30px;
-      width: 30px;
-    }
-  }
-`;
-const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-item: center;
-  margin-left: auto;
-  margin-right: auto;
-`;
+
 
 const CustomPagingImage = ({
   bigImage,
@@ -61,13 +40,11 @@ const CustomPagingImage = ({
     }
   };
   return (
-    <div>
+    <Section>
+            <h2 className="title mb-5 center">{title}</h2>
+<Container>
       <div className={styles.imageSlider}>
-        <Button
-          variant="success"
-          className={styles?.prevButton}
-          onClick={handlePrevClick}
-        >
+        <Button variant="success" className={styles?.prevButton} onClick={handlePrevClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 298 512"
@@ -81,8 +58,8 @@ const CustomPagingImage = ({
         </Button>
         <div className="">
           <Image
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt={"Image not Found "}
             src={bigImage?.[imageIndex]?.image?.sourceUrl || ""}
           />
@@ -90,11 +67,7 @@ const CustomPagingImage = ({
             {bigImage?.[imageIndex]?.imageTitle}
           </p>
         </div>
-        <Button
-          variant="success"
-          className={styles.nextButton}
-          onClick={handleNextClick}
-        >
+        <Button variant="success" className={styles.nextButton} onClick={handleNextClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 298 512"
@@ -108,7 +81,10 @@ const CustomPagingImage = ({
         </Button>
       </div>
       <div>
-        <p className={styles?.imageTitle}>Color Description</p>
+        <center>
+
+        <h3 className='subheader mt-2'>{colorHeading}</h3>
+        </center>
         <Container>
           <Row className={styles?.colorDescription}>
             {bigImage?.map((item, i) => (
@@ -137,7 +113,8 @@ const CustomPagingImage = ({
           </div>
         </Container>
       </div>
-    </div>
+      </Container>
+    </Section>
   );
 };
 
