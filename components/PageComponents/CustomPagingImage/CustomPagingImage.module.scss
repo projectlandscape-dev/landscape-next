@@ -1,0 +1,44 @@
+.imageSlider{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imageTitle{
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.colorDescription{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    gap: 2rem;
+}
+.descriptionImage{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+.prevButton{
+    display: flex;
+    justify-content: center; 
+    width: 40px;
+    border-radius: 60%;
+    background-color: #5b9c49;
+    border:2px solid #5b9c49;
+
+}
+.nextButton{
+   display: flex;
+    justify-content: center;
+    width: 40px;
+    border-radius: 60%;
+    background-color: #5b9c49;
+    border: 2px solid #5b9c49;
+}
+.descriptionImage{
+width: 90%;
+margin: auto;
+}
