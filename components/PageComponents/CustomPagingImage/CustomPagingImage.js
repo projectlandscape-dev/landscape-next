@@ -3,6 +3,7 @@ import { Container } from "../../layoutComponents";
 import Image from "next/image";
 import styled from "styled-components";
 import Slider from "react-slick";
+import Link from "next/link";
 
 export const GridAuto = styled.div`
   display: grid;
@@ -26,8 +27,14 @@ const SliderWrapper = styled.div`
     }
   }
 `;
-
-const TwoImageWithColor = ({
+const ImageContainer = styled.div`
+display : flex;
+justify-content :center;
+align-item : center;
+margin-left: auto;
+margin-right : auto;
+`
+const CustomPagingImage = ({
   bigImage,
   title,
   colorHeading,
@@ -35,85 +42,80 @@ const TwoImageWithColor = ({
   description,
   descriptionTitle,
 }) => {
-  var settings = {
-    dots: false,
+  const settings = {
+    customPaging: function (i) {
+      return (
+        <div>
+          {/* <h3 className="subheader">{colorHeading}</h3> */}
+
+          <div>
+            <Image
+              src={bigImage[i]?.image?.sourceUrl}
+              alt={bigImage[i]?.image?.altText}
+              width={100}
+              height={100}
+            />
+            {/* <h4>{item.title}</h4> */}
+          </div>
+        </div>
+      );
+    },
+    dots: true,
+    dotsClass: "slick-dots slick-thumb",
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
   return (
     <section style={{ marginTop: "4em" }}>
       <Container>
         <center>
-          <h1 className="title">{title}</h1>
+          <h1 className="title">{/* {title} */}</h1>
         </center>
         <GridAuto>
           <SliderWrapper>
             <Slider {...settings}>
               {bigImage.map((item) => {
                 return (
-                  <div key={item}>
+                  <ImageContainer key={item} >
                     <Image
-                      style={{ width: "100%", height: "400px" }}
+                      style={{  height: "auto" }}
                       src={item?.image?.sourceUrl}
                       alt={item?.image?.altText}
-                      width={500}
+                      width={700}
                       height={300}
                     />
-
                     <h3 className="subheader center mt-2">{item.imageTitle}</h3>
-                  </div>
+                  </ImageContainer>
                 );
               })}
             </Slider>
           </SliderWrapper>
         </GridAuto>
-        <center>
-          <h3 className="subheader mt-5">{colorHeading}</h3>
+        {/* <center>
+          <h3 className="subheader mt-5">
+            {colorHeading}
+            </h3>
           <GridAuto>
             {colorItem.map((item) => {
               return (
-                <div>
-                  <Image
-                    key={item}
-                    src={item?.image?.sourceUrl}
-                    alt={item?.image?.altText}
-                    width={100}
-                    height={100}
-                  />
-                  <h4>{item.title}</h4>
-                </div>
-              );
-            })}
+            <div>
+              <Image
+                key={item}
+                src={item?.image?.sourceUrl}
+                alt={item?.image?.altText}
+                width={100}
+                height={100}
+              />
+              <h4>
+                {item.title}
+              </h4>
+            </div>
+            );
+            })} 
           </GridAuto>
-        </center>
+        </center> */}
         <h4 className="subheader mt-5">{descriptionTitle}</h4>
         <div
           className="mt-2"
@@ -126,4 +128,4 @@ const TwoImageWithColor = ({
   );
 };
 
-export default TwoImageWithColor;
+export default CustomPagingImage;
