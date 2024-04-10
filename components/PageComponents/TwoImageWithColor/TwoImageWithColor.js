@@ -7,7 +7,7 @@ import Slider from "react-slick";
 export const GridAuto = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-  grid-gap: 2em;
+  grid-gap: 0;
   margin-top: 2em;
 `;
 const SliderWrapper = styled.div`

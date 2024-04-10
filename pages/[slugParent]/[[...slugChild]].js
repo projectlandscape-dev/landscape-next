@@ -3,7 +3,6 @@ import { getPageByUri, getAllPages, getBreadcrumbsByUri } from "lib/pages";
 import LayoutJs from "../../components/layoutJs";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 import PostPage from "../../components/blogPage";
-// import { tempPages } from "../../data/utils";
 
 export default function Page(props) {
   const { page, post } = props;
@@ -103,6 +102,7 @@ export async function getStaticProps({
         post: data.post,
         posts: data.posts,
       },
+      revalidate: 60,
     };
   }
 
@@ -122,6 +122,7 @@ export async function getStaticProps({
       page,
       breadcrumbs,
     },
+    revalidate: 60,
   };
 }
 
@@ -137,7 +138,6 @@ export async function getStaticPaths() {
   // We also filter out the `/` homepage as it will conflict with index.js if
   // as they have the same path, which will fail the build
  
-//  pages.push(...tempPages)
   const paths = pages
     .filter(({ uri }) => typeof uri === "string" && uri !== "/")
     .map(({ uri }) => {

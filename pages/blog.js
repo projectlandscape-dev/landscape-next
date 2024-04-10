@@ -4,14 +4,18 @@ import styled from "styled-components";
 import Link from "next/link";
 import { getPaginatedPosts } from "lib/posts";
 import { postPathBySlugCategory } from "lib/posts";
-const Image = dynamic(()=>import("components/Image"))
-const LayoutJs = dynamic(()=>import("../components/layoutJs"))
-const Container = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Container));
-const Section = dynamic(()=>import("../components/layoutComponents").then((module)=>module.Section));
-const HeroBannerPadding = dynamic(()=>import("../components/layoutComponents").then((module)=>module.HeroBannerPadding));
-const ButtonPrimary = dynamic(()=>import("/components/buttons").then((module)=>module.ButtonPrimary));
-const Seo = dynamic(()=>import("../components/seo"))
-const Pagination = dynamic(()=>import("components/Pagination"))
+// const Image = dynamic(()=>import("components/Image"))
+import Image from "next/image";
+import LayoutJs from "../components/layoutJs";
+import {
+  Container,
+  Section,
+  HeroBannerPadding,
+} from "../components/layoutComponents";
+
+import { ButtonPrimary } from "../components/buttons";
+const Seo = dynamic(() => import("../components/seo"));
+const Pagination = dynamic(() => import("components/Pagination"));
 
 const device = {
   md: "48em",
@@ -125,6 +129,7 @@ const BannerBottomText = styled.div`
 `;
 
 export default function Blog({ posts, pagination }) {
+  console.log("posts", posts, pagination);
   return (
     <LayoutJs>
       <Seo
@@ -167,7 +172,7 @@ export default function Blog({ posts, pagination }) {
               const categorySlug =
                 post.categories.length > 0 ? post.categories[0]?.slug : "";
               return (
-                <li key={post.slug}>
+                <li key={post.slug} className="mt-2">
                   <Article
                     className="post-list-item"
                     itemScope
@@ -175,11 +180,19 @@ export default function Blog({ posts, pagination }) {
                   >
                     {post.featuredImage ? (
                       <Image
+                        style={{ width: "100%", height: "auto" , objectFit: 'cover' }}
                         alt={post.featuredImage.altText || ""}
-                        srcSet={post.featuredImage.srcSet}
-                        src={post.featuredImage.src}
+                        src={post.featuredImage.sourceUrl}
+                        width={500}
+                        height={500}
+                        sizes={post.featuredImage.sizes}
                       />
-                    ) : null}
+                    ) : // <Image
+                    //   alt={post.featuredImage.altText || ""}
+                    //   srcSet={post.featuredImage.srcSet}
+                    //   src={post.featuredImage.src}
+                    // />
+                    null}
 
                     <Text>
                       <header>
@@ -230,5 +243,6 @@ export async function getStaticProps() {
         basePath: "/posts",
       },
     },
+    revalidate: 60,
   };
 }
