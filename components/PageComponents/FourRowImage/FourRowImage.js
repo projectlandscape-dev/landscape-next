@@ -44,11 +44,7 @@ const FourRowImage = ({ imagesRow, title }) => {
                           alt={item.image.altText}
                           width={500}
                           height={500}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setIsOpenModal(true);
-                            setImageUrl(item.image.sourceUrl);
-                          }}
+                       
                         />
                         <h4>{item.title}</h4>
                       </Link>
@@ -61,6 +57,11 @@ const FourRowImage = ({ imagesRow, title }) => {
                         alt={item.image.altText}
                         width={500}
                         height={500}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpenModal(true);
+                          setImageUrl(item.image.sourceUrl);
+                        }}
                       />
                       <h4>{item.title}</h4>
                     </>
