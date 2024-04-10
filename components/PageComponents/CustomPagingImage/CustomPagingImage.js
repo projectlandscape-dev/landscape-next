@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import { Button } from "react-bootstrap";
 import styles from "./CustomPagingImage.module.scss";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { Section, Container } from "../../layoutComponents";
 
 export const GridAuto = styled.div`
@@ -18,7 +15,6 @@ const CustomPagingImage = ({
   bigImage,
   title,
   colorHeading,
-  colorItem,
   description,
   descriptionTitle,
 }) => {
