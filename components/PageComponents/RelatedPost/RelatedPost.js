@@ -14,11 +14,15 @@ const Wrapper = styled.div`
     padding: 4em 0;
   }
 `;
-const Image = styled.img`
+
+const ImageWrapper = styled.div`
   height: 280px;
   width: 100%;
-  object-fit: cover;
+  position: relative;
+  overflow: hidden;
 `;
+
+
 
 const Text = styled.div`
   text-align: center;
@@ -72,10 +76,19 @@ export default function RelatedPost({ selectPost }) {
             const categorySlug = post?.categories?.nodes[0]?.slug;
             return (
               <div key={index}>
-                <Image
-                  alt={post.featuredImage?.node?.altText}
-                  src={post.featuredImage?.node?.sourceUrl}
-                />{" "}
+
+              
+                 <ImageWrapper>
+                  <Image
+                    alt={post.featuredImage?.node?.altText || 'Post Image'}
+                    src={post.featuredImage?.node?.sourceUrl}
+                    layout='fill'
+                    objectFit='cover'
+                  />
+                </ImageWrapper>
+
+
+                  
                 <h4 style={{ padding: "20px 0px" }}>
                   <Link
                     style={{ color: "#3b5c8d" }}
