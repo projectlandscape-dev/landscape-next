@@ -703,7 +703,7 @@ export default function Footer() {
             <div className="container">
               <div>
                 <p>website by: </p>
-                <Link target="_blank" href="https://www.aarontonner.com">
+                <Link target="_blank" href="https://aarontonner.com">
                   <Image
                     className="img"
                     src="/aaron-tonner-web-solutions-logo-white-white.svg"
