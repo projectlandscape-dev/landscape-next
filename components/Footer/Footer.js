@@ -37,7 +37,7 @@ export default function Footer() {
             <div className={styles.flex}>
               <div className="spacing-lg">
                 <div className="spacing">
-                  <h1 className="subheader tan">contact us</h1>
+                  <h4 className="subheader tan">contact us</h4>
                   <ul>
                     <li>
                       <Link
@@ -92,7 +92,7 @@ export default function Footer() {
                   />
                 </div>
                 <div className="spacing">
-                  <h1 className="subheader tan">showroom</h1>
+                  <h4 className="subheader tan">showroom</h4>
                   <ul>
                     <li>
                       <Link
@@ -133,7 +133,7 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div className={styles.socials}>
-                  <h1 className="subheader tan">let's connect!</h1>
+                  <h4 className="subheader tan">let's connect!</h4>
                   <div>
                     <Link
                       target="_blank"
@@ -214,7 +214,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div>
-                  <h1 className="subheader tan">about us</h1>
+                  <h4 className="subheader tan">about us</h4>
                   <p className={styles.about}>
                     Project landscape redefines the fundamentals of landscape
                     installation, landscape maintenance and service through-out
@@ -237,10 +237,10 @@ export default function Footer() {
               <div className={styles.divider} />
             </div>
             <div>
-              <h1 className="subheader tan">email us</h1>
+              <h4 className="subheader tan">email us</h4>
               <FormFooter />
               <div style={{ marginTop: "30px" }}>
-                <h1 className="subheader tan">Cities</h1>
+                <h4 className="subheader tan">Cities</h4>
                 <div className={styles.cities}>
                   <div>
                     <Link
@@ -337,7 +337,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/residential-services/hardscaping">
-                      <h1 className="subheader">hardscaping</h1>
+                      <h5 className="subheader">hardscaping</h5>
                     </Link>
                   </li>
                   <li>
@@ -418,7 +418,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/residential-services/softscaping">
-                      <h1 className="subheader">softscaping</h1>
+                      <h5 className="subheader">softscaping</h5>
                     </Link>
                   </li>
                   <li>
@@ -475,7 +475,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/residential-services/outdoor-living">
-                      <h1 className="subheader">outdoor living</h1>
+                      <h5 className="subheader">outdoor living</h5>
                     </Link>
                   </li>
                   <li>
@@ -564,7 +564,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/about">
-                      <h1 className="subheader">company information</h1>
+                      <h5 className="subheader">company information</h5>
                     </Link>
                   </li>
                   <li>
