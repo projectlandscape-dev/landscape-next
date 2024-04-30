@@ -71,15 +71,14 @@ export async function getStaticProps({
   // We only want to apply deeper paths to the URI if we actually have
   // existing children
 
-  if (Array.isArray(slugChild) && slugChild.length > 0) {
-    pageUri += `${slugChild.join("/")}/`;
-  }
-
-
-  // Previous Code
-  //  if (Array.isArray(slugChild) && slugChild.length > 0) {
-  //   pageUri = `${pageUri}${slugChild.join("/")}/`;
+  // if (Array.isArray(slugChild) && slugChild.length > 0) {
+  //   pageUri += `${slugChild.join("/")}/`;
   // }
+
+ 
+   if (Array.isArray(slugChild) && slugChild.length > 0) {
+    pageUri = `${pageUri}${slugChild.join("/")}/`;
+  }
 
   const { page } = await getPageByUri(pageUri);
 
