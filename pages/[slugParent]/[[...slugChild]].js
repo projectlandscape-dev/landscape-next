@@ -72,8 +72,14 @@ export async function getStaticProps({
   // existing children
 
   if (Array.isArray(slugChild) && slugChild.length > 0) {
-    pageUri = `${pageUri}${slugChild.join("/")}/`;
+    pageUri += `${slugChild.join("/")}/`;
   }
+
+
+  // Previous Code
+  //  if (Array.isArray(slugChild) && slugChild.length > 0) {
+  //   pageUri = `${pageUri}${slugChild.join("/")}/`;
+  // }
 
   const { page } = await getPageByUri(pageUri);
 
