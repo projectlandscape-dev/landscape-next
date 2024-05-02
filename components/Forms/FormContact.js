@@ -67,7 +67,7 @@ export default function FormContact(props) {
           <form
             name="contact"
             className="spacing"
-            action="https://formspree.io/f/mjvdqzab"
+            action="https://formspree.io/f/xleqadpo"
             method="POST"
             enctype="multipart/form-data"
           >

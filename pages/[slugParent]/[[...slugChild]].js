@@ -71,25 +71,48 @@ export async function getStaticProps({
   // We only want to apply deeper paths to the URI if we actually have
   // existing children
 
-  if (Array.isArray(slugChild) && slugChild.length > 0) {
+  // if (Array.isArray(slugChild) && slugChild.length > 0) {
+  //   pageUri += `${slugChild.join("/")}/`;
+  // }
+
+ 
+   if (Array.isArray(slugChild) && slugChild.length > 0) {
     pageUri = `${pageUri}${slugChild.join("/")}/`;
   }
 
+
+  // debug test
+  console.log("Constructed URI:", pageUri);
+
+
+
+  
   const { page } = await getPageByUri(pageUri);
 
   if (!page) {
+    // log test
+        console.log("No page found at URI, checking for blog post...");
+    // log test
     const allPosts = await getAllPostsWithSlug();
+
+        console.log("Fetched all posts:", allPosts);
+    // look at posts
 
     const isBlog = allPosts.edges.find(
       ({ node }) => node.slug === slugChild[0]
     );
     if (!isBlog) {
+      //log
+            console.log("No blog post found for slug:", slugChild[0]);
+      
       return {
         props: {},
         notFound: true,
       };
     }
 
+    // log
+    console.log("Fetching post details for:", slugChild[0]);
     const data = await getPostAndMorePosts(
       params?.slugChild[0],
       preview,
@@ -110,6 +133,9 @@ export async function getStaticProps({
   // tree of pages. Rather than querying every segment, the query should
   // be cached for all pages, so we can grab that and use it to create
   // our trail
+
+
+    console.log("Page found, generating breadcrumbs...");
 
   const { pages } = await getAllPages({
     queryIncludes: "index",

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image';
 import styled from "styled-components";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
@@ -14,15 +13,11 @@ const Wrapper = styled.div`
     padding: 4em 0;
   }
 `;
-
-const ImageWrapper = styled.div`
+const Image = styled.img`
   height: 280px;
   width: 100%;
-  position: relative;
-  overflow: hidden;
+  object-fit: cover;
 `;
-
-
 
 const Text = styled.div`
   text-align: center;
@@ -76,19 +71,10 @@ export default function RelatedPost({ selectPost }) {
             const categorySlug = post?.categories?.nodes[0]?.slug;
             return (
               <div key={index}>
-
-              
-                 <ImageWrapper>
-                  <Image
-                    alt={post.featuredImage?.node?.altText || 'Post Image'}
-                    src={post.featuredImage?.node?.sourceUrl}
-                    layout='fill'
-                    objectFit='cover'
-                  />
-                </ImageWrapper>
-
-
-                  
+                <Image
+                  alt={post.featuredImage?.node?.altText}
+                  src={post.featuredImage?.node?.sourceUrl}
+                />{" "}
                 <h4 style={{ padding: "20px 0px" }}>
                   <Link
                     style={{ color: "#3b5c8d" }}
