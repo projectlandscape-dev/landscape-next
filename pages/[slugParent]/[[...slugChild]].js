@@ -3,7 +3,7 @@ import { getPageByUri, getAllPages, getBreadcrumbsByUri } from "lib/pages";
 import LayoutJs from "../../components/layoutJs";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 import PostPage from "../../components/blogPage";
-import Seo from "../components/seo";
+import Seo from "../components/seo.js";
 
 export default function Page(props) {
   const { page, post } = props;
