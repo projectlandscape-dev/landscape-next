@@ -3,7 +3,6 @@ import { getPageByUri, getAllPages, getBreadcrumbsByUri } from "lib/pages";
 import LayoutJs from "../../components/layoutJs";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 import PostPage from "../../components/blogPage";
-import Seo from "../components/seo.js";
 
 export default function Page(props) {
   const { page, post } = props;
@@ -32,7 +31,7 @@ export default function Page(props) {
 
   return (
     <LayoutJs>
-       <Seo title={title} description={description} /> 
+       // <Seo title={title} description={description} /> 
       <div>
         {/* Iterate over ACF flexible fields and pass props to imported component */}
         {hasFlexibleFields && (
