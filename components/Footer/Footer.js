@@ -189,7 +189,7 @@ export default function Footer() {
                   <div>
                     <Link
                       target="_blank"
-                      href="https://www.houzz.com/professionals/landscape-architects-and-landscape-designers/project-landscape-ltd-pfvwus-pf~816279347/__public"
+                      href="https://www.houzz.com/pro/projectlandscape"
                     >
                       <Image
                         width={100}
