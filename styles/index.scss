@@ -298,3 +298,6 @@ section {
     grid-template-columns: 1fr;
   }
 }
+body.modal-open {
+  overflow: hidden;
+}

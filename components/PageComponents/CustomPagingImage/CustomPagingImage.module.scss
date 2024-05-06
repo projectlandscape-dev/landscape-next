@@ -1,0 +1,51 @@
+.imageSlider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imageTitle {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.colorDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.descriptionImage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.prevButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  padding: 12px 15px;
+  color: white;
+  border-radius: 50%;
+  background-color: #5b9c49;
+  // border:2px solid #5b9c49;
+}
+.nextButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  padding: 12px 15px;
+  color: white;
+  border-radius: 50%;
+  background-color: #5b9c49;
+}
+.descriptionImage {
+  width: 90%;
+  margin: auto;
+}
+.color{
+    cursor: pointer;
+}

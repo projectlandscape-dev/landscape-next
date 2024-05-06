@@ -149,7 +149,7 @@ export default function PostPage({ post, posts, preview }) {
   }
 
   return (
-    <LayoutJs>
+    <LayoutJs preview={preview}>
       <Seo title={post.title} description={post.excerpt} />
       <HeroBannerPadding />
       {post.featuredImage ? (
