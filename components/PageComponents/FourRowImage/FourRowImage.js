@@ -47,6 +47,7 @@ const FourRowImage = ({ imagesRow, title }) => {
                       <h4>{item.title}</h4>
                     </Link>
                   ) : (
+                    
                     <>
                       <Image
                         style={{ width: "700px", height: "250px" }}
