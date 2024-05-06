@@ -27,29 +27,27 @@ const FourRowImage = ({ imagesRow, title }) => {
       <Section>
         <Container>
           <center>
-            <StyledTitle>
-              <h1 className="title">{title}</h1>
-            </StyledTitle>
+          <StyledTitle>
+          <h1 className="title">{title}</h1>
+          </StyledTitle>
           </center>
           <GridFour>
             {imagesRow.map((item, index) => {
               return (
                 <div key={index} className="mt-4">
                   {item.link ? (
-                    <>
-                      <Link href={item.link} className={styles.Img_Container}>
-                        <Image
-                          style={{ width: "700px", height: "250px" }}
-                          src={item.image.sourceUrl}
-                          alt={item.image.altText}
-                          width={500}
-                          height={500}
-                       
-                        />
-                        <h4>{item.title}</h4>
-                      </Link>
-                    </>
+                    <Link href={item.link} className={styles.Img_Container}>
+                      <Image
+                        style={{ width:'700px', height: "250px" }}
+                        src={item.image.sourceUrl}
+                        alt={item.image.altText}
+                        width={500}
+                        height={500}
+                      />
+                      <h4>{item.title}</h4>
+                    </Link>
                   ) : (
+                    
                     <>
                       <Image
                         style={{ width: "700px", height: "250px" }}
