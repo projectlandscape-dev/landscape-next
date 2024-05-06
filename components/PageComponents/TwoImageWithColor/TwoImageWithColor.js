@@ -108,7 +108,7 @@ const TwoImageWithColor = ({
                     width={100}
                     height={100}
                   />
-                  <h4>{item.title}</h4>
+                  <h2>{item.title}</h2>
                 </div>
               );
             })}

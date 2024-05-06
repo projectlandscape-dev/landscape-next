@@ -71,7 +71,7 @@ export default function Banner(props) {
           <Container className="spacing">
             <Text className="spacing">
               <div className="">
-                <h1 className="title">{props.title}</h1>
+                <small className="title">{props.title}</small>
                 <p className="subheader tan">{props.subheader}</p>
               </div>
               <ButtonPrimary href="/contact">get free estimate</ButtonPrimary>
