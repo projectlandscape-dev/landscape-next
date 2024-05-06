@@ -5,8 +5,8 @@ const DEFAULT_OG_IMAGE =
   "https://storage.googleapis.com/brandflow-bucket/personal/blog/portfolio-og.jpg";
 
 export default function Seo({
-  title = "Project Landscape Ltd. - Calgary Landscaping Company",
-  description = "Project Landscape redefines the fundamentals of landscape installation, landscape maintenance and service throughout Calgary and surrounding areas.",
+  title = "Project Landscape Ltd. - Calgary Landscaping Company" || title,
+  description = "Project Landscape redefines the fundamentals of landscape installation, landscape maintenance and service throughout Calgary and surrounding areas." || description,
   siteName = "Project Landscape Ltd. - Calgary Landscaping Company",
   canonical = DOMAIN,
   ogImage = DEFAULT_OG_IMAGE,
