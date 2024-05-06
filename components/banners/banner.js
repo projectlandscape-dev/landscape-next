@@ -70,9 +70,9 @@ export default function Banner(props) {
         <Wrapper img={props.img}>
           <Container className="spacing">
             <Text className="spacing">
-              <div className="">
-                <small className="title">{props.title}</small>
-                <p className="subheader tan">{props.subheader}</p>
+              <div>
+            <small className="title">{`${props.title} - Project Landscape`}</small>
+              <p className="subheader tan">{props.subheader}</p>
               </div>
               <ButtonPrimary href="/contact">get free estimate</ButtonPrimary>
             </Text>
