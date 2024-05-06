@@ -64,7 +64,7 @@ export default function ComponentE({ subheader, title, content }) {
                   />
 
                   <Inner>
-                    <h3 className="subheader accent">{item.title}</h3>
+                    <h2 className="subheader accent">{item.title}</h2>
                     {item.description ? (
                       item.link ? (
                         <Link href={item?.link || "#"}>
