@@ -90,7 +90,7 @@ export default function Banner({
                 <p style={{ fontSize: "16px" }} className="subheader">
                   {titleCopy}
                 </p>
-                <h1 className="title">{title}</h1>
+                <small className="title">{title}</small>
                 <p className="subheader">{subheader}</p>
               </div>
               <ButtonPrimary href="/contact">get started</ButtonPrimary>

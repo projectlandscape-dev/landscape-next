@@ -158,7 +158,7 @@ export default function ChartArea({ title, image, steps, sliderdata }) {
       <Section>
         <div className={styles.text}>
           {/* <p className="subheader accent">find the service you need</p> */}
-          <h2 className="title mb-4">{title}</h2>
+          <h3 className="title mb-4">{title}</h3>
         </div>
         <YoutubeModal
           isOpen={isYoutubeModalOpen}
