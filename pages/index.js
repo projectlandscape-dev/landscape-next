@@ -45,6 +45,7 @@ const NewBlockBlack = dynamic(() =>
   import("../components/Sections/NewBlockBlack")
 );
 import Seo from "../components/seo";
+import Head from "next/head";
 
 
 const Wrapper = styled.div`
@@ -88,6 +89,9 @@ export default function Index() {
           title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
           description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
         />
+         <Head>
+          <link rel="canonical" href="https://www.projectlandscape.ca" />
+        </Head>
         <HeroBasic />
         <PortfolioBanner />
         <MainServices />
