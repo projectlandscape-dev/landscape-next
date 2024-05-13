@@ -31,7 +31,7 @@ const ExceptTheBest = ({ title, body }) => {
             color: "var(--clr-accent)",
           }}
         >
-          <h3>{title}</h3>
+          <h2 class="title">{title}</h2>
         </div>
         <BodyWrapper
           dangerouslySetInnerHTML={{

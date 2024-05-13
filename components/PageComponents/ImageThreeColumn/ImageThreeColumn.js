@@ -18,7 +18,7 @@ export default function ImageThreeColumn({ title, images }) {
     <Section>
       {title ? (
         <center style={{ marginBottom: "20px" }}>
-          <h1>{title}</h1>
+          <h2>{title}</h2>
         </center>
       ) : null}
       <ImageWrapper>
