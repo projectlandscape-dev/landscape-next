@@ -29,14 +29,19 @@ const SliderWrapper = styled.div`
       width: 30px;
     }
   }
+  .slick-track {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+  }
 `;
 
 const SliderItem = styled.div`
   figure {
     div {
       img {
-        height: 300px;
-        width: 100%;
+        height: auto;
+        width: 80%;
         object-fit: cover;
       }
     }
