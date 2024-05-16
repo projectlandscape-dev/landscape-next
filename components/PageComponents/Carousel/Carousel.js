@@ -41,7 +41,7 @@ const SliderItem = styled.div`
     div {
       img {
         height: auto;
-        width: 80%;
+        width: 50%;
         object-fit: cover;
       }
     }
