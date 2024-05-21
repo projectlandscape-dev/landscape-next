@@ -49,6 +49,43 @@ export default function Badges({ title }) {
       <Wrapper className="spacing">
         <h2 className="title center">Awards and Certificates</h2>
         <Slider className={styles.slider} {...settings}>
+
+        <div>
+            <Image
+              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_CMYK_GOLD.webp"
+              alt="best landscaping companies in calgary"
+              style={ImgStyle}
+              width={100}
+              height={100}
+            />
+          </div>
+          <div>
+            <Image
+              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_CMYK_Text-1.webp"
+              alt="best landscaping companies in calgary"
+              style={ImgStyle}
+              width={100}
+              height={100}
+            />
+          </div>
+          <div>
+            <Image
+              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_Rev.webp"
+              alt="best landscaping companies in calgary"
+              style={ImgStyle}
+              width={100}
+              height={100}
+            />
+          </div>
+          <div>
+            <Image
+              src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_CMYK.webp"
+              alt="best landscaping companies in calgary"
+              style={ImgStyle}
+              width={100}
+              height={100}
+            />
+          </div>
           <div>
             <Image
               src="/badges/best-landscaping-companies-in-calgary-1.svg"
