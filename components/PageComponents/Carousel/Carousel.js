@@ -30,9 +30,9 @@ const SliderWrapper = styled.div`
     }
   }
   .slick-track {
-    display : flex;
-    justify-content : center;
-    align-items : center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -40,8 +40,8 @@ const SliderItem = styled.div`
   figure {
     div {
       img {
-        height: auto;
-        width: 50%;
+        height: 300px;
+        width: 60%;
         object-fit: cover;
       }
     }
@@ -50,6 +50,7 @@ const SliderItem = styled.div`
 
 const Inner = styled.div`
   padding: 2em;
+  text-align: center;
 `;
 
 // const StyledImg = styled(GatsbyImage)`
