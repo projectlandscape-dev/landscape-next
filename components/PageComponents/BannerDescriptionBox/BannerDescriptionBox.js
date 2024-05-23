@@ -66,9 +66,10 @@ const BannerDescriptionBox = ({ body, bgimage, title, itemwrapper }) => {
 
         <GridThree>
           {itemwrapper.map((item) => {
+             console.log("Image Alt Text:", item.altText);
             return (
               <ItemWrapper>
-                <Image src={item.image.sourceUrl} alt={item.altText} loading="lazy" />
+                <Image src={item.image.sourceUrl} alt={item.altText || 'Its time to revitalize your Calgary backyard'} loading="lazy" />
                 {item.title && item.link ? (
                   <Link href={item.link}>
                     <h4>{item.title}</h4>
