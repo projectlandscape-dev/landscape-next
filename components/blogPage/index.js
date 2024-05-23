@@ -339,7 +339,7 @@ export default function PostPage({ post, posts, preview }) {
               <div>
                 <p className="caps bold">from the landscaping experts</p>
                 {post.title ? (
-                  <h1 className="title accent bold italics">{post.title}</h1>
+                  <h2 className="title accent bold italics">{post.title}</h2>
                 ) : null}
               </div>
               <BlogArticle className="blog-post">
