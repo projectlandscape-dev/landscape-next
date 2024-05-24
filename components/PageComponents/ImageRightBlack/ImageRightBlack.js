@@ -102,6 +102,7 @@ export default function ImageRightBlack({
                   </ButtonPrimary>
                   <Image
                     width="160"
+                   alt="Red arrow pointing to the left."
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed__1_-removebg-preview.png"
                   />
                 </Buttonwrapper>
