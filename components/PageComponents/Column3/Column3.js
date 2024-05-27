@@ -33,7 +33,7 @@ export default function Column3({ content }) {
                       width={100}
                       height={100}
                     />
-                    <h1 className="number">{item?.title}</h1>
+                    <h3 className="number">{item?.title}</h3>
                     <h5>{item?.subheader}</h5>
                   </center>
                 </Box>

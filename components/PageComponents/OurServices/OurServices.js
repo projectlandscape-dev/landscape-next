@@ -29,7 +29,7 @@ export default function OurServices({ title, services }) {
         <Section>
           <div style={{ width: "80%", margin: "auto", color: "white" }}>
             <center style={{ margin: "3rem" }}>
-              <h1>{title}</h1>
+              <h2>{title}</h2>
             </center>
             <GridThree>
               {services?.map((item) => {
@@ -50,9 +50,9 @@ export default function OurServices({ title, services }) {
                     )}
 
                     <center>
-                      <h1 style={{ fontSize: "24px", marginTop: "10px" }}>
+                      <h3 style={{ fontSize: "24px", marginTop: "10px" }}>
                         {item?.title}
-                      </h1>
+                      </h3>
                     </center>
                   </div>
                 );

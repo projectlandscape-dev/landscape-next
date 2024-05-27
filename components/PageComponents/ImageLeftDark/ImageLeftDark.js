@@ -63,7 +63,12 @@ export default function ImageLeftDark({
             <Img>
               {imageCopy ? (
                 <LogoWrapper>
-                  <NextImage height={130} width={130} src={imageCopy.sourceUrl} alt={imageCopy.altText}/>
+                  <NextImage
+                    height={130}
+                    width={130}
+                    src={imageCopy.sourceUrl}
+                    alt={imageCopy.altText}
+                  />
                 </LogoWrapper>
               ) : null}
               <Image
@@ -91,7 +96,7 @@ export default function ImageLeftDark({
                     <Image
                       width="160px"
                       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62-removebg-preview.png"
-                      alt='arrow'
+                      alt="Red arrow pointing to the left."
                     />
                   )}
                 </Buttonwrapper>
@@ -104,7 +109,7 @@ export default function ImageLeftDark({
                     <Image
                       width="160px"
                       src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-62-removebg-preview.png"
-                      alt='arrow'
+                      alt="Red arrow pointing to the left."
                     />
                   )}
                 </Buttonwrapper>

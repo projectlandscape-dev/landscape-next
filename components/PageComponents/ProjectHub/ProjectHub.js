@@ -79,7 +79,7 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
             style={{ backgroundImage: `url(${bgimage.sourceUrl})` }}
           >
             <InnerBoxWrapper>
-              <h1 style={{ color: "white", letterSpacing: "6px" }}>outdoor</h1>
+              <h3 style={{ color: "white", letterSpacing: "6px" }}>outdoor</h3>
 
               <div style={{ background: "green" }}>
                 <Living
@@ -88,7 +88,7 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
                   living
                 </Living>
               </div>
-              <h1>Done Right</h1>
+              <h3>Done Right</h3>
               <Seperator>
                 <Image style={{ margin: "0 auto" }} src="/star.png" />
               </Seperator>
