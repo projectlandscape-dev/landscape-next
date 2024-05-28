@@ -64,7 +64,7 @@ export default function ReferFriend() {
       />
       <Container className="spacing mb-5 mt-5">
         <Text>
-          <h3 className="title">PROJECT LANDSCAPES REFERRAL PROGRAM</h3>
+          <h1 className="title">PROJECT LANDSCAPES REFERRAL PROGRAM</h1>
         </Text>
         <p className="mt-4 leading-relaxed">
           Project Landscape's referral and loyalty program reflects our
