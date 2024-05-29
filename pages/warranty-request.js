@@ -56,7 +56,7 @@ export default function WarrantyRequest() {
         <Container>
           <FlexMobileOpp>
             <div>
-              <h2>Project Landscape Guarantee</h2>
+              <h1>Project Landscape Guarantee</h1>
               <h5>Your Peace of Mind is Our Priority</h5>
               <p>
                 At Project Landscape, we understand that your outdoor space is
