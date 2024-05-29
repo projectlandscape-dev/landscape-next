@@ -425,11 +425,7 @@ export default function HeaderBasic() {
                         </Link>
                       </li>
                      
-                      <li>
-                        <Link className={styles.styledLink} href="/free-guides">
-                          Free Guides
-                        </Link>
-                      </li>
+                   
                       <li>
                         <Link
                           className={styles.styledLink}
