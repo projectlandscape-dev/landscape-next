@@ -101,7 +101,7 @@ export default function Reviews() {
       <Section>
         <Container>
           <Text className="spacing">
-            <h2 className="title center">5-star reviews</h2>
+            <h1 className="title center">5-star Reviews and Testimonials</h1>
           </Text>
           <GridThree className="spacing-md">
             <Review
