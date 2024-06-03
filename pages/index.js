@@ -93,7 +93,7 @@ export default function Index() {
           <link rel="canonical" href="https://www.projectlandscape.ca" />
         </Head>
         <HeroBasic />
-        
+        <Badges />
         <MainServices />
         <NewBlockBlack />
         <AllServices />
@@ -182,7 +182,7 @@ export default function Index() {
           </section>
         </Wrapper>
         <Cta3 />
-        <Badges />
+        
         <ProductsImg />
         <ShowroomSection />
         <PortfolioBanner />
