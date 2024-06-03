@@ -68,7 +68,7 @@ export default function HeroBasic(props) {
                   <p style={{ fontSize: "16px" }} className="subheader tan">
                     Award Winning Calgary Landscape Services
                   </p>
-                  <h2 className="title">Calgary Outdoor living : Done Right</h2>
+                  <h1 className="title">Calgary Outdoor living : Done Right</h1>
                   <p className={styles.subheader}>
                     Where outdoor living happens Decks, Pergolas, landscape
                     design & more
@@ -95,9 +95,9 @@ export default function HeroBasic(props) {
                   <p style={{ fontSize: "16px" }} className="subheader tan">
                     Award Winning Calgary Hardscaping & Patios
                   </p>
-                  <h2 className="title">
+                  <h1 className="title">
                     Calgary Landscaping & Hardscaping Services
-                  </h2>
+                  </h1>
                   <p className="subheader tan">
                     create a stunning outdoor oasis with our hardscaping
                     services Patios, Retaining walls, walkways & more
@@ -124,9 +124,9 @@ export default function HeroBasic(props) {
                   <p style={{ fontSize: "16px" }} className="subheader tan">
                     Award Winning Calgary Landscape Services
                   </p>
-                  <h2 className="title">
+                  <h1 className="title">
                     Calgary Landscaping & Softscaping services
-                  </h2>
+                  </h1>
                   <p className="subheader tan">
                     Bring your backyard to life Artificial turf, Irrigation, Sod
                     installation & more

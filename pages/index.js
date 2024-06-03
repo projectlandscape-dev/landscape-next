@@ -93,7 +93,7 @@ export default function Index() {
           <link rel="canonical" href="https://www.projectlandscape.ca" />
         </Head>
         <HeroBasic />
-        <PortfolioBanner />
+        <Badges />
         <MainServices />
         <NewBlockBlack />
         <AllServices />
@@ -111,10 +111,10 @@ export default function Index() {
             <div className="container">
               <div className="flex">
                 <div>
-                  <h1 className="title tan">
+                  <h2 className="title tan">
                     Discover why Project Landscape is the top residential
                     landscaping company in Calgary
-                  </h1>
+                  </h2>
                 </div>
                 <Divider />
                 <div>
@@ -182,9 +182,10 @@ export default function Index() {
           </section>
         </Wrapper>
         <Cta3 />
-        <Badges />
+        
         <ProductsImg />
         <ShowroomSection />
+        <PortfolioBanner />
         <ScrollCount />
         <ProjectImg />
         <MainVideo />
