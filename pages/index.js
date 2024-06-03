@@ -111,10 +111,10 @@ export default function Index() {
             <div className="container">
               <div className="flex">
                 <div>
-                  <h1 className="title tan">
+                  <h2 className="title tan">
                     Discover why Project Landscape is the top residential
                     landscaping company in Calgary
-                  </h1>
+                  </h2>
                 </div>
                 <Divider />
                 <div>
