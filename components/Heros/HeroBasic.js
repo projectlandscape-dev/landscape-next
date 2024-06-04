@@ -52,33 +52,7 @@ export default function HeroBasic(props) {
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}  >
-            <Carousel.Item interval={5000}>
-              <div className={styles.imgContainer}>
-                <Image
-                  style={{ objectFit: "cover"}}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                  fill
-                  sizes="(min-width: 808px) 50vw, 100vw"
-                  alt="calgary landscaping"
-                  priority
-                />
-              </div>
-              <Carousel.Caption style={captionStyle} >
-                <div className="spacing">
-                  <p style={{ fontSize: "16px" }} className="subheader tan">
-                    Award Winning Calgary Landscape Services
-                  </p>
-                  <h1 className="title">Calgary Outdoor living : Done Right</h1>
-                  <p className={styles.subheader}>
-                    Where outdoor living happens Decks, Pergolas, landscape
-                    design & more
-                  </p>
-                  <ButtonPrimary href="/residential-services/outdoor-living">
-                    Explore Outdoor living services&#8594;
-                  </ButtonPrimary>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
+       
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
                 <Image
@@ -108,6 +82,37 @@ export default function HeroBasic(props) {
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
+
+     <Carousel.Item interval={5000}>
+              <div className={styles.imgContainer}>
+                <Image
+                  style={{ objectFit: "cover"}}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  fill
+                  sizes="(min-width: 808px) 50vw, 100vw"
+                  alt="calgary landscaping"
+                  priority
+                />
+              </div>
+              <Carousel.Caption style={captionStyle} >
+                <div className="spacing">
+                  <p style={{ fontSize: "16px" }} className="subheader tan">
+                    Award Winning Calgary Landscape Services
+                  </p>
+                  <h2 className="title">Calgary Outdoor living : Done Right</h2>
+                  <p className={styles.subheader}>
+                    Where outdoor living happens Decks, Pergolas, landscape
+                    design & more
+                  </p>
+                  <ButtonPrimary href="/residential-services/outdoor-living">
+                    Explore Outdoor living services&#8594;
+                  </ButtonPrimary>
+                </div>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+
+
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
                 <Image
@@ -124,9 +129,9 @@ export default function HeroBasic(props) {
                   <p style={{ fontSize: "16px" }} className="subheader tan">
                     Award Winning Calgary Landscape Services
                   </p>
-                  <h1 className="title">
+                  <h2 className="title">
                     Calgary Landscaping & Softscaping services
-                  </h1>
+                  </h2>
                   <p className="subheader tan">
                     Bring your backyard to life Artificial turf, Irrigation, Sod
                     installation & more
