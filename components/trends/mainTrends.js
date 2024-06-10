@@ -109,7 +109,7 @@ export default function MainTrends() {
                 loading="lazy"
               />
               <div>
-                <h3 className="subheader">design & landscape styles</h3>
+                <h3 className="subheader">Calgary design & landscape styles</h3>
                 <ButtonUnderline
                   className="service-button"
                   href="/landscape-styles"
@@ -127,7 +127,7 @@ export default function MainTrends() {
                 loading="lazy"
               />
               <div>
-                <h3 className="subheader">outdoor living inspiration</h3>
+                <h3 className="subheader">Calgary outdoor living inspiration</h3>
                 <ButtonUnderline
                   className="service-button"
                   href="/outdoor-living-inspiration"
@@ -145,7 +145,7 @@ export default function MainTrends() {
                 loading="lazy"
               />
               <div>
-                <h3 className="subheader">landscape trends</h3>
+                <h3 className="subheader">Calgary landscape trends</h3>
                 <ButtonUnderline
                   className="service-button"
                   href="/landscaping-trends"
