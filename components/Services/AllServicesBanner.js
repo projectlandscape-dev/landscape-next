@@ -120,7 +120,7 @@ export default function AllServicesBanner() {
       <Container>
         <Text>
           <h2 className="title">
-            take a closer look at our calgary landscaping services
+            take a closer look at our landscaping Calgary services
           </h2>
         </Text>
       </Container>
