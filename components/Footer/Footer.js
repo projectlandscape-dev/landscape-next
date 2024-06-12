@@ -91,14 +91,6 @@ export default function Footer() {
                     </li>
                   </ul>
                 </div>
-                {/* <div className={styles.payments}>
-                  <Image
-                    src="/visa.png"
-                    alt="calgary landscaping payment type"
-                    width={100}
-                    height={100}
-                  />
-                </div> */}
                 <div className="spacing">
                   <h4 className="subheader tan">showroom</h4>
                   <ul>
