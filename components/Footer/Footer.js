@@ -38,6 +38,14 @@ export default function Footer() {
               <div className="spacing-lg">
                 <div className="spacing">
                   <h4 className="subheader tan">contact us</h4>
+                  <div style={{ paddingLeft: "2rem" }}>
+                    <Image
+                      src="/visa.png"
+                      alt="calgary landscaping payment type"
+                      width={100}
+                      height={100}
+                    />
+                  </div>
                   <ul>
                     <li>
                       <Link
@@ -83,14 +91,14 @@ export default function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div className={styles.payments}>
+                {/* <div className={styles.payments}>
                   <Image
                     src="/visa.png"
                     alt="calgary landscaping payment type"
                     width={100}
                     height={100}
                   />
-                </div>
+                </div> */}
                 <div className="spacing">
                   <h4 className="subheader tan">showroom</h4>
                   <ul>
@@ -240,7 +248,10 @@ export default function Footer() {
               <h4 className="subheader tan">email us</h4>
               <FormFooter />
               <div style={{ marginTop: "30px" }}>
-                <h4 className="subheader tan">Cities</h4>
+                <h4 className="subheader tan">
+                  We offer our comprehensive landscaping Calgary services to
+                  these surrounding area
+                </h4>
                 <div className={styles.cities}>
                   <div>
                     <Link
