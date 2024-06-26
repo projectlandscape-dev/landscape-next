@@ -87,7 +87,7 @@ export default function Index() {
       <LayoutJs>
         <Seo
           title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
-          description="Landscaping Calgary - trusted and top-rated Calgary landscapers to help with your residential and commercial landscaping needs. Call Us ☎️"
+          description="Landscaping Calgary with Project Landscape, the top-rated residential and commercial team. Get expert hardscaping, softscaping, and outdoor living solutions today!"
         />
          <Head>
           <link rel="canonical" href="https://www.projectlandscape.ca" />
