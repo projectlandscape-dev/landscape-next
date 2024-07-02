@@ -10,8 +10,8 @@ const Text = styled.div`
   color: var(--txt-light);
 `;
 const ImgStyles = {
-  width:'100%',
-  height:'auto',
+  width: "100%",
+  height: "auto",
   boxShadow: "-20px 20px 0px 1px var(--clr-tan)",
   marginTop: "2em",
   maxHeight: "450px",
@@ -32,10 +32,7 @@ export default function NewBlockBlack() {
             />
             <Text className="spacing">
               <div>
-                <h2 className="title tan">
-                  {" "}
-                  We're Flipping The Indoors Out
-                </h2>
+                <h2 className="title tan"> We're Flipping The Indoors Out</h2>
               </div>
               <p>
                 We're taking the indoor comfort outside, from designing and
@@ -56,9 +53,7 @@ export default function NewBlockBlack() {
                 lighting. Our formula to the perfect landscaping process sets us
                 apart from the competition.
               </p>
-              <ButtonPrimary href="/landscape-idea-center">
-                explore showroom
-              </ButtonPrimary>
+              <ButtonPrimary href="/contact">Connect Now</ButtonPrimary>
             </Text>
           </div>
         </div>

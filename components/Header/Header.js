@@ -424,16 +424,8 @@ export default function HeaderBasic() {
                           financing{" "}
                         </Link>
                       </li>
-                      <li>
-                        <Link className={styles.styledLink} href="/care-guides">
-                          Care Guides
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className={styles.styledLink} href="/free-guides">
-                          Free Guides
-                        </Link>
-                      </li>
+                     
+                   
                       <li>
                         <Link
                           className={styles.styledLink}

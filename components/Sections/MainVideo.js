@@ -40,7 +40,7 @@ export default function MainVideo() {
             The most trusted landscape company in Calgary
           </h2>
           <h3 className="title">
-            Welcome to a different kind of customer experience in outdoor living
+            Welcome to a different kind of customer experience in Landscaping Calgary
           </h3>
         </TextTop>
         <div className="flexMobileOpp spacing">

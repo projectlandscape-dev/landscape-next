@@ -87,13 +87,13 @@ export default function Index() {
       <LayoutJs>
         <Seo
           title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
-          description="Our trusted and top-rated Calgary landscapers can help with your residential and commercial landscaping needs. Call Us ☎️"
+          description="Landscaping Calgary with Project Landscape, the top-rated residential and commercial team. Get expert hardscaping, softscaping, and outdoor living solutions today!"
         />
          <Head>
           <link rel="canonical" href="https://www.projectlandscape.ca" />
         </Head>
         <HeroBasic />
-        <PortfolioBanner />
+        <Badges />
         <MainServices />
         <NewBlockBlack />
         <AllServices />
@@ -111,10 +111,10 @@ export default function Index() {
             <div className="container">
               <div className="flex">
                 <div>
-                  <h1 className="title tan">
-                    Discover why Project Landscape is the top residential
-                    landscaping company in Calgary
-                  </h1>
+                  <h2 className="title tan">
+                    Discover why Project Landscape is the top Landscaping Calgary residential
+                    company
+                  </h2>
                 </div>
                 <Divider />
                 <div>
@@ -182,9 +182,10 @@ export default function Index() {
           </section>
         </Wrapper>
         <Cta3 />
-        <Badges />
+        
         <ProductsImg />
         <ShowroomSection />
+        <PortfolioBanner />
         <ScrollCount />
         <ProjectImg />
         <MainVideo />

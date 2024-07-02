@@ -120,13 +120,13 @@ export default function AllServicesBanner() {
       <Container>
         <Text>
           <h2 className="title">
-            take a closer look at our calgary landscaping services
+            take a closer look at our landscaping Calgary services
           </h2>
         </Text>
       </Container>
       <Container className="spacing">
         <h3 className="subheader accent center">
-          popular hardscaping services
+          popular Calgary hardscaping services
         </h3>
         <GridAuto>
           <ServiceBox
@@ -188,7 +188,7 @@ export default function AllServicesBanner() {
       <WrapperDark>
         <Container>
           <h3 className="subheader light center">
-            popular softscaping services
+            popular Calgary softscaping services
           </h3>
           <GridAuto>
             <ServiceBox
@@ -226,7 +226,7 @@ export default function AllServicesBanner() {
       </WrapperDark>
       <Container>
         <h3 className="subheader center accent">
-          popular outdoor living services
+          popular Calgary outdoor living services
         </h3>
         <GridAuto>
           <ServiceBox

@@ -246,7 +246,7 @@ export default function ServiceArea({ title, content1, content2 }) {
               <p className="caps dark bold">
                 EXPERIENCED • PROFESSIONAL • COMPLETE SATISFACTION
               </p>
-              <h1 className="title dark bold italics">{title}</h1>
+              <h2 className="title dark bold italics">{title}</h2>
             </div>
             <div>
               <article

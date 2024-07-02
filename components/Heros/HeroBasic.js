@@ -52,33 +52,7 @@ export default function HeroBasic(props) {
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
           <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}  >
-            <Carousel.Item interval={5000}>
-              <div className={styles.imgContainer}>
-                <Image
-                  style={{ objectFit: "cover"}}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                  fill
-                  sizes="(min-width: 808px) 50vw, 100vw"
-                  alt="calgary landscaping"
-                  priority
-                />
-              </div>
-              <Carousel.Caption style={captionStyle} >
-                <div className="spacing">
-                  <p style={{ fontSize: "16px" }} className="subheader tan">
-                    Award Winning Calgary Landscape Services
-                  </p>
-                  <h2 className="title">Calgary Outdoor living : Done Right</h2>
-                  <p className={styles.subheader}>
-                    Where outdoor living happens Decks, Pergolas, landscape
-                    design & more
-                  </p>
-                  <ButtonPrimary href="/residential-services/outdoor-living">
-                    Explore Outdoor living services&#8594;
-                  </ButtonPrimary>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
+       
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
                 <Image
@@ -93,11 +67,11 @@ export default function HeroBasic(props) {
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
-                    Award Winning Calgary Hardscaping & Patios
+                    Award Winning Landscaping Calgary Services
                   </p>
-                  <h2 className="title">
+                  <h1 className="title">
                     Calgary Landscaping & Hardscaping Services
-                  </h2>
+                  </h1>
                   <p className="subheader tan">
                     create a stunning outdoor oasis with our hardscaping
                     services Patios, Retaining walls, walkways & more
@@ -108,6 +82,37 @@ export default function HeroBasic(props) {
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
+
+     <Carousel.Item interval={5000}>
+              <div className={styles.imgContainer}>
+                <Image
+                  style={{ objectFit: "cover"}}
+                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
+                  fill
+                  sizes="(min-width: 808px) 50vw, 100vw"
+                  alt="calgary landscaping"
+                  priority
+                />
+              </div>
+              <Carousel.Caption style={captionStyle} >
+                <div className="spacing">
+                  <p style={{ fontSize: "16px" }} className="subheader tan">
+                    Award Winning Landscaping Calgary Services
+                  </p>
+                  <h2 className="title">Calgary Outdoor living : Done Right</h2>
+                  <p className={styles.subheader}>
+                    Where outdoor living happens Decks, Pergolas, landscape
+                    design & more
+                  </p>
+                  <ButtonPrimary href="/residential-services/outdoor-living">
+                    Explore Outdoor living services&#8594;
+                  </ButtonPrimary>
+                </div>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+
+
             <Carousel.Item interval={5000}>
               <div className={styles.imgContainer}>
                 <Image
@@ -122,7 +127,7 @@ export default function HeroBasic(props) {
               <Carousel.Caption style={captionStyle} className="spacing">
                 <div className="spacing">
                   <p style={{ fontSize: "16px" }} className="subheader tan">
-                    Award Winning Calgary Landscape Services
+                    Award Winning Landscaping Calgary Services
                   </p>
                   <h2 className="title">
                     Calgary Landscaping & Softscaping services

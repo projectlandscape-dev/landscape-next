@@ -96,7 +96,7 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
           </ImageWrapper>
         </div>
         <TextWrapper>
-          <h1 className="title">{title}</h1>
+          <h3 className="title">{title}</h3>
 
           <div
             dangerouslySetInnerHTML={{
