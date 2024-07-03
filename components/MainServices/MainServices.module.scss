@@ -107,11 +107,13 @@
       transform: translateY(0);
       // bottom: -102px;
       transform: translateY(-20%);
+      top:14%
+      
     }
     .imageOverlayHeader {
       z-index: 9;
       color: goldenrod;
-      top: 20%;
+      top: 10%;
       transform: translateY(-10%);
     }
   }

@@ -30,7 +30,6 @@ export default function Footer() {
                   src="/project-landscape-logo-light.svg"
                   alt="project landscape logo - calgary landscape company"
                 />
-                <Map />
               </div>
               <div className={styles.divider} />
             </div>
@@ -46,6 +45,7 @@ export default function Footer() {
                       height={100}
                     />
                   </div>
+                  <Map />
                   <ul>
                     <li>
                       <Link
