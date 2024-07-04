@@ -81,14 +81,17 @@ export default function HeaderBasic() {
               </Link>
             </div>
           </div>
+
           <div>
-            <span className="m-2">(816)398-2901</span>
-            <ButtonSecondaryLight
-              className="service-button"
-              href="/residential-services/softscaping"
-            >
-              CONNECT NOW
-            </ButtonSecondaryLight>
+            <span className="m-3">403 257 4059</span>
+            <span>
+              <ButtonSecondaryLight
+                className="service-button"
+                href="/residential-services/softscaping"
+              >
+                CONNECT NOW
+              </ButtonSecondaryLight>
+            </span>
           </div>
         </div>
 
