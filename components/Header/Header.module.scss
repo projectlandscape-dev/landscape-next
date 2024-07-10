@@ -7,8 +7,12 @@
 }
 
 .headertop {
-  padding: 0.2em 0.1em;
+  padding: 0.4em 0.1em;
   background: var(--clr-accent);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .containerTop .containerTopText {
@@ -16,10 +20,12 @@
   }
   .header .containerTop {
     gap: 0.6em;
+  
   }
   .header .containerTop {
     margin-left: 0;
   }
+  
   .containerTop .location {
     font-size: 0.7em;
   }

@@ -19,7 +19,7 @@ export default function MainServices() {
       style and meets your needs. Choose us for a landscape that
       elevates your home and lifestyle!`,
   };
-
+  console.log(styles.contentForImageContainer);
   return (
     <section>
       <div className="container">
@@ -46,12 +46,19 @@ export default function MainServices() {
               <div className={styles.textHoverContainer}>
                 <div className={styles.textHoverContent}>
                   <div className={styles.contentForImageContainer}>
-                    With a deep understanding of the five distinctive historical
-                    garden styles, we create timeless designs that age with
-                    grace and beauty. Our experience-driven approach means we
-                    take everything into consideration: your lifestyle, existing
-                    architecture, personal preferences, practical requirements,
-                    and future goals for outdoor living. Visit our{" "}
+                    If you’re seeking to enhance your backyard experience,
+                    hardscaping is the perfect solution. Elements like paving
+                    stone patios, retaining walls, garden bed walls, and
+                    concrete features not only boost visual appeal but also
+                    create inviting transitions into your outdoor areas. A
+                    well-planned hardscape can transform your backyard into an
+                    extension of your home, offering a seamless blend between
+                    indoor and outdoor living spaces. Imagine having an outdoor
+                    living room where you can relax, entertain, and enjoy nature
+                    without the high costs of traditional home extensions.
+                    Additionally, incorporating features such as fire pits,
+                    outdoor kitchens, and seating areas can further elevate the
+                    functionality and enjoyment of your outdoor oasis.
                   </div>
                 </div>
               </div>
@@ -82,12 +89,14 @@ export default function MainServices() {
               <div className={styles.textHoverContainer}>
                 <div className={styles.textHoverContent}>
                   <div className={styles.contentForImageContainer}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                    Transform your average landscape into the envy of your
+                    neighborhood with our softscaping services in Calgary. Enjoy
+                    a virtually maintenance-free lawn with artificial turf,
+                    safeguard your investment with underground sprinklers, and
+                    choose from a variety of ground covers, including decorative
+                    rocks and mulch. Opt for our unique planting services that
+                    go beyond the ordinary and add a personalized touch to your
+                    outdoor space.
                   </div>
                 </div>
               </div>
@@ -119,12 +128,13 @@ export default function MainServices() {
                 <div className={styles.textHoverContent}>
                   {/* <h3 className="subheader">Calgary outdoor living</h3> */}
                   <div className={`${styles.contentForImageContainer}`}>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look even slightly believable. If you are going to use a
-                    passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text.
+                    Experience a lifestyle driven by the outdoors! Your outdoor
+                    living space should reflect your unique style, with
+                    personalized touches like custom pergolas, outdoor kitchens,
+                    privacy panels, fireplaces, low-maintenance decking,
+                    landscape lighting, fences, and more. Explore our Outdoor
+                    Living page to discover how we can help you achieve your
+                    lifestyle goals.
                   </div>
                 </div>
               </div>

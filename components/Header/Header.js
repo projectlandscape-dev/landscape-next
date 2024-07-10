@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Mail, Phone, Location, DropdownArrow } from "../../public/svg/Svg";
 import Logo from "../../public/project-landscape-logo-light.svg";
+import { ButtonSecondaryLight } from "../buttons";
 const device = {
   sm: "18em",
   md: "70em",
@@ -80,6 +81,15 @@ export default function HeaderBasic() {
               </Link>
             </div>
           </div>
+          <div>
+            <span className="m-2">(816)398-2901</span>
+            <ButtonSecondaryLight
+              className="service-button"
+              href="/residential-services/softscaping"
+            >
+              CONNECT NOW
+            </ButtonSecondaryLight>
+          </div>
         </div>
 
         <div className={styles.headerbottom}>
@@ -105,12 +115,12 @@ export default function HeaderBasic() {
                   </p>
                   <div>
                     <ul>
-                        <Link
-                          className={styles.linkDark}
-                          href="/residential-services/hardscaping"
-                        >
-                          <h3 className="subheader">hardscaping</h3>
-                        </Link>
+                      <Link
+                        className={styles.linkDark}
+                        href="/residential-services/hardscaping"
+                      >
+                        <h3 className="subheader">hardscaping</h3>
+                      </Link>
                       <li>
                         <Link
                           className={styles.styledLink}
@@ -352,9 +362,9 @@ export default function HeaderBasic() {
                   </p>
                   <div>
                     <ul>
-                        <Link className={styles.linkDark} href="/about">
-                          <h3 className="subheader">company information</h3>
-                        </Link>
+                      <Link className={styles.linkDark} href="/about">
+                        <h3 className="subheader">company information</h3>
+                      </Link>
                       <li>
                         <Link className={styles.styledLink} href="/about">
                           about
@@ -424,8 +434,7 @@ export default function HeaderBasic() {
                           financing{" "}
                         </Link>
                       </li>
-                     
-                   
+
                       <li>
                         <Link
                           className={styles.styledLink}
