@@ -90,7 +90,7 @@ export default function Index() {
           description="Landscaping Calgary with Project Landscape, the top-rated residential and commercial team. Get expert hardscaping, softscaping, and outdoor living solutions today!"
         />
          <Head>
-          <link rel="canonical" href="https://www.projectlandscape.ca" />
+          <link rel="canonical" href="https://www.projectlandscape.ca/" />
         </Head>
         <HeroBasic />
         <Badges />
