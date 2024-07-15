@@ -13,6 +13,8 @@ export default function Seo({
   ogType = "website",
   twitterHandle = "",
 }) {
+
+    const canonicalUrl = canonical.endsWith("/") ? canonical : `${canonical}/`;
   return (
     <Head>
       <title key="title">{`${title}`}</title>
