@@ -14,7 +14,7 @@ export default function Seo({
   twitterHandle = "",
 }) {
 
-    const canonicalUrl = canonical.endsWith("/") ? canonical : `${canonical}/`;
+  const canonicalUrl = canonical.endsWith("/") && canonical !== DOMAIN ? canonical.slice(0, -1) : canonical;
   return (
     <Head>
       <title key="title">{`${title}`}</title>
