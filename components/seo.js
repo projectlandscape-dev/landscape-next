@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const DOMAIN = "https://www.projectlandscape.ca/";
+const DOMAIN = "https://www.projectlandscape.ca";
 const DEFAULT_OG_IMAGE =
   "https://storage.googleapis.com/brandflow-bucket/personal/blog/portfolio-og.jpg";
 
