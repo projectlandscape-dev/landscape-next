@@ -3,6 +3,7 @@ import { getPageByUri, getAllPages, getBreadcrumbsByUri } from "lib/pages";
 import LayoutJs from "../../components/layoutJs";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 import PostPage from "../../components/blogPage";
+import SeoPage from "../../components/PageComponents/SeoPage/SeoPage";  // Correct import path
 
 export default function Page(props) {
   const { page, post } = props;
@@ -10,6 +11,10 @@ export default function Page(props) {
   if (post) {
     return (
       <>
+      <SeoPage 
+          title={post.metaTitle || post.title}  // Use metaTitle if available, otherwise use post title
+          description={post.metaDescription || post.excerpt}  // Use metaDescription if available, otherwise use post excerpt
+        />
         <PostPage {...props} />
       </>
     );
