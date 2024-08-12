@@ -348,7 +348,7 @@ const FeaturedWork = () => {
                 </div>
               </div>{" "}
             </Carousel.Item>
-            <Carousel.Item interval={5000}>
+            {/* <Carousel.Item interval={5000}>
               <div
                 style={{
                   display: "flex",
@@ -385,7 +385,7 @@ const FeaturedWork = () => {
                   />
                 </div>
               </div>{" "}
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         </div>
       </Section>
