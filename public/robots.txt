@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://projectlandscape.ca
+Host: https://www.projectlandscape.ca
 
 # Sitemaps
-Sitemap: https://projectlandscape.ca/sitemap.xml
+Sitemap: https://www.projectlandscape.ca/sitemap.xml

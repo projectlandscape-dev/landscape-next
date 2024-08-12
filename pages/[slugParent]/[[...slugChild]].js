@@ -38,7 +38,7 @@ export default function Page(props) {
 
   return (
     <LayoutJs>
-    <Seo title={title} description={description} />
+    {/* <Seo title={title} description={description} /> */}
       <div>
         {/* Iterate over ACF flexible fields and pass props to imported component */}
         {hasFlexibleFields && (
