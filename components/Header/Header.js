@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Mail, Phone, Location, DropdownArrow } from "../../public/svg/Svg";
 import Logo from "../../public/project-landscape-logo-light.svg";
-import { ButtonSecondaryLight } from "../buttons";
+
 const device = {
   sm: "18em",
   md: "70em",
@@ -81,14 +81,17 @@ export default function HeaderBasic() {
               </Link>
             </div>
           </div>
-          <div>
-            <span className="m-2">(816)398-2901</span>
-            <ButtonSecondaryLight
-              className="service-button"
-              href="/residential-services/softscaping"
+
+          <div className={styles.header_right}>
+            <Link className={styles.navLinkTop} href="tel: 403 257 4059">
+            403 257 4059
+            </Link>
+            <button
+              className={styles.connect_now}
+              // href="/residential-services/softscaping"
             >
               CONNECT NOW
-            </ButtonSecondaryLight>
+            </button>
           </div>
         </div>
 

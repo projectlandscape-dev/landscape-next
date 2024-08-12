@@ -7,10 +7,10 @@
 }
 
 .headertop {
-  padding: 0.4em 0.1em;
+  padding: 0.5em 0em;
   background: var(--clr-accent);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
 }
@@ -61,7 +61,6 @@
 }
 .location {
   color: var(--txt-light);
-  align-items: center;
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -105,7 +104,7 @@
 }
 
 .containerTop {
-  margin-left: 135px;
+  // margin-left: 135px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -339,4 +338,26 @@
 
 .navOpen {
   display: flex;
+}
+
+.connect_now{
+  display: inline;
+  cursor: pointer;
+  font-family: var(--font-alfa-slab-one);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-button);
+  padding: 0.8em 0.8em;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  text-transform: uppercase;
+  background: var(--clr-tan);
+  color: var(--txt-dark);
+  border: 1px solid var(--clr-tan);
+}
+
+.header_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap : 1em;
 }

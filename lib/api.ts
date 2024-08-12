@@ -59,6 +59,10 @@ export async function getAllPostsWithSlug() {
           }
             }
             slug
+            post_title {
+              postTitle
+            }
+        
           }
         }
       }

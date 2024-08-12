@@ -31,6 +31,8 @@ export default function Page(props) {
     acf,
   } = page;
 
+  console.log('title...... : ', description)
+
   const hasFlexibleFields =
     Array.isArray(acf.flexibleFields) && acf.flexibleFields.length > 0;
 
