@@ -120,7 +120,7 @@ export default function FormContact(props) {
                 }}
               >
                 <div className="spacing">
-                  <h3 className="subheader">harscaping needs:</h3>
+                  <h3 className="subheader">hardscaping needs:</h3>
                   <div className="spacing-sm">
                     <input
                       type="checkbox"
