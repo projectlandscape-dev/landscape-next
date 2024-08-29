@@ -93,9 +93,9 @@ const FeaturedWork = () => {
               >
                 <div style={{ width: "40%" }}>
                   <div style={{ width: "60%", marginLeft: "50px" }}>
-                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                    <p style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
                       Hardscaping Meets Low Maintenance
-                    </h2>
+                    </p>
                     <p style={{ marginBottom: "40px" }}>
                       Explore a stunning Calgary landscape where hardscaping
                       blends with low-maintenance elegance. Behold a backyard
@@ -137,9 +137,9 @@ const FeaturedWork = () => {
               >
                 <div style={{ width: "40%" }}>
                   <div style={{ width: "60%", marginLeft: "50px" }}>
-                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                    <p style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
                       The Ultimate Deck
-                    </h2>
+                    </p>
                     <p style={{ marginBottom: "40px" }}>
                       This contemporary deck and pergola design is expertly
                       wrapped and sealed with smooth hardy board, ensuring
@@ -177,9 +177,9 @@ const FeaturedWork = () => {
               >
                 <div style={{ width: "40%" }}>
                   <div style={{ width: "60%", marginLeft: "50px" }}>
-                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                    <p style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
                       A Calgary Staycation
-                    </h2>
+                    </p>
                     <p style={{ marginBottom: "40px" }}>
                       Welcome to your ultimate staycation destination right in
                       Calgary! This backyard oasis is adorned with a stunning
@@ -221,9 +221,9 @@ const FeaturedWork = () => {
               >
                 <div style={{ width: "40%" }}>
                   <div style={{ width: "60%", marginLeft: "50px" }}>
-                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                    <p style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
                       Backyard Revival
-                    </h2>
+                    </p>
                     <p style={{ marginBottom: "40px" }}>
                       Experience a complete transformation with this
                       show-stopping front and backyard makeover. This
@@ -266,9 +266,9 @@ const FeaturedWork = () => {
               >
                 <div style={{ width: "40%" }}>
                   <div style={{ width: "60%", marginLeft: "50px" }}>
-                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                    <p style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
                       A Place To Unwind
-                    </h2>
+                    </p>
                     <p style={{ marginBottom: "40px" }}>
                       Explore our newest landscape creation featuring
                       outcropping retaining walls, welcoming patios, elegant
@@ -310,9 +310,9 @@ const FeaturedWork = () => {
               >
                 <div style={{ width: "40%" }}>
                   <div style={{ width: "60%", marginLeft: "50px" }}>
-                    <h2 style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
+                    <p style={{ fontSize: "2.4rem", marginBottom: "1.5rem" }}>
                       Award winning Landscapes
-                    </h2>
+                    </p>
                     <p style={{ marginBottom: "40px" }}>
                       Project Landscape has proudly set a new standard in
                       Calgary, becoming the only outdoor living company to
