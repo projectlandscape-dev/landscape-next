@@ -27,7 +27,7 @@ export default function StaticProcessArea() {
             <li className={Styles.listStyle}>
               <p className={Styles.pointStyle}>1</p>
               <div className={Styles.desStyle}>
-                <span>Initiating Customer Engagement</span>
+                <span><b>Initiating Customer Engagement</b></span>
                 <p>
                   This initial step invites customers to connect with us.
                   Whether through a contact form, phone call, or email, we
@@ -39,7 +39,7 @@ export default function StaticProcessArea() {
             <li className={Styles.listStyle}>
               <p className={Styles.pointStyle}>2</p>
               <div className={Styles.desStyle}>
-                <span>Design Phase</span>
+                <span><b>Design Phase</b></span>
 
                 <p>
                   Once contact is made, we enter the design phase. This involves
@@ -53,7 +53,7 @@ export default function StaticProcessArea() {
             <li className={Styles.listStyle}>
               <p className={Styles.pointStyle}>3</p>
               <div className={Styles.desStyle}>
-                <span>Material Selections</span>
+                <span><b>Material Selections</b></span>
 
                 <p>
                   In this step, we guide customers through selecting the right
@@ -67,7 +67,7 @@ export default function StaticProcessArea() {
             <li className={Styles.listStyle}>
               <p className={Styles.pointStyle}>4</p>
               <div className={Styles.desStyle}>
-                <span>Installation Stage</span>
+                <span><b>Installation Stage</b></span>
 
                 <p>
                   Here, we detail our installation process. We emphasize the
@@ -81,7 +81,7 @@ export default function StaticProcessArea() {
             <li className={Styles.listStyle}>
               <p className={Styles.pointStyle}>5</p>
               <div className={Styles.desStyle}>
-                <span>Walkthrough & Education</span>
+                <span><b>Walkthrough & Education</b></span>
 
                 <p>
                   The final step on your homepage is the walkthrough and
