@@ -12,7 +12,7 @@ export default function Cta3() {
         <div className="container">
           <div className={styles.text}>
             <div className="spacing">
-              <h2 className="title">your outdoor oasis is just a click away</h2>
+              <span className="title">your outdoor oasis is just a click away</span>
               <ButtonSecondaryLight href="/contact">
                 get started &#8594;
               </ButtonSecondaryLight>
