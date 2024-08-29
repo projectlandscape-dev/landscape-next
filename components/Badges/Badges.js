@@ -115,7 +115,7 @@ const Badges = () => {
   return (
     <div className={`spacing mt-5 ${styles.container}`} ref={containerRef}>
       <div className="container">
-        <h2 className="title center">Top Rated Landscaping Calgary</h2>
+        <span className="title center">Top Rated Landscaping Calgary</span>
       </div>
       <Slider
         className={styles.slider}
