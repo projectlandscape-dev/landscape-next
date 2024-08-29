@@ -39,7 +39,7 @@ export default function Footer() {
             <div className={styles.flex}>
               <div className="spacing-lg">
                 <div className="spacing">
-                  <h4 className="subheader tan">contact us</h4>
+                  <span className="subheader tan">contact us</span>
                   <div style={{ paddingLeft: "2rem" }}>
                     <Image
                       src="/visa.png"
@@ -240,7 +240,7 @@ export default function Footer() {
               <div className={styles.divider} />
             </div>
             <div>
-              <h4 className="subheader tan">email us</h4>
+              <span className="subheader tan">email us</span>
               <FormFooter />
               <div style={{ marginTop: "30px" }}>
                 <span className="subheader tan">
@@ -424,7 +424,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/residential-services/softscaping">
-                      <h5 className="subheader">softscaping</h5>
+                      <span className="subheader">softscaping</span>
                     </Link>
                   </li>
                   <li>
