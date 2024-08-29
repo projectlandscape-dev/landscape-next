@@ -350,7 +350,7 @@ export default function HeaderBasic() {
                   <div>
                     <ul>
                       <Link className={styles.linkDark} href="/about">
-                        <p className="subheader">company information</p>
+                        <span className="subheader">company information</span>
                       </Link>
                       <li>
                         <Link className={styles.styledLink} href="/about">
