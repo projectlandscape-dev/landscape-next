@@ -36,18 +36,15 @@ export default function MainVideo() {
     <section>
       <div className="spacing-lg">
         <TextTop>
-          <h2 className="subheader accent">
+          <h2 className="title">
             The most trusted landscape company in Calgary
           </h2>
-          <h3 className="title">
-            Welcome to a different kind of customer experience in Landscaping Calgary
-          </h3>
         </TextTop>
         <div className="flexMobileOpp spacing">
           <Text>
             <div className="container spacing">
               <div>
-                <h3 className="subheader">redefining landscaping in calgary</h3>
+                <span className="subheader">redefining landscaping in calgary</span>
                 <p>
                   Project Landscape redefines the fundamentals of{" "}
                   <ButtonInline href="/residential-services/irrigation-landscape-lighting">
@@ -72,9 +69,9 @@ export default function MainVideo() {
                 </p>
               </div>
               <div>
-                <h3 className="subheader">
+                <span className="subheader">
                   giving you a personal calgary landscaping paradise
-                </h3>
+                </span>
                 <p>
                   Our professional experience and knowledge helps us tackle any{" "}
                   <ButtonInline href="/portfolio">
@@ -90,9 +87,9 @@ export default function MainVideo() {
                 </p>
               </div>
               <div>
-                <h3 className="subheader">
+                <span className="subheader">
                   increasing the beauty of your Calgary landscape
-                </h3>
+                </span>
                 <p>
                   <ButtonInline href="/about">Project Landscape</ButtonInline>{" "}
                   has all of the expertise, the highest insurance that the
