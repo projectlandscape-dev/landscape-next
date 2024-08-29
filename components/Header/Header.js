@@ -344,9 +344,9 @@ export default function HeaderBasic() {
                   </div>
                 </div>
                 <div className={styles.dropdown}>
-                  <span>
+                  <p>
                     about <DropdownArrow />
-                  </span>
+                  </p>
                   <div>
                     <ul>
                       <Link className={styles.linkDark} href="/about">
@@ -447,9 +447,9 @@ export default function HeaderBasic() {
                   </div>
                 </div>
                 <div className={styles.dropdown}>
-                  <span>
+                  <p>
                     resources <DropdownArrow />
-                  </span>
+                  </p>
                   <div>
                     <ul>
                       <span className="subheader">Get Inspired</span>
