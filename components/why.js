@@ -14,7 +14,7 @@ export default function Why() {
       <div className="container spacing">
         <div>
           <p className="subheader accent">Why Choose project Landscape</p>
-          <h2 className="title">the best of Calgary landscaping companies</h2>
+          <h2 className="title">The best of Calgary landscaping companies</h2>
           <p className="subheader accent">Clients Benefits What You Get</p>
         </div>
         <div className="gridThree">
@@ -26,9 +26,9 @@ export default function Why() {
               height={80}
               loading="lazy"
             />
-            <h3 className="body--large caps bold">
+            <span className="body--large caps bold">
               We Provide Environmental Sustainability
-            </h3>
+            </span>
             <p>
               Hiring a professional Calgary landscape{" "}
               <ButtonInline href="/landscape-design">designer</ButtonInline>{" "}
@@ -49,9 +49,9 @@ export default function Why() {
               loading="lazy"
             />
 
-            <h3 className="body--large caps bold">
+            <span className="body--large caps bold">
               We Provide Reduced Maintenance
-            </h3>
+            </span>
             <p>
               When you work with a professional landscaping Calgary designer,
               you’re not just investing in the beauty of your home’s exterior,
@@ -71,9 +71,9 @@ export default function Why() {
               loading="lazy"
             />
 
-            <h3 className="body--large caps bold">
+            <span className="body--large caps bold">
               Decades Of Landscaping Experience
-            </h3>
+            </span>
             <p>
               Professional landscaping in Calgary not only enhances the
               aesthetics of your home, but it can also increase its value. A
@@ -92,9 +92,9 @@ export default function Why() {
               loading="lazy"
             />
 
-            <h3 className="body--large caps bold">
+            <span className="body--large caps bold">
               We Can Enhance Your Property Value
-            </h3>
+            </span>
             <p>
               A professional landscaper in Calgary understands the importance of
               environmental sustainability in landscaping. They can recommend
@@ -117,9 +117,9 @@ export default function Why() {
               loading="lazy"
             />
 
-            <h3 className="body--large caps bold">
+            <span className="body--large caps bold">
               We Can Save You Time & Money
-            </h3>
+            </span>
             <p>
               Maintaining a landscape can be a daunting task, especially for
               those without the necessary knowledge and expertise. When you work
@@ -138,9 +138,9 @@ export default function Why() {
               loading="lazy"
             />
 
-            <h3 className="body--large caps bold">
+            <span className="body--large caps bold">
               We Bring your Ideas To life
-            </h3>
+            </span>
             <p>
               Working with a professional landscape designer is a smart
               investment for any homeowner who wants to enhance the beauty,
