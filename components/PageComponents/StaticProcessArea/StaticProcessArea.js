@@ -25,9 +25,9 @@ export default function StaticProcessArea() {
           </h2>
           <ul className={Styles.orderStyle}>
             <li className={Styles.listStyle}>
-              <h2 className={Styles.pointStyle}>1</h2>
+              <p className={Styles.pointStyle}>1</p>
               <div className={Styles.desStyle}>
-                <h3>Initiating Customer Engagement</h3>
+                <span>Initiating Customer Engagement</span>
                 <p>
                   This initial step invites customers to connect with us.
                   Whether through a contact form, phone call, or email, we
@@ -37,9 +37,9 @@ export default function StaticProcessArea() {
               </div>
             </li>
             <li className={Styles.listStyle}>
-              <h2 className={Styles.pointStyle}>2</h2>
+              <p className={Styles.pointStyle}>2</p>
               <div className={Styles.desStyle}>
-                <h3>Design Phase</h3>
+                <span>Design Phase</span>
 
                 <p>
                   Once contact is made, we enter the design phase. This involves
@@ -51,9 +51,9 @@ export default function StaticProcessArea() {
               </div>
             </li>
             <li className={Styles.listStyle}>
-              <h2 className={Styles.pointStyle}>3</h2>
+              <p className={Styles.pointStyle}>3</p>
               <div className={Styles.desStyle}>
-                <h3>Material Selections</h3>
+                <span>Material Selections</span>
 
                 <p>
                   In this step, we guide customers through selecting the right
@@ -65,9 +65,9 @@ export default function StaticProcessArea() {
               </div>
             </li>
             <li className={Styles.listStyle}>
-              <h2 className={Styles.pointStyle}>4</h2>
+              <p className={Styles.pointStyle}>4</p>
               <div className={Styles.desStyle}>
-                <h3>Installation Stage</h3>
+                <span>Installation Stage</span>
 
                 <p>
                   Here, we detail our installation process. We emphasize the
@@ -79,9 +79,9 @@ export default function StaticProcessArea() {
               </div>
             </li>
             <li className={Styles.listStyle}>
-              <h2 className={Styles.pointStyle}>5</h2>
+              <p className={Styles.pointStyle}>5</p>
               <div className={Styles.desStyle}>
-                <h3>Walkthrough & Education</h3>
+                <span>Walkthrough & Education</span>
 
                 <p>
                   The final step on your homepage is the walkthrough and
