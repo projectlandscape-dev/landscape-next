@@ -106,7 +106,7 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/hardscaping"
                       >
-                        <p className="subheader">hardscaping</p>
+                        <div className="subheader">hardscaping</div>
                       </Link>
                       <li>
                         <Link
@@ -195,7 +195,7 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/softscaping"
                       >
-                        <p className="subheader">softscaping</p>
+                        <span className="subheader">softscaping</span>
                       </Link>
                       <li>
                         <Link
