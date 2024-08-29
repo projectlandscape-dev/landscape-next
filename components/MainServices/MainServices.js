@@ -64,7 +64,7 @@ export default function MainServices() {
               </div>
             </div>
             <div className={styles.itemText}>
-              <h3 className="subheader">Calgary hardscaping</h3>
+              <span className="subheader">Calgary hardscaping</span>
               <ButtonUnderline
                 className="service-button"
                 href="/residential-services/hardscaping"
@@ -102,7 +102,7 @@ export default function MainServices() {
               </div>
             </div>
             <div className={styles.itemText}>
-              <h3 className="subheader">Calgary softscaping</h3>
+              <span className="subheader">Calgary softscaping</span>
               <ButtonUnderline
                 className="service-button"
                 href="/residential-services/softscaping"
@@ -140,7 +140,7 @@ export default function MainServices() {
               </div>
             </div>
             <div className={styles.itemText}>
-              <h3 className="subheader">Calgary outdoor living</h3>
+              <span className="subheader">Calgary outdoor living</span>
               <ButtonUnderline
                 className="service-button"
                 href="/residential-services/outdoor-living"
