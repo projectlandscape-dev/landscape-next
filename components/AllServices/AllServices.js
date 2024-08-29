@@ -27,14 +27,14 @@ export default function AllServices() {
       <div className="container">
         <div className={styles.text}>
           <h2 className="title">
-            take a closer look at our Landscaping calgary services
+            Take a closer look at our landscaping Calgary services
           </h2>
         </div>
       </div>
       <div className="container spacing">
-        <h3 className="subheader accent center">
+        <span className="subheader accent center">
           popular Calgary hardscaping services
-        </h3>
+        </span>
         <div className={styles.gridAuto}>
           <ServiceBox
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685735838/calgary-pavers_za64ny.webp"
@@ -100,9 +100,9 @@ export default function AllServices() {
       </div>
       <div className={styles.wrapperDark}>
         <div className="container">
-          <h3 className="subheader light center">
-            popular Calgary softscaping services
-          </h3>
+          <span className="subheader light center">
+            Popular Calgary softscaping services
+          </span>
           <div className={styles.gridAuto}>
             <ServiceBox
               href="/residential-services/landscape-construction/artificial-turf"
@@ -138,9 +138,9 @@ export default function AllServices() {
         </div>
       </div>
       <div className="container">
-        <h3 className="subheader center accent">
+        <span className="subheader center accent">
           popular Calgary outdoor living services
-        </h3>
+        </span>
         <div className={styles.gridAuto}>
           <ServiceBox
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/calgary-decks_n5n0el.webp"
