@@ -106,7 +106,7 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/hardscaping"
                       >
-                        <div className="subheader">hardscaping</div>
+                        <span className="subheader">hardscaping</span>
                       </Link>
                       <li>
                         <Link
@@ -252,7 +252,7 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/outdoor-living"
                       >
-                        <p className="subheader">outdoor living</p>
+                        <span className="subheader">outdoor living</span>
                       </Link>
                       <li>
                         <Link
@@ -344,9 +344,9 @@ export default function HeaderBasic() {
                   </div>
                 </div>
                 <div className={styles.dropdown}>
-                  <p>
+                  <span>
                     about <DropdownArrow />
-                  </p>
+                  </span>
                   <div>
                     <ul>
                       <Link className={styles.linkDark} href="/about">
@@ -401,7 +401,7 @@ export default function HeaderBasic() {
                       </li>
                     </ul>
                     <ul>
-                      <p className="subheader">customer center</p>
+                      <span className="subheader">customer center</span>
                       <li>
                         <Link className={styles.styledLink} href="/faq">
                           FAQ
@@ -447,12 +447,12 @@ export default function HeaderBasic() {
                   </div>
                 </div>
                 <div className={styles.dropdown}>
-                  <p>
+                  <span>
                     resources <DropdownArrow />
-                  </p>
+                  </span>
                   <div>
                     <ul>
-                      <p className="subheader">Get Inspired</p>
+                      <span className="subheader">Get Inspired</span>
                       <li>
                         <Link className={styles.styledLink} href="/projects">
                           Projects
@@ -486,7 +486,7 @@ export default function HeaderBasic() {
                       </li>
                     </ul>
                     <ul>
-                      <p className="subheader">designscape style</p>
+                      <span className="subheader">designscape style</span>
                       <li>
                         <Link
                           className={styles.styledLink}
