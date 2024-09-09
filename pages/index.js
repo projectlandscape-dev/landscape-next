@@ -112,15 +112,15 @@ export default function Index() {
               <div className="flex">
                 <div>
                   <h2 className="title tan">
-                    Discover why Project Landscape is the top Landscaping Calgary residential
-                    company
+                    Discover why Project Landscape is the top Residential Landscaping
+                    Company in Alberta
                   </h2>
                 </div>
                 <Divider />
                 <div>
                   <p>
                     <ButtonInline href="/about">Project Landscape</ButtonInline>{" "}
-                    has established itself as the largest residential Calgary
+                    has established itself as the largest Albertan residential
                     landscaping company due to its commitment to taking landscape{" "}
                     <ButtonInline href="/landscape-design">
                       design and installations
@@ -139,7 +139,7 @@ export default function Index() {
                     homeowners. Our designs blend aesthetics with functionality,
                     ensuring that every outdoor space is transformed into a
                     stunning and practical oasis. Secondly, we are known for our
-                    exceptional Calgary landscaping{" "}
+                    exceptional work{" "}
                     <ButtonInline href="/residential-services/concrete-installations">
                       installation services
                     </ButtonInline>
@@ -165,7 +165,7 @@ export default function Index() {
                       outdoor lighting
                     </ButtonInline>
                     , we handle every aspect of the installation process.
-                    Additionally, Project Landscape Calgary stands out for its
+                    Additionally, our brand stands out for its
                     commitment to customer satisfaction. We prioritize open
                     communication while actively involving clients in the design
                     and installation phases. Our dedication to meeting deadlines,
