@@ -25,7 +25,7 @@ export default function ProductsImg() {
           <Text className="spacing">
             <div>
               <h2 className="title">
-                get the highest quality calgary landscaping materials
+                get the highest quality landscaping materials
               </h2>
             </div>
             <p>
@@ -61,7 +61,7 @@ export default function ProductsImg() {
             height={100}
             style={ImgStyle}
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659915/calgary-landscaping-selection-guide-1_g3knih.jpg"
-            alt="calgary landscaping materials"
+            alt="Local landscaping materials"
           />
         </div>
       </div>
