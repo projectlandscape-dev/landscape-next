@@ -184,16 +184,14 @@ export default function FaqFeatured(props) {
                   </AccordionButton>
                 </p>
                 <AccordionPanel pb={4}>
-                  At our premier Calgary landscaping company, we offer a diverse
-                  array of services tailored to elevate your outdoor living
+                  We offer a diverse array of services tailored to elevate your outdoor living
                   experience. Our skilled team excels in crafting custom decks,
                   perfect for entertaining and relaxation. We also specialize in
                   installing elegant paving stone patios, blending functionality
                   with aesthetic appeal. Our expertise extends to innovative
                   hardscaping solutions, transforming your garden into a
                   stunning, durable oasis. Choose us for a blend of creativity,
-                  quality, and sustainability in all your landscaping needs,
-                  right here in Calgary.
+                  quality, and sustainability in all your landscaping needs.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
