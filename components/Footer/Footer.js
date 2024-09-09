@@ -219,9 +219,9 @@ export default function Footer() {
                 <div>
                   <span className="subheader tan">about us</span>
                   <p className={styles.about}>
-                    Project landscape redefines the fundamentals of landscape
+                    Project Landscape redefines the fundamentals of landscape
                     installation, landscape maintenance and service through-out
-                    Calgary landscaping, snow removal and{" "}
+                   the province, including snow removal and{" "}
                     <ButtonInline href="/areas-we-service">
                       surrounding areas
                     </ButtonInline>
