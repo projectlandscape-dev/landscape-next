@@ -37,14 +37,14 @@ export default function MainVideo() {
       <div className="spacing-lg">
         <TextTop>
           <h2 className="title">
-            The most trusted landscape company in Calgary
+            A Landscape Company You Can Trust
           </h2>
         </TextTop>
         <div className="flexMobileOpp spacing">
           <Text>
             <div className="container spacing">
               <div>
-                <span className="subheader">redefining landscaping in calgary</span>
+                <span className="subheader">Redefining Landscaping</span>
                 <p>
                   Project Landscape redefines the fundamentals of{" "}
                   <ButtonInline href="/residential-services/irrigation-landscape-lighting">
@@ -65,12 +65,12 @@ export default function MainVideo() {
                   </ButtonInline>{" "}
                   community.{" "}
                   <ButtonInline href="/contact">Contact us</ButtonInline> to
-                  hire our landscaping Calgary team today!
+                  hire our team today!
                 </p>
               </div>
               <div>
                 <span className="subheader">
-                  giving you a personal calgary landscaping paradise
+                  giving you a personal backyard paradise
                 </span>
                 <p>
                   Our professional experience and knowledge helps us tackle any{" "}
@@ -78,7 +78,7 @@ export default function MainVideo() {
                     landscaping project
                   </ButtonInline>{" "}
                   thrown our way - weather its installing a complete landscape
-                  or giving a Calgary business a more attractive{" "}
+                  or giving your business a more attractive{" "}
                   <ButtonInline href="/concrete-curbing">
                     curb-appeal
                   </ButtonInline>
@@ -88,7 +88,7 @@ export default function MainVideo() {
               </div>
               <div>
                 <span className="subheader">
-                  increasing the beauty of your Calgary landscape
+                  increasing the beauty of your outdoor landscape
                 </span>
                 <p>
                   <ButtonInline href="/about">Project Landscape</ButtonInline>{" "}
