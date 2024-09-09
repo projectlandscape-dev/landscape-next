@@ -41,7 +41,7 @@ export default function MainServices() {
                 sizes="100vw"
               />
               <h3 className={`subheader ${styles.imageOverlayHeader}`}>
-                Calgary hardscaping
+                Hardscaping
               </h3>
               <div className={styles.textHoverContainer}>
                 <div className={styles.textHoverContent}>
@@ -84,7 +84,7 @@ export default function MainServices() {
                 sizes="100vw"
               />
               <h3 className={`subheader ${styles.imageOverlayHeader}`}>
-                Calgary softscaping
+                Softscaping
               </h3>
               <div className={styles.textHoverContainer}>
                 <div className={styles.textHoverContent}>
@@ -122,7 +122,7 @@ export default function MainServices() {
                 sizes="100vw"
               />
               <h3 className={`subheader ${styles.imageOverlayHeader}`}>
-                Calgary outdoor living
+                Outdoor Living
               </h3>
               <div className={styles.textHoverContainer}>
                 <div className={styles.textHoverContent}>
