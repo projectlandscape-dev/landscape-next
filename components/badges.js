@@ -54,7 +54,7 @@ export default function Badges() {
         <div className="spacing">
           <Container>
             <span className="title center">
-              Top rated Calgary landscaping company
+              Your Top Rated Landscaping Company in Calgary
             </span>
           </Container>
           <Slider className="slider" {...settings}>
