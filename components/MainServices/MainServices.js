@@ -4,10 +4,10 @@ import { ButtonUnderline } from "../buttons";
 import styles from "./MainServices.module.scss";
 export default function MainServices() {
   const paragraphContent = {
-    title: "A Calgary Landscape Company you Can Rely On",
-    description: `Welcome to Project Landscape, Calgary's most trusted and extensive
+    title: "A Landscaping Company you Can Rely On",
+    description: `Welcome to Project Landscape, A trusted
       residential landscape company, where transforming your outdoor
-      space into a dream oasis is our passion. As Calgary's largest
+      space into a dream oasis is our passion. As one of Alberta's largest
       provider of comprehensive landscaping services, we specialize in
       bringing your vision to life with our expert hardscaping,
       softscaping, and outdoor living solutions. Our certification in
