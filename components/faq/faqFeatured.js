@@ -178,7 +178,7 @@ export default function FaqFeatured(props) {
                       flex="1"
                       textAlign="left"
                     >
-                      What Types Of Calgary Landscaping Services Do You Offer?
+                      What Types Of Services Do You Offer?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
