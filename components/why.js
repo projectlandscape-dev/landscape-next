@@ -13,8 +13,8 @@ export default function Why() {
     <section>
       <div className="container spacing">
         <div>
-          <p className="subheader accent">Why Choose project Landscape</p>
-          <h2 className="title">The best of Calgary landscaping companies</h2>
+          <p className="subheader accent">Why Choose Project Landscape</p>
+          <h2 className="title">One of the best Albertan landscaping companies</h2>
           <p className="subheader accent">Clients Benefits What You Get</p>
         </div>
         <div className="gridThree">
