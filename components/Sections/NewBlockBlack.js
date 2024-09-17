@@ -41,14 +41,14 @@ export default function NewBlockBlack() {
                 As an outdoor living and hardscape design company, our goal is
                 to exceed our clients' expectations with exceptional customer
                 service and award-winning designs. If you're looking for a
-                reliable and skilled team to turn your Calgary property into the
+                reliable and skilled team to turn your property into the
                 talk of the town, you're in the right place. For the past seven
-                years, we've helped hundreds of Calgary homeowners create their
+                years, we've helped hundreds of clients create their
                 dream outdoor spaces. Every client, big or small, can expect the
                 best in design, customer service, and professionalism from our
                 team of experienced, committed, and landscape savvy
                 professionals. Since 2016, we've been at the forefront in the
-                landscape design and installation industry in Calgary, offering
+                landscape design and installation industry, offering
                 everything from custom decking to sophisticated landscape
                 lighting. Our formula to the perfect landscaping process sets us
                 apart from the competition.

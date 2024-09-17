@@ -58,7 +58,7 @@ export default function FaqFeatured(props) {
           <div className="flexMobileOpp">
             <Accordion className="spacing" allowToggle>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -71,7 +71,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   Project landscape is unique in our aim to work with customers
                   both residential and commercial. From first contact we can
@@ -82,7 +82,7 @@ export default function FaqFeatured(props) {
               </AccordionItem>
 
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -94,7 +94,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   Booking a free consultation is the best way to get started. We
                   can be reached by phone or email and will answer you within 24
@@ -104,7 +104,7 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -116,7 +116,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   Project landscape offers a full warranty on all hardscapes and
                   softscapes. Our Ironclad warranty program is virtually
@@ -124,7 +124,7 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -136,7 +136,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   We are fully licensed and insured, giving you peace of mind
                   when work is being carried out. We hold the highest insurance
@@ -146,7 +146,7 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -159,7 +159,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   With such a large selection of materials and products
                   available, we would recommend you look online at Pintrest or
@@ -170,7 +170,7 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -178,26 +178,24 @@ export default function FaqFeatured(props) {
                       flex="1"
                       textAlign="left"
                     >
-                      What Types Of Calgary Landscaping Services Do You Offer?
+                      What Types Of Services Do You Offer?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
-                  At our premier Calgary landscaping company, we offer a diverse
-                  array of services tailored to elevate your outdoor living
+                  We offer a diverse array of services tailored to elevate your outdoor living
                   experience. Our skilled team excels in crafting custom decks,
                   perfect for entertaining and relaxation. We also specialize in
                   installing elegant paving stone patios, blending functionality
                   with aesthetic appeal. Our expertise extends to innovative
                   hardscaping solutions, transforming your garden into a
                   stunning, durable oasis. Choose us for a blend of creativity,
-                  quality, and sustainability in all your landscaping needs,
-                  right here in Calgary.
+                  quality, and sustainability in all your landscaping needs.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -209,7 +207,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   The cost of landscaping can vary widely depending on factors
                   such as the size of the area, the complexity of the design,
@@ -222,7 +220,7 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -234,7 +232,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   As licensed landscape contractors, Project Landscape is happy
                   to help obtain needed permits as part of a project management
@@ -242,7 +240,7 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <h2>
+                <p>
                   <AccordionButton style={AccordionStyle}>
                     <Box
                       className="subheader"
@@ -255,7 +253,7 @@ export default function FaqFeatured(props) {
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
-                </h2>
+                </p>
                 <AccordionPanel pb={4}>
                   Project Landscape is Calgary's premier outdoor living company,
                   specializing in retaining walls and paving stone

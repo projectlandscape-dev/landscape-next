@@ -46,7 +46,7 @@ export default function FinanceBanner() {
           />
           <div>
             <p className="subheader">get the landscape financing you need</p>
-            <h2 className="title">payment plans to match any budget</h2>
+            <p className="title">payment plans to match any budget</p>
           </div>
           <p style={{ fontWeight: "600" }}>
             At Project Landscape Ltd., we are constantly reviewing and

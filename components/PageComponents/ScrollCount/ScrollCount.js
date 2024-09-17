@@ -114,9 +114,9 @@ export default function ScrollCount() {
               </div>
             </div>
             <div className={styles.thirdColumn}>
-              <h3 style={{ fontSize: "25px", lineHeight: 1 }}>
+              <h2 style={{ fontSize: "25px", lineHeight: 1 }}>
                 Creating Dream Outdoor Spaces with Savings and Reliability{" "}
-              </h3>
+              </h2>
               <p>
                 One by One we've helped hundreds of customers in Calgary, not
                 only in creating the stunning outdoor living spaces they've

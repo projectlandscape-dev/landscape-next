@@ -130,7 +130,7 @@ export default function HeroBasic(props) {
                     Award Winning Landscaping Calgary Services
                   </p>
                   <h2 className="title">
-                    Calgary Landscaping & Softscaping services
+                    Local Landscaping & Softscaping services
                   </h2>
                   <p className="subheader tan">
                     Bring your backyard to life Artificial turf, Irrigation, Sod
@@ -151,7 +151,7 @@ export default function HeroBasic(props) {
               <ButtonInline href="/residential-services/outdoor-living">
                 outdoor space
               </ButtonInline>{" "}
-              into a serene haven with our unique Calgary landscaping services.
+              into a serene haven with our dedicated landscaping team.
               From custom{" "}
               <ButtonInline href="/landscape-design">design</ButtonInline> to
               expert installation, our team of experts will help you create a

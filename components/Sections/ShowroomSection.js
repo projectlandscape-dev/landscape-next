@@ -28,7 +28,7 @@ export default function ShowroomSection() {
               width={400}
               style={ImgStyles}
               src="https://res.cloudinary.com/di7j408eq/image/upload/v1685659853/calgary-landscaping-showroom-banner_tamdfs.png"
-              alt="calgary landscaping showroom"
+              alt="A picture of our Local landscaping showroom"
             />
             <Text className="spacing">
               <div>
@@ -43,18 +43,16 @@ export default function ShowroomSection() {
                 <ButtonInline href="/landscape-idea-center">
                   showroom
                 </ButtonInline>{" "}
-                locations conveniently located throughout Calgary. Our Calgary
-                landscaping showrooms provide an opportunity for customers to
+                Our local landscaping showrooms provide an opportunity for customers to
                 view our high-quality landscaping products, materials, and{" "}
                 <ButtonInline href="/landscape-design">designs</ButtonInline>,
                 as well as to get a sense of the exceptional level of
-                craftsmanship that our Calgary landscape team brings to every
+                craftsmanship that our team brings to every
                 project. Our friendly and knowledgeable staff are always
                 available to answer any{" "}
                 <ButtonInline href="/faq">questions</ButtonInline> and help
                 guide you through the selection process. Come visit one of our
-                showrooms today and see for yourself why we're the go-to choice
-                for landscaping services in Calgary.
+                showrooms today and see for yourself!
               </p>
 
               <div className="flex">

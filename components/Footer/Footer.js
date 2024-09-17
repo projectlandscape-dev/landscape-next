@@ -39,7 +39,7 @@ export default function Footer() {
             <div className={styles.flex}>
               <div className="spacing-lg">
                 <div className="spacing">
-                  <h4 className="subheader tan">contact us</h4>
+                  <span className="subheader tan">contact us</span>
                   <div style={{ paddingLeft: "2rem" }}>
                     <Image
                       src="/visa.png"
@@ -95,7 +95,7 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div className="spacing">
-                  <h4 className="subheader tan">showroom</h4>
+                  <span className="subheader tan">showroom</span>
                   <ul>
                     <li>
                       <Link
@@ -136,7 +136,7 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div className={styles.socials}>
-                  <h4 className="subheader tan">let's connect!</h4>
+                  <span className="subheader tan">let's connect!</span>
                   <div>
                     <Link
                       target="_blank"
@@ -217,11 +217,11 @@ export default function Footer() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="subheader tan">about us</h4>
+                  <span className="subheader tan">about us</span>
                   <p className={styles.about}>
-                    Project landscape redefines the fundamentals of landscape
+                    Project Landscape redefines the fundamentals of landscape
                     installation, landscape maintenance and service through-out
-                    Calgary landscaping, snow removal and{" "}
+                   the province, including snow removal and{" "}
                     <ButtonInline href="/areas-we-service">
                       surrounding areas
                     </ButtonInline>
@@ -240,13 +240,13 @@ export default function Footer() {
               <div className={styles.divider} />
             </div>
             <div>
-              <h4 className="subheader tan">email us</h4>
+              <span className="subheader tan">email us</span>
               <FormFooter />
               <div style={{ marginTop: "30px" }}>
-                <h4 className="subheader tan">
+                <span className="subheader tan">
                   We offer our comprehensive landscaping Calgary services to
                   these surrounding area
-                </h4>
+                </span>
                 <div className={styles.cities}>
                   <div>
                     <Link
@@ -343,7 +343,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/residential-services/hardscaping">
-                      <h5 className="subheader">hardscaping</h5>
+                      <span className="subheader">hardscaping</span>
                     </Link>
                   </li>
                   <li>
@@ -424,7 +424,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/residential-services/softscaping">
-                      <h5 className="subheader">softscaping</h5>
+                      <span className="subheader">softscaping</span>
                     </Link>
                   </li>
                   <li>
@@ -481,7 +481,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/residential-services/outdoor-living">
-                      <h5 className="subheader">outdoor living</h5>
+                      <span className="subheader">outdoor living</span>
                     </Link>
                   </li>
                   <li>
@@ -570,7 +570,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link href="/about">
-                      <h5 className="subheader">company information</h5>
+                      <span className="subheader">company information</span>
                     </Link>
                   </li>
                   <li>

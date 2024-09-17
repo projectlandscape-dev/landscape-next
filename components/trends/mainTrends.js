@@ -74,14 +74,14 @@ export default function MainTrends() {
         <div className="container">
           <Text className="spacing ">
             <div>
-              <h2 className="title"> 2024 calgary landscaping trends</h2>
+              <h2 className="title"> Delivering the Latest Landscaping Trends</h2>
             </div>
             <p>
               We take pride in staying up to date with the latest trends and
               techniques in the landscaping industry. We are passionate about
               providing our customers with innovative and unique{" "}
               <ButtonInline href="/landscape-design">
-                Calgary landscaping designs
+              landscaping designs
               </ButtonInline>{" "}
               that will enhance the beauty and functionality of their{" "}
               <ButtonInline href="/residential-services/outdoor-living">
@@ -93,7 +93,7 @@ export default function MainTrends() {
               every project, ensuring that our customers receive the most
               innovative and cutting-edge landscaping solutions available. Trust
               us to bring your vision to life with the latest and greatest
-              Calgary landscaping trends.
+              landscaping and outdoor living trends.
             </p>
           </Text>
         </div>

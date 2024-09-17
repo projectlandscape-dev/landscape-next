@@ -106,7 +106,7 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/hardscaping"
                       >
-                        <h3 className="subheader">hardscaping</h3>
+                        <span className="subheader">hardscaping</span>
                       </Link>
                       <li>
                         <Link
@@ -195,7 +195,7 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/softscaping"
                       >
-                        <h3 className="subheader">softscaping</h3>
+                        <span className="subheader">softscaping</span>
                       </Link>
                       <li>
                         <Link
@@ -252,7 +252,7 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/outdoor-living"
                       >
-                        <h3 className="subheader">outdoor living</h3>
+                        <span className="subheader">outdoor living</span>
                       </Link>
                       <li>
                         <Link
@@ -350,7 +350,7 @@ export default function HeaderBasic() {
                   <div>
                     <ul>
                       <Link className={styles.linkDark} href="/about">
-                        <h3 className="subheader">company information</h3>
+                        <span className="subheader">company information</span>
                       </Link>
                       <li>
                         <Link className={styles.styledLink} href="/about">
@@ -401,7 +401,7 @@ export default function HeaderBasic() {
                       </li>
                     </ul>
                     <ul>
-                      <h3 className="subheader">customer center</h3>
+                      <span className="subheader">customer center</span>
                       <li>
                         <Link className={styles.styledLink} href="/faq">
                           FAQ
@@ -452,7 +452,7 @@ export default function HeaderBasic() {
                   </p>
                   <div>
                     <ul>
-                      <h3 className="subheader">Get Inspired</h3>
+                      <span className="subheader">Get Inspired</span>
                       <li>
                         <Link className={styles.styledLink} href="/projects">
                           Projects
@@ -486,7 +486,7 @@ export default function HeaderBasic() {
                       </li>
                     </ul>
                     <ul>
-                      <h3 className="subheader">designscape style</h3>
+                      <span className="subheader">designscape style</span>
                       <li>
                         <Link
                           className={styles.styledLink}

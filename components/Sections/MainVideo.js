@@ -36,18 +36,15 @@ export default function MainVideo() {
     <section>
       <div className="spacing-lg">
         <TextTop>
-          <h2 className="subheader accent">
-            The most trusted landscape company in Calgary
+          <h2 className="title">
+            A Landscape Company You Can Trust
           </h2>
-          <h3 className="title">
-            Welcome to a different kind of customer experience in Landscaping Calgary
-          </h3>
         </TextTop>
         <div className="flexMobileOpp spacing">
           <Text>
             <div className="container spacing">
               <div>
-                <h3 className="subheader">redefining landscaping in calgary</h3>
+                <span className="subheader">Redefining Landscaping</span>
                 <p>
                   Project Landscape redefines the fundamentals of{" "}
                   <ButtonInline href="/residential-services/irrigation-landscape-lighting">
@@ -68,20 +65,20 @@ export default function MainVideo() {
                   </ButtonInline>{" "}
                   community.{" "}
                   <ButtonInline href="/contact">Contact us</ButtonInline> to
-                  hire our landscaping Calgary team today!
+                  hire our team today!
                 </p>
               </div>
               <div>
-                <h3 className="subheader">
-                  giving you a personal calgary landscaping paradise
-                </h3>
+                <span className="subheader">
+                  giving you a personal backyard paradise
+                </span>
                 <p>
                   Our professional experience and knowledge helps us tackle any{" "}
                   <ButtonInline href="/portfolio">
                     landscaping project
                   </ButtonInline>{" "}
                   thrown our way - weather its installing a complete landscape
-                  or giving a Calgary business a more attractive{" "}
+                  or giving your business a more attractive{" "}
                   <ButtonInline href="/concrete-curbing">
                     curb-appeal
                   </ButtonInline>
@@ -90,9 +87,9 @@ export default function MainVideo() {
                 </p>
               </div>
               <div>
-                <h3 className="subheader">
-                  increasing the beauty of your Calgary landscape
-                </h3>
+                <span className="subheader">
+                  increasing the beauty of your outdoor landscape
+                </span>
                 <p>
                   <ButtonInline href="/about">Project Landscape</ButtonInline>{" "}
                   has all of the expertise, the highest insurance that the
