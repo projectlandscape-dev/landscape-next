@@ -145,7 +145,7 @@ export default function AllServices() {
           <ServiceBox
             src="https://res.cloudinary.com/di7j408eq/image/upload/v1685736600/calgary-decks_n5n0el.webp"
             alt="calgary landscaping services"
-            href="/decks-calgary"
+            href="/composite-decking"
             text="Decks"
           />
           <ServiceBox
