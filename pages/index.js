@@ -47,7 +47,6 @@ const NewBlockBlack = dynamic(() =>
 import Seo from "../components/seo";
 import Head from "next/head";
 
-
 const Wrapper = styled.div`
   position: relative;
   z-index: 1;
@@ -62,13 +61,13 @@ const Wrapper = styled.div`
   }
 `;
 const Bgoverlay = styled.div`
-position: absolute;
-top: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.8);
-z-index: -1;
-`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+`;
 
 const Divider = styled.div`
   width: 3px;
@@ -81,7 +80,6 @@ const Divider = styled.div`
 `;
 
 export default function Index() {
-  
   return (
     <>
       <LayoutJs>
@@ -89,7 +87,7 @@ export default function Index() {
           title="Landscaping Calgary | Top Rated | Project Landscape Ltd."
           description="Landscaping Calgary with Project Landscape, the top-rated residential and commercial team. Get expert hardscaping, softscaping, and outdoor living solutions today!"
         />
-         <Head>
+        <Head>
           <link rel="canonical" href="https://www.projectlandscape.ca/" />
         </Head>
         <HeroBasic />
@@ -106,14 +104,14 @@ export default function Index() {
             height={500}
             sizes="(max-width:768px) , 33vw, 50vw"
           />
-          <Bgoverlay/>
+          <Bgoverlay />
           <section>
             <div className="container">
               <div className="flex">
                 <div>
                   <h2 className="title tan">
-                    Discover why Project Landscape is the top Residential Landscaping
-                    Company in Alberta
+                    Discover why Project Landscape is the top Residential
+                    Landscaping Company in Alberta
                   </h2>
                 </div>
                 <Divider />
@@ -121,7 +119,8 @@ export default function Index() {
                   <p>
                     <ButtonInline href="/about">Project Landscape</ButtonInline>{" "}
                     has established itself as the largest Albertan residential
-                    landscaping company due to its commitment to taking landscape{" "}
+                    landscaping company due to its commitment to taking
+                    landscape{" "}
                     <ButtonInline href="/landscape-design">
                       design and installations
                     </ButtonInline>{" "}
@@ -134,8 +133,8 @@ export default function Index() {
                     <ButtonInline href="/landscape-design">
                       landscape design
                     </ButtonInline>
-                    . We have a team of highly skilled and creative designers who
-                    understand the unique needs and preferences of Calgary
+                    . We have a team of highly skilled and creative designers
+                    who understand the unique needs and preferences of Calgary
                     homeowners. Our designs blend aesthetics with functionality,
                     ensuring that every outdoor space is transformed into a
                     stunning and practical oasis. Secondly, we are known for our
@@ -165,10 +164,10 @@ export default function Index() {
                       outdoor lighting
                     </ButtonInline>
                     , we handle every aspect of the installation process.
-                    Additionally, our brand stands out for its
-                    commitment to customer satisfaction. We prioritize open
-                    communication while actively involving clients in the design
-                    and installation phases. Our dedication to meeting deadlines,
+                    Additionally, our brand stands out for its commitment to
+                    customer satisfaction. We prioritize open communication
+                    while actively involving clients in the design and
+                    installation phases. Our dedication to meeting deadlines,
                     providing transparent pricing, and delivering high-quality
                     workmanship has earned us a{" "}
                     <ButtonInline href="/testimonials">
@@ -182,7 +181,7 @@ export default function Index() {
           </section>
         </Wrapper>
         <Cta3 />
-        
+
         <ProductsImg />
         <ShowroomSection />
         <PortfolioBanner />

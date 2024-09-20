@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, HeroBannerPadding } from "../../layoutComponents";
-import { ButtonPrimary} from "../../buttons";
+import { ButtonPrimary } from "../../buttons";
+import Image from "next/image";
 
 const BannerGrid = styled.div`
   display: grid;
@@ -14,10 +15,11 @@ const Flex = styled.div`
 `;
 
 const Wrapper = styled.div`
+  position: relative;
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   z-index: 1;
-  background: ${(props) => `url(${props.img})`}, rgba(0, 0, 0, 0.4);
+  // background: ${(props) => `url(${props.img})`}, rgba(0, 0, 0, 0.4);
   // background: url("../../../images/hero.jpg")), rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
   background-position: center;
@@ -72,6 +74,8 @@ const TextMobile = styled.div`
     display: flex;
   }
 `;
+
+
 export default function Banner({
   title,
   subheader,
@@ -83,8 +87,16 @@ export default function Banner({
     <div>
       <HeroBannerPadding />
       <BannerGrid>
-        <Wrapper img={image.sourceUrl}>
-          <Container className="spacing">
+        <Wrapper>
+            <Image
+              className="bg-black bg-opacity-40 bg-blend-overlay"
+              src={image.sourceUrl}
+              alt="s"
+              fill
+              sizes="100vw"
+              priority
+            />
+          <Container className="spacing absolute">
             <Text className="spacing">
               <div className="">
                 <p style={{ fontSize: "16px" }} className="subheader">
@@ -111,5 +123,3 @@ export default function Banner({
     </div>
   );
 }
-
-
