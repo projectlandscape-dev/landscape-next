@@ -38,6 +38,11 @@ const nextConfig = {
         hostname: "vumbnail.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "b3136009.smushcdn.com",
+        port: "",
+      },
     ],
   },
   compiler:{

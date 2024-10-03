@@ -14,7 +14,6 @@ const captionStyle = {
 };
 
 export default function DynamicSlider({ body, sliderdata }) {
-  console.log(sliderdata, "data333");
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
