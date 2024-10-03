@@ -7,19 +7,10 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import { Container, FlexMobileOpp, Section } from "components/layoutComponents";
 import styled from "styled-components";
-import { ButtonPrimary, ButtonSecondaryLight } from "components/buttons";
+import { ButtonPrimary } from "components/buttons";
+import Image from "next/image";
 
-const Wrapper = styled.div`
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"),
-    rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--txt-light);
-`;
 
 const AccordionStyle = {
   background: "var(--clr-accent)",
@@ -31,38 +22,43 @@ const AccordionStyle = {
 
 export default function FaqFeatured({ title, body, questions }) {
   return (
-    <Wrapper>
-      <Section>
-        <Container>
-          <FlexMobileOpp>
+    <div className="relative z-0 bg-opacity-80 bg-blend-overlay text-txt-light h-full">
+      <Image
+        className="object-cover w-[100vw] h-[100vh]"
+        src={
+          "https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hero.webp"
+        }
+        alt=""
+        fill
+        sizes="(min-width: 808px) 50vw, 100vw"
+      />
+      <div className="relative z-10 p-5">
+        <div className="w-[85%] mx-auto max-w-[95rem]">
+          <div className="flex items-center !flex-col-reverse gap-6 lg:gap-0 lg:!flex-row space-y-0 md:space-y-0 space-x-0 md:space-x-[4em] ">
             <Accordion className="spacing" allowToggle>
-              {questions.map((item, index) => {
-                return (
-                  <AccordionItem style={AccordionStyle} key={index}>
-                    <h2>
-                      <AccordionButton style={AccordionStyle}>
-                        <Box
-                          className="subheader"
-                          as="span"
-                          flex="1"
-                          textAlign="left"
-                        >
-                          {item.question}
-                        </Box>
-                        <AccordionIcon />
-                      </AccordionButton>
-                    </h2>
-                    <AccordionPanel
-                      pb={4}
-                      dangerouslySetInnerHTML={{
-                        __html: `${item.answer}`,
-                      }}
-                    />
-                  </AccordionItem>
-                );
-              })}
+              {questions.map((item, index) => (
+                <AccordionItem style={AccordionStyle} key={index}>
+                  <h2>
+                    <AccordionButton style={AccordionStyle}>
+                      <Box
+                        className="subheader"
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                      >
+                        {item.question}
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel
+                    pb={4}
+                    dangerouslySetInnerHTML={{ __html: `${item.answer}` }}
+                  />
+                </AccordionItem>
+              ))}
             </Accordion>
-            <div className="spacing">
+            <div className="w-full spacing">
               <div>
                 <p className="subheader tan">learn from the leaders</p>
                 <h2 className="title">
@@ -70,17 +66,13 @@ export default function FaqFeatured({ title, body, questions }) {
                 </h2>
               </div>
               {body ? (
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `${body}`,
-                  }}
-                />
+                <div dangerouslySetInnerHTML={{ __html: `${body}` }} />
               ) : null}
               <ButtonPrimary href="/contact">book a service</ButtonPrimary>
             </div>
-          </FlexMobileOpp>
-        </Container>
-      </Section>
-    </Wrapper>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

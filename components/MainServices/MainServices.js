@@ -19,7 +19,6 @@ export default function MainServices() {
       style and meets your needs. Choose us for a landscape that
       elevates your home and lifestyle!`,
   };
-  console.log(styles.contentForImageContainer);
   return (
     <section>
       <div className="container">
