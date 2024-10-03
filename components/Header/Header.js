@@ -257,7 +257,7 @@ export default function HeaderBasic() {
                       <li>
                         <Link
                           className={styles.styledLink}
-                          href="/decks-calgary"
+                          href="/composite-decking"
                         >
                           decks
                         </Link>
