@@ -53,7 +53,6 @@ export const YoutubeModal = ({
   currentVideoId,
   setCurrentVideoId,
 }) => {
-  console.log(currentVideoId, "idddd");
   const handleModalClick = (e) => {
     e.stopPropagation();
   };

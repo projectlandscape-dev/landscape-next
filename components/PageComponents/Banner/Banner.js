@@ -1,69 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, HeroBannerPadding } from "../../layoutComponents";
+import { Container } from "../../layoutComponents";
 import { ButtonPrimary } from "../../buttons";
 import Image from "next/image";
 
-const BannerGrid = styled.div`
-  display: grid;
-  grid-template-rows: auto auto;
-`;
 
-const Flex = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
-  z-index: 1;
-  // background: ${(props) => `url(${props.img})`}, rgba(0, 0, 0, 0.4);
-  // background: url("../../../images/hero.jpg")), rgba(0, 0, 0, 0.4);
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 4em 0;
-
-  display: grid;
-  place-items: center;
-
-  min-height: 90vh;
-  height: 100%;
-
-  @media screen and(max-width: 36em) {
-    min-height: 110vh;
-    height: 100%;
-  }
-`;
-
-const Text = styled.div`
-  max-width: 140ch;
-  width: 100%;
-  color: var(--txt-light);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  p {
-    color: var(--clr-tan);
-  }
-`;
-
-const BannerBottomText = styled.div`
-  grid-row: 2 / -1;
-  grid-column: 1 / -1;
-  z-index: 2;
-  background: var(--clr-dark);
-  color: var(--txt-light);
-  padding: 2em;
-  width: 80%;
-
-  @media screen and (max-width: 1000px) {
-    display: none;
-  }
-`;
 
 const TextMobile = styled.div`
   display: none;
@@ -75,7 +16,6 @@ const TextMobile = styled.div`
   }
 `;
 
-
 export default function Banner({
   title,
   subheader,
@@ -85,36 +25,35 @@ export default function Banner({
 }) {
   return (
     <div>
-      <HeroBannerPadding />
-      <BannerGrid>
-        <Wrapper>
-            <Image
-              className="bg-black bg-opacity-40 bg-blend-overlay"
-              src={image.sourceUrl}
-              alt="s"
-              fill
-              sizes="100vw"
-              priority
-            />
-          <Container className="spacing absolute">
-            <Text className="spacing">
-              <div className="">
-                <p style={{ fontSize: "16px" }} className="subheader">
-                  {titleCopy}
-                </p>
-                <h1 className="title">{title} - Project Landscape</h1>
-                <p className="subheader">{subheader}</p>
+      <div className="py-12 px-0" />
+      <div className="grid grid-rows-[auto_auto] w-full mx-auto relative">
+        <div className="relative grid place-items-center min-h-[100vh] h-full">
+          <Image
+            className="w-full h-[100vh]"
+            src={image.sourceUrl}
+            alt="Banner Image"
+            // layout="fill"
+            width={1440}
+            height={500}
+            priority
+          />
+          <div className="spacing w-3/4 absolute z-10">
+            <div className="text-txt-light mx-auto text-center">
+              <div>
+                <p className="text-xs subheader text-clr-tan">{titleCopy}</p>
+                <h2 className="title">{title} - Project Landscape</h2>
+                <p className="subheader text-clr-tan">{subheader}</p>
               </div>
               <ButtonPrimary href="/contact">get started</ButtonPrimary>
-            </Text>
-          </Container>
-        </Wrapper>
-        <BannerBottomText>
+            </div>
+          </div>
+        </div>
+        <div className="bg-dark absolute bottom-0 text-light py-8 px-4 w-[85%] hidden lg:block ">
           <Container>
             <p>{description}</p>
           </Container>
-        </BannerBottomText>
-      </BannerGrid>
+        </div>
+      </div>
       <TextMobile>
         <Container>
           <p>{description}</p>

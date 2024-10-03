@@ -8,6 +8,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import {Alfa_Slab_One , Open_Sans, } from "next/font/google";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { useReportWebVitals } from 'next/web-vitals'
 
 const alfaSlabOne = Alfa_Slab_One({
   weight: '400',
@@ -28,7 +29,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const p = router.asPath.split("?")[0];
   const canonicalURL = `https://www.projectlandscape.ca${p}`.replace(/\/$/, '');
-  
+  useReportWebVitals((metric) => {
+    console.log(metric)
+  })
   return (
     <main  className={`${alfaSlabOne.variable} ${openSans.variable}`}>
      <ChakraProvider>
