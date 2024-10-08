@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const p = router.asPath.split("?")[0];
   const canonicalURL = `https://www.projectlandscape.ca${p}`.replace(/\/$/, '');
-
   return (
     <main  className={`${alfaSlabOne.variable} ${openSans.variable}`}>
      <ChakraProvider>

@@ -32,7 +32,6 @@ export default function Banner({
             className="w-[100vw] h-[100vh]"
             src={image.sourceUrl}
             alt="Banner Image"
-            // layout="fill"
             width={1440}
             height={500}
             sizes="(min-width: 808px) 50vw, 100vw"
