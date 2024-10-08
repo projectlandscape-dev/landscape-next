@@ -1,16 +1,7 @@
 import styled from "styled-components";
 import { ButtonInline } from "../buttons";
-import { ButtonPrimary } from "../buttons";
-import Carousel from 'react-bootstrap/Carousel';
 import styles from "./HeroBasic.module.scss";
-import Image from "next/image";
-
-const captionStyle = {
-  textAlign: "left",
-  height:'60%',
-  color: "var(--txt-light)",
-  textShadow: "-3px 3px 3px #000000",
-};
+import HeroCarousel from "./HeroCarousel";
 
 export const GridThree = styled.div`
   display: grid;
@@ -22,127 +13,13 @@ export const GridThree = styled.div`
   }
 `;
 
-export default function HeroBasic(props) {
-  const CustomPrevIcon = (props) => (
-    <Image
-      // style={{ margin: "180px 0 0 80px", width: "100%", height: "auto" }}
-      style={{  width: "100%", height: "auto" }}
-      width={200}
-      height={150}
-      src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/icon-slider-arrow-left.png"
-      alt="long-arrow-left"
-      {...props}
-    />
-  );
-  const CustomNextIcon = (props) => (
-    <Image
-      // style={{ margin: "180px 80px 0 0", width: "100%", height: "auto" }}
-      style={{  width: "100%", height: "auto" }}
-      width={200}
-      height={150}
-      src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed-1.png"
-      alt="long-arrow-right--v1"
-      {...props}
-    />
-  );
-
+export default function HeroBasic() {
   return (
     <div className={styles.wrapper}>
       <div className="heroBannerPadding" />
       <div className={styles.heroGrid}>
         <div className={styles.heroWrapper}>
-          <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}  >
-       
-            <Carousel.Item interval={5000}>
-              <div className={styles.imgContainer}>
-                <Image
-                  style={{ objectFit: "cover" }}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658197/hardscaping-slider_1_mj4mkv.webp"
-                  fill
-                  alt="calgary landscaping"
-                  // sizes="(min-width: 808px) 50vw, 100vw"
-                  priority
-                />
-              </div>
-              <Carousel.Caption style={captionStyle} className="spacing">
-                <div className="spacing">
-                  <p style={{ fontSize: "16px" }} className="subheader tan">
-                    Award Winning Landscaping Calgary Services
-                  </p>
-                  <h1 className="title">
-                    Calgary Landscaping & Hardscaping Services
-                  </h1>
-                  <p className="subheader tan">
-                    create a stunning outdoor oasis with our hardscaping
-                    services Patios, Retaining walls, walkways & more
-                  </p>
-                  <ButtonPrimary href="/residential-services/hardscaping">
-                    Explore Hardscaping services&#8594;
-                  </ButtonPrimary>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-     <Carousel.Item interval={5000}>
-              <div className={styles.imgContainer}>
-                <Image
-                  style={{ objectFit: "cover"}}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685516535/outdoor-living-slider_1_nsnsnr.webp"
-                  fill
-                  sizes="(min-width: 808px) 50vw, 100vw"
-                  alt="calgary landscaping"
-                  priority
-                />
-              </div>
-              <Carousel.Caption style={captionStyle} >
-                <div className="spacing">
-                  <p style={{ fontSize: "16px" }} className="subheader tan">
-                    Award Winning Landscaping Calgary Services
-                  </p>
-                  <h2 className="title">Calgary Outdoor living : Done Right</h2>
-                  <p className={styles.subheader}>
-                    Where outdoor living happens Decks, Pergolas, landscape
-                    design & more
-                  </p>
-                  <ButtonPrimary href="/residential-services/outdoor-living">
-                    Explore Outdoor living services&#8594;
-                  </ButtonPrimary>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-
-
-            <Carousel.Item interval={5000}>
-              <div className={styles.imgContainer}>
-                <Image
-                  style={{ objectFit: "cover" }}
-                  src="https://res.cloudinary.com/di7j408eq/image/upload/v1685658338/softscaping-slider-1_yn1qmo.webp"
-                  alt="calgary landscaping"
-                  fill
-                  sizes="(min-width: 808px) 50vw, 100vw"
-                  // priority
-                />
-              </div>
-              <Carousel.Caption style={captionStyle} className="spacing">
-                <div className="spacing">
-                  <p style={{ fontSize: "16px" }} className="subheader tan">
-                    Award Winning Landscaping Calgary Services
-                  </p>
-                  <h2 className="title">
-                    Calgary Landscaping & Softscaping services
-                  </h2>
-                  <p className="subheader tan">
-                    Bring your backyard to life Artificial turf, Irrigation, Sod
-                    installation & more
-                  </p>
-                  <ButtonPrimary href="/residential-services/softscaping">
-                    Explore softscaping services &#8594;
-                  </ButtonPrimary>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+          <HeroCarousel />
         </div>
         <div className={styles.heroBottomText}>
           <div className="container">

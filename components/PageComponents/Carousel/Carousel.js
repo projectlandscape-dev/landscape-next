@@ -1,10 +1,8 @@
 import React from "react";
 import { Container, Section } from "components/layoutComponents";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import Image from "components/Image";
+import Image from "next/image";
 
 const Text = styled.div`
   text-align: center;
@@ -41,7 +39,7 @@ const SliderItem = styled.div`
     div {
       img {
         height: 300px;
-        width: 60%;
+        // width: 60%;
         object-fit: cover;
       }
     }
@@ -49,15 +47,9 @@ const SliderItem = styled.div`
 `;
 
 const Inner = styled.div`
-  padding: 2em;
+  padding: 1em;
   text-align: center;
 `;
-
-// const StyledImg = styled(GatsbyImage)`
-//   height: 450px;
-//   width: 100%;
-//   object-fit: cover;
-// `
 
 export default function Carousel({
   subheader,
@@ -65,8 +57,6 @@ export default function Carousel({
   carouselContent,
   secondHeading,
 }) {
-  let width = "100%";
-  let height = "300px";
 
   const settings = {
     dots: true,
@@ -117,13 +107,14 @@ export default function Carousel({
           <Slider {...settings}>
             {carouselContent.map((item, index) => {
               return (
-                <SliderItem key={index}>
+                <div key={index}>
                   <Image
+                    className="w-full h-[400px]"
                     alt={item.image.altText || ""}
                     srcSet={item.image.sourceUrl}
-                    src={item.image.sourceUrl}
-                    width={width}
-                    height={height}
+                    src={item.image.sourceUrl || item.image.sourceUrl}
+                    width={500}
+                    height={300}
                   />
                   <Inner>
                     {item.title ? (
@@ -137,7 +128,7 @@ export default function Carousel({
                       />
                     ) : null}
                   </Inner>
-                </SliderItem>
+                </div>
               );
             })}
           </Slider>

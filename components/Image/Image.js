@@ -1,11 +1,9 @@
-import ClassName from 'models/classname';
-import NextImage from "next/image"
-import styles from './Image.module.scss';
+import ClassName from "models/classname";
+import NextImage from "next/image";
+import styles from "./Image.module.scss";
 const Image = ({
   children,
   className,
-  width = '580',
-  height = '400',
   src,
   alt,
   srcSet,
@@ -18,8 +16,16 @@ const Image = ({
 
   return (
     <figure className={imageClassName.toString()}>
-      <div className={styles.featuredImageImg} id="#image-container" style={{display: 'flex', justifyContent:'center', alignItems:'center'}}>
-        <NextImage className='w-full h-auto' width={580} height={400}  alt={alt || ''} src={srcSet || src} sizes={sizes} loading='lazy' />
+      <div className="!flex justify-center items-center" id="#image-container">
+        <NextImage
+          className="w-full h-auto"
+          width={580}
+          height={400}
+          alt={alt || ""}
+          src={srcSet || src}
+          sizes="(min-width: 808px) 50vw, 100vw"
+          loading="lazy"
+        />
       </div>
       {children && <figcaption>{children}</figcaption>}
       {dangerouslySetInnerHTML && (

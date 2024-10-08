@@ -29,6 +29,7 @@ export default function DynamicSlider({ body, sliderdata }) {
                       alt={item?.bgimage?.altText}
                       width={500}
                       height={100}
+                      priority
                     />
                   </div>
                   <Carousel.Caption style={captionStyle} className="spacing">

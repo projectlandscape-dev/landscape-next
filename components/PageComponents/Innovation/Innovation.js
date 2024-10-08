@@ -1,57 +1,42 @@
 import React from "react";
-import { Container, Section, Flex } from "components/layoutComponents";
-import styled from "styled-components";
+import Image from "next/image";
 import { ButtonSecondaryLight } from "../../buttons";
 
-const SectionWrapper = styled.div`
-  background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-85.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-`;
-
-const ContentWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 42%;
-  margin: 27px auto;
-  text-align: center;
-  background: #387d1c91;
-  color: white;
-  padding: 40px;
-  gap: 15px;
-  @media screen and (max-width: 48em) {
-    width: 80%;
-  }
-`;
 const Innovation = ({ title, body, button, link }) => {
   return (
-    <SectionWrapper>
-      <Section>
-        <ContentWrapper>
-          <h2>{title}</h2>
+    <div className="relative w-full h-auto min-h-screen">
+      <Image
+        src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/image-85.png"
+        alt="Background Image"
+        fill
+        objectFit="cover"
+        objectPosition="center"
+        className="z-0 absolute"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
+      />
+      <div className="relative z-20 flex justify-center items-center min-h-screen py-16">
+        <div className="bg-green-800 bg-opacity-60 text-white text-center p-10 rounded-lg w-4/5 md:w-2/5">
+          <h2 className="text-4xl font-bold mb-4">{title}</h2>
           <div
             dangerouslySetInnerHTML={{
               __html: `${body}`,
             }}
+            className="mb-6"
           />
-          <div style={{ width: "50%", margin: "0 auto" }}>
+          <div className="flex justify-center">
             {button && link ? (
               <ButtonSecondaryLight href={link}>{button}</ButtonSecondaryLight>
             ) : (
               <ButtonSecondaryLight href="/contact">
-                get started
+                Get Started
               </ButtonSecondaryLight>
             )}
           </div>
-        </ContentWrapper>
-      </Section>
-      ;
-    </SectionWrapper>
+        </div>
+      </div>
+    </div>
   );
 };
 
 export default Innovation;
-
-//
