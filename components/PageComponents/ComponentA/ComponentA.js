@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Section } from "components/layoutComponents";
-import Image from "../../Image";
+// import Image from "../../Image";
+import Image from "next/image";
 import Link from "next/link";
 
 const device = {
@@ -140,11 +141,12 @@ export default function ComponentA({ subheader, title, body, componentItems }) {
               return (
                 <Item key={index}>
                   <Image
+                  className="w-full h-96"
                     alt={item.image.altText || ""}
                     srcSet={item.image.srcSet}
-                    src={item.image.src}
-                    width={width}
-                    height={height}
+                    src={item.image.srcSet}
+                    width={500}
+                    height={300}
                   />
 
                   <Inner>

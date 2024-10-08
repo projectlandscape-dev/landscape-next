@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect, useCallback } from "react";
-import Slider from "react-slick";
+"use client";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./Badges.module.scss";
 
@@ -35,107 +35,58 @@ const gridImg = [
 ];
 
 const Badges = () => {
-  const [visibleBadges, setVisibleBadges] = useState(6);
-  const [hasMore, setHasMore] = useState(true);
-  const containerRef = useRef(null);
+  const sliderRef = useRef(null);
+  const scrollInterval = useRef(null);
 
-  const settings = {
-    infinite: true,
-    lazyLoad: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    centerMode: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 450,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
-  const handleScroll = useCallback(() => {
-    if (containerRef.current) {
-      const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
-      if (scrollTop + clientHeight >= scrollHeight - 100 && hasMore) {
-        loadMore();
-      }
-    }
-  }, [hasMore]);
-
-  const loadMore = () => {
-    setVisibleBadges((prevVisibleBadges) => prevVisibleBadges + 10);
-    if (visibleBadges >= badgesImg.length) {
-      setHasMore(false);
-    }
-  };
-
+  // Auto scroll function
   useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener("scroll", handleScroll);
-    }
+    const slider = sliderRef.current;
+    let scrollAmount = 0;
 
-    return () => {
-      if (container) {
-        container.removeEventListener("scroll", handleScroll);
+    const autoScroll = () => {
+      if (slider) {
+        const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+        if (scrollAmount >= maxScrollLeft) {
+          scrollAmount = 0;
+        } else {
+          scrollAmount += slider.clientWidth;
+        }
+        slider.scrollTo({ left: scrollAmount, behavior: "smooth" });
       }
     };
-  }, [handleScroll]);
 
-  const handleLazyLoad = (slideIndex) => {
-    if (slideIndex >= badgesImg.length) {
-      console.log(`Slide ${slideIndex} is about to be loaded.`);
-    }
-  };
+    // Set interval for scrolling every 4 seconds
+    scrollInterval.current = setInterval(autoScroll, 3000);
+
+    return () => {
+      clearInterval(scrollInterval.current);
+    };
+  }, []);
 
   return (
-    <div className={`spacing mt-5 ${styles.container}`} ref={containerRef}>
+    <div className="spacing mt-5">
       <div className="container">
-        <span className="title center">Top Rated Landscaping Calgary</span>
+        <span className="text-center text-2xl font-semibold block mb-5">
+          Top Rated Landscaping Calgary
+        </span>
       </div>
-      <Slider
-        className={styles.slider}
-        {...settings}
-        onLazyLoad={handleLazyLoad}
-      >
-        {badgesImg.slice(0, visibleBadges).map((badge, index) => (
-          <div key={index}>
-            <Image
-              src={`/badges/${badge}`}
-              alt="Best Landscaping Companies in Calgary"
-              className={styles.ImgStyle}
-              width={200}
-              height={100}
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </Slider>
-      <div className={styles.grid}>
+      <div className="overflow-hidden relative" ref={sliderRef}>
+        <div className="!flex transition-all ease-linear duration-1000 space-x-4">
+          {badgesImg.map((badge, index) => (
+            <div key={index} className="flex-shrink-0 lg:min-w-[20%] md:min-w-[25%] sm:min-w-[33.33%] min-w-[50%] max-w-[200px]">
+              <Image
+                src={`/badges/${badge}`}
+                alt="Best Landscaping Companies in Calgary"
+                className={`${styles.ImgStyle} px-4`}
+                width={200}
+                height={100}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-4 mt-6 p-2 lg:hidden">
         {gridImg.map((badge, index) => (
           <div key={index}>
             <Image

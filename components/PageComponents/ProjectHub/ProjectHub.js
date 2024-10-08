@@ -1,21 +1,9 @@
 import React from "react";
-import { Container, Section, Flex } from "components/layoutComponents";
 import styled from "styled-components";
-import { ButtonPrimary, ButtonSecondaryLight } from "../../buttons";
+import { ButtonSecondaryLight } from "../../buttons";
 import Image from "next/image";
 
-const ImageWrapper = styled.div`
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 48em) {
-    height: 300px;
-  }
-`;
+
 const TextWrapper = styled.div`
   background: var(--clr-accent);
   margin-left: 0;
@@ -34,10 +22,13 @@ const FlexDiv = styled.div`
   }
 `;
 const InnerBoxWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 4px solid var(--clr-accent);
   height: fit-content;
   padding: 10px;
-
   color: white;
 `;
 const Living = styled.div`
@@ -74,14 +65,17 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
   return (
     <div>
       <FlexDiv>
-        <div>
-          <ImageWrapper
-            style={{ backgroundImage: `url(${bgimage.sourceUrl})` }}
-          >
+          <div className="relative  h-[555px] md:h-400px">
+            <Image
+              src={bgimage.sourceUrl}
+              alt="bg-image"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             <InnerBoxWrapper>
-              <h3 style={{ color: "white", letterSpacing: "6px" }}>outdoor</h3>
+              <h3 className="text-white tracking-[6px]">outdoor</h3>
 
-              <div style={{ background: "green" }}>
+              <div className="bg-green-700">
                 <Living
                   style={{ backgroundImage: `url(${bgimage.sourceUrl})` }}
                 >
@@ -90,11 +84,16 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
               </div>
               <h3>Done Right</h3>
               <Seperator>
-                <Image style={{ margin: "0 auto" }} src="/star.png" />
+                <Image
+                  className="mx-auto my-0"
+                  src="/star.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                />
               </Seperator>
             </InnerBoxWrapper>
-          </ImageWrapper>
-        </div>
+          </div>
         <TextWrapper>
           <h3 className="title">{title}</h3>
 
@@ -103,7 +102,7 @@ const ProjectHub = ({ title, body, button, link, bgimage }) => {
               __html: `${body}`,
             }}
           />
-          <div style={{ marginTop: "25px" }}>
+          <div className="mt-4">
             {button && link ? (
               <ButtonSecondaryLight href={link}>{button}</ButtonSecondaryLight>
             ) : (

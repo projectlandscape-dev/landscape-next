@@ -1,55 +1,42 @@
 import React from "react";
-import { Container, Section } from "components/layoutComponents";
 import Image from "next/image";
-import styled from "styled-components";
 import { ButtonPrimary } from "components/buttons";
 
 const FinanceTab = ({ title, subheader, innerHeading, body }) => {
-  const Wrapper = styled.div`
-    background: url("https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"),
-      rgba(255, 255, 255, 0.7);
-    background-blend-mode: overlay;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 4em;
-    position: relative;
-    z-index: 2;
-
-    .finance-img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 3;
-    }
-  `;
   return (
     <section>
       <center>
-        <h2 className="title" style={{ padding: "20px 0px" }}>
+        <h2 className="title py-4" >
           {title}
         </h2>
       </center>
       <div className="container">
-        <Wrapper>
-          <div>
+        <div className="relative">
+          <Image
+            className="object-cover h-40"
+            src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg" 
+            alt="Finance Background"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+          <div className="relative top-0 p-5 bg-[#ffffffb3]">
             <p className="subheader">{subheader}</p>
             <h2 className="title">{innerHeading}</h2>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: body,
+              }}
+            />
+            <ButtonPrimary href="/financing">View Payment Plans</ButtonPrimary>
+            <Image
+              className="absolute top-0 right-0"
+              src="/finance-it.jpg"
+              alt="Affordable Calgary Landscaping Financing"
+              width={100}
+              height={100}
+            />
           </div>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `${body}`,
-            }}
-          />
-          <ButtonPrimary href="/financing">view payment plans</ButtonPrimary>
-          <Image
-            className="finance-img"
-            src="/finance-it.jpg"
-            alt="affordable calgary landscaping financing"
-            width={100}
-            height={100}
-          />
-        </Wrapper>
+        </div>
       </div>
     </section>
   );

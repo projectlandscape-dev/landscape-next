@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Section, Flex } from "components/layoutComponents";
+import { Container, Section } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
-import Image from "components/Image";
+import Image from "next/image";
 
 const Wrapper = styled.div`
   background: black;
@@ -101,8 +101,9 @@ export default function ImageRightBlack({
                     discover Products
                   </ButtonPrimary>
                   <Image
-                    width="160"
-                   alt="Red arrow pointing to the left."
+                    width={160}
+                    height={160}
+                    alt="Red arrow pointing to the left."
                     src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/01/unnamed__1_-removebg-preview.png"
                   />
                 </Buttonwrapper>
@@ -114,13 +115,15 @@ export default function ImageRightBlack({
             <Img showshadow={showshadow}>
               {imageCopy ? (
                 <LogoWrapper>
-                  <Image height='130' width='130' src={imageCopy.sourceUrl} />
+                  <Image height={130} width={130} src={imageCopy.sourceUrl} />
                 </LogoWrapper>
               ) : null}
               <Image
-                className="stretch"
+                className="w-full h-auto"
                 alt={image.altText || ""}
-                srcSet={image.sourceUrl}
+                src={image.sourceUrl}
+                width={500}
+                height={300}
               />
             </Img>
           </FlexWrap>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Section, Container, GridThree } from "components/layoutComponents";
 import { ButtonPrimary } from "components/buttons";
-import Image from "components/Image";
+import Image from "next/image";
 import Link from "next/link";
 
 const Text = styled.div`
@@ -12,11 +12,6 @@ const Text = styled.div`
   margin-right: auto;
   margin-left: auto;
 `;
-
-// const StyledImg = styled(GatsbyImage)`
-//   height: 300px;
-//   width: 100%;
-// `
 
 const Item = styled.div`
   text-align: center;
@@ -56,11 +51,12 @@ export default function ComponentE({ subheader, title, content }) {
               return (
                 <Item className="spacing" key={index}>
                   <Image
+                    className="w-full h-60"
                     alt={item.image.altText || ""}
                     srcSet={item.image.srcSet}
-                    src={item.image.src}
-                    width={width}
-                    height={height}
+                    src={item.image.src || item.image.srcSet}
+                    width={500}
+                    height={500}
                   />
 
                   <Inner>

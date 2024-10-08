@@ -22,12 +22,12 @@ export default function InstagramFeed() {
   return (
     <div className="spacing">
       <Script
-        id="embeded"
-        dangerouslySetInnerHTML={{
-          __html: `document.getElementById('embeded').classList.remove('embeded')`,
-        }}
         src="https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
+        onLoad={() => {
+          console.log("EmbedSocial script loaded successfully");
+        }}
+        defer
       />
       <Feed ref={feedContainerRef}>
         <iframe
