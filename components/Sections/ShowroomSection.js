@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
-const ButtonPrimary = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimary));
-const ButtonInline = dynamic(()=>import("../buttons").then((module)=>module.ButtonInline));
+import { ButtonPrimary, ButtonInline } from "../buttons";
 
 const Wrapper = styled.div`
   background: var(--clr-dark);

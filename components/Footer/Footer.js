@@ -1,10 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-const FormFooter = dynamic(() => import("../Forms/FormFooter"));
-const Map = dynamic(() => import("../map"));
-const InstagramFeed = dynamic(() => import("../instagramFeed"));
+import FormFooter from "../Forms/FormFooter";
+import Map from "../map";
+import InstagramFeed from "../instagramFeed";
 import { ButtonInline } from "../buttons";
 import styles from "./Footer.module.scss";
 import { RegClock, Phone, Location, Mail } from "../../public/svg/Svg";

@@ -37,7 +37,6 @@ export default function MainServices() {
                 alt="calgary hardscaping services"
                 width={800} // Set a specific width
                 height={600} // Set a specific height
-                sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw"
               />
               <h3 className={`subheader ${styles.imageOverlayHeader}`}>
                 Hardscaping

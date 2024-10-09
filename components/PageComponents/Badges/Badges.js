@@ -3,9 +3,7 @@ import { Section } from "../../layoutComponents";
 import Image from "next/image";
 import styled from "styled-components";
 import styles from "./Badges.module.scss";
-import dynamic from "next/dynamic";
-const SliderComponent = dynamic(()=>import("./SliderComponent"))
-
+import SliderComponent from "./SliderComponent";
 
 const ImgStyle = {
   marginTop: "auto",

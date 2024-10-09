@@ -1,5 +1,5 @@
 import Script from "next/script";
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Feed = styled.div`
@@ -17,7 +17,6 @@ const Feed = styled.div`
 `;
 
 export default function InstagramFeed() {
-  const feedContainerRef = useRef(null);
 
   return (
     <div className="spacing">
@@ -29,7 +28,7 @@ export default function InstagramFeed() {
         }}
         defer
       />
-      <Feed ref={feedContainerRef}>
+      <Feed>
         <iframe
           src="https://embedsocial.com/api/pro_hashtag/3c18d46b1f22bc51b2c07e90e7ab55bb531af6ad"
           allowtransparency="true"

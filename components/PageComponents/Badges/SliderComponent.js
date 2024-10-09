@@ -1,19 +1,8 @@
-'use client'
 import React from "react";
-const Slider = dynamic(() => import('react-slick'), { ssr: false })
+import Slider from "react-slick";
 import Image from "next/image";
 import styles from "./Badges.module.scss";
-import dynamic from "next/dynamic";
 
-const ImgStyle = {
-  marginTop: "auto",
-  marginBottom: "auto",
-  height: "100px",
-  width: "200px",
-  padding: "0em",
-  boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
-  margin: "12px 30px",
-};
 const SliderComponent = () => {
   const settings = {
     infinite: true,
@@ -31,117 +20,117 @@ const SliderComponent = () => {
     <Slider className={styles.slider} {...settings}>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_CMYK_GOLD.webp"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_CMYK_Text-1.webp"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_Rev.webp"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="https://21-pl.purpleparrotwebsites.com/wp-content/uploads/2024/05/Belgard_MasterCraftsman_Icon_CMYK.webp"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/best-landscaping-companies-in-calgary-1.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/best-landscaping-companies-in-calgary-2.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/best-landscaping-companies-in-calgary-3.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-experts-calgary-1.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-experts-calgary-2.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-experts-calgary-3.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-1.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-2.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-3.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
@@ -149,99 +138,99 @@ const SliderComponent = () => {
 
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-4.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-5.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-6.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-7.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-8.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-9.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-10.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/landscaping-calgary-top-rated-experts-11.svg"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/newBadges1.png"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/newBadges2.png"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />
       </div>
       <div>
         <Image
+         className="mt-auto mb-auto h-[100px] w-[200px] p-0 shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] m-[12px_30px]"
           src="/badges/newBadges3.png"
           alt="best landscaping companies in calgary"
-          style={ImgStyle}
           width={100}
           height={100}
         />

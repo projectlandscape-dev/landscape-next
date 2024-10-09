@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
-const ButtonInline = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonInline)
-);
-const ButtonUnderline = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonUnderline)
-);
+import { ButtonInline, ButtonUnderline } from "../buttons";
 import Image from "next/image";
 
 const device = {

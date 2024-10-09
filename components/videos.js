@@ -32,15 +32,6 @@ const VideoIframe = React.memo(({ videoId, thumbnailUrl }) => {
           height={360}
         />
       </Link>
-      {/* <iframe
-        id="youtube"
-        width="500"
-        height="360"
-        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-        frameBorder="0"
-        allowFullScreen
-        title={`YouTube video player for video ${videoId}`}
-      ></iframe> */}
     </div>
   );
 });
