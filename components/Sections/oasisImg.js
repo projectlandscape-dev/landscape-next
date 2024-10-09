@@ -1,13 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-const ButtonInline = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonInline)
-);
-const ButtonPrimary = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonPrimary)
-);
+import { ButtonInline,ButtonPrimary } from "../buttons";
 
 const Wrapper = styled.div``;
 const Text = styled.div``;

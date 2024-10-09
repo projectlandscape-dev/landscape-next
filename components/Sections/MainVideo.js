@@ -1,11 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
-const ButtonPrimary = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimary));
-const ButtonPrimaryDark = dynamic(()=>import("../buttons").then((module)=>module.ButtonPrimaryDark));
-const ButtonInline = dynamic(()=>import("../buttons").then((module)=>module.ButtonInline));
-
+import { ButtonPrimary, ButtonPrimaryDark, ButtonInline } from "../buttons";
 
 const TextTop = styled.div`
   text-align: center;

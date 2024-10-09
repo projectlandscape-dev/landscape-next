@@ -4,8 +4,6 @@ import { Container } from "../../layoutComponents";
 import { ButtonPrimary } from "../../buttons";
 import Image from "next/image";
 
-
-
 const TextMobile = styled.div`
   display: none;
   background: var(--clr-dark);
@@ -27,13 +25,12 @@ export default function Banner({
     <div>
       <div className="py-12 px-0" />
       <div className="grid grid-rows-[auto_auto] w-full mx-auto relative">
-        <div className="relative grid place-items-center min-h-[100vh]">
+        <div className="relative grid place-items-center h-[100vh]">
           <Image
-            className="w-[100vw] h-[100vh]"
+            className="w-full h-full object-cover"
             src={image.sourceUrl}
             alt="Banner Image"
-            width={1440}
-            height={500}
+            fill
             sizes="(min-width: 808px) 50vw, 100vw"
             priority
           />

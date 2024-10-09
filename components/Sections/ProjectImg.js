@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-const ButtonSecondaryLight = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonSecondaryLight)
-);
+import { ButtonSecondaryLight } from "../buttons";
 
 const Wrapper = styled.div`
   background: var(--clr-accent);

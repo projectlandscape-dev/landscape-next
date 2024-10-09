@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-const ButtonPrimary = dynamic(() =>
-  import("../buttons").then((module) => module.ButtonPrimary)
-);
+import { ButtonPrimary } from "../buttons";
 
 const Text = styled.div``;
 

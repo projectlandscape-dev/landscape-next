@@ -2,9 +2,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Styles from "./StaticProcess.module.scss";
 import Image from "next/image";
-const Section = dynamic(() =>
-  import("components/layoutComponents").then((module) => module.Section)
-);
+import { Section } from "../../layoutComponents";
 
 export default function StaticProcessArea() {
   return (
