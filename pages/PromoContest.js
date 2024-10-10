@@ -1,34 +1,13 @@
+'use client'
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import styled from "styled-components";
-const Section = dynamic(() =>
-  import("../components/layoutComponents").then((module) => module.Section)
-);
-const Container = dynamic(() =>
-  import("../components/layoutComponents").then((module) => module.Container)
-);
-const Flex = dynamic(() =>
-  import("../components/layoutComponents").then((module) => module.Flex)
-);
-const Label = dynamic(() =>
-  import("../components/Forms/FormItems").then((module) => module.Label)
-);
-const Input = dynamic(() =>
-  import("../components/Forms/FormItems").then((module) => module.Input)
-);
-const TextArea = dynamic(() =>
-  import("../components/Forms/FormItems").then((module) => module.TextArea)
-);
-const Submit = dynamic(() =>
-  import("../components/Forms/FormItems").then((module) => module.Submit)
-);
+import { Section, Container, Flex } from "../components/layoutComponents";
+import { Label, Input, TextArea, Submit } from "../components/Forms/FormItems";
 import { TfiReload } from "react-icons/tfi";
-const RulesAndRegulation = dynamic(() =>
-  import("../components/RulesAndRegulation.js/RulesAndRegulation")
-);
-const LayoutJs = dynamic(() => import("../components/layoutJs"));
+import RulesAndRegulation from "../components/RulesAndRegulation.js/RulesAndRegulation";
+import LayoutJs from "../components/layoutJs";
 
 const FormWrapper = styled.div`
   max-width: 750px;
@@ -77,7 +56,6 @@ export default function PromoContest() {
   const handleCaptchaChange = (e) => {
     setUserAnswer(e.target.value);
     const userAnswerInt = parseInt(e.target.value);
-
     if (consentChecked && userAnswerInt === Result) {
       setUserAnswer("");
       setCaptchaError("");

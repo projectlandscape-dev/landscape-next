@@ -43,6 +43,7 @@ const HeroCarousel = () => {
           alt="calgary landscaping"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
+          decoding="async"
         />
       </div>
       <Carousel.Caption style={captionStyle} className="spacing">
