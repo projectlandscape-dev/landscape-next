@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'txt-light': 'var(--txt-light)',
         'clr-tan' : 'var(--clr-tan)',
+        'clr-accent' : 'var(--clr-accent)',
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
@@ -34,6 +35,9 @@ module.exports = {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
+      backgroundColor : {
+        'clr-accent' : 'var(--clr-accent)',
+      }
     },
   },
   plugins: [],

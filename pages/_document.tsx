@@ -6,7 +6,6 @@ export default function Document() {
       <Head>
         <link rel="preconnect" href="https://vumbnail.com" />
         <link rel="preconnect" href="https://embedsocial.com" />
-  
       </Head>
       <body>
         <Main />

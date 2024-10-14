@@ -48,91 +48,75 @@ export default function Footer() {
                     />
                   </div>
 
-                  <ul>
-                    <li>
-                      <Link
-                        className={styles.contactLink}
-                        href="tel: 403-257-4059"
-                      >
-                        <div>
-                          <Phone style={IconStyle} />
-                        </div>
-                        403-257-4059
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={styles.contactLink}
-                        href="mailto: office@projectlandscape.ca"
-                      >
-                        <div>
-                          <Mail style={IconStyle} />
-                        </div>
-                        office@projectlandscape.ca
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={styles.contactLink}
-                        href="https://www.google.com/search?q=project%20landscape&oq=project+landscape&aqs=chrome..69i57j69i64j69i60l3.2120j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AJOqlzVRUU_ZaNptPsOjzHtILa57paj9uQ:1676341266052&rflfq=1&num=10&rldimm=11747008283103314784&lqi=ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg&ved=2ahUKEwjnu73t-ZP9AhVKGzQIHdw6BLIQvS56BAgWEAE&sa=X&rlst=f#rlfi=hd:;si:11747008283103314784,l,ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg;mv:[[50.997355899999995,-113.98204679999999],[50.9522124,-114.01662379999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:14"
-                        target="_blank"
-                      >
-                        <div>
-                          <Location style={IconStyle} />
-                        </div>
-                        3511 64 Ave Calgary, AB
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className={styles.contactLink} href="#">
-                        <div>
-                          <RegClock />
-                        </div>
-                        9 AM - 5 PM Mon - Fri <br /> 9 AM - 3 PM Sat
-                      </Link>
-                    </li>
-                  </ul>
+                  {/* <ul> */}
+                  <div className="!flex items-center gap-1">
+                    <Phone style={IconStyle} />
+                    <Link
+                      className={styles.contactLink}
+                      href="tel: 403-257-4059"
+                    >
+                      403-257-4059
+                    </Link>
+                  </div>
+                  <div className="!flex items-center gap-1">
+                    <Mail style={IconStyle} />
+                    <Link
+                      className={styles.contactLink}
+                      href="mailto: office@projectlandscape.ca"
+                    >
+                      office@projectlandscape.ca
+                    </Link>
+                  </div>
+                  <div className="!flex items-center gap-1">
+                    <Location style={IconStyle} />
+                    <Link
+                      className={styles.contactLink}
+                      href="https://www.google.com/search?q=project%20landscape&oq=project+landscape&aqs=chrome..69i57j69i64j69i60l3.2120j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AJOqlzVRUU_ZaNptPsOjzHtILa57paj9uQ:1676341266052&rflfq=1&num=10&rldimm=11747008283103314784&lqi=ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg&ved=2ahUKEwjnu73t-ZP9AhVKGzQIHdw6BLIQvS56BAgWEAE&sa=X&rlst=f#rlfi=hd:;si:11747008283103314784,l,ChFwcm9qZWN0IGxhbmRzY2FwZUi-z42FnKuAgAhaGxAAEAEYABgBIhFwcm9qZWN0IGxhbmRzY2FwZXoHQ2FsZ2FyeZIBEmxhbmRzY2FwZV9kZXNpZ25lcg;mv:[[50.997355899999995,-113.98204679999999],[50.9522124,-114.01662379999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:14"
+                      target="_blank"
+                    >
+                      3511 64 Ave Calgary, AB
+                    </Link>
+                  </div>
+                  <div className="!flex items-center gap-1">
+                    <RegClock />
+                    <Link className={styles.contactLink} href="#">
+                      9 AM - 5 PM Mon - Fri <br /> 9 AM - 3 PM Sat
+                    </Link>
+                  </div>
+                  {/* </ul> */}
                 </div>
                 <div className="spacing">
                   <span className="subheader tan">showroom</span>
-                  <ul>
-                    <li>
-                      <Link
-                        className={styles.contactLink}
-                        href="https://www.google.com/maps?q=backyard+canada&rlz=1C1JZAP_enCA1008CA1008&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE5NzVqMGo5qAIAsAIA&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi097Gbmfb-AhUCADQIHYjWB-kQ_AUoAnoECAEQBA"
-                        target="_blank"
-                      >
-                        <div>
-                          <Location style={IconStyle} />
-                        </div>
-                        BACKYARD CANADA - 711 48 AVE SE UNIT 1
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={styles.contactLink}
-                        href="https://www.google.com/maps/place/THE+PATIO+STORE/@51.010056,-114.0577993,15z/data=!4m10!1m2!2m1!1spatio+store!3m6!1s0x537170fe60213311:0x6b77a73a5221e247!8m2!3d51.0008443!4d-114.0513727!15sCgtwYXRpbyBzdG9yZVoNIgtwYXRpbyBzdG9yZZIBF291dGRvb3JfZnVybml0dXJlX3N0b3JlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5GYmtwNVJrdFJFQUXgAQA!16s%2Fg%2F11d_74qn23"
-                        target="_blank"
-                      >
-                        <div>
-                          <Location style={IconStyle} />
-                        </div>
-                        PATIO STORE - 533 58 AVE SE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={styles.contactLink}
-                        href="https://www.google.com/maps/place/World+of+Spas+%7C+Calgary+Hot+Tub+and+Swim+Spa+Dealer/@50.9962677,-114.0670975,17z/data=!3m1!4b1!4m6!3m5!1s0x537170f8345d142b:0x8259ac784ba88f8b!8m2!3d50.9962677!4d-114.0645172!16s%2Fg%2F1td424wj"
-                        target="_blank"
-                      >
-                        <div>
-                          <Location style={IconStyle} />
-                        </div>
-                        WORLD OF SPAS - 6201 CENTRE S
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="!flex items-center gap-1">
+                    <Location style={IconStyle} />
+                    <Link
+                      className={styles.contactLink}
+                      href="https://www.google.com/maps?q=backyard+canada&rlz=1C1JZAP_enCA1008CA1008&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE5NzVqMGo5qAIAsAIA&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi097Gbmfb-AhUCADQIHYjWB-kQ_AUoAnoECAEQBA"
+                      target="_blank"
+                    >
+                      BACKYARD CANADA - 711 48 AVE SE UNIT 1
+                    </Link>
+                  </div>
+                  <div className="!flex items-center gap-1">
+                    <Location style={IconStyle} />
+                    <Link
+                      className={styles.contactLink}
+                      href="https://www.google.com/maps/place/THE+PATIO+STORE/@51.010056,-114.0577993,15z/data=!4m10!1m2!2m1!1spatio+store!3m6!1s0x537170fe60213311:0x6b77a73a5221e247!8m2!3d51.0008443!4d-114.0513727!15sCgtwYXRpbyBzdG9yZVoNIgtwYXRpbyBzdG9yZZIBF291dGRvb3JfZnVybml0dXJlX3N0b3JlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5GYmtwNVJrdFJFQUXgAQA!16s%2Fg%2F11d_74qn23"
+                      target="_blank"
+                    >
+                      PATIO STORE - 533 58 AVE SE
+                    </Link>
+                  </div>
+                  <div className="!flex items-center gap-1">
+                    <Location style={IconStyle} />
+                    <Link
+                      className={styles.contactLink}
+                      href="https://www.google.com/maps/place/World+of+Spas+%7C+Calgary+Hot+Tub+and+Swim+Spa+Dealer/@50.9962677,-114.0670975,17z/data=!3m1!4b1!4m6!3m5!1s0x537170f8345d142b:0x8259ac784ba88f8b!8m2!3d50.9962677!4d-114.0645172!16s%2Fg%2F1td424wj"
+                      target="_blank"
+                    >
+                      WORLD OF SPAS - 6201 CENTRE S
+                    </Link>
+                  </div>
                 </div>
                 <div className={styles.socials}>
                   <span className="subheader tan">let's connect!</span>
@@ -220,7 +204,7 @@ export default function Footer() {
                   <p className={styles.about}>
                     Project Landscape redefines the fundamentals of landscape
                     installation, landscape maintenance and service through-out
-                   the province, including snow removal and{" "}
+                    the province, including snow removal and{" "}
                     <ButtonInline href="/areas-we-service">
                       surrounding areas
                     </ButtonInline>

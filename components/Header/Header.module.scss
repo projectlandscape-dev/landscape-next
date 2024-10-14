@@ -207,14 +207,12 @@
 }
 
 .linkDark {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-700);
   color: var(--txt-dark);
-  letter-spacing: 0.1em;
   transition: all 0.25s linear;
-
+  font-family: var(--font-alfa-slab-one);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-400);
+  line-height: 1.1;
   // aligning text with icon
   display: flex;
   align-items: center;

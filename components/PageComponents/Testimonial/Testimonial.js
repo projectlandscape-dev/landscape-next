@@ -2,8 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import { ButtonPrimary } from "../../buttons";
-import dynamic from "next/dynamic";
-const TestimonialSlider = dynamic(() => import("./TestimonialSlider"));
+import TestimonialSlider from "./TestimonialSlider";
 
 const SliderWrapper = styled.div`
   .slick-prev:before,

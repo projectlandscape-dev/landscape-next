@@ -58,20 +58,18 @@ export default function FaqFeatured(props) {
           <div className="flexMobileOpp">
             <Accordion className="spacing" allowToggle>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      What makes project landscape different from other Calgary
-                      landscape contractors?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    What makes project landscape different from other Calgary
+                    landscape contractors?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   Project landscape is unique in our aim to work with customers
                   both residential and commercial. From first contact we can
@@ -82,19 +80,17 @@ export default function FaqFeatured(props) {
               </AccordionItem>
 
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      What is the best way to get started?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    What is the best way to get started?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   Booking a free consultation is the best way to get started. We
                   can be reached by phone or email and will answer you within 24
@@ -104,19 +100,17 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      Do you offer a warranty?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    Do you offer a warranty?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   Project landscape offers a full warranty on all hardscapes and
                   softscapes. Our Ironclad warranty program is virtually
@@ -124,19 +118,17 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      Is your company licensed and insured?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    Is your company licensed and insured?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   We are fully licensed and insured, giving you peace of mind
                   when work is being carried out. We hold the highest insurance
@@ -146,20 +138,18 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      I don’t know much about landscape materials or products,
-                      can you help?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    I don’t know much about landscape materials or products, can
+                    you help?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   With such a large selection of materials and products
                   available, we would recommend you look online at Pintrest or
@@ -170,44 +160,42 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      What Types Of Services Do You Offer?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                {" "}
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    What Types Of Services Do You Offer?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>{" "}
                 <AccordionPanel pb={4}>
-                  We offer a diverse array of services tailored to elevate your outdoor living
-                  experience. Our skilled team excels in crafting custom decks,
-                  perfect for entertaining and relaxation. We also specialize in
-                  installing elegant paving stone patios, blending functionality
-                  with aesthetic appeal. Our expertise extends to innovative
-                  hardscaping solutions, transforming your garden into a
-                  stunning, durable oasis. Choose us for a blend of creativity,
-                  quality, and sustainability in all your landscaping needs.
+                  We offer a diverse array of services tailored to elevate your
+                  outdoor living experience. Our skilled team excels in crafting
+                  custom decks, perfect for entertaining and relaxation. We also
+                  specialize in installing elegant paving stone patios, blending
+                  functionality with aesthetic appeal. Our expertise extends to
+                  innovative hardscaping solutions, transforming your garden
+                  into a stunning, durable oasis. Choose us for a blend of
+                  creativity, quality, and sustainability in all your
+                  landscaping needs.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      How much does landscaping typically cost?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    How much does landscaping typically cost?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   The cost of landscaping can vary widely depending on factors
                   such as the size of the area, the complexity of the design,
@@ -220,19 +208,17 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      Will my Project require a permit / who obtains the permit?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    Will my Project require a permit / who obtains the permit?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   As licensed landscape contractors, Project Landscape is happy
                   to help obtain needed permits as part of a project management
@@ -240,20 +226,18 @@ export default function FaqFeatured(props) {
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem style={AccordionStyle}>
-                <p>
-                  <AccordionButton style={AccordionStyle}>
-                    <Box
-                      className="subheader"
-                      as="span"
-                      flex="1"
-                      textAlign="left"
-                    >
-                      Do you have any certifications or affiliations with
-                      professional organizations?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </p>
+                <AccordionButton style={AccordionStyle}>
+                  <Box
+                    className="subheader"
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                  >
+                    Do you have any certifications or affiliations with
+                    professional organizations?
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
                 <AccordionPanel pb={4}>
                   Project Landscape is Calgary's premier outdoor living company,
                   specializing in retaining walls and paving stone

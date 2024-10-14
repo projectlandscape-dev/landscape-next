@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import { ButtonPrimary } from "../buttons";
-import dynamic from "next/dynamic";
-const TestimonialSlider = dynamic(() => import("./TestimonialSlider"));
+import TestimonialSlider from "./TestimonialSlider";
 
 const Wrapper = styled.div`
   position: relative;
