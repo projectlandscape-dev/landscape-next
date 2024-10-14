@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Mail, Phone, Location, DropdownArrow } from "../../public/svg/Svg";
+import { Phone, DropdownArrow } from "../../public/svg/Svg";
 import Logo from "../../public/project-landscape-logo-light.svg";
 
 const device = {
@@ -61,18 +61,16 @@ export default function HeaderBasic() {
       <div className={styles.header}>
         <div className={styles.headertop}>
           <div className={styles.containerTop}>
-            <div className={styles.headerTopLeft}> Outdoor Living Done Right</div>
-         
-
+            <div className={styles.headerTopLeft}>
+              {" "}
+              Outdoor Living Done Right
+            </div>
             <div className={styles.header_right}>
               <Link className={styles.navLinkTop} href="tel: 403 257 4059">
-              <Phone />
+                <Phone />
                 403 257 4059
               </Link>
-              <button
-                className={styles.connect_now}
-                href="/contact"
-              >
+              <button className={styles.connect_now} href="/contact">
                 CONNECT NOW
               </button>
             </div>
@@ -106,88 +104,68 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/hardscaping"
                       >
-                        <span className="subheader">hardscaping</span>
+                        Hardscaping
                       </Link>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/patio-surfaces"
                         >
                           paving stones
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/paver-sealing-refresh-program"
                         >
                           Paving Stone Sealing
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/retaining-walls"
                         >
                           retaining walls
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/outdoor-living/garden-walls"
                         >
                           garden walls
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/hardscaping/garden-bed-edging"
                         >
                           garden bed edging
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/concrete-curbing"
                         >
                           concrete curbing
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/staircases-stepping-stones"
                         >
                           stairs and stepping stones
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/seating"
                         >
                           seat walls and pillars
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/concrete-installations"
                         >
                           concrete installation
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/hardscaping/water-management"
                         >
                           water management
                         </Link>
-                      </li>
                     </ul>
 
                     <ul>
@@ -195,56 +173,44 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/softscaping"
                       >
-                        <span className="subheader">softscaping</span>
+                       Softscaping
                       </Link>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/artificial-turf"
                         >
                           artificial turf
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/irrigation-landscape-lighting"
                         >
                           irrigation installation
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/sod-installation"
                         >
                           sod installation
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/softscaping/calgary-sod-delivery"
                         >
                           sod delivery
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/tree-shrub-planting"
                         >
                           shrub and tree planting
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/mulches-decorative-rock"
                         >
                           mulch and decorative rock
                         </Link>
-                      </li>
                     </ul>
 
                     <ul>
@@ -252,94 +218,72 @@ export default function HeaderBasic() {
                         className={styles.linkDark}
                         href="/residential-services/outdoor-living"
                       >
-                        <span className="subheader">outdoor living</span>
+                      Outdoor living
                       </Link>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/composite-decking"
                         >
                           decks
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/gazebos-pergolas"
                         >
                           pergolas
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/landscape-lighting-services-calgary"
                         >
                           landscape lighting
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/landscape-design"
                         >
                           landscape design
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/water-features"
                         >
                           water features
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/fire-pits-fire-places"
                         >
                           fire pits and fire places
                         </Link>
-                      </li>
 
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/fence-contractor-in-calgary"
                         >
                           fences
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/privacy-screens"
                         >
                           privacy screens
                         </Link>
-                      </li>
-                      <li>
                         <Link className={styles.styledLink} href="/railings">
                           deck railings
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/landscape-construction/outdoor-kitchens"
                         >
                           outdoor kitchens
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/residential-services/outdoor-living/outdoor-furniture"
                         >
                           outdoor furniture
                         </Link>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -350,99 +294,73 @@ export default function HeaderBasic() {
                   <div>
                     <ul>
                       <Link className={styles.linkDark} href="/about">
-                        <span className="subheader">company information</span>
+                       Company information
                       </Link>
-                      <li>
                         <Link className={styles.styledLink} href="/about">
-                          about
+                        about
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/strategic-partners"
                         >
                           strategic partners
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/areas-we-service"
                         >
                           service areas
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/awards-certificates"
                         >
                           Awards and Certificates
                         </Link>
-                      </li>
-                      <li>
                         <Link className={styles.styledLink} href="/our-process">
                           our process
                         </Link>
-                      </li>
-                      <li>
                         <Link className={styles.styledLink} href="/careers">
                           careers
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/project-landscape-difference"
                         >
                           the project landscape difference
                         </Link>
-                      </li>
                     </ul>
                     <ul>
                       <span className="subheader">customer center</span>
-                      <li>
                         <Link className={styles.styledLink} href="/faq">
                           FAQ
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/refer-a-friend-to-project-landscape-ltd"
                         >
                           refer a friend
                         </Link>
-                      </li>
 
-                      <li>
                         <Link className={styles.styledLink} href="/financing">
                           financing{" "}
                         </Link>
-                      </li>
 
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/warranty-request"
                         >
                           warranty request
                         </Link>
-                      </li>
-                      <li>
                         <Link className={styles.styledLink} href="/blog">
                           blogs
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/testimonials"
                         >
                           testimonials
                         </Link>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -453,64 +371,48 @@ export default function HeaderBasic() {
                   <div>
                     <ul>
                       <span className="subheader">Get Inspired</span>
-                      <li>
                         <Link className={styles.styledLink} href="/projects">
                           Projects
                         </Link>
-                      </li>
-                      <li>
                         <Link className={styles.styledLink} href="/portfolio">
                           portfolio
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/calgary-landscaping-materials"
                         >
                           Material Selection Guide
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/landscape-idea-center"
                         >
                           indoor idea center
                         </Link>
-                      </li>
-                      <li>
                         <Link className={styles.styledLink} href="/packages">
                           packages
                         </Link>
-                      </li>
                     </ul>
                     <ul>
                       <span className="subheader">designscape style</span>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/landscape-styles"
                         >
                           landscaping styles
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/outdoor-living-inspiration"
                         >
                           outdoor living inspiration
                         </Link>
-                      </li>
-                      <li>
                         <Link
                           className={styles.styledLink}
                           href="/landscaping-trends"
                         >
                           landscaping trends
                         </Link>
-                      </li>
                     </ul>
                   </div>
                 </div>

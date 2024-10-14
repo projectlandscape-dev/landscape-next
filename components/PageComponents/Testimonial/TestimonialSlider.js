@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import dynamic from "next/dynamic";
-const ReviewBox = dynamic(()=>import('../../testimonials/ReviewBox'))
-
+import ReviewBox from "../../testimonials/ReviewBox";
 
 const reviewItem = [
   {

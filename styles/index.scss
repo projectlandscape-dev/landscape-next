@@ -305,3 +305,27 @@ section {
 body.modal-open {
   overflow: hidden;
 }
+
+
+.BtnSecondarySeeAllourwork{
+  cursor: pointer;
+  display: inline-block;
+  width: 230px;
+  font-family: var(--font-alfa-slab-one);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-button);
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1em 1.33em;
+  transition: all 0.2s linear;
+
+  background: transparent;
+  color: var(--clr-accent);
+  border: 1px solid var(--clr-accent);
+
+  &:hover {
+    opacity: 0.8;
+    color: var(--clr-accent);
+  }
+}

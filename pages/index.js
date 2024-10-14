@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import LayoutJs from "../components/layoutJs";
 import HeroBasic from "../components/Heros/HeroBasic";
-const Badges = dynamic(() => import("../components/Badges/Badges"));
+import Badges from "../components/Badges/Badges";
 import AllServices from "../components/AllServices/AllServices";
 import { ButtonInline } from "../components/buttons";
 import Cta3 from "../components/Cta3/Cta3";
@@ -24,9 +23,7 @@ import PortfolioBanner from "../components/portfolioBanner";
 import StaticProcessArea from "../components/PageComponents/StaticProcessArea/StaticProcessArea";
 import FeaturedWork from "../components/StaticFeaturedWork";
 import FinanceBanner from "../components/financeBanner";
-const ScrollCount = dynamic(() =>
-  import("../components/PageComponents/ScrollCount/ScrollCount")
-);
+import ScrollCount from "../components/PageComponents/ScrollCount/ScrollCount";
 import NewBlockBlack from "../components/Sections/NewBlockBlack";
 import Seo from "../components/seo";
 import Head from "next/head";
