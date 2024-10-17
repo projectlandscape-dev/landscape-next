@@ -833,6 +833,13 @@ export const PAGE_COMPONENTS_ACF_FIELDS = gql`
           descriptionTitle
           description
         }
+
+        ... on Page_Pagecomponents_PageComponents_DropdownMenus {
+          repeaterContent {
+            heading
+            description
+          }
+        }
       }
     }
   }

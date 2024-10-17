@@ -88,7 +88,7 @@ export default function GoogleBadge() {
                 ))}
               </FlexStars>
             </div>
-            <p className="body--small">Based on 90 reviews</p>
+            <p className="body--small">Based on 98 reviews</p>
           </div>
         </Flex>
       </Wrapper>
