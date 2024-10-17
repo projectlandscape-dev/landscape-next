@@ -3,6 +3,7 @@ import { Container } from "../../layoutComponents";
 import Image from "next/image";
 import styled from "styled-components";
 import Slider from "react-slick";
+import DropdownMenus from "../DropdownMenus";
 
 export const GridAuto = styled.div`
   display: grid;
@@ -69,7 +70,7 @@ const TwoImageWithColor = ({
     ],
   };
   return (
-    <section style={{ marginTop: "4em" }}>
+    <section style={{ marginTop: "5em" }}>
       <Container>
         <center>
           <h1 className="title">{title}</h1>

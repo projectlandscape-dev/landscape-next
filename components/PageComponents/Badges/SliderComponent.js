@@ -5,15 +5,14 @@ import styles from "./Badges.module.scss";
 
 const SliderComponent = () => {
   const settings = {
+    dots: false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 0,
-    cssEase: "ease-in-out",
-    centerMode: true,
-    lazyLoad: "ondemand",
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
 
   const images = [
@@ -46,14 +45,14 @@ const SliderComponent = () => {
   return (
     <Slider className={styles.slider} {...settings}>
       {images.map((src, index) => (
-          <Image
-            key={index}
-            className="m-5 mx-auto !p-2 h-[110px] !w-[200px] shadow-2xl"
-            src={src}
-            alt="best landscaping companies in calgary"
-            width={100}
-            height={100}
-          />
+        <Image
+          key={index}
+          className="m-5 mx-auto !p-2 h-[110px] !w-[200px] shadow-2xl"
+          src={src}
+          alt="best landscaping companies in calgary"
+          width={100}
+          height={100}
+        />
       ))}
     </Slider>
   );
