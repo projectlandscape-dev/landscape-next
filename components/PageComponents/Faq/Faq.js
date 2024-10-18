@@ -11,7 +11,6 @@ import styled from "styled-components";
 import { ButtonPrimary } from "components/buttons";
 import Image from "next/image";
 
-
 const AccordionStyle = {
   background: "var(--clr-accent)",
   borderRadius: "var(--br)",
@@ -22,7 +21,7 @@ const AccordionStyle = {
 
 export default function FaqFeatured({ title, body, questions }) {
   return (
-    <div className="relative z-0 bg-opacity-80 bg-blend-overlay text-txt-light h-full">
+    <div className="relative z-0 bg-opacity-100 bg-blend-overlay text-txt-light h-full">
       <Image
         className="object-cover w-[100vw] h-[100vh]"
         src={
@@ -33,8 +32,9 @@ export default function FaqFeatured({ title, body, questions }) {
         sizes="(min-width: 808px) 50vw, 100vw"
       />
       <div className="relative z-10 p-5">
+        <div className="absolute inset-0 bg-black opacity-70 z-[-1]"></div>{" "}
         <div className="w-[85%] mx-auto max-w-[95rem]">
-          <div className="flex items-center !flex-col-reverse gap-6 lg:gap-0 lg:!flex-row space-y-0 md:space-y-0 space-x-0 md:space-x-[4em] ">
+          <div className="flex items-center !flex-col-reverse gap-6 lg:gap-0 lg:!flex-row space-y-0 md:space-y-0 space-x-0 md:space-x-[4em]">
             <Accordion className="spacing" allowToggle>
               {questions.map((item, index) => (
                 <AccordionItem style={AccordionStyle} key={index}>

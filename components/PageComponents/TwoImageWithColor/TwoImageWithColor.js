@@ -116,12 +116,14 @@ const TwoImageWithColor = ({
           </GridAuto>
         </center>
         <h4 className="subheader mt-5">{descriptionTitle}</h4>
-        <div
-          className="mt-2"
-          dangerouslySetInnerHTML={{
-            __html: `${description}`,
-          }}
-        />
+        {description && (
+          <div
+            className="mt-2"
+            dangerouslySetInnerHTML={{
+              __html: `${description}`,
+            }}
+          />
+        )}
       </Container>
     </section>
   );
